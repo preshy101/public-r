@@ -241,7 +241,7 @@
 					tempor incididunt ut labore mollit anim id est laborum.
 				</p>
 			</div> <!-- .title-block -->
-			<div class="row">
+			{{-- <div class="row">
 				<div class="col-lg-6">
 					<div class="post-wrapper post-split clearfix">
 						<div class="image-wrapper">
@@ -318,7 +318,7 @@
 					</div> <!-- .post-wrapper split-post -->
 
 				</div> <!-- .col-lg-6 -->
-			</div> <!-- .row -->
+			</div> <!-- .row --> --}}
 			<div class="btn-container">
 				<a class="btn btn-narrow" href="#">View All</a>
 			</div>
