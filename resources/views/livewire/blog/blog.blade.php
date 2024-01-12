@@ -40,7 +40,7 @@
 									{{$cat->title}}
 								</a>
 								@endforeach
-							<h3 class="entry-title"><a href="#">{{$item->title}}</a></h3>
+							<h3 class="entry-title"><a  wire:navigate href="/news/posts/{{$item->slug}}">{{$item->title}}</a></h3>
 							<div class="entry-content">
 								<p>
 									{!!$item->getExcept()!!}

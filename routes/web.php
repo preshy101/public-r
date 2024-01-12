@@ -70,6 +70,7 @@ Route::get('/membership/upgrade', MemberUpgrade::class)->name('member.upgrade');
 // Blog
 Route::get('/news/posts', Blog::class)->name('news.posts'); 
 Route::get('/news/posts/{slug}', ViewBlog::class)->name('news.posts.view'); 
+Route::post('/news/search/{title}', ViewBlog::class)->name('news.posts.view'); 
 
 // Contact
 Route::get('/contact-us', Contactus::class)->name('contactus'); 

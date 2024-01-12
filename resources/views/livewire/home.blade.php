@@ -130,11 +130,11 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <i class="pe-7s-user"></i>
-							<h3><span class="counter">15K</span>Students</h3>
+							<h3><span class="counter">15455</span>Students</h3>
 						</div> <!-- .col-xs-6 -->
 						<div class="col-xs-6">
                             <i class="pe-7s-users"></i>
-							<h3><span class="counter">7K</span>Members</h3>
+							<h3><span class="counter">7464</span>Members</h3>
 						</div> <!-- .col-xs-6 -->
 						<div class="col-xs-6">
                             <i class="pe-7s-note"></i>
@@ -232,99 +232,7 @@
 	</section> <!-- .testimonial-section -->
 
     {{-- News --}}
-    <section class="blog-section blog-style-04 section-block">
-		<div class="container">
-			<div class="title-block">
-				<h2>Latest News</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore mollit anim id est laborum.
-				</p>
-			</div> <!-- .title-block -->
-			{{-- <div class="row">
-				<div class="col-lg-6">
-					<div class="post-wrapper post-split clearfix">
-						<div class="image-wrapper">
-							<img class="img-responsive" src="{{asset('./img/markus-winkler-k_Am9hKISLM-unsplash.jpg')}}" style="width: 570px; height: 208px;" alt="blog image">
-						</div> <!-- .image-wrapper -->
-						<div class="post-content">
-							<ul class="post-meta">
-								<li>August 03, 2017</li>
-								<li><a href="#">Web Design</a></li>
-							</ul>
-							<h3><a href="#">Praesent convallis lorem nisi anamas eget</a></h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt...
-							</p>
-							<a class="btn-open" href="#">Read More</a>
-						</div> <!-- .post-content -->
-					</div> <!-- .post-wrapper split-post -->
-
-					<div class="post-wrapper post-split clearfix">
-						<div class="image-wrapper">
-							<img class="img-responsive" src="{{asset('./img/markus-winkler-k_Am9hKISLM-unsplash.jpg')}}" style="width: 570px; height: 208px;" alt="blog image">
-						</div> <!-- .image-wrapper -->
-						<div class="post-content">
-							<ul class="post-meta">
-								<li>August 03, 2017</li>
-								<li><a href="#">Web Design</a></li>
-							</ul>
-							<h3><a href="#">Nulla non arcu rutrum manegis convallis</a></h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt...
-							</p>
-							<a class="btn-open" href="#">Read More</a>
-						</div> <!-- .post-content -->
-					</div> <!-- .post-wrapper split-post -->
-
-				</div> <!-- .col-lg-6 -->
-				<div class="col-lg-6">
-					<div class="post-wrapper post-split clearfix">
-						<div class="image-wrapper">
-							<img class="img-responsive" src="{{asset('./img/markus-winkler-k_Am9hKISLM-unsplash.jpg')}}" style="width: 570px; height: 208px;" alt="blog image">
-						</div> <!-- .image-wrapper -->
-						<div class="post-content">
-							<ul class="post-meta">
-								<li>August 03, 2017</li>
-								<li><a href="#">Web Design</a></li>
-							</ul>
-							<h3><a href="#">Donec volutpat purus in orci mollis ut pretium</a></h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt...
-							</p>
-							<a class="btn-open" href="#">Read More</a>
-						</div> <!-- .post-content -->
-					</div> <!-- .post-wrapper split-post -->
-
-					<div class="post-wrapper post-split clearfix">
-						<div class="image-wrapper">
-							<img class="img-responsive" src="{{asset('./img/markus-winkler-k_Am9hKISLM-unsplash.jpg')}}" style="width: 570px; height: 208px;" alt="blog image">
-						</div> <!-- .image-wrapper -->
-						<div class="post-content">
-							<ul class="post-meta">
-								<li>August 03, 2017</li>
-								<li><a href="#">Web Design</a></li>
-							</ul>
-							<h3><a href="#">Praesent congue sem tortor vulputate felis</a></h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt...
-							</p>
-							<a class="btn-open" href="#">Read More</a>
-						</div> <!-- .post-content -->
-					</div> <!-- .post-wrapper split-post -->
-
-				</div> <!-- .col-lg-6 -->
-			</div> <!-- .row --> --}}
-			<div class="btn-container">
-				<a class="btn btn-narrow" href="#">View All</a>
-			</div>
-			
-		</div> <!-- .container -->
-	</section> <!-- .blog-section -->
+	@include('livewire.sections.news')
 
     {{-- Subscribe --}}
 	{{-- @endsection --}}

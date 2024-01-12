@@ -21,7 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/slick-theme.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/magnific-popup.css')}}">
 	<!-- STYLES -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/bootstrap.min.css')}}"> 
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/style.css')}}">
 	@livewireStyles
 </head>

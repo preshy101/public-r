@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Carbon\Carbon;
 use App\Models\cms;
+use App\Models\Post;
 use Livewire\Component;
 use App\Models\imageGallery;
 
@@ -17,6 +18,7 @@ class Home extends Component
 
     public $testimony;
     public $faq;
+    public $posts;
 
     // public function create(){
     //     dd($this->sub);
@@ -49,6 +51,8 @@ class Home extends Component
 
         $this->gallery = imageGallery:: 
         latest()->take(6)->get();
+
+        $this->posts = Post::published()->latest()->take(3)->get();
     }
     public function render()
     { 
@@ -61,6 +65,7 @@ class Home extends Component
         'gallery' => $this->gallery, 
         'faq' => $this->faq, 
         'testimony' => $this->testimony, 
+        'post' => $this->posts
         ]
     )->extends('welcome');
     }
