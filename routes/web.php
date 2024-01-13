@@ -13,22 +13,23 @@ use App\Livewire\About\Council;
 
 use App\Livewire\Resource\ViewEvent;
 
+use App\Livewire\Resource\SearchBlog;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Student\StudentResult;
 use App\Livewire\About\VisionAndMission;
-use App\Livewire\Resource\ResourceEvent;
 
+use App\Livewire\Resource\ResourceEvent;
 use App\Livewire\Resource\ResourceImage;
 use App\Livewire\Resource\ResourceVideo;
 use App\Livewire\Resource\ViewAllImages;
 use App\Livewire\Student\StudentDiploma;
 use App\Livewire\Membership\MemberUpgrade;
-use App\Livewire\Student\StudentAdmission;
 
+use App\Livewire\Student\StudentAdmission;
 use App\Livewire\Membership\MemberCategory;
 use App\Livewire\Student\StudentCurriculum;
-use App\Livewire\Student\StudentRequirment;
 
+use App\Livewire\Student\StudentRequirment;
 use App\Livewire\Student\StudentStudyCentre;
 use App\Livewire\Membership\MemberInformation;
 use App\Livewire\Resource\ResourceDownloadables;
@@ -70,7 +71,7 @@ Route::get('/membership/upgrade', MemberUpgrade::class)->name('member.upgrade');
 // Blog
 Route::get('/news/posts', Blog::class)->name('news.posts'); 
 Route::get('/news/posts/{slug}', ViewBlog::class)->name('news.posts.view'); 
-Route::post('/news/search/{title}', ViewBlog::class)->name('news.posts.view'); 
+Route::post('/news/search/{title}', SearchBlog::class)->name('news.posts.view'); 
 
 // Contact
 Route::get('/contact-us', Contactus::class)->name('contactus'); 
