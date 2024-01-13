@@ -2,7 +2,7 @@
 
 namespace App\Filament\Resources;
 
-use App\Models\Cms;
+use App\Models\cms;
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
@@ -24,7 +24,7 @@ use App\Filament\Resources\CmsResource\RelationManagers;
 
 class CmsResource extends Resource
 {
-    protected static ?string $model = Cms::class;
+    protected static ?string $model = cms::class;
     protected static ?string $navigationLabel = 'Resources';
 
     protected static ?string $navigationIcon = 'heroicon-o-squares-plus';

@@ -22,6 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/magnific-popup.css')}}">
 	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/bootstrap.min.css')}}"> 
+	<link rel="icon" href="{{asset('img/masthead.png')}}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/style.css')}}">
 	@livewireStyles
 </head>
