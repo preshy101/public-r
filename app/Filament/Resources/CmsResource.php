@@ -25,7 +25,7 @@ use App\Filament\Resources\CmsResource\RelationManagers;
 class CmsResource extends Resource
 {
     protected static ?string $model = cms::class;
-    protected static ?string $navigationLabel = 'Resources';
+    protected static ?string $navigationLabel = 'CMS';
 
     protected static ?string $navigationIcon = 'heroicon-o-squares-plus';
 
