@@ -9,6 +9,7 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;  
 use Filament\Tables\Columns\TextColumn;
@@ -35,7 +36,7 @@ class PostResource extends Resource
     {
         return $form
         ->schema([
-            Section::make('Mean Content')
+            Section::make('Mean Content')->columns(2)
                 ->description('few words')
                 ->schema([
                     TextInput::make('title')->live()->required()->minLength(3)->maxLength(150)
@@ -47,22 +48,23 @@ class PostResource extends Resource
                         $set('slug', Str::slug($state));
                         }
                 ),
-                    TextInput::make('slug')->required()->unique(ignoreRecord: true),  
+                    TextInput::make('slug')->readOnly()->required()->unique(ignoreRecord: true),  
+                    Select::make('categories')->multiple()->relationship('categories','title')->searchable()->required(),
                     RichEditor::make('body')->required()
-                    ->fileAttachmentsDirectory('post/images')->columnSpanFull(),
+                    ->fileAttachmentsDirectory('post/images')->columnSpanFull(),    
+                    Select::make('user_id')->relationship('author','name')->searchable()->required(),
+                    DateTimePicker::make('published_at')->nullable(),
+                    Toggle::make('featured'),
                 ])
-                ->columns(2),
+                ->columnSpan(2),
             Section::make('Meta')
                 ->description('')
                 ->schema([
                     FileUpload::make('image')->image()->directory('post/thumbnails'),
-                    DateTimePicker::make('published_at')->nullable(),
-                    Checkbox::make('featured'),
-                    Select::make('user_id')->relationship('author','name')->searchable()->required(),
-                    Select::make('categories')->multiple()->relationship('categories','title')->searchable()->required()
-                ])
+                    
+                ])->collapsible()->columnSpan(['lg' => 1])
                 // ->columns(2),
-        ]);
+        ])->columns(3);
     }
 
     public static function table(Table $table): Table
