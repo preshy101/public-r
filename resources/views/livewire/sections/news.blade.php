@@ -1,5 +1,7 @@
 <div>
       {{-- News --}}
+      @if (!empty($posts))
+       
       <section class="blog-section blog-style-04 section-block">
 		<div class="container">
 			<div class="title-block">
@@ -29,7 +31,7 @@
                                     @endforeach
                                 </li>
 							</ul>
-							<h3><a href="#">{{$item->title}}</a></h3>
+							<h3><a wire:navigate href="/news/posts/{{$item->slug}}">{{$item->title}}</a></h3>
 							<p>
 								{!!$item->getExcept()!!}
 							</p>
@@ -45,6 +47,8 @@
 			</div>
 			
 		</div> <!-- .container -->
-	</section> <!-- .blog-section -->
+	</section> <!-- .blog-section -->   
+
+    @endif
 
 </div>

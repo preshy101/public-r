@@ -38,7 +38,7 @@
                 {{-- src="{{asset('img/unseen-histories-G2vxuMlATxA-unsplash.jpg')}}" --}}
         @endif
         {{-- Our Team --}} 
-        @if ($team)
+        @if (!empty($team))
         <section class="team-section team-02 mt-0 section-block">
             <div class="container">
                 <div class="title-block">

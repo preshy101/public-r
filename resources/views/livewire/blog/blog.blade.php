@@ -19,7 +19,7 @@
 			
 			<div class="row">
 				<div class="col-md-8 blog-posts">
-		@if ($posts) 
+		@if (!empty($posts)) 
 			@foreach ($posts as $item)
 					
 					<div class="post-wrapper post-split clearfix">

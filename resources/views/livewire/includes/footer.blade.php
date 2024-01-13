@@ -63,20 +63,22 @@
                 <div class="col-lg-3 col-md-6 recent-post-widget">
                     <h3 class="widget-title">Recent posts</h3>
                     <ul class="post-list">
-                        {{-- <li class="clearfix">
-                            <div class="image-wrapper"><img class="img-responsive" src="{{asset('./img/ashni-Wh9ZC4727e4-unsplash.jpg')}}" alt="blog post thumbnail"></div>
+                        @php
+                        $posts = App\Models\Post::published()->latest()->take(3)->get();
+                    @endphp
+                        @if (!empty($posts))
+                        @foreach ($posts as $item)  
+                        <li class="clearfix">
+                            <div class="image-wrapper"><img class="img-responsive" 
+                                src="{{Storage::url($item->image)}}"  alt="news post thumbnail"></div>
                             <div class="content-wrapper">
-                                <h5><a href="#">When the music is over turn off</a></h5>
-                                <p>August 07, 2017</p>
+                                <h5><a wire:navigate href="/news/posts/{{$item->slug}}">{{$item->title}}</a></h5>
+                                <p>{{$item->published_at->diffForHumans()}}</p>
                             </div> <!-- .content-wrapper -->
                         </li> <!-- .clearfix -->
-                        <li class="clearfix">
-                            <div class="image-wrapper"><img class="img-responsive" src="{{asset('./img/ashni-Wh9ZC4727e4-unsplash.jpg')}}" alt="blog post thumbnail"></div>
-                            <div class="content-wrapper">
-                                <h5><a href="#">When the music is over turn off the light</a></h5>
-                                <p>August 07, 2017</p>
-                            </div> <!-- .content-wrapper -->
-                        </li> <!-- .clearfix --> --}}
+                        @endforeach
+                        @endif
+                       
                     </ul> <!-- .post-list -->
                 </div> <!-- col-lg-3 col-md-6 -->
                 <div class="col-lg-3 col-md-6 newsletter-widget">
