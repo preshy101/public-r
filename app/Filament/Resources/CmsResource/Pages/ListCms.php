@@ -14,7 +14,7 @@ class ListCms extends ListRecords
     {
         return [
             Actions\CreateAction::make()
-            ->label('Create Content'),
+            ->label('Add Content'),
         ];
     }
 }

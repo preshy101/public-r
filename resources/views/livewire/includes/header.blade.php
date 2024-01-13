@@ -150,7 +150,7 @@
 							</ul> <!-- .dropdown-menu -->
 						</li>
 						<li class="dropdown
-						{{(Route::is('resources.image','resources.image.view','resources.event','resources.event.view','resources.downloadable','resources.video','resources.event',
+						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video','resources.event',
 						  ))?"active":''}} 
 						">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
@@ -158,9 +158,7 @@
                                     <li>
                                         <a wire:navigate href="/resources/images" class="dropdown-toggle" data-toggle="dropdown">Image Gallery</a>   
                                     </li>
-                                    <li>
-                                        <a wire:navigate href="/resources/up-coming-events"  class="dropdown-toggle" data-toggle="dropdown">UpComing Event</a>    
-                                    </li>
+                                    
                                     <li>
                                         <a wire:navigate href="/resources/videos"  class="dropdown-toggle" data-toggle="dropdown">Video</a>
                                     </li>
@@ -168,6 +166,9 @@
                                         <a wire:navigate href="/resources/downloadable" class="dropdown-toggle" data-toggle="dropdown">Downloadables</a>
                                     </li>
                                 </ul> <!-- .dropdown-menu --> 
+						</li>
+						<li>
+							<a wire:navigate href="/resources/up-coming-events"  class="{{(Route::is('resources.event',))?"active":''}}" data-toggle="dropdown">Events</a>    
 						</li>
 						<li class="
 							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" >News</a></li>

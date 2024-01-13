@@ -27,12 +27,13 @@ class ImageGalleryResource extends Resource
     protected static ?string $model = imageGallery::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationLabel = 'Gallery';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Section::make('Main')
+                Section::make('')->columns(1)
                 ->description('')
                 ->schema([ 
                     Select::make('cms_id')->relationship('cms','title')->searchable()->required()
@@ -45,29 +46,29 @@ class ImageGalleryResource extends Resource
                         $data = cms::find($state);
                         $set('note', $data->contentId . " - " . $data->version);
                     }),
-                           
+                    
+                    
+                    Textarea::make('alternativeText')
+                    ->required()
+                    ->rows(5)
+                    ->cols(20)
+                    ->minLength(2)
+                    ->maxLength(255),
+                ])->columnSpan(2),
+                Section::make('Files')
+                ->description('')
+                ->schema([       
                     TextInput::make('note')
                     ->required() 
                     ->minLength(2)
                     ->readOnly()
                     ->maxLength(255),
-                    
-                    Textarea::make('alternativeText')
-                    ->required()
-                    ->rows(10)
-                    ->cols(20)
-                    ->minLength(2)
-                    ->maxLength(255),
-                ]),
-                Section::make('Main')
-                ->description('')
-                ->schema([
                 FileUpload::make('image')->multiple()->label('file(s)')
                 ->required()->minFiles(2)
                 ->maxSize(50024)
                 ->maxFiles(25)->directory('gallary/thumbnails'), 
-        ])
-            ]);
+        ])->columnSpan(['lg' => 1])
+            ])->columns(3);
     }
 
     public static function table(Table $table): Table

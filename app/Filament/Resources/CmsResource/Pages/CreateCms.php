@@ -8,5 +8,5 @@ use Filament\Resources\Pages\CreateRecord;
 
 class CreateCms extends CreateRecord
 {
-    protected static string $resource = CmsResource::class;
+    protected static string $resource = CmsResource::class; 
 }

@@ -33,36 +33,37 @@ class CmsResource extends Resource
     {
         return $form
             ->schema([
-                Section::make('Main') 
+                Section::make('') ->columns(2)
                     ->description('')
                     ->schema([  
                 Select::make('contentId')
                 ->required()
+                ->label('Content Category')
                 ->searchable()
                 ->options([
                     // home
-                    'slide' => 'SLIDE',
-                    'welcome' => 'WELCOME NOTES',
-                    'presidentSpeech' => "PRESIDENT'S SPEECH",
-                    'teamMembers' => 'TEAM MEMBERS',
+                    'slide' => 'Slide',
+                    'welcome' => 'Welcome Notes',
+                    'presidentSpeech' => "President Speech",
+                    'teamMembers' => 'Team Members  ',
                     'faq' => 'FAQ',
-                    'testimonial' => 'TESTIMONIAL',
+                    'testimonial' => 'Testimonial',
                     // about us
-                    'history' => 'HISTORY',
-                    'visionAndMission' => 'VISION AND MISSION',
-                    'ethicCodes' => 'ETHIC CODES',
-                    'council' => 'COUNCIL',
+                    'history' => 'History',
+                    'visionAndMission' => 'Vision And Mission',
+                    'ethicCodes' => 'Ethic Codes',
+                    'council' => 'Council',
                     // student
-                    'curriculum' => 'CURRICULUM',
+                    'curriculum' => 'Curriculum',
                     // membership
-                    'membershipInformation' => 'MEMBERSHIP INFORMATION',
-                    'membershipCategory' => 'MEMBERSHIP CATEGORY',
-                    'membershipUpgrade' => 'MEMBERSHIP UPGRADE', 
+                    'membershipInformation' => 'Membership Information',
+                    'membershipCategory' => 'Membership Category',
+                    'membershipUpgrade' => 'Membership Upgrade', 
                     // resources
-                    'images' => 'IMAGE GALLERY',
-                    'events' => 'EVENT',
-                    'videos' => 'VIDEO GALLERY',
-                    'downloads' => 'DOWNLOADABLE'
+                    'images' => 'Image Gallery',
+                    'events' => 'Events',
+                    'videos' => 'Video Gallery',
+                    'downloads' => 'Downloadable'
                 ]),   
                 TextInput::make('version')
                 ->required() 
@@ -70,32 +71,39 @@ class CmsResource extends Resource
                 ->maxLength(255), 
                 TextInput::make('title')
                 ->required() 
-                ->placeholder('Name, Title, FAQ-Question')
+                ->placeholder('Title')
                 ->minLength(2)
+                ->columnSpanFull()
+                
                 ->maxLength(255), 
-                Textarea::make('description')
-                ->required()
-                ->placeholder('FAQ-Answer')
-                ->rows(10)
-                ->cols(20)
-                ->minLength(2)
-                ->maxLength(255),
-                Textarea::make('note') 
-                ->minLength(2)
-                ->maxLength(255), 
-                RichEditor::make('fullText') 
-                ->minLength(2) 
-                ->fileAttachmentsDirectory('attachments')
-                ->fileAttachmentsVisibility('private'),
-            
                 DateTimePicker::make('startDate')->nullable()
                 ->required(),
                 DateTimePicker::make('endDate')->nullable()
                 ->required(),
-            ]), 
-                Section::make('Main')
+                Textarea::make('description')
+                ->required()
+                ->placeholder('')
+                ->rows(3)
+                ->cols(20)
+                ->columnSpanFull()
+                ->minLength(2)
+                ->maxLength(255),
+                
+                RichEditor::make('fullText') 
+                ->minLength(2) 
+                ->columnSpanFull()
+                ->fileAttachmentsDirectory('attachments')
+                ->fileAttachmentsVisibility('private'),
+            
+            ])->columnSpan(2),
+
+                Section::make('Images')
                 ->description('')
-                ->schema([
+                ->schema(
+                    [Textarea::make('note') 
+                ->minLength(2)
+                ->maxLength(255), 
+               
                 FileUpload::make('image')
                 ->minSize(12)
                 ->maxSize(102400)
@@ -104,9 +112,9 @@ class CmsResource extends Resource
                 ->imageCropAspectRatio('16:9')
                 ->imageResizeTargetWidth('1920')
                 ->imageResizeTargetHeight('1080')
-                ->directory('resources/thumbnails'), 
-                ])
-            ]);
+                ->directory('resources/thumbnails') ])->collapsible()->columnSpan(['lg' => 1]), 
+                
+            ])->columns(3);
     }
 
     public static function table(Table $table): Table

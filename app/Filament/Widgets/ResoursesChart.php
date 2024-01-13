@@ -9,7 +9,7 @@ use Filament\Widgets\ChartWidget;
 
 class ResoursesChart extends ChartWidget
 {
-    protected static ?string $heading = 'Resources';
+    protected static ?string $heading = 'Content';
     protected static string $color = 'info';
 
     protected function getData(): array

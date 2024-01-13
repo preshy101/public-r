@@ -2,22 +2,23 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ContactUszResource\Pages;
-use App\Filament\Resources\ContactUszResource\RelationManagers;
-use App\Models\ContactUsz;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Forms\Form;
+use App\Models\feedback;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Forms\Components\Section;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\ContactUszResource\Pages;
+use App\Filament\Resources\ContactUszResource\RelationManagers;
 
 class ContactUszResource extends Resource
 {
-    protected static ?string $model = ContactUsz::class;
+    protected static ?string $model = feedback::class;
     
-    protected static ?string $navigationLabel = 'Contact Us';
+    protected static ?string $navigationLabel = 'Feedback';
  
     protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-left-right';
 
@@ -25,6 +26,9 @@ class ContactUszResource extends Resource
     {
         return $form
             ->schema([
+                Section::make('') ->columns(2)
+                    ->description('')
+                    ->schema([  
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
@@ -42,7 +46,8 @@ class ContactUszResource extends Resource
                     ->maxLength(255),
                 Forms\Components\TextInput::make('status')
                     ->maxLength(255),
-            ]);
+            ])
+        ]);
     }
 
     public static function table(Table $table): Table

@@ -74,7 +74,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 text-block text-center">
-					<h2><span>WELCOME TO THE</span> NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2>
+					{{-- <h2><span>WELCOME TO THE</span> NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2> --}}
 					<p class="lead">
 						{{-- {{dd($slide)}}/ --}}
 						{{($welcome != null)?$welcome->description:""}}
@@ -165,6 +165,7 @@
 		@include('livewire.sections.presidentMessage')
 
     {{-- FAQ --}}
+	@if(!empty($faq))
     <section class="accordion-section">
         <div class="container">
             <div class="row">
@@ -188,7 +189,7 @@
                             </div> <!-- .panel-collapse -->
                         </div> <!-- .panel panel-default --> 
 						@endforeach 
- 
+					
                     </div> <!-- .panel-group -->
                 </div> <!-- .col-md-6 -->
                 <div class="col-md-6">
@@ -199,7 +200,7 @@
             </div> <!-- .row -->
         </div> <!-- .container -->
     </section> <!-- .accordion-section -->
-
+	@endif
     {{-- Testimony --}}
 	<section class="testimonial-section section-block" style="background-color: red" >
 		<div class="container" >

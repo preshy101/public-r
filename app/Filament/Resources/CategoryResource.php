@@ -10,6 +10,7 @@ use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Forms\Components\ColorPicker;
@@ -22,13 +23,17 @@ class CategoryResource extends Resource
     protected static ?string $model = Category::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-archive-box';
-    protected static ?string $navigationGroup = 'News';
+    protected static ?string $navigationGroup = 'Blog';
+    protected static ?string $navigationLabel = 'Category';
 
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
+                Section::make('')  
+                    ->description('')
+                    ->schema([  
                 TextInput::make('title')->live()->required()->minLength(3)->maxLength(150)
                 ->afterStateUpdated(function 
                 (string $operation, $state, Forms\Set $set){
@@ -41,7 +46,8 @@ class CategoryResource extends Resource
                 TextInput::make('slug')->required()->unique(ignoreRecord: true),
                 ColorPicker::make('text_color')->nullable(),
                 ColorPicker::make('bg_color')->nullable()
-            ]);
+            ]) ->columns(2)
+        ]);
     }
 
     public static function table(Table $table): Table
