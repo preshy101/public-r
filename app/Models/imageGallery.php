@@ -4,13 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\softDeletes; 
+use Illuminate\Database\Eloquent\SoftDeletes; 
 use App\Models\cms;
 
 class imageGallery extends Model
 {
     use HasFactory;
-    use softDeletes; 
+    use SoftDeletes; 
     protected $guarded = [];
 
     public function cms(){

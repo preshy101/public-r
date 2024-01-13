@@ -7,13 +7,13 @@ use Filament\Panel;
 use Filament\Models\Contracts\FilamentUser;  
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\softDeletes; 
+use Illuminate\Database\Eloquent\SoftDeletes; 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable implements FilamentUser
 {
-    use softDeletes;
+    use SoftDeletes;
     use HasApiTokens, HasFactory, Notifiable; 
     use Notifiable;  
 
