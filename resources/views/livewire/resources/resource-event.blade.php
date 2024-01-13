@@ -47,8 +47,9 @@
                         </div> <!-- .col-md-4 -->
                         @endforeach
                         @endif
+                        {{ $events->onEachSide(1)->links() }}
                     </div> <!-- .row -->
-                    <div class="pagination-block text-center">
+                    {{-- <div class="pagination-block text-center">
                         <ul>
                             <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
                             <li class="active"><a href="#">1</a></li>
@@ -58,7 +59,7 @@
                             <li><a href="#">5</a></li>
                             <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
                         </ul>
-                    </div> <!-- .btn-container -->
+                    </div> <!-- .btn-container --> --}}
                 </div> <!-- .container -->
             </section> <!-- .portfolio-section -->        
 		</div> <!-- .container -->

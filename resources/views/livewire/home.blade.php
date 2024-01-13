@@ -39,12 +39,13 @@
 					<div class="container">
 						
 						<div class="carousel-caption">
-							<h1 class="h1-extra"><span>N.I.P.R</span>
+							<h1 class="h1-extra">
+								{{-- <span>N.I.P.R</span> --}}
 								{{$item->title}}</h1>
 							<p class="lead" style="color: white;">
 								{!!$item->description!!}
 							</p> 
-							<a class="btn btn-main" href="#">learn more</a>
+							{{-- <a class="btn btn-main" href="#">learn more</a> --}}
 						</div> <!-- .carousel-caption -->
 					</div> <!-- .container -->
 				</div> <!-- .item -->
@@ -76,7 +77,7 @@
 					<h2><span>WELCOME TO THE</span> NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2>
 					<p class="lead">
 						{{-- {{dd($slide)}}/ --}}
-						{{($welcome != null)?$welcome->description:"welcome to NIPR"}}
+						{{($welcome != null)?$welcome->description:""}}
 					</p>
 				</div> <!-- .col-md-8 img-block -->
 			</div> <!-- .row -->

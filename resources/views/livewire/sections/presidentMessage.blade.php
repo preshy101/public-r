@@ -1,17 +1,15 @@
-   {{-- President Message --}}
+{{-- President Message --}}
+@if (!empty($president)) 
    <section class="about-section section-block">
     <div class="container">
         <div class="row">
             <div class="col-md-6 img-block">
                 <img class="img-responsive rounded" 
-                @if (!empty($president)) 
-                  
-					src="{{Storage::url($president->image)}}"   
-                @else
-                    
-                src="{{asset('img/unseen-histories-G2vxuMlATxA-unsplash.jpg')}}"
-                @endif
-                style="height: 515px;"  alt="about image">
+                
+					src="{{Storage::url($president->image)}}"  
+                     style="height: 515px;"  alt="about image">  
+                
+              
             </div> <!-- .col-md-6 img-block -->
             <div class="col-md-6 content-block">
                 <h2><span>Meet the president </span> 
@@ -35,6 +33,10 @@
                 </div> <!-- .row -->
             </div> <!-- .container -->
         </section> <!-- .about-section --> 
+        @else
+                    
+                {{-- src="{{asset('img/unseen-histories-G2vxuMlATxA-unsplash.jpg')}}" --}}
+        @endif
         {{-- Our Team --}} 
         @if ($team)
         <section class="team-section team-02 mt-0 section-block">

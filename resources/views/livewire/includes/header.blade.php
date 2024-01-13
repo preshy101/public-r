@@ -50,8 +50,8 @@
 		<div class="top-bar clearfix" style="background-color: red">
 			<div class="container">
 				<ul class="list-inline pull-left quick-contact">
-					<li><a href="#"><i class="fa fa-phone"></i> <span>+234 000 0000 000</span></a></li>
-					<li><a href="#"><i class="fa fa-envelope-o"></i> <span>info@nipr.com</span></a></li>
+					<li><a href="#"><i class="fa fa-phone"></i> <span>07010383277, 09094367076</span></a></li>
+					{{-- <li><a href="#"><i class="fa fa-envelope-o"></i> <span>info@nipr.com</span></a></li> --}}
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">
@@ -62,8 +62,8 @@
 				</ul> <!-- .top-bar-menu -->
 
 				<ul class="list-inline pull-right top-bar-menu">
-					<li><a href="#">Register</a></li>
-					<li><a href="#">Login</a></li>
+					{{-- <li><a href="#">Register</a></li>
+					<li><a href="#">Login</a></li> --}}
 					{{-- <li><a href="#">Sitemap</a></li> --}}
 				</ul> <!-- .top-bar-menu -->
 			</div> <!-- .container -->

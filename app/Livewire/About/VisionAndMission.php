@@ -17,7 +17,7 @@ class VisionAndMission extends Component
     }
     public function render()
     {
-        return view('livewire.about.Vision-and-mission', [
+        return view('livewire.about.vision-and-mission', [
             'vision' => $this->vision
         ])
         ->extends('welcome');

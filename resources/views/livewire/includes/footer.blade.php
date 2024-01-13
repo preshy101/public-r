@@ -4,16 +4,21 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="icon-box" style="background-color: white; color: red" ><i class="fa fa-map-marker"></i></div>
-                    <p>22, Bardeshi, Savar, Dhaka</p>
+                    <p>Suite 4, Block A, A R O Plaza, Plot 2105,
+
+                        Herbert Macaulay Way, Wuse, Zone 6, Abuja</p>
+                </div> <!-- .col-md-4 -->
+                <div class="col-md-4">
+                   {{--  <div class="icon-box" style="background-color: white; color: red" >
+                        <i class="fa fa-envelope"></i> 
+                    </div>--}}
+                    {{-- <a href="#">hello@corporex.com</a> --}}
                 </div> <!-- .col-md-4 -->
                 <div class="col-md-4">
                     <div class="icon-box" style="background-color: white; color: red" ><i class="fa fa-phone"></i></div>
-                    <a href="#">+8801679 252595</a>
+                  <br>  <a href="#">07010383277, 09094367076</a>
                 </div> <!-- .col-md-4 -->
-                <div class="col-md-4">
-                    <div class="icon-box" style="background-color: white; color: red" ><i class="fa fa-envelope"></i></div>
-                    <a href="#">hello@corporex.com</a>
-                </div> <!-- .col-md-4 -->
+                
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .cntact-info -->
@@ -58,7 +63,7 @@
                 <div class="col-lg-3 col-md-6 recent-post-widget">
                     <h3 class="widget-title">Recent posts</h3>
                     <ul class="post-list">
-                        <li class="clearfix">
+                        {{-- <li class="clearfix">
                             <div class="image-wrapper"><img class="img-responsive" src="{{asset('./img/ashni-Wh9ZC4727e4-unsplash.jpg')}}" alt="blog post thumbnail"></div>
                             <div class="content-wrapper">
                                 <h5><a href="#">When the music is over turn off</a></h5>
@@ -71,7 +76,7 @@
                                 <h5><a href="#">When the music is over turn off the light</a></h5>
                                 <p>August 07, 2017</p>
                             </div> <!-- .content-wrapper -->
-                        </li> <!-- .clearfix -->
+                        </li> <!-- .clearfix --> --}}
                     </ul> <!-- .post-list -->
                 </div> <!-- col-lg-3 col-md-6 -->
                 <div class="col-lg-3 col-md-6 newsletter-widget">
@@ -95,7 +100,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>All rights reserved &copy; {{now()->year}} <strong>First Digit Communication limited</strong></p>
+                    <p>All rights reserved &copy; {{now()->year}} <strong> niprng.org.ng</strong></p>
                 </div> <!-- .col-md-6 -->
                 <div class="col-md-6">
                     <ul class="bottom-links">
