@@ -13,7 +13,7 @@ use App\Livewire\About\Council;
 
 use App\Livewire\Resource\ViewEvent;
 
-use App\Livewire\Resource\SearchBlog;
+use App\Livewire\SearchBlog;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Student\StudentResult;
 use App\Livewire\About\VisionAndMission;
@@ -71,7 +71,7 @@ Route::get('/membership/upgrade', MemberUpgrade::class)->name('member.upgrade');
 // Blog
 Route::get('/news/posts', Blog::class)->name('news.posts'); 
 Route::get('/news/posts/{slug}', ViewBlog::class)->name('news.posts.view'); 
-Route::post('/news/search/{title}', SearchBlog::class)->name('news.posts.view'); 
+Route::get('/news/search/{title}', SearchBlog::class)->name('news.search'); 
 
 // Contact
 Route::get('/contact-us', Contactus::class)->name('contactus'); 
