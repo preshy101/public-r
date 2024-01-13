@@ -7,7 +7,7 @@ use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
-use App\Models\ImageGallery;
+use App\Models\imageGallery;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Section;
@@ -24,7 +24,7 @@ use App\Filament\Resources\ImageGalleryResource\RelationManagers;
 
 class ImageGalleryResource extends Resource
 {
-    protected static ?string $model = ImageGallery::class;
+    protected static ?string $model = imageGallery::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
