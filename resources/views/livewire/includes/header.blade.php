@@ -150,7 +150,7 @@
 							</ul> <!-- .dropdown-menu -->
 						</li>
 						<li class="dropdown
-						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video','resources.event',
+						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video'
 						  ))?"active":''}} 
 						">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
@@ -167,8 +167,8 @@
                                     </li>
                                 </ul> <!-- .dropdown-menu --> 
 						</li>
-						<li>
-							<a wire:navigate href="/resources/up-coming-events"  class="{{(Route::is('resources.event',))?"active":''}}" data-toggle="dropdown">Events</a>    
+						<li class="{{(Route::is('resources.event'))?"active":''}}">
+							<a wire:navigate href="/resources/up-coming-events"   >Events</a>    
 						</li>
 						<li class="
 							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" >News</a></li>

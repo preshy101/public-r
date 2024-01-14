@@ -45,8 +45,7 @@
 			<div class="title-block">
 				<h2>Our Team</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore mollit anim id est laborum.
+					our amazing team members
 				</p>
 			</div> <!-- .title-block -->
 			<div class="row">
