@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use App\Models\ContactUsz;
+use App\Models\feedback;
 use App\Livewire\Contactus;
 use Livewire\Attributes\Rule;
 use Illuminate\Support\Facades\Validator;
@@ -33,7 +33,7 @@ class Contactus extends Component
             ['required' => 'The :attribute field is required'],
         )->validate();
  
-        ContactUsz::create(
+        feedback::create(
             [
                 'name' => $this->name,
                 'email' => $this->email,
