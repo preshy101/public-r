@@ -86,7 +86,7 @@
 					<div class="item-wrapper">
 						<div class="icon-box"><i class="pe-7s-rocket"></i></div>
 						<div class="content-wrapper">
-							<h3>Career Road-map</h3>
+							<h3>Mission and Vision</h3>
 							<p>
 								Navigate your professional journey with our comprehensive career roadmap, designed to guide you through strategic milestones and opportunities for growth.							</p>
 						</div> <!-- .content-wrapper -->
@@ -96,7 +96,7 @@
 					<div class="item-wrapper">
 						<div class="icon-box"><i class="pe-7s-shield"></i></div>
 						<div class="content-wrapper">
-							<h3>Security</h3>
+							<h3>Professionalism</h3>
 							<p>
 								Ensuring your safety in the digital realm, we prioritize robust security measures to safeguard your information and provide you with a secure online experience.							</p>
 						</div> <!-- .content-wrapper -->
