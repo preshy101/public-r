@@ -165,7 +165,7 @@
 		@include('livewire.sections.presidentMessage')
 
     {{-- FAQ --}}
-	@if(!empty($faq))
+	@if(count($faq)>0)
     <section class="accordion-section">
         <div class="container">
             <div class="row">
@@ -202,7 +202,7 @@
     </section> <!-- .accordion-section -->
 	@endif
     {{-- Testimony --}}
-	@if(!empty($testimony))
+	@if(count($testimony) > 0)
 	<section class="testimonial-section section-block" style="background-color: red" >
 		<div class="container" >
 			<div class="title-block white"  >

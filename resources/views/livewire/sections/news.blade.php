@@ -1,6 +1,6 @@
 <div>
       {{-- News --}}
-      @if (!empty($posts))
+      @if (count($posts) > 0)
        
       <section class="blog-section blog-style-04 section-block">
 		<div class="container">

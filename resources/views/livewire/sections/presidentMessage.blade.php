@@ -1,5 +1,5 @@
 {{-- President Message --}}
-@if (!empty($president)) 
+@if (($president != null)) 
    <section class="about-section section-block">
     <div class="container">
         <div class="row">
@@ -38,7 +38,7 @@
                 {{-- src="{{asset('img/unseen-histories-G2vxuMlATxA-unsplash.jpg')}}" --}}
         @endif
         {{-- Our Team --}} 
-        @if (!empty($team))
+        @if (count($team)> 0)
         <section class="team-section team-02 mt-0 section-block">
             <div class="container">
                 <div class="title-block">
