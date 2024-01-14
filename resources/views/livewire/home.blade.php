@@ -202,6 +202,7 @@
     </section> <!-- .accordion-section -->
 	@endif
     {{-- Testimony --}}
+	@if(!empty($testimony))
 	<section class="testimonial-section section-block" style="background-color: red" >
 		<div class="container" >
 			<div class="title-block white"  >
@@ -232,7 +233,7 @@
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section> <!-- .testimonial-section -->
-
+@endif
     {{-- News --}}
 	@include('livewire.sections.news')
 
