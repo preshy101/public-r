@@ -100,9 +100,7 @@ class CmsResource extends Resource
                 Section::make('Images')
                 ->description('')
                 ->schema(
-                    [Textarea::make('note') 
-                ->minLength(2)
-                ->maxLength(255), 
+                    [
                
                 FileUpload::make('image')
                 ->minSize(12)
@@ -113,7 +111,9 @@ class CmsResource extends Resource
                 ->imageResizeTargetWidth('1920')
                 ->imageResizeTargetHeight('1080')
                 ->directory('resources/thumbnails') ])->collapsible()->columnSpan(['lg' => 1]), 
-                
+                Textarea::make('note') 
+                ->minLength(2)
+                ->maxLength(255), 
             ])->columns(3);
     }
 
