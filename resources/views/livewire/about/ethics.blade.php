@@ -21,7 +21,7 @@
          {{($ethics != null )?$ethics->description:''}}
         </p>
         <p> {!! ($ethics != null )?$ethics->fullText:'' !!}</p> 
-        @if ()
+        @if (!empty($ethics))
             <a target="_blank" href="{{url('docs/code_of_conduct.pdf')}}"> 
             <i class="fa fa-download"></i> Preview Document</a>
         @endif
