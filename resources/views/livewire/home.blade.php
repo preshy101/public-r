@@ -76,13 +76,13 @@
 					</div> <!-- .row --> 
 				</div> <!-- .col-md-6 -->
 
- 				<div class="col-md-4 facts-block" style="align-content: center; padding-left: 9%">
+ 				{{-- <div class="col-md-4 facts-block" style="align-content: center; padding-left: 9%">
 				
 						<a class="contact-btn btn btn-ghost bg-danger " 
 						style="background-color: red"
 						id="contact"  href="#">Become a Member</a>
 						 
-				</div> <!-- .col-md-6 -->
+				</div> <!-- .col-md-6 --> --}}
 
 				<div class="col-md-4 facts-block">
                     <div class="row">
