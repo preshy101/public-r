@@ -62,7 +62,7 @@
                         <li><a href="https://www.linkedin.com/in/nigerian-institute-of-public-relations-7600b5a5/"><i class="fab fa-linkedin "></i></a></li>
                         <li><a href="https://www.instagram.com/niprofficial/"><i class="fab fa-instagram "></i></a></li> 
                         <li><a href="https://www.youtube.com/@niprofficial"><i class="fab fa-youtube "></i></a></li> 
-                        <li><a href="www.tiktok.com/@niprofficial"><i class="fab fa-tiktok "></i></a></li> 
+                        <li><a href="https://www.tiktok.com/@niprofficial"><i class="fab fa-tiktok "></i></a></li> 
 				</ul> <!-- .top-bar-menu -->
 
 				<ul class="list-inline pull-right top-bar-menu">
