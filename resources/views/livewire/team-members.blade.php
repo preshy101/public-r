@@ -19,23 +19,26 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 img-block">
-					<img class="img-responsive" src="{{($presidentSpeech)?Storage::url($presidentSpeech->image):""}}" alt="about image">
+					<img class="img-responsive"
+					style=" border-radius: 2%"
+					src="{{($presidentSpeech)?Storage::url($presidentSpeech->image):""}}" alt=" image">
 				</div> <!-- .col-md-6 img-block -->
 				<div class="col-md-6 content-block">
 					<h2><span>Meet the president</span>
 						{{($president != null)?$president->title: "Mr President"}} </h2>
 					<p>
-						{{($president != null)?$president->description:"The Nigerian Institute of Public Relations (NIPR) was established in 1963. 
-                    The body attained the status of a Chartered Institute in June 1990 through Decree No. 16 (now an Act of the National Assembly)
-                     from which it derives the power and responsibility  to register members, set parameters of knowledge to acquire to qualify to 
-                     practise, regulate the practice and development of the PR Profession as well monitor professional conducts through an established
-                     Code of Ethics, amongst others. "}}
+						{{($president != null)?$president->description:" "}}
 					 </p>
-					<p>
-						{{ ($president != null)?$president->note: "" }} 
-					</p>
+					<hr class="divider-small">
+					
 				 
 				</div> <!-- .col-md-6 -->
+				<p align="justify">
+					{!!($president != null)?$president->fullText:""!!}
+				</p>
+				<p>
+					<i>{{ ($president != null)?$president->note: "" }}  </i>
+				</p>
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section> <!-- .about-section -->
@@ -55,15 +58,16 @@
 					<div class="img-wrapper">
 						<img class="img-responsive" 
 						src="{{Storage::url($item->image)}}" 
+						style="border-radius: 2%; height: 445px;"
 						alt="team member 00">
 					</div> <!-- .img-wrapper -->
 					<div class="member-info" style="background-color: red; color: white">
 						<h4>{{$item->title}} <small>{{$item->description}}</small></h4>
 						<ul class="social-links">
-							<li><a href="#" class="facebook-link"><i class="fa fa-facebook"></i></a></li>
+							{{-- <li><a href="#" class="facebook-link"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#" class="twitter-link"><i class="fa fa-twitter"></i></a></li>
 							<li><a href="#" class="google-plus-link"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" class="linkedin-link"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="linkedin-link"><i class="fa fa-linkedin"></i></a></li> --}}
 						</ul> <!-- .social-links -->
 					</div> <!-- .member-info -->
 				</div> <!-- col-lg-3 col-md-6 -->
@@ -88,17 +92,17 @@
 				<div class="col-md-6">
 					<div class="progress-wrapper">
 						<h4>Creativity</h4>
-						<div class="progress">
-						  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+						<div class="progress ">
+						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="80"
 						  aria-valuemin="0" aria-valuemax="100">
-						    <span>70%</span>
+						    <span>80%</span>
 						  </div>
 						</div> <!-- .progress -->
 					</div> <!-- .progress-wrapper -->
 					<div class="progress-wrapper">
 						<h4>Technology</h4>
 						<div class="progress">
-						  <div class="progress-bar" role="progressbar" aria-valuenow="79"
+						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="79"
 						  aria-valuemin="0" aria-valuemax="100">
 						    <span>79%</span>
 						  </div>
@@ -107,7 +111,7 @@
 					<div class="progress-wrapper">
 						<h4>Education</h4>
 						<div class="progress">
-						  <div class="progress-bar" role="progressbar" aria-valuenow="90"
+						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="90"
 						  aria-valuemin="0" aria-valuemax="100">
 						    <span>90%</span>
 						  </div>
@@ -116,9 +120,9 @@
 					<div class="progress-wrapper">
 						<h4>Resource</h4>
 						<div class="progress">
-						  <div class="progress-bar" role="progressbar" aria-valuenow="60"
+						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="95"
 						  aria-valuemin="0" aria-valuemax="100">
-						    <span>60%</span>
+						    <span>95%</span>
 						  </div>
 						</div> <!-- .progress -->
 					</div> <!-- .progress-wrapper -->

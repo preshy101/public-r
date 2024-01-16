@@ -3,10 +3,11 @@
 <div> 
 	{{-- @section('content') --}}
     {{-- Slider --}}
-    <section class="hero-area"> 
+	@if (count($slide) > 0)  
+     <section class="hero-area"> 
 		<div id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
-				@if ($slide) 
+				@if ($slide != null) 
 				@foreach ($slide as $index => $item) 
 				<li data-target="#corporex-slider" data-slide-to="{{$index}}" class="{{( $index == 0 )? 'active':'' }}"></li>
 			
@@ -15,22 +16,7 @@
 			</ol> <!-- .carousel-indicators -->
 			 
 			<div class="carousel-inner">
-
-				{{-- <div class="item caption-right gradient-right-dark active">
-					<img class="slider-bg img-responsive" src="{{asset('img/austin-distel-VCFxt2yT1eQ-unsplash.jpg')}}" alt="slider image 02">
-					<div class="container">
-						
-						<div class="carousel-caption">
-							<h1 class="h1-extra"><span>N.I.P.R</span>The career Path to greatness</h1>
-							<p class="lead">
-								Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur.
-							</p>
-							<a class="btn btn-main" href="#">learn more</a>
-						</div> <!-- .carousel-caption -->
-					</div> <!-- .container -->
-				</div> <!-- .item --> --}}
-
+ 
 				@foreach ($slide as $index => $item) 
 				<div class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 
 					<img class="slider-bg img-responsive" 
@@ -40,12 +26,12 @@
 						
 						<div class="carousel-caption">
 							<h1 class="h1-extra">
-								{{-- <span>N.I.P.R</span> --}}
+							 <!-- <span>N.I.P.R</span> -->
 								{{$item->title}}</h1>
 							<p class="lead" style="color: white;">
 								{!!$item->description!!}
 							</p> 
-							{{-- <a class="btn btn-main" href="#">learn more</a> --}}
+							<!-- <a class="btn btn-main" href="#">learn more</a> -->
 						</div> <!-- .carousel-caption -->
 					</div> <!-- .container -->
 				</div> <!-- .item -->
@@ -63,22 +49,24 @@
   				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
   				<span class="sr-only">Previous</span>
   			</a> <!-- .carousel-control -->
-	@endif
-		</div> <!-- .carousel -->
-	</section> <!-- .hero-area -->
+		@endif
+	</div> <!-- .carousel -->
+	</section> <!-- .hero-area --> 
 	<!-- Slideshow container -->
-	 
+	@endif
+		
 
     {{-- Key Features --}}
 	<section class="intro-section intro-08 section-block">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 text-block text-center">
-					{{-- <h2><span>WELCOME TO THE</span> NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2> --}}
+					<h2><span>WELCOME TO THE</span> NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2>
 					<p class="lead">
-						{{-- {{dd($slide)}}/ --}}
+						 
 						{{($welcome != null)?$welcome->description:""}}
 					</p>
+				<p> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
 				</div> <!-- .col-md-8 img-block -->
 			</div> <!-- .row -->
 			<div class="row feature-set">
@@ -88,8 +76,13 @@
 						<div class="content-wrapper">
 							<h3>Mission and Vision</h3>
 							<p>
-								Navigate your professional journey with our comprehensive career roadmap, designed to guide you through strategic milestones and opportunities for growth.							</p>
-						</div> <!-- .content-wrapper -->
+								{{-- Navigate your professional journey with our comprehensive career roadmap, designed to guide you through strategic milestones and opportunities for growth.							</p> --}}
+								<li> To be the leading regional public relations organisation.</li> 
+								<li> To unite the PR profession and bring all persons / organisations under a common banner.</li>
+								<li> To represent the industry on PR issues so as to establish growth for the profession as a whole.</li>
+								<li> To enhance the image of public relations in Nigeria</li>		
+								<br>
+							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 -->
 				<div class="col-sm-4">
@@ -98,8 +91,13 @@
 						<div class="content-wrapper">
 							<h3>Professionalism</h3>
 							<p>
-								Ensuring your safety in the digital realm, we prioritize robust security measures to safeguard your information and provide you with a secure online experience.							</p>
-						</div> <!-- .content-wrapper -->
+								{{-- Ensuring your safety in the digital realm, we prioritize robust security measures to safeguard your information and provide you with a secure online experience.							</p> --}}
+								 NIPR determine what standards of knowledge
+								 and skills are to be attained by Public Relations practitioners. For high standards of practice. 
+								 The Institute must from time to time upgrade its Code of Professional Conduct. 
+								 The decree empowers the Council to make byelaws and other rules not 
+								inconsistent with this decree as to acts which constitute professional misconduct 
+							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 -->
 				<div class="col-sm-4">
@@ -108,7 +106,13 @@
 						<div class="content-wrapper">
 							<h3>Certification</h3>
 							<p>
-								Elevate your expertise and credibility with our range of industry-recognized certifications, empowering you to stay ahead in today's competitive landscape							</p>
+								Elevate your expertise and credibility with our range of industry-recognized certifications, empowering you to stay ahead in today's competitive landscape,
+							and introducing a learning management system to foster and breed excellence across every level	
+						<br>
+						<br>
+						<br>
+						<br>
+						</p>
 						</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 -->
@@ -164,23 +168,111 @@
 	
 		@include('livewire.sections.presidentMessage')
 
+		<!-- Event Gallery-->
+		
+		@if($welcomePics != null)
+		<section class="portfolio-section portfolio-style-02 section-block" >
+			<div class="container">
+				<div class="title-block">
+					<h2>Our Glorified Moments</h2>
+					<p>
+						every moment hinting to the core vision and mission of Nigerian Institute of Public Relation (NIPR) 
+					</p>
+				</div> <!-- .title-block -->
+				{{-- 	<div class="portfolio-sorting">
+				<ul class="portfolio-category">
+						<li data-filter="all">All</li>
+						<li data-filter=".finance">Finance</li>
+						<li data-filter=".marketing">Marketing</li>
+						<li data-filter=".development">Development</li>
+					</ul> 
+				</div> <!-- .portfolio-sorting -->--}}
+				@php
+						$count = 0;
+						@endphp
+					@foreach($welcomePics as $item) 
+					@foreach ($item->imageVideo as $pics) 
+					<div class="row portfolio-container no-pad">
+					@foreach ($pics->image as $index => $images)
+					@if ($index <3)
+						
+					<div class="col-md-4 col-sm-6 portfolio-item mix finance">
+						<div class="item-wrapper">
+							<img class="img-responsive" 
+							src="{{Storage::url($images)}}" 
+							alt="portflio image one">
+							<div class="portfolio-details">
+								<a class="portfolio-popup" href="{{Storage::url($images)}}"><span class="zoom-icon"></span></a>
+								<div class="hover-content">
+									{{-- <h3><a href="#">Duis semper sed nulla interdum</a></h3>
+									<p>Category</p> --}}
+								</div><!-- .hover-content -->
+							</div> <!-- .portfolio-details -->
+						</div> <!-- .item-wrapper -->
+					</div> <!-- .portfolio-item -->
+					
+					@endif
+					@endforeach
+				</div> <!-- .row -->
+					@endforeach
+					@endforeach
+
+
+					@foreach($welcomePics as $item) 
+					@foreach ($item->imageVideo as $pics) 
+					<div class="row portfolio-container no-pad">
+					@foreach ($pics->image as $index => $images)
+					{{-- @if ($index >3 ) --}}
+					@if ($index >3 && $count <= 9)
+					@php $count = $count++ @endphp
+					<div class="col-md-4 col-sm-6 portfolio-item mix finance">
+						<div class="item-wrapper">
+							<img class="img-responsive" 
+							src="{{Storage::url($images)}}" 
+							alt="portflio image one">
+							<div class="portfolio-details">
+								<a class="portfolio-popup" href="{{Storage::url($images)}}"><span class="zoom-icon"></span></a>
+								<div class="hover-content">
+									{{-- <h3><a href="#">Duis semper sed nulla interdum</a></h3>
+									<p>Category</p> --}}
+								</div><!-- .hover-content -->
+							</div> <!-- .portfolio-details -->
+						</div> <!-- .item-wrapper -->
+					</div> <!-- .portfolio-item -->
+					
+					@endif
+					@endforeach
+				</div> <!-- .row -->
+					@endforeach
+					@endforeach
+
+
+
+	
+				<div class="btn-container text-center">
+					<a  wire:navigate class="btn btn-narrow" href="/resources/up-coming-events">View All</a>
+				</div> <!-- .btn-container -->
+			</div> <!-- .container -->
+		</section> <!-- .portfolio-section -->
+	@endif
+
     {{-- FAQ --}}
 	@if(count($faq)>0)
-    <section class="accordion-section">
+    <section class="accordion-section" style="background:#f5f5f5;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="panel-group corporex-accordion accordion-style-01 radial" id="accordion">
                         @foreach ($faq as $index => $item) 
-						<div class="panel">
+						<div class="panel" style="background:#f5f5f5;">
                             <div class="panel-heading {{($index == 0)? 'active':''}}">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapsez{{$index}}">
                                        {{$item->title}}
                                     </a>
                                 </h4><!-- .panel-title -->
                             </div> <!-- .panel-heading -->
-                            <div id="collapse{{$index}}" class="panel-collapse collapse {{($index == 0)? 'in':''}}">
+                            <div id="collapsez{{$index}}" class="panel-collapse collapse {{($index == 0)? 'in':''}}">
                                 <div class="panel-body">
                                     <p>
                                         {{ $item->description}}
@@ -194,7 +286,9 @@
                 </div> <!-- .col-md-6 -->
                 <div class="col-md-6">
                     <div class="image-wrapper">
-                        <img class="img-responsive" src="{{asset('./img/simone-secci-49uySSA678U-unsplash.jpg')}}" alt="hand shake image">
+                        <img class="img-responsive"
+						style="height: 550px"
+						src="{{asset('./img/simone-secci-49uySSA678U-unsplash.jpg')}}" alt="hand shake image">
                     </div> <!-- .img-wrapper -->
                 </div> <!-- .col-md-6 -->
             </div> <!-- .row -->

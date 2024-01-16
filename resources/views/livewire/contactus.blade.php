@@ -47,7 +47,7 @@
 			<div class="contact-form-block">
 				<div class="row">
 					<div class="col-md-7 form-block">
-						<h2>Say Hello</h2>
+						<h2>Contact Us</h2>
 						<div class="form-message">
 							<p></p>
 						</div> <!-- .form-message -->

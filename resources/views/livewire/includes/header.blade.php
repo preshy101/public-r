@@ -24,6 +24,8 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/bootstrap.min.css')}}"> 
 	<link rel="icon" href="{{asset('img/masthead.png')}}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/style.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
 	@livewireStyles
 </head>
 <style>
@@ -55,10 +57,12 @@
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">
-					<li><a href="https://www.facebook.com/profile.php?id=100004381365825&mibextid=AEUHqQ"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://x.com/nipr_hq?s=11&t=9HmMeHB4scZXQG4gvZuypA"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/niprhq/"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://www.instagram.com/nipr_hq"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://web.facebook.com/NIPROFFICIALPAGE?mibextid=LQQJ4d&_rdc=1&_rdr"><i class="fab fa-facebook "></i></a></li>
+                        <li><a href="https://twitter.com/niprofficial"><i class="fab fa-twitter "></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nigerian-institute-of-public-relations-7600b5a5/"><i class="fab fa-linkedin "></i></a></li>
+                        <li><a href="https://www.instagram.com/niprofficial/"><i class="fab fa-instagram "></i></a></li> 
+                        <li><a href="https://www.youtube.com/@niprofficial"><i class="fab fa-youtube "></i></a></li> 
+                        <li><a href="www.tiktok.com/@niprofficial"><i class="fab fa-tiktok "></i></a></li> 
 				</ul> <!-- .top-bar-menu -->
 
 				<ul class="list-inline pull-right top-bar-menu">
@@ -91,7 +95,7 @@
 						</li> 
 						
 						<li class="{{(Route::is('about-us.history', 'about-us.vision', 'about-us.ethics', 'about-us.council' ))?"active":''}} dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
 							<ul class="dropdown-menu">
 								<li>  
 									    <a wire:navigate href="/about-us">NIPR History</a>
@@ -107,12 +111,12 @@
 						 'student.professional-admission', 'student.result', 'student.requirements', 
 						 'student.study-centre', 'student.curriculum' ))?"active":''}} 
 						dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Students</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training/Program</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Courses & Exams </a>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Training ></a>
 									<ul class="dropdown-menu">
-										<li><a  wire:navigate href="/student/professional-certificate">Professional Certificat</a></li>
+										<li><a  wire:navigate href="/student/professional-certificate">Professional Certificate</a></li>
 										<li><a  wire:navigate href="/student/professional-diploma">Professional Diploma</a></li>
 										<li><a wire:navigate href="/student/professional-admission">Professional Admission</a></li>
 										<li><a wire:navigate href="/student/result">Results</a></li>
@@ -155,6 +159,30 @@
 						">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
                                 <ul class="dropdown-menu">
+									 <li>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Publications ></a>
+										<ul class="dropdown-menu">
+                                    <li>
+                                        <a wire:navigate href="#" >Press Releases</a>   
+                                    </li>
+                                    <li>
+                                        <a wire:navigate href="#" >Newsletters</a>   
+                                    </li>
+                                    <li>
+                                        <a wire:navigate href="#" >Publications</a>   
+                                    </li>
+
+									<li>
+										<a wire:navigate href="#" >Conferences</a>   
+									</li>
+									</ul>
+									</li>
+                                    <li>
+										<a wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>   
+                                    </li>
+                                    <li>
+                                        <a wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown">Research Materials</a>   
+                                    </li>
                                     <li>
                                         <a wire:navigate href="/resources/images" class="dropdown-toggle" data-toggle="dropdown">Image Gallery</a>   
                                     </li>

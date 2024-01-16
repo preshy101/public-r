@@ -29,6 +29,10 @@ class Home extends Component
         ->where('endDate', '>=', Carbon::now())
         ->get();
 
+        $this->welcomePics = cms::with('imageVideo')->where([['contentId','welcome'],['startDate', '<=', Carbon::now()]])
+        ->where('endDate', '>=', Carbon::now())
+        ->latest()->take(6)->get();
+        
         $this->welcome = cms::where([['contentId','welcome'],['startDate', '<=', Carbon::now()]])
         ->where('endDate', '>=', Carbon::now())
         ->latest()->first();
@@ -58,7 +62,9 @@ class Home extends Component
     { 
         // $slide = cms::where('contentId', 'slide')->latest()->take(5)->get();
        
-        return view('livewire.home', ['slide' => $this->slide, 
+        return view('livewire.home', [
+            'slide' => $this->slide, 
+            'welcomePics' => $this->welcomePics, 
         'welcome' => $this->welcome, 
         'president' => $this->president, 
         'team' => $this->team, 

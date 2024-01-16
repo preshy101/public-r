@@ -63,10 +63,15 @@ class ImageGalleryResource extends Resource
                     ->minLength(2)
                     ->readOnly()
                     ->maxLength(255),
-                FileUpload::make('image')->multiple()->label('file(s)')
-                ->required()->minFiles(2)
-                ->maxSize(50024)
-                ->maxFiles(25)->directory('gallary/thumbnails'), 
+                FileUpload::make('image')
+                ->multiple()
+                ->label('file(s)')
+                ->required()
+                ->minFiles(2)
+                ->maxSize(5000024) 
+                ->imageCropAspectRatio('20:19')
+                ->maxFiles(25) 
+                ->directory('gallary/thumbnails'), 
         ])->columnSpan(['lg' => 1])
             ])->columns(3);
     }

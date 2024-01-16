@@ -103,13 +103,19 @@ class CmsResource extends Resource
                     [
                
                 FileUpload::make('image')
-                ->minSize(12)
-                ->maxSize(102400)
+                ->minSize(5)
+                ->maxSize(12400)
                 ->imageEditor()
-                ->imageResizeMode('cover')
-                ->imageCropAspectRatio('16:9')
-                ->imageResizeTargetWidth('1920')
-                ->imageResizeTargetHeight('1080')
+                ->imageResizeMode('force')
+                // ->imageCropAspectRatio('20:19')
+                // ->imageResizeTargetWidth('1920')
+                // ->imageResizeTargetHeight('1080')
+                ->imageEditorAspectRatios([
+                    null,
+                    '16:9',
+                    '4:3',
+                    '1:1',
+                ])
                 ->directory('resources/thumbnails') ])->collapsible()->columnSpan(['lg' => 1]), 
                 Textarea::make('note') 
                 ->minLength(2)

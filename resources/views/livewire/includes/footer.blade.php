@@ -26,19 +26,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 footer-about">
-                    <h3 class="widget-title">About Us</h3>
+                    <h3 class="widget-title">Socials </h3>
                     <p>
-                        Nigerian Institute of Public Relations (NIPR) hitherto
-                         known as the Public Relations Association of Nigeria (until when it was 
-                        renamed in 1972) was established in 1963. 
-                        The body attained the status of a Chartered Institute on June 1st 1990 
-                        through Decree No. 16 (now an Act of the National Assembly). 
+                  
                     </p>
                     <ul class="list-inline footer-social">
-                        <li><a href="https://www.facebook.com/profile.php?id=100004381365825&mibextid=AEUHqQ"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://x.com/nipr_hq?s=11&t=9HmMeHB4scZXQG4gvZuypA"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/niprhq/"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/nipr_hq/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://web.facebook.com/NIPROFFICIALPAGE?mibextid=LQQJ4d&_rdc=1&_rdr"><i class="fab fa-facebook fa-2x"></i></a></li>
+                        <li><a href="https://twitter.com/niprofficial"><i class="fab fa-twitter fa-2x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nigerian-institute-of-public-relations-7600b5a5/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        <li><a href="https://www.instagram.com/niprofficial/"><i class="fab fa-instagram fa-2x"></i></a></li> 
+                        <li><a href="https://www.youtube.com/@niprofficial"><i class="fab fa-youtube fa-2x"></i></a></li> 
+                        <li><a href="www.tiktok.com/@niprofficial"><i class="fab fa-tiktok fa-2x"></i></a></li> 
                     </ul> <!-- .footer-social -->
                 </div> <!-- col-lg-3 col-md-6 -->
                 <div class="col-lg-3 col-md-6 widget widget-gallery">

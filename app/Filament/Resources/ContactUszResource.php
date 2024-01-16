@@ -41,11 +41,10 @@ class ContactUszResource extends Resource
                     ->maxLength(255),
                 Forms\Components\TextInput::make('website')
                     ->maxLength(255),
-                Forms\Components\TextInput::make('message')
+                Forms\Components\Textarea::make('message')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('status')
-                    ->maxLength(255),
+                Forms\Components\Toggle::make::make('status'),
             ])
         ]);
     }
@@ -84,7 +83,7 @@ class ContactUszResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                // Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
