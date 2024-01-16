@@ -80,18 +80,37 @@
                     </ul> <!-- .post-list -->
                 </div> <!-- col-lg-3 col-md-6 -->
                 <div class="col-lg-3 col-md-6 newsletter-widget">
-                    <h3 class="widget-title">Subscribe Us</h3>
-                    <form class="subscription-form"  >
-                        <div class="form-group">
-                            <label class="sr-only" for="subscriber-name">Name</label>
-                            <input wire:model='sub' type="text" name="subscriber-name" id="subscriber-name" class="form-control" placeholder="Your name">
-                        </div> <!-- .form-group -->
-                        <div class="form-group">
-                            <label class="sr-only" for="subscriber-email">Email</label>
-                            <input type="text" name="subscriber-email" id="subscriber-email" class="form-control" placeholder="Your email">
-                        </div> <!-- .form-group -->
-                        <button wire:click.prevent='create' class="btn btn-main">Submit</button>
-                    </form> <!-- .subscription-form -->
+                    <h3 class="widget-title">Subscribe Us</h3>  
+               
+                                <a class="btn btn-main btn-lg" href="#" data-toggle="modal" data-target="#myModal">Join</a>
+                            
+                            <div class="modal corporex-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Subscribe Us</h4>
+                                        </div> <!-- .modal-header -->
+                                        <div class="modal-body">
+                                                <form class="subscription-form"  >
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="subscriber-name">Name</label>
+                                                        <input wire:model='sub' type="text" name="subscriber-name" id="subscriber-name" class="form-control" placeholder="Your name">
+                                                    </div> <!-- .form-group -->
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="subscriber-email">Email</label>
+                                                        <input type="text" name="subscriber-email" id="subscriber-email" class="form-control" placeholder="Your email">
+                                                    </div> <!-- .form-group -->
+                                                  
+                                        </div> <!-- .modal-body -->
+                                        <div class="modal-footer">  
+                                            <button wire:click.prevent='create' class="btn btn-main">Submit</button>
+                                                </form> <!-- .subscription-form -->
+                                        </div> <!-- .modal-footer -->
+                                    </div> <!-- .modal-content -->
+                                </div> <!-- .modal-dialog --> 
+
+                  
                 </div> <!-- col-lg-3 col-md-6 -->
             </div> <!-- .row -->
         </div> <!-- .container -->
