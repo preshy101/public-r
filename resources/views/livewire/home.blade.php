@@ -218,13 +218,14 @@
 					@endforeach
 
 
+					@php $count = $count + 3 @endphp
 					@foreach($welcomePics as $item) 
 					@foreach ($item->imageVideo as $pics) 
 					<div class="row portfolio-container no-pad">
 					@foreach ($pics->image as $index => $images)
 					{{-- @if ($index >3 ) --}}
-					@if ($index >3 && $count <= 9)
-					@php $count = $count++ @endphp
+					@if ($index >3 && $count < 6)
+					@php $count = $count + 1 @endphp
 					<div class="col-md-4 col-sm-6 portfolio-item mix finance">
 						<div class="item-wrapper">
 							<img class="img-responsive" 
