@@ -3,7 +3,7 @@
 <div> 
 	{{-- @section('content') --}}
     {{-- Slider --}}
-	{{-- @if (count($slide) > 0)  
+	@if (count($slide) > 0)  
      <section class="hero-area"> 
 		<div id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -53,136 +53,34 @@
 	</div> <!-- .carousel -->
 	</section> <!-- .hero-area --> 
 	<!-- Slideshow container -->
-	@endif --}}
-	
-	   {{-- Statistics --}}
-	   <section class="fun-facts-section fun-facts-01 section-block" style="padding-top: 2%;
-	   padding-bottom: 0%;">
-        {{-- <div class="container"> --}}
-            <div class="row py-0" style=" 
-				padding-left: 5%; padding-right: 5%;">
-               
-				<div class="col-md-4 facts-block">
-                    <div class="row">
-                        <div class="col-xs-6" style="margin: 0%">
-                            <i class="pe-7s-user"></i>
-							<h3 style="color: white"><span class="counter">15455</span><br>Students</h3>
-						</div> <!-- .col-xs-6 -->
-						<div class="col-xs-6" style="margin: 0%">
-                            <i class="pe-7s-users"></i>
-							<h3  style="color: white"><span class="counter">7464</span><br>Members</h3>
-						</div> <!-- .col-xs-6 -->
-					
-					</div> <!-- .row --> 
-				</div> <!-- .col-md-6 -->
-
- 				<div class="col-md-4 facts-block" style="align-content: center; padding-left: 9%">
-				
-						<a class="contact-btn btn btn-ghost bg-danger " 
-						style="background-color: red"
-						id="contact"  href="#">Become a Member</a>
-						 
-				</div> <!-- .col-md-6 -->
-
-				<div class="col-md-4 facts-block">
-                    <div class="row">
-                       
-						<div class="col-xs-6" style="margin: 0%">
-                            <i class="pe-7s-note"></i>
-							<h3  style="color: white"><span class="counter">2432</span><br>Certificates</h3>
-						</div> <!-- .col-xs-6 -->
-						<div class="col-xs-6" style="margin: 0%">
-                            <i class="pe-7s-camera"></i>
-							<h3  style="color: white"><span class="counter">43</span><br> Events</h3>
-						</div> <!-- .col-xs-6 -->
-					</div> <!-- .row --> 
-				</div> <!-- .col-md-6 -->
-
-
-			</div> <!-- .row -->
-		{{-- </div> <!-- .container --> --}}
-	</section> <!-- .split-section -->
-
+	@endif
+		
 
     {{-- Key Features --}}
-	<section class="intro-section intro-08 section-block" style="padding-top: 35px">
-		{{-- <div class="container"> --}}
+	<section class="intro-section intro-08 section-block">
+		<div class="container">
 			<div class="row">
-			<div class="col-md-6 content-block" style="padding-left: 5%">
-					<h2><span>WELCOME TO THE</span><br> NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2>
+				<div class="col-md-10 col-md-offset-1 text-block text-center">
+					<h2><span>WELCOME TO THE</span> NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2>
 					<p class="lead">
 						 
 						{{($welcome != null)?$welcome->description:""}}
 					</p>
 				<p> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
 				</div> <!-- .col-md-8 img-block -->
-			
-
-			<div class="col-md-5  ">
-			<div style="border-radius: 2%" id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					 @if (count($slide) > 0)  
-					@foreach ($slide as $index => $item) 
-					<li data-target="#corporex-slider" data-slide-to="{{$index}}" class="{{( $index == 0 )? 'active':'' }}"></li>
-				
-					@endforeach	
-				
-				</ol> <!-- .carousel-indicators -->
-				 
-				<div style="border-radius: 2%" class="carousel-inner">
-	 
-					@foreach ($slide as $index => $item) 
-					<div style="border-radius: 2%" class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 
-						<img class="slider-bg img-responsive" 
-						
-						src="{{Storage::url($item->image)}}"  
-						alt="slider image 01">
-						<div class="container">
-							
-							<div class="carousel-caption">
-								<h1 class="h1-extra">
-								 <!-- <span>N.I.P.R</span> -->
-									{{$item->title}}</h1>
-								<p class="lead" style="color: white;">
-									{!!$item->description!!}
-								</p> 
-								<!-- <a class="btn btn-main" href="#">learn more</a> -->
-							</div> <!-- .carousel-caption -->
-						</div> <!-- .container -->
-					</div> <!-- .item -->
-					@endforeach
-				
-				</div> <!-- .carousel-inner -->
-	
-				<!-- Controls -->
-				  <a class="left carousel-control" href="#corporex-slider" role="button" data-slide="prev">
-					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					  <span class="sr-only">Previous</span>
-				  </a> <!-- .carousel-control -->
-	
-				  <a class="right carousel-control" href="#corporex-slider" role="button" data-slide="next">
-					  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					  <span class="sr-only">Previous</span>
-				  </a> <!-- .carousel-control -->
-			@endif
-			</div> <!-- .carousel -->
-			</div>  
-
-		</div> <!-- .row -->
-
-
-			<div class="row feature-set" style="padding-left: 5%; padding-right: 5%;">
+			</div> <!-- .row -->
+			<div class="row feature-set">
 				<div class="col-sm-4">
 					<div class="item-wrapper">
 						<div class="icon-box"><i class="pe-7s-rocket"></i></div>
 						<div class="content-wrapper">
 							<h3>Mission and Vision</h3>
 							<p>
-								 <li> To be the leading regional public relations organisation.</li> 
+								{{-- Navigate your professional journey with our comprehensive career roadmap, designed to guide you through strategic milestones and opportunities for growth.							</p> --}}
+								<li> To be the leading regional public relations organisation.</li> 
 								<li> To unite the PR profession and bring all persons / organisations under a common banner.</li>
 								<li> To represent the industry on PR issues so as to establish growth for the profession as a whole.</li>
 								<li> To enhance the image of public relations in Nigeria</li>		
-								<br>
 								<br>
 							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
@@ -193,6 +91,7 @@
 						<div class="content-wrapper">
 							<h3>Professionalism</h3>
 							<p>
+								{{-- Ensuring your safety in the digital realm, we prioritize robust security measures to safeguard your information and provide you with a secure online experience.							</p> --}}
 								 NIPR determine what standards of knowledge
 								 and skills are to be attained by Public Relations practitioners. For high standards of practice. 
 								 The Institute must from time to time upgrade its Code of Professional Conduct. 
@@ -212,16 +111,51 @@
 						<br>
 						<br>
 						<br>
-					
+						<br>
 						</p>
 						</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 -->
 			</div> <!-- .row -->
-		{{-- </div> <!-- .container --> --}}
+		</div> <!-- .container -->
 	</section> <!-- .about-section -->
 
- 
+    {{-- Statistics --}}
+	<section class="fun-facts-section fun-facts-01 section-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 content-block">
+                    <h2><span>Professionalism at its best</span>Our excellent records preceeds us</h2>
+					<p>
+						With a track record of excellence, our commitment to quality and innovation is reflected in our records, 
+						showcasing a history of successful partnerships and satisfied clients 
+					</p>
+				</div> <!-- .col-md-6 -->
+				<div class="col-md-5 col-md-offset-1 facts-block">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <i class="pe-7s-user"></i>
+							<h3><span class="counter">15455</span>Students</h3>
+						</div> <!-- .col-xs-6 -->
+						<div class="col-xs-6">
+                            <i class="pe-7s-users"></i>
+							<h3><span class="counter">7464</span>Members</h3>
+						</div> <!-- .col-xs-6 -->
+						<div class="col-xs-6">
+                            <i class="pe-7s-note"></i>
+							<h3><span class="counter">2432</span>Certificates</h3>
+						</div> <!-- .col-xs-6 -->
+						<div class="col-xs-6">
+                            <i class="pe-7s-camera"></i>
+							<h3><span class="counter">43</span>Events</h3>
+						</div> <!-- .col-xs-6 -->
+					</div> <!-- .row -->
+					
+				</div> <!-- .col-md-6 -->
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+	</section> <!-- .split-section -->
+
 	{{-- Contact us --}}
 	<section class="contact-banner" style="background-color: red">
 			<div class="container">

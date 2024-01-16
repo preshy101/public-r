@@ -29,11 +29,11 @@
 	@livewireStyles
 </head>
 <style>
-	#contact:hover {
+	/* #contact:hover {
     background: white;
     color: red;
-	border-color: white
-}
+	border-color: white 
+}*/
 	nav {    
 		position: fixed;    
 		top: 0px;  
