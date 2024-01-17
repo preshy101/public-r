@@ -52,8 +52,38 @@
 		<div class="top-bar clearfix" style="background-color: red">
 			<div class="container">
 				<ul class="list-inline pull-left quick-contact">
-					<li><a href="#"><i class="fa fa-phone"></i> <span>07010383277, 09094367076</span></a></li>
-					{{-- <li><a href="#"><i class="fa fa-envelope-o"></i> <span>info@nipr.com</span></a></li> --}}
+					<li><a href="#"><i class="fa fa-phone"></i> <span>0701 038 3277, 0909 436 7076</span></a></li>
+					<li>
+
+					<a   href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i>  <span>Subscribe Us</span></a>
+                            
+                        <div class="modal corporex-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Subscribe Us</h4>
+                                        </div> <!-- .modal-header -->
+                                        <div class="modal-body">
+                                                <form class="subscription-form"  >
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="subscriber-name">Name</label>
+                                                        <input wire:model='sub' type="text" name="subscriber-name" id="subscriber-name" class="form-control" placeholder="Your name">
+                                                    </div> <!-- .form-group -->
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="subscriber-email">Email</label>
+                                                        <input type="text" name="subscriber-email" id="subscriber-email" class="form-control" placeholder="Your email">
+                                                    </div> <!-- .form-group -->
+                                                  
+                                        </div> <!-- .modal-body -->
+                                        <div class="modal-footer">  
+                                            <button wire:click.prevent='create' class="btn btn-main">Submit</button>
+                                                </form> <!-- .subscription-form -->
+                                        </div> <!-- .modal-footer -->
+                                    </div> <!-- .modal-content -->
+                                </div> <!-- .modal-dialog -->      
+                		</div> <!-- col-lg-3 col-md-6 -->
+					</li>
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">
@@ -72,7 +102,7 @@
 				</ul> <!-- .top-bar-menu -->
 			</div> <!-- .container -->
 		</div> <!-- .top-bar -->
-		<nav class="navbar  corporex-navbar navbar-01" >
+		<nav class="navbar  corporex-navbar navbar-01"  style="padding-top: 0%;padding-bottom: 0%">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">

@@ -108,18 +108,24 @@
 	<section class="intro-section intro-08 section-block" style="padding-top: 35px">
 		{{-- <div class="container"> --}}
 			<div class="row">
-			<div class="col-md-6 content-block" style="padding-left: 5%">
-					<h2><span>WELCOME TO THE</span><br> NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2>
-					<p class="lead">
-						 
+			<div class="col-md-8 content-block" style="padding-left: 5%">
+					<h2>
+						<center> <span>WELCOME TO THE</centerspan> </center>
+						
+				 NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2>
+				 <center>
+					<p class="lead"> 	 
 						{{($welcome != null)?$welcome->description:""}}
 					</p>
+				 </center>
+				
+
 				<p> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
 				</div> <!-- .col-md-8 img-block -->
 			
 
-			<div class="col-md-5  ">
-			<div style="border-radius: 2%" id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
+			<div class="col-md-4  ">
+			<div style="border-radius: 2%; " id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					 @if (count($slide) > 0)  
 					@foreach ($slide as $index => $item) 
@@ -129,7 +135,7 @@
 				
 				</ol> <!-- .carousel-indicators -->
 				 
-				<div style="border-radius: 2%" class="carousel-inner">
+				<div style="border-radius: 2%; height: 460px; padding-right: 5%" class="carousel-inner">
 	 
 					@foreach ($slide as $index => $item) 
 					<div style="border-radius: 2%" class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 
@@ -140,13 +146,14 @@
 						<div class="container">
 							
 							<div class="carousel-caption">
-								<h1 class="h1-extra">
+								<h6 class="h1-extra" style="color: #f5f5f5">
 								 <!-- <span>N.I.P.R</span> -->
-									{{$item->title}}</h1>
-								<p class="lead" style="color: white;">
+								 {{$item->title}}
+								</h6>
+								 <a class="btn btn-main" wire:navigate href="/resources/images">see more</a> 
+								<br><small class="lead" style="color: white;">
 									{!!$item->description!!}
-								</p> 
-								<!-- <a class="btn btn-main" href="#">learn more</a> -->
+								</small> 
 							</div> <!-- .carousel-caption -->
 						</div> <!-- .container -->
 					</div> <!-- .item -->
@@ -233,95 +240,6 @@
 
 	
 		@include('livewire.sections.presidentMessage')
-
-		<!-- Event Gallery-->
-		
-		@if($welcomePics != null)
-		<section class="portfolio-section portfolio-style-02 section-block" >
-			<div class="container">
-				<div class="title-block">
-					<h2>Our Glorified Moments</h2>
-					<p>
-						every moment hinting to the core vision and mission of Nigerian Institute of Public Relation (NIPR) 
-					</p>
-				</div> <!-- .title-block -->
-				{{-- 	<div class="portfolio-sorting">
-				<ul class="portfolio-category">
-						<li data-filter="all">All</li>
-						<li data-filter=".finance">Finance</li>
-						<li data-filter=".marketing">Marketing</li>
-						<li data-filter=".development">Development</li>
-					</ul> 
-				</div> <!-- .portfolio-sorting -->--}}
-				@php
-						$count = 0;
-						@endphp
-					@foreach($welcomePics as $item) 
-					@foreach ($item->imageVideo as $pics) 
-					<div class="row portfolio-container no-pad">
-					@foreach ($pics->image as $index => $images)
-					@if ($index <3)
-						
-					<div class="col-md-4 col-sm-6 portfolio-item mix finance">
-						<div class="item-wrapper">
-							<img class="img-responsive" 
-							src="{{Storage::url($images)}}" 
-							alt="portflio image one">
-							<div class="portfolio-details">
-								<a class="portfolio-popup" href="{{Storage::url($images)}}"><span class="zoom-icon"></span></a>
-								<div class="hover-content">
-									{{-- <h3><a href="#">Duis semper sed nulla interdum</a></h3>
-									<p>Category</p> --}}
-								</div><!-- .hover-content -->
-							</div> <!-- .portfolio-details -->
-						</div> <!-- .item-wrapper -->
-					</div> <!-- .portfolio-item -->
-					
-					@endif
-					@endforeach
-				</div> <!-- .row -->
-					@endforeach
-					@endforeach
-
-
-					@php $count = $count + 3 @endphp
-					@foreach($welcomePics as $item) 
-					@foreach ($item->imageVideo as $pics) 
-					<div class="row portfolio-container no-pad">
-					@foreach ($pics->image as $index => $images)
-					{{-- @if ($index >3 ) --}}
-					@if ($index >3 && $count < 6)
-					@php $count = $count + 1 @endphp
-					<div class="col-md-4 col-sm-6 portfolio-item mix finance">
-						<div class="item-wrapper">
-							<img class="img-responsive" 
-							src="{{Storage::url($images)}}" 
-							alt="portflio image one">
-							<div class="portfolio-details">
-								<a class="portfolio-popup" href="{{Storage::url($images)}}"><span class="zoom-icon"></span></a>
-								<div class="hover-content">
-									{{-- <h3><a href="#">Duis semper sed nulla interdum</a></h3>
-									<p>Category</p> --}}
-								</div><!-- .hover-content -->
-							</div> <!-- .portfolio-details -->
-						</div> <!-- .item-wrapper -->
-					</div> <!-- .portfolio-item -->
-					
-					@endif
-					@endforeach
-				</div> <!-- .row -->
-					@endforeach
-					@endforeach
-
-
-
-	
-				<div class="btn-container text-center">
-					<a  wire:navigate class="btn btn-narrow" href="/resources/up-coming-events">View All</a>
-				</div> <!-- .btn-container -->
-			</div> <!-- .container -->
-		</section> <!-- .portfolio-section -->
-	@endif
 
     {{-- FAQ --}}
 	@if(count($faq)>0)

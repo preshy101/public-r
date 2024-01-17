@@ -14,9 +14,10 @@
                 @foreach ($posts as $item)
                     
 				<div class="col-md-4">
-					<div class="post-wrapper">
-						<div class="image-wrapper">
+					<div class="post-wrapper" >
+						<div class="image-wrapper" >
 							<img class="img-responsive" 
+                            style="border-radius: 2%"
                             src="{{Storage::url($item->image)}}" 
                             alt="blog image 01">
 						</div> <!-- .image-wrapper -->

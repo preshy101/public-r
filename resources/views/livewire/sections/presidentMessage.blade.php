@@ -1,8 +1,8 @@
 {{-- President Message --}}
 @if (($president != null)) 
-   <section class="about-section section-block">
+   <section class=" section-block" >
     <div class="container">
-        <div class="row">
+        <div class="row" >
             <div class="col-md-6 img-block">
                 <img class="img-responsive rounded" 
                 
@@ -12,7 +12,7 @@
               
             </div> <!-- .col-md-6 img-block -->
             <div class="col-md-6 content-block">
-                <h2><span>Meet the president </span> 
+                <h2><span>Meet the president </span> <br>
                     {{($president != null)?$president->title: "Mr President"}} 
                 </h2>
                 <p>
@@ -35,7 +35,7 @@
         @endif
         {{-- Our Team --}} 
         @if (count($team)> 0)
-        <section class="team-section team-02 mt-0 section-block" style="padding-top: 0px">
+        <section class="team-section team-01 mt-0 section-block" style="padding-top: 0px">
             <div class="container">
                 <div class="title-block">
                     <h2>Our Team</h2>
