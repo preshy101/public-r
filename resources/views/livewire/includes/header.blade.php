@@ -52,7 +52,79 @@
 		<div class="top-bar clearfix" style="background-color: red">
 			<div class="container">
 				<ul class="list-inline pull-left quick-contact">
-					<li><a href="#"><i class="fa fa-phone"></i> <span>0701 038 3277, 0909 436 7076</span></a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-edit"></i> <span>Make Enquiry</span></a>
+						<div class="modal corporex-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title" id="myModalLabel">Enquiry</h4>
+									</div> <!-- .modal-header -->
+									<div class="modal-body">
+										<form >
+											<div class="row">
+												@if(session('success'))
+												<div class="alert alert-success">
+													<button type="button" class="close"  data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+													<i class="fa fa-thumbs-up"></i>
+													<strong>Great!</strong> {{ session('success')}}
+												</div>
+												@endif
+												<div class="col-md-12">
+													<div class="form-group">
+														<label for="author" class="sr-only">Name:</label>
+														<input wire:model='name' required class="form-control" type="text" name="author" id="author" placeholder="Name *">
+													@error('name')
+														<span class="text-danger">{{$message}}</span>
+													@enderror
+													</div> <!-- .form-group -->
+													<div class="form-group">
+														<label for="email" class="sr-only">Email:</label>
+														<input wire:model='email' required class="form-control" type="email" name="email" id="email" placeholder="Email *">
+													@error('email')
+														<span class="text-danger">{{$message}}</span>
+													@enderror
+													</div> <!-- .form-group -->
+													<div class="form-group">
+														<label for="phone" class="sr-only">Phone:</label>
+														<input wire:model='phone' required class="form-control" type="text" name="phone" id="phone" placeholder="Phone">
+													@error('phone')
+														<span class="text-danger">{{$message}}</span>
+													@enderror
+													</div> <!-- .form-group -->
+													<div class="form-group">
+														<label for="url" class="sr-only">Category:</label>
+														<select wire:model='website' required class="form-control" type="url" name="url" id="url" placeholder="Website">
+														<option value="">Select Option</option>
+														<option value="Normal">Normal</option>
+														<option value="Urgent">Urgent</option>
+														<option value="Critical">Critical</option>
+							
+														</select>
+													@error('website')
+														<span class="text-danger">{{$message}}</span>
+													@enderror
+													</div> <!-- .form-group -->
+													
+													<div class="form-group">
+														<label for="comment" class="sr-only">Comment:</label>
+														<textarea wire:model='message'required class="form-control" name="comment" id="comment" placeholder="Write your comment here *"></textarea>
+													@error('message')
+														<span class="text-danger">{{$message}}</span>
+													@enderror
+													</div> <!-- .form-group -->
+													<button wire:click.prevent='create' class="btn btn-main">Submit</button>
+												</div> <!-- .col-md-6 -->
+												<div class="col-md-6">
+													
+												</div> <!-- .col-md-6 -->
+											</div> <!-- .row -->
+										</form>
+									</div>
+									</div>
+									</div>
+									</div>
+					</li>
 					<li>
 
 					<a   href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i>  <span>Subscribe Us</span></a>
@@ -102,7 +174,7 @@
 				</ul> <!-- .top-bar-menu -->
 			</div> <!-- .container -->
 		</div> <!-- .top-bar -->
-		<nav class="navbar  corporex-navbar navbar-01"  style="padding-top: 0%;padding-bottom: 0%">
+		<nav class="navbar  corporex-navbar navbar-01"  style="padding-top: 0%; text-transform: unset; padding-bottom: 0%">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
@@ -120,19 +192,19 @@
 				<div class="collapse navbar-collapse navbar-items" id="navbar-items">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="{{(Route::is('home'))?"active":''}} dropdown menu-large">
-							<a  href="/" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+							<a  href="/" role="button" style="text-transform: unset" aria-haspopup="false" aria-expanded="true">Home</a>
 							
 						</li> 
 						
 						<li class="{{(Route::is('about-us.history', 'about-us.vision', 'about-us.ethics', 'about-us.council' ))?"active":''}} dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-							<ul class="dropdown-menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+							<ul class="dropdown-menu" style="text-transform: unset">
 								<li>  
-									    <a wire:navigate href="/about-us">NIPR History</a>
-									    <a wire:navigate href="/about-us/vision-and-mission">Vision & History</a>
-									    <a wire:navigate href="/about-us/ethics">Ethics Code</a>
-									    <a href="#">Chapters</a>
-									    <a wire:navigate href="/about-us/council">Council</a>
+									    <a wire:navigate href="/about-us" style="text-transform: unset">NIPR History</a>
+									    <a wire:navigate href="/about-us/vision-and-mission" style="text-transform: unset">Vision & History</a>
+									    <a wire:navigate href="/about-us/ethics"style="text-transform: unset">Ethics Code</a>
+									    <a href="#"style="text-transform: unset">Chapters</a>
+									    <a wire:navigate href="/about-us/council"style="text-transform: unset">Council</a>
 								 
 							</ul> <!-- .dropdown-menu -->
 						</li>
@@ -141,23 +213,23 @@
 						 'student.professional-admission', 'student.result', 'student.requirements', 
 						 'student.study-centre', 'student.curriculum' ))?"active":''}} 
 						dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training/Program</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Educational Services</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Training ></a>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"> Training ></a>
 									<ul class="dropdown-menu">
-										<li><a  wire:navigate href="/student/professional-certificate">Professional Certificate</a></li>
-										<li><a  wire:navigate href="/student/professional-diploma">Professional Diploma</a></li>
-										<li><a wire:navigate href="/student/professional-admission">Professional Admission</a></li>
-										<li><a wire:navigate href="/student/result">Results</a></li>
-										<li><a wire:navigate href="/student/study-centre">Study Centres</a></li>
+										<li><a  wire:navigate href="/student/professional-certificate"style="text-transform: unset">Professional Certificate</a></li>
+										<li><a  wire:navigate href="/student/professional-diploma"style="text-transform: unset">Professional Diploma</a></li>
+										<li><a wire:navigate href="/student/professional-admission"style="text-transform: unset">Professional Admission</a></li>
+										<li><a wire:navigate href="/student/result"style="text-transform: unset">Results</a></li>
+										<li><a wire:navigate href="/student/study-centre"style="text-transform: unset">Study Centres</a></li>
 									</ul> <!-- .dropdown-menu -->
 								</li>
 								<li>
-									<a wire:navigate href="/student/requirements" class="dropdown-toggle" data-toggle="dropdown">Requirements</a> 
+									<a style="text-transform: unset" wire:navigate href="/student/requirements" class="dropdown-toggle" data-toggle="dropdown">Requirements</a> 
 								</li>
 								<li>
-									<a wire:navigate href="/student/curriculum" class="dropdown-toggle" data-toggle="dropdown">Curriculum</a>
+									<a style="text-transform: unset" wire:navigate href="/student/curriculum" class="dropdown-toggle" data-toggle="dropdown">Curriculum</a>
 									 
 								</li> 
 							</ul> <!-- .dropdown-menu -->
@@ -166,18 +238,18 @@
 						{{(Route::is('member.information', 'member.upgrade', 'member.categery',
 						  ))?"active":''}} 
 						dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MemberShip</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">MemberShip</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a wire:navigate href="/membership/information" class="dropdown-toggle" data-toggle="dropdown">Membership Information</a>
+									<a wire:navigate href="/membership/information" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Information</a>
 									
 								</li>
 								<li>
-									<a wire:navigate href="/membership/category" class="dropdown-toggle" data-toggle="dropdown">MemberShip Categories</a>
+									<a wire:navigate href="/membership/category" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">MemberShip Categories</a>
 									
 								</li>
 								<li>
-									<a  wire:navigate href="/membership/upgrade"class="dropdown-toggle" data-toggle="dropdown">Membership Upgrade</a>
+									<a  wire:navigate href="/membership/upgrade"class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Upgrade</a>
 									
 								</li>
 								 
@@ -187,51 +259,51 @@
 						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video'
 						  ))?"active":''}} 
 						">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
-                                <ul class="dropdown-menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Resources</a>
+                                <ul class="dropdown-menu" style="text-transform: unset">
 									 <li>
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Publications ></a>
-										<ul class="dropdown-menu">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"> Publications ></a>
+										<ul class="dropdown-menu" style="text-transform: unset">
                                     <li>
-                                        <a wire:navigate href="#" >Press Releases</a>   
+                                        <a wire:navigate href="#" style="text-transform: unset">Press Releases</a>   
                                     </li>
                                     <li>
-                                        <a wire:navigate href="#" >Newsletters</a>   
+                                        <a wire:navigate href="#" style="text-transform: unset">Newsletters</a>   
                                     </li>
                                     <li>
-                                        <a wire:navigate href="#" >Publications</a>   
+                                        <a wire:navigate href="#" style="text-transform: unset">Publications</a>   
                                     </li>
 
 									<li>
-										<a wire:navigate href="#" >Conferences</a>   
+										<a wire:navigate href="#" style="text-transform: unset">Conferences</a>   
 									</li>
 									</ul>
 									</li>
                                     <li>
-										<a wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>   
+										<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Blog</a>   
                                     </li>
                                     <li>
-                                        <a wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown">Research Materials</a>   
+                                        <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Research Materials</a>   
                                     </li>
                                     <li>
-                                        <a wire:navigate href="/resources/images" class="dropdown-toggle" data-toggle="dropdown">Image Gallery</a>   
+                                        <a wire:navigate href="/resources/images" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Image Gallery</a>   
                                     </li>
                                     
                                     <li>
-                                        <a wire:navigate href="/resources/videos"  class="dropdown-toggle" data-toggle="dropdown">Video</a>
+                                        <a wire:navigate href="/resources/videos" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Video</a>
                                     </li>
                                     <li>
-                                        <a wire:navigate href="/resources/downloadable" class="dropdown-toggle" data-toggle="dropdown">Downloadables</a>
+                                        <a wire:navigate href="/resources/downloadable" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Downloadables</a>
                                     </li>
                                 </ul> <!-- .dropdown-menu --> 
 						</li>
 						<li class="{{(Route::is('resources.event'))?"active":''}}">
-							<a wire:navigate href="/resources/up-coming-events"   >Events</a>    
+							<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset"  >Events</a>    
 						</li>
 						<li class="
-							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" >News</a></li>
+							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" style="text-transform: unset">News</a></li>
 						<li class="
-						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" >Contact</a></li>
+						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li>
 					</ul> <!-- .nav navbar-nav -->
 				</div> <!-- .collapse navbar-collapse -->
 

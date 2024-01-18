@@ -22,11 +22,11 @@
                             alt="blog image 01">
 						</div> <!-- .image-wrapper -->
 						<div class="post-content">
-							<ul class="post-meta">
+							<ul class="post-meta" style="word-wrap: break-word;word-break: break-all;">
 								<li>{{$item->published_at->diffForHumans()}}</li>
-								<li>
+								<li >
                                     @foreach ($item->categories as $cat)  
-                                    <a class="badge badge-pill " style="background: {{$cat->bg_color}}; color:{{$cat->text_color}}" href="#">
+                                    <a class="badge badge-pill " style="word-wrap: break-word; background: {{$cat->bg_color}}; color:{{$cat->text_color}}" href="#">
                                         {{$cat->title}}
                                     </a>
                                     @endforeach

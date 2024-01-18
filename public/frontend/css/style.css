@@ -1149,7 +1149,7 @@ ul {
   background: url('../../img/kane-reinholdtsen-LETdkk7wHQk-unsplash.jpg') no-repeat center;
   background-size: cover;
   color: #fff;
-  height: 286px;
+  height: 150px;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -1182,7 +1182,7 @@ ul {
 }
 .page-title-banner .bread-crumb {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 0;
 }
 .page-title-banner .bread-crumb li {

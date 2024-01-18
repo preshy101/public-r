@@ -9,6 +9,10 @@
                         Herbert Macaulay Way, Wuse, Zone 6, Abuja</p>
                 </div> <!-- .col-md-4 -->
                 <div class="col-md-4">
+                    {{-- <div class="icon-box" style="background-color: white; color: red" ><i class="fa fa-phone"></i></div>
+                  <br>  <a href="#">0701 038 3277, 0909 436 7076</a> --}}
+                </div> <!-- .col-md-4 -->
+                <div class="col-md-4">
                     {{-- <div class="icon-box" style="background-color: white; color: red" >
                       
                     </div> --}}<br>
@@ -21,10 +25,7 @@
                         <li><a href="https://www.tiktok.com/@niprofficial"><i class="fab fa-tiktok fa-2x"></i></a></li> 
                     </ul> <!-- .footer-social -->
                 </div> <!-- .col-md-4 -->
-                <div class="col-md-4">
-                    <div class="icon-box" style="background-color: white; color: red" ><i class="fa fa-phone"></i></div>
-                  <br>  <a href="#">0701 038 3277, 0909 436 7076</a>
-                </div> <!-- .col-md-4 -->
+                
                 
             </div> <!-- .row -->
         </div> <!-- .container -->
