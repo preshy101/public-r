@@ -62,17 +62,17 @@
 			<div class="row">
 			<div class="col-md-8 content-block" style="padding-left: 5%;   text-align: justify;
 			text-justify: inter-word;" >
-					<h2>
+					<h2 style="text-transform: unset">
 						 
-				 NIGERIAN INSTITUTE OF PUBLIC RELATIONS (NIPR)</h2>
+				  Nigerian Institute Of Public Relations (NIPR)</h2>
 				 <center>
 					<p class="lead"> 	 
-						{{($welcome != null)?$welcome->description:""}}
+						{{-- {{($welcome != null)?$welcome->description:""}} --}}
 					</p>
 				 </center>
 				
 
-				<p 
+				<p  style="width: 500px"
 				> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
 				</div> <!-- .col-md-8 img-block -->
 			
@@ -132,46 +132,40 @@
 
 
 			<div class="row feature-set" style="padding-left: 5%; padding-right: 5%;">
-				<div class="col-sm-4">
-					<div class="item-wrapper"  style="max-height: 570px;">
-						<div class="icon-box"><i class="pe-7s-rocket"></i></div>
+				<div class=" col-md-12 col-lg-4" >
+					<div class="item-wrapper" style=" height: 348;">
+						<div class="icon-box" ><h3 style="color: red; height: 348;"><i class="pe-7s-rocket"></i> <b style="text-transform: capitalize"> Mission and Vision</b> </h3> </div>
 						<div class="content-wrapper" >
-							<h3 style="color: red;">Mission and Vision</h3> 
-							<p>
+							
+							<p style=" height: 348;">
 								 <li> To be the leading regional public relations organisation.</li> 
 								<li> To unite the PR profession and bring all persons / organisations under a common banner.</li>
 								<li> To represent the industry on PR issues so as to establish growth for the profession as a whole.</li>
-								<li> To enhance the image of public relations in Nigeria</li>		
-								<br>
-								<br>
+								<li> To enhance the image of public relations in Nigeria</li>		 
 							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 -->
-				<div class="col-sm-4">
-					<div class="item-wrapper"  style="max-height: 570px;">
-						<div class="icon-box"><i class="pe-7s-shield"></i></div>
-						<div class="content-wrapper">
-							<h3 style="color: red">Professionalism</h3>
-							<p>
+				<div class=" col-md-12 col-lg-4" >
+					<div class="item-wrapper" style=" height: 348;" >
+						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-id"></i> Professionalism  </h3></div>
+						<div class="content-wrapper" >
+							
+							<p style=" height: 348;">
 								 NIPR determine what standards of knowledge
 								 and skills are to be attained by Public Relations practitioners. For high standards of practice. 
 								 The Institute must from time to time upgrade its Code of Professional Conduct. 
-								 The decree empowers the Council to make byelaws and other rules not 
-								inconsistent with this decree as to acts which constitute professional misconduct 
+								 The decree empowers the Council to make byelaws and other rules  
 							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 -->
-				<div class="col-sm-4">
-					<div class="item-wrapper" style="max-height: 570px;">
-						<div class="icon-box"><i class="pe-7s-ribbon"></i></div>
-						<div class="content-wrapper">
-							<h3 style="color: red">Certification</h3>
-							<p>
+				<div class=" col-md-12 col-lg-4" >
+					<div class="item-wrapper" style=" height: 348;">
+						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-medal"></i> Certification</h3></div>
+						<div class="content-wrapper" > 
+							<p style=" height: 348;">
 								Elevate your expertise and credibility with our range of industry-recognized certifications, empowering you to stay ahead in today's competitive landscape,
 							and introducing a learning management system to foster and breed excellence across every level	
-						<br>
-						<br>
-						<br>
+						<br> 
 					
 						</p>
 						</div> <!-- .content-wrapper -->
@@ -185,49 +179,36 @@
 	<section class="fun-facts-section fun-facts-01 section-block">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 content-block">
-                    <h2><span>Professionalism at its best</span>Our excellent records preceeds us</h2>
+                <div class="col-md-12 facts-block">
+                    {{-- <h2><span>Professionalism at its best</span>Our excellent records preceeds us</h2>
 					<p>
 						With a track record of excellence, our commitment to quality and innovation is reflected in our records, 
 						showcasing a history of successful partnerships and satisfied clients 
-					</p>
+					</p>    --}} 
+                        <div class="col-xs-12 col-md-3">
+                            <i class="pe-7s-user " style="font-size: 50px;"></i>
+							<h3 style="text-transform: capitalize"><span class="counter">15455</span>Students</h3>
+						</div> <!-- .col-xs-6 -->
+						<div class="col-xs-12 col-md-3">
+                            <i class="pe-7s-users" style="font-size: 50px;"></i>
+							<h3 style="text-transform: capitalize"><span class="counter">7464</span>Members</h3>
+						</div> <!-- .col-xs-6 -->
+						<div class="col-xs-12 col-md-3">
+                            <i class="pe-7s-note" style="font-size: 50px;"></i>
+							<h3 style="text-transform: capitalize"><span class="counter">2432</span>Certificates</h3>
+						</div> <!-- .col-xs-6 -->
+						<div class="col-xs-12 col-md-3">
+                            <i class="pe-7s-camera" style="font-size: 50px;"></i>
+							<h3 style="text-transform: capitalize"><span class="counter">43</span>Events</h3>
+						</div> <!-- .col-xs-6 --> 
 				</div> <!-- .col-md-6 -->
-				<div class="col-md-5 col-md-offset-1 facts-block">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <i class="pe-7s-user"></i>
-							<h3><span class="counter">15455</span>Students</h3>
-						</div> <!-- .col-xs-6 -->
-						<div class="col-xs-6">
-                            <i class="pe-7s-users"></i>
-							<h3><span class="counter">7464</span>Members</h3>
-						</div> <!-- .col-xs-6 -->
-						<div class="col-xs-6">
-                            <i class="pe-7s-note"></i>
-							<h3><span class="counter">2432</span>Certificates</h3>
-						</div> <!-- .col-xs-6 -->
-						<div class="col-xs-6">
-                            <i class="pe-7s-camera"></i>
-							<h3><span class="counter">43</span>Events</h3>
-						</div> <!-- .col-xs-6 -->
-					</div> <!-- .row -->
+				{{-- <div class="col-md-5 col-md-offset-1 facts-block">
+                 
 					
-				</div> <!-- .col-md-6 -->
+				</div> <!-- .col-md-6 --> --}}
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section> <!-- .split-section -->
-
-	{{-- Contact us --}}
-	<section class="contact-banner" style="background-color: red">
-			<div class="container">
-				<h2>Make the first step </h2>
-				<p>Its easy and beautiful. It will change your life</p>
-				<a class="contact-btn btn btn-ghost" id="contact" style="co" href="#">Become a Member</a>
-			</div> <!-- .container -->
-	</section> <!-- .contact-banner -->
-
-	
-
 	
 		@include('livewire.sections.presidentMessage')
 

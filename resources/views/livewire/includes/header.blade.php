@@ -52,13 +52,13 @@
 		<div class="top-bar clearfix" style="background-color: red">
 			<div class="container">
 				<ul class="list-inline pull-left quick-contact">
-					<li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-edit"></i> <span>Make Enquiry</span></a>
+					<li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-edit"></i> <span>Contact Us</span></a>
 						<div class="modal corporex-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										<h4 class="modal-title" id="myModalLabel">Enquiry</h4>
+										<h4 class="modal-title" id="myModalLabel">Contact Us</h4>
 									</div> <!-- .modal-header -->
 									<div class="modal-body">
 										<form >
@@ -156,6 +156,8 @@
                                 </div> <!-- .modal-dialog -->      
                 		</div> <!-- col-lg-3 col-md-6 -->
 					</li>
+					<li><a href="#" ><i class="fa fa-user"></i> <span>Become A Member</span></a></li>
+
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">
