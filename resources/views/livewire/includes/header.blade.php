@@ -96,9 +96,8 @@
 														<label for="url" class="sr-only">Category:</label>
 														<select wire:model='website' required class="form-control" type="url" name="url" id="url" placeholder="Website">
 														<option value="">Select Option</option>
-														<option value="Normal">Normal</option>
-														<option value="Urgent">Urgent</option>
-														<option value="Critical">Critical</option>
+														<option value="Enquiry">Enquiry</option>
+														<option value="feedback">Feedback</option> 
 							
 														</select>
 													@error('website')
@@ -127,7 +126,7 @@
 					</li>
 					<li>
 
-					<a   href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i>  <span>Subscribe Us</span></a>
+					<a   href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i>  <span>News Letter</span></a>
                             
                         <div class="modal corporex-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -223,9 +222,17 @@
 										<li><a  wire:navigate href="/student/professional-certificate"style="text-transform: unset">Professional Certificate</a></li>
 										<li><a  wire:navigate href="/student/professional-diploma"style="text-transform: unset">Professional Diploma</a></li>
 										<li><a wire:navigate href="/student/professional-admission"style="text-transform: unset">Professional Admission</a></li>
-										<li><a wire:navigate href="/student/result"style="text-transform: unset">Results</a></li>
+										{{-- <li><a wire:navigate href="/student/result"style="text-transform: unset">Results</a></li> --}}
+										<li><a wire:navigate href="#"style="text-transform: unset">Special Master Classes</a></li>
+										<li><a wire:navigate href="#"style="text-transform: unset">MCPD</a></li>
 										<li><a wire:navigate href="/student/study-centre"style="text-transform: unset">Study Centres</a></li>
 									</ul> <!-- .dropdown-menu -->
+								</li>
+								<li>
+									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">CPR</a> 
+								</li>
+								<li>
+									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">DPR</a> 
 								</li>
 								<li>
 									<a style="text-transform: unset" wire:navigate href="/student/requirements" class="dropdown-toggle" data-toggle="dropdown">Requirements</a> 
@@ -242,6 +249,15 @@
 						dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">MemberShip</a>
 							<ul class="dropdown-menu">
+								<li>
+									<a wire:navigate href="" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">New application</a> 
+								</li>
+								<li>
+									<a wire:navigate href="" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Upgrade </a> 
+								</li>
+								<li>
+									<a wire:navigate href="" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Master Class </a> 
+								</li>
 								<li>
 									<a wire:navigate href="/membership/information" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Information</a>
 									
@@ -281,26 +297,43 @@
 									</li>
 									</ul>
 									</li>
-                                    <li>
-										<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Blog</a>   
-                                    </li>
+                                    
                                     <li>
                                         <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Research Materials</a>   
                                     </li>
-                                    <li>
-                                        <a wire:navigate href="/resources/images" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Image Gallery</a>   
-                                    </li>
                                     
-                                    <li>
-                                        <a wire:navigate href="/resources/videos" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Video</a>
-                                    </li>
                                     <li>
                                         <a wire:navigate href="/resources/downloadable" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Downloadables</a>
                                     </li>
                                 </ul> <!-- .dropdown-menu --> 
 						</li>
-						<li class="{{(Route::is('resources.event'))?"active":''}}">
-							<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset"  >Events</a>    
+						<li class="dropdown {{(Route::is('resources.event'))?"active":''}}">
+							<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" >Events</a>  
+							<ul class="dropdown-menu" style="text-transform: unset"> 
+							   
+							   <li>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">NIPR week</a>   
+							   </li>
+							   
+							   <li>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Sam Epelle Memorial Gold Lecture</a>
+							   </li>
+							   <li>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Conference for PR Practitioners in Tertiary Institutions</a>
+							   </li>
+							   <li>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Director’s Conference</a>
+							   </li>
+							   <li>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Aviation Conference</a>
+							   </li>
+							   <li>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Workshop for Spokespersons in Nigeria</a>
+							   </li>
+							   <li>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Igwe Nnaemeka Alfred Achebe Peace & <br> Reconciliation Annual Lecture Series</a>
+							   </li>
+						   </ul> <!-- .dropdown-menu -->   
 						</li>
 						<li class="
 							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" style="text-transform: unset">News</a></li>
