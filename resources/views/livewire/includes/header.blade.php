@@ -156,7 +156,7 @@
                                 </div> <!-- .modal-dialog -->      
                 		</div> <!-- col-lg-3 col-md-6 -->
 					</li>
-					<li><a href="#" ><i class="fa fa-user"></i> <span>Become A Member</span></a></li>
+					<li><a href="https://portal.niprng.org.ng/member/login" ><i class="fa fa-user"></i> <span>Become A Member</span></a></li>
 
 				</ul> <!-- .quick-contact -->
 

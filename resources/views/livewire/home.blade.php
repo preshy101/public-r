@@ -166,6 +166,7 @@
 								Elevate your expertise and credibility with our range of industry-recognized certifications, empowering you to stay ahead in today's competitive landscape,
 							and introducing a learning management system to foster and breed excellence across every level	
 						<br> 
+						<br> 
 					
 						</p>
 						</div> <!-- .content-wrapper -->
