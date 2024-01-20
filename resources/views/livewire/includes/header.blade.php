@@ -270,8 +270,10 @@
 							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" style="text-transform: unset">News</a></li>
 						{{-- <li class="
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
-						<li class="
-						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="" style="text-transform: unset">NIPR Hubs</a></li>
+						<li 
+						{{-- class="
+						    {{(Route::is('contactus'))?"active":''}} " --}}
+							><a wire:navigate href="" style="text-transform: unset">NIPR Hubs</a></li>
 					</ul> <!-- .nav navbar-nav -->
 				</div> <!-- .collapse navbar-collapse -->
 

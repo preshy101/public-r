@@ -56,7 +56,7 @@ class Home extends Component
         $this->gallery = imageGallery:: 
         latest()->take(6)->get();
 
-        $this->posts = Post::published()->latest()->take(3)->get();
+        $this->posts = Post::published()->latest()->take(12)->get();
     }
     public function render()
     { 

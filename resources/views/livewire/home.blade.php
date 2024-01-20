@@ -80,8 +80,8 @@
 			<div class="col-md-4  ">
 			<div style="border-radius: 2%; " id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
-					 @if (count($slide) > 0)  
-					@foreach ($slide as $index => $item) 
+					 @if (count($post) > 0)  
+					@foreach ($post as $index => $item) 
 					<li data-target="#corporex-slider" data-slide-to="{{$index}}" class="{{( $index == 0 )? 'active':'' }}"></li>
 				
 					@endforeach	
@@ -90,7 +90,7 @@
 				 
 				<div style="border-radius: 2%; height: 460px; padding-right: 5%" class="carousel-inner">
 	 
-					@foreach ($slide as $index => $item) 
+					@foreach ($post as $index => $item) 
 					<div style="border-radius: 2%" class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 
 						<img class="slider-bg img-responsive" 
 						
@@ -98,15 +98,17 @@
 						alt="slider image 01">
 						<div class="container">
 							
-							<div class="carousel-caption">
+							<div class="carousel-caption" style="color: white;">
 								<h6 class="h1-extra" style="color: #f5f5f5;font-size: 30px;">
 								 <!-- <span>N.I.P.R</span> -->
 								 {{$item->title}}
-								</h6>
-								 <a class="btn btn-main" wire:navigate href="/resources/images">see more</a> 
-								<br><small class="lead" style="color: white;font-size: 15px;">
-									{!!$item->description!!}
-								</small> 
+								
+								 <a class="btn btn-main" wire:navigate href="/news/posts/{{$item->slug}}">read more</a> 
+								<br>
+							</h6>
+							<small class="lead" style="color: white ;font-size: 15px;">
+								{!! Str::words($item->body, 10, ' ...') !!} 
+							</small> 
 							</div> <!-- .carousel-caption -->
 						</div> <!-- .container -->
 					</div> <!-- .item -->

@@ -39,32 +39,33 @@ class CmsResource extends Resource
                 Select::make('contentId')
                 ->required()
                 ->label('Content Category')
-                ->searchable()->relationship('cms','title')
-                // ->options([
-                //     // home
-                //     'slide' => 'Slide',
-                //     'welcome' => 'Welcome Notes',
-                //     'presidentSpeech' => "President Speech",
-                //     'teamMembers' => 'Team Members  ',
-                //     'faq' => 'FAQ',
-                //     'testimonial' => 'Testimonial',
-                //     // about us
-                //     'history' => 'History',
-                //     'visionAndMission' => 'Vision And Mission',
-                //     'ethicCodes' => 'Ethic Codes',
-                //     'council' => 'Council',
-                //     // student
-                //     'curriculum' => 'Curriculum',
-                //     // membership
-                //     'membershipInformation' => 'Membership Information',
-                //     'membershipCategory' => 'Membership Category',
-                //     'membershipUpgrade' => 'Membership Upgrade', 
-                //     // resources
-                //     'images' => 'Image Gallery',
-                //     'events' => 'Events',
-                //     'videos' => 'Video Gallery',
-                //     'downloads' => 'Downloadable'
-                // ])
+                ->searchable()
+                // ->relationship('cms','title')
+                ->options([
+                    // home
+                    'slide' => 'Slide',
+                    'welcome' => 'Welcome Notes',
+                    'presidentSpeech' => "President Speech",
+                    'teamMembers' => 'Team Members  ',
+                    'faq' => 'FAQ',
+                    'testimonial' => 'Testimonial',
+                    // about us
+                    'history' => 'History',
+                    'visionAndMission' => 'Vision And Mission',
+                    'ethicCodes' => 'Ethic Codes',
+                    'council' => 'Council',
+                    // student
+                    'curriculum' => 'Curriculum',
+                    // membership
+                    'membershipInformation' => 'Membership Information',
+                    'membershipCategory' => 'Membership Category',
+                    'membershipUpgrade' => 'Membership Upgrade', 
+                    // resources
+                    'images' => 'Image Gallery',
+                    'events' => 'Events',
+                    'videos' => 'Video Gallery',
+                    'downloads' => 'Downloadable'
+                ])
                 ,   
                 TextInput::make('version')
                 ->required() 

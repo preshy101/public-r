@@ -17,7 +17,7 @@ class cms extends Model
     public function imageVideo(): HasMany{
         return $this->hasMany(imageGallery::class);
        }
-    public function cms(){
+    public function cmsCat(){
         return $this->belongsTo(cmsCategory::class);
     }
 }
