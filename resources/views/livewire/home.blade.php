@@ -319,7 +319,7 @@
 						<blockquote>
 							{{ $item->description }}
 						</blockquote>
-						<h4>{{$item->title}}
+						<h4 style="text-transform: unset">{{$item->title}}
 							{{-- <small>Web Designer</small> --}}
 						</h4>
 					</div> <!-- .content-wrapper -->
