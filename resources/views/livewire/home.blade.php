@@ -102,9 +102,9 @@
 								<h6 class="h1-extra" style="color: #f5f5f5;font-size: 30px;">
 								 <!-- <span>N.I.P.R</span> -->
 								 {{$item->title}}
-								
-								 <a class="btn btn-main" wire:navigate href="/news/posts/{{$item->slug}}">read more</a> 
 								<br>
+								 <a class="btn btn-main" wire:navigate href="/news/posts/{{$item->slug}}">read more</a> 
+								
 							</h6>
 							<small class="lead" style="color: white ;font-size: 15px;">
 								{!! Str::words($item->body, 10, ' ...') !!} 
