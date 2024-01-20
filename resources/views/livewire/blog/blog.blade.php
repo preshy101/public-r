@@ -126,11 +126,13 @@
 					<div class="widget widget-social-links">
 						<h3 class="widget-title">Follow us</h3>
 						<ul>
-							<li class="facebook-link"><a href="https://www.facebook.com/profile.php?id=100004381365825&mibextid=AEUHqQ"><i class="fa fa-facebook"></i></a></li>
-							<li class="twitter-link"><a href="#https://x.com/nipr_hq?s=11&t=9HmMeHB4scZXQG4gvZuypA"><i class="fa fa-twitter"></i></a></li>
-							<li class="google-plus-link"><a href="https://www.linkedin.com/in/niprhq/"><i class="fa fa-linkedin"></i></a></li>
-							{{-- <li class="youtube-link"><a href="#"><i class="fa fa-instagram"></i></a></li> --}}
-							<li class="youtube-link"><a href="https://www.instagram.com/nipr_hq"><i class="fa fa-instagram"></i></a></li>
+							
+						<li class="facebook-link"><a href="https://web.facebook.com/NIPROFFICIALPAGE?mibextid=LQQJ4d&_rdc=1&_rdr"><i class="fab fa-facebook "></i></a></li>
+                        <li class="twitter-link"><a href="https://twitter.com/niprofficial"><i class="fab fa-twitter "></i></a></li>
+                        <li class="twitter-link"><a href="https://www.linkedin.com/in/nigerian-institute-of-public-relations-7600b5a5/"><i class="fab fa-linkedin "></i></a></li>
+                        <li class="google-plus-link"><a href="https://www.instagram.com/niprofficial/"><i class="fab fa-instagram "></i></a></li> 
+                        <li class="youtube-link"><a href="https://www.youtube.com/@niprofficial"><i class="fab fa-youtube "></i></a></li> 
+                        <li style="background: black"><a href="https://www.tiktok.com/@niprofficial"><i class="fab fa-tiktok "></i></a></li> 
 						</ul>
 					</div> <!-- .widget widget-social-links -->
 			
@@ -138,10 +140,19 @@
 						<h3 class="widget-title">Photo Gallery</h3>
 						<ul class="list-inline photo-gallery clearfix">
 							@if ($gallery)
+							@php
+								$count = 0;
+							@endphp
 								@foreach ($gallery as $item)
-									@foreach ($item->image as $img) 
+								@if ($count <= 9)
+								
+									@foreach ($item->image as $index =>  $img) 
+									@php
+										$count = $count + $index;
+									@endphp
 									<li><a class="gallery-img" href="#"><img class="img-responsive" src="{{Storage::url($img)}}" alt="gallery photo"></a></li>
-									@endforeach
+									@endforeach	
+								@endif
 								@endforeach
 							@else
 								<small>No content yet</small>
