@@ -266,9 +266,8 @@
 				</p>
 			</div> <!-- .title-block -->
 			<div class="testimonial-carousel" id="testimonial-carousel">
-				@foreach ($testimony as $index => $item) 
-				@if ($index <= 2)
-					
+				@foreach ($testimony as  $item) 
+				 
 				
 				<div class="testimonial-item">
 					<div class="content-wrapper">
@@ -284,7 +283,7 @@
 						</h4>
 					</div> <!-- .content-wrapper -->
 				</div> <!-- .col-md-4 -->
-				@endif
+				 
 				@endforeach
 				 
 			</div> <!-- .row -->

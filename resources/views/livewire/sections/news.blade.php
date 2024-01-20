@@ -11,8 +11,9 @@
 				</p>
 			</div> <!-- .title-block -->
 			<div class="row">
-                @foreach ($posts as $item)
-                    
+                @foreach ($posts as $index => $item)
+                    @if ($index <= 2)
+						
 				<div class="col-md-4">
 					<div class="post-wrapper" >
 						<div class="image-wrapper" >
@@ -40,6 +41,7 @@
 						</div> <!-- .post-content -->
 					</div> <!-- .post-wrapper -->
 				</div> <!-- .col-md-4 -->
+					@endif
             
                  @endforeach
 			</div> <!-- .row -->
