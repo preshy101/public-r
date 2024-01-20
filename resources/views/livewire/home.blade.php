@@ -57,10 +57,10 @@
 	
 
     {{-- Key Features --}}
-	<section class="intro-section intro-08 section-block" style="padding-top: 35px">
+	<section class="intro-section intro-08 section-block" style="padding-top: 35px; ">
 		{{-- <div class="container"> --}}
 			<div class="row">
-			<div class="col-md-8 content-block" style="padding-left: 5%;   text-align: justify;
+			<div class="col-lg-8 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
 			text-justify: inter-word;" >
 					<h2 style="text-transform: unset">
 						 
@@ -75,10 +75,50 @@
 
 				<p  style="width: 500px"
 				> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
+				<div class=" col-md-12 col-lg-4" >
+					<div class="item-wrapper" style=" height: 348;">
+						<div class="icon-box" ><h3 style="color: red; height: 348;"><i class="pe-7s-rocket"></i> <b style="text-transform: capitalize"> Mission and Vision</b> </h3> </div>
+						<div class="content-wrapper" >
+							
+							<p style=" height: 348;">
+								 <li> To be the leading regional public relations organisation.</li> 
+								<li> To unite the PR profession and bring all persons / organisations under a common banner.</li>
+								<li> To represent the industry on PR issues so as to establish growth for the profession as a whole.</li>
+								<li> To enhance the image of public relations in Nigeria</li>		 
+							</div> <!-- .content-wrapper -->
+					</div> <!-- .item-wrapper -->
+				</div> <!-- .col-sm-4 -->
+				<div class=" col-md-12 col-lg-4" >
+					<div class="item-wrapper" style=" height: 348;" >
+						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-id"></i> Professionalism  </h3></div>
+						<div class="content-wrapper" >
+							
+							<p style=" height: 348;">
+								 NIPR determine what standards of knowledge
+								 and skills are to be attained by Public Relations practitioners. For high standards of practice. 
+								 The Institute must from time to time upgrade its Code of Professional Conduct. 
+								 The decree empowers the Council to make byelaws and other rules  
+							</div> <!-- .content-wrapper -->
+					</div> <!-- .item-wrapper -->
+				</div> <!-- .col-sm-4 -->
+				<div class=" col-md-12 col-lg-4" >
+					<div class="item-wrapper" style=" height: 348;">
+						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-medal"></i> Certification</h3></div>
+						<div class="content-wrapper" > 
+							<p style=" height: 348;">
+								Elevate your expertise and credibility with our range of industry-recognized certifications, empowering you to stay ahead in today's competitive landscape,
+							and introducing a learning management system to foster and breed excellence across every level	
+						<br> 
+						<br> 
+					
+						</p>
+						</div> <!-- .content-wrapper -->
+					</div> <!-- .item-wrapper -->
+				</div> <!-- .col-sm-4 -->
 				</div> <!-- .col-md-8 img-block -->
 			
 
-			<div class="col-md-4  ">
+			<div class="col-lg-4  ">
 			<div style="border-radius: 2%; " id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					 @if (count($post) > 0)  
@@ -89,7 +129,7 @@
 				
 				</ol> <!-- .carousel-indicators -->
 				 
-				<div style="border-radius: 2%; height: 460px; padding-right: 5%" class="carousel-inner">
+				<div style="border-radius: 2%; max-height: 658px; padding-right: 5%" class="carousel-inner">
 	 
 					@foreach ($post as $index => $item) 
 					<div style="border-radius: 2%" class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 
@@ -135,7 +175,7 @@
 
 
 			<div class="row feature-set" style="padding-left: 5%; padding-right: 5%;">
-				<div class=" col-md-12 col-lg-4" >
+				{{-- <div class=" col-md-12 col-lg-4" >
 					<div class="item-wrapper" style=" height: 348;">
 						<div class="icon-box" ><h3 style="color: red; height: 348;"><i class="pe-7s-rocket"></i> <b style="text-transform: capitalize"> Mission and Vision</b> </h3> </div>
 						<div class="content-wrapper" >
@@ -160,8 +200,8 @@
 								 The decree empowers the Council to make byelaws and other rules  
 							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
-				</div> <!-- .col-sm-4 -->
-				<div class=" col-md-12 col-lg-4" >
+				</div> <!-- .col-sm-4 --> --}}
+				{{-- <div class=" col-md-12 col-lg-4" >
 					<div class="item-wrapper" style=" height: 348;">
 						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-medal"></i> Certification</h3></div>
 						<div class="content-wrapper" > 
@@ -174,7 +214,7 @@
 						</p>
 						</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
-				</div> <!-- .col-sm-4 -->
+				</div> <!-- .col-sm-4 --> --}}
 			</div> <!-- .row -->
 		{{-- </div> <!-- .container --> --}}
 	</section> <!-- .about-section -->
