@@ -49,8 +49,12 @@
 	</div> <!-- .corporex-preloader -->
 	 --}}
 	<header class="site-header fixed-top" >
+		{{-- <div class="top-bar clearfix" id="homepageBanner" style="height: 200px;">
+
+		</div> --}}
 		<div class="top-bar clearfix" style="background-color: red">
 			<div class="container">
+
 				<ul class="list-inline pull-left quick-contact">
 					<li><a wire:navigate href="/contact-us" data-toggle="modal" data-target="#myModal2"><i class="fa fa-edit"></i> <span>Contact Us</span></a>
 								 
@@ -271,9 +275,32 @@
 						{{-- <li class="
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
 						<li 
-						{{-- class="
-						    {{(Route::is('contactus'))?"active":''}} " --}}
-							><a wire:navigate href="" style="text-transform: unset">NIPR Hubs</a></li>
+						class="dropdown
+						    {{(Route::is('contactus'))?"active":''}} "
+							><a wire:navigate href="" style="text-transform: unset">NIPR Hubs</a>
+						
+							<ul class="dropdown-menu" style="text-transform: unset">  
+								<li>
+									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Aviation Hub</a>   
+								</li>
+								<li>
+									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Energy Hub</a>   
+								</li>
+								<li>
+									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Maritime Hub</a>   
+								</li>
+								<li>
+									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Enterprise Hub</a>   
+								</li>
+								<li>
+									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Young Professionals Hub</a>   
+								</li>
+								<li>
+									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Professionals in Tertiary Institutions Hub</a>   
+								</li>
+								 
+							</ul> <!-- .dropdown-menu -->   
+						</li>
 					</ul> <!-- .nav navbar-nav -->
 				</div> <!-- .collapse navbar-collapse -->
 

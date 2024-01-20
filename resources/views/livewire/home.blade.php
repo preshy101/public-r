@@ -64,7 +64,8 @@
 			text-justify: inter-word;" >
 					<h2 style="text-transform: unset">
 						 
-				  Nigerian Institute Of Public Relations (NIPR)</h2>
+				  {{-- Nigerian Institute Of Public Relations (NIPR) --}}
+				</h2>
 				 <center>
 					<p class="lead"> 	 
 						{{-- {{($welcome != null)?$welcome->description:""}} --}}
