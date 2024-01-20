@@ -52,77 +52,8 @@
 		<div class="top-bar clearfix" style="background-color: red">
 			<div class="container">
 				<ul class="list-inline pull-left quick-contact">
-					<li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-edit"></i> <span>Contact Us</span></a>
-						<div class="modal corporex-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										<h4 class="modal-title" id="myModalLabel">Contact Us</h4>
-									</div> <!-- .modal-header -->
-									<div class="modal-body">
-										<form >
-											<div class="row">
-												@if(session('success'))
-												<div class="alert alert-success">
-													<button type="button" class="close"  data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-													<i class="fa fa-thumbs-up"></i>
-													<strong>Great!</strong> {{ session('success')}}
-												</div>
-												@endif
-												<div class="col-md-12">
-													<div class="form-group">
-														<label for="author" class="sr-only">Name:</label>
-														<input wire:model='name' required class="form-control" type="text" name="author" id="author" placeholder="Name *">
-													@error('name')
-														<span class="text-danger">{{$message}}</span>
-													@enderror
-													</div> <!-- .form-group -->
-													<div class="form-group">
-														<label for="email" class="sr-only">Email:</label>
-														<input wire:model='email' required class="form-control" type="email" name="email" id="email" placeholder="Email *">
-													@error('email')
-														<span class="text-danger">{{$message}}</span>
-													@enderror
-													</div> <!-- .form-group -->
-													<div class="form-group">
-														<label for="phone" class="sr-only">Phone:</label>
-														<input wire:model='phone' required class="form-control" type="text" name="phone" id="phone" placeholder="Phone">
-													@error('phone')
-														<span class="text-danger">{{$message}}</span>
-													@enderror
-													</div> <!-- .form-group -->
-													<div class="form-group">
-														<label for="url" class="sr-only">Category:</label>
-														<select wire:model='website' required class="form-control" type="url" name="url" id="url" placeholder="Website">
-														<option value="">Select Option</option>
-														<option value="Enquiry">Enquiry</option>
-														<option value="feedback">Feedback</option> 
-							
-														</select>
-													@error('website')
-														<span class="text-danger">{{$message}}</span>
-													@enderror
-													</div> <!-- .form-group -->
-													
-													<div class="form-group">
-														<label for="comment" class="sr-only">Comment:</label>
-														<textarea wire:model='message'required class="form-control" name="comment" id="comment" placeholder="Write your comment here *"></textarea>
-													@error('message')
-														<span class="text-danger">{{$message}}</span>
-													@enderror
-													</div> <!-- .form-group -->
-													<button wire:click.prevent='create' class="btn btn-main">Submit</button>
-												</div> <!-- .col-md-6 -->
-												<div class="col-md-6">
-													
-												</div> <!-- .col-md-6 -->
-											</div> <!-- .row -->
-										</form>
-									</div>
-									</div>
-									</div>
-									</div>
+					<li><a wire:navigate href="/contact-us" data-toggle="modal" data-target="#myModal2"><i class="fa fa-edit"></i> <span>Contact Us</span></a>
+								 
 					</li>
 					<li>
 
@@ -337,8 +268,10 @@
 						</li>
 						<li class="
 							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" style="text-transform: unset">News</a></li>
+						{{-- <li class="
+						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
 						<li class="
-						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li>
+						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="" style="text-transform: unset">NIPR Hubs</a></li>
 					</ul> <!-- .nav navbar-nav -->
 				</div> <!-- .collapse navbar-collapse -->
 
