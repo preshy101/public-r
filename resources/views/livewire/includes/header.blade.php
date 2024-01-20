@@ -149,33 +149,49 @@
 						 'student.professional-admission', 'student.result', 'student.requirements', 
 						 'student.study-centre', 'student.curriculum' ))?"active":''}} 
 						dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Educational Services</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Training</a>
+							<ul class="dropdown-menu" style="text-transform: unset"> 
+								<li>
+									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Master Classes</a> 
+								</li>
+								<li>
+									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">MCPD</a> 
+								</li>
+								 
+							</ul> <!-- .dropdown-menu -->
+						</li> 
+						<li class="
+						{{(Route::is('student.professional-certificate', 'student.professional-diploma',
+						 'student.professional-admission', 'student.result', 'student.requirements', 
+						 'student.study-centre', 'student.curriculum' ))?"active":''}} 
+						dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Education </a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"> Training ></a>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"> Finishing School ></a>
 									<ul class="dropdown-menu">
-										<li><a  wire:navigate href="/student/professional-certificate"style="text-transform: unset">Professional Certificate</a></li>
+										{{-- <li><a  wire:navigate href="/student/professional-certificate"style="text-transform: unset">Professional Certificate</a></li>
 										<li><a  wire:navigate href="/student/professional-diploma"style="text-transform: unset">Professional Diploma</a></li>
-										<li><a wire:navigate href="/student/professional-admission"style="text-transform: unset">Professional Admission</a></li>
+										<li><a wire:navigate href="/student/professional-admission"style="text-transform: unset">Professional Admission</a></li> --}}
 										{{-- <li><a wire:navigate href="/student/result"style="text-transform: unset">Results</a></li> --}}
-										<li><a wire:navigate href="#"style="text-transform: unset">Special Master Classes</a></li>
-										<li><a wire:navigate href="#"style="text-transform: unset">MCPD</a></li>
-										<li><a wire:navigate href="/student/study-centre"style="text-transform: unset">Study Centres</a></li>
+										<li><a wire:navigate href="#"style="text-transform: unset">membership exam</a></li>
+										{{-- <li><a wire:navigate href="/student/study-centre"style="text-transform: unset">Study Centres</a></li> --}}
 									</ul> <!-- .dropdown-menu -->
 								</li>
+ 
 								<li>
 									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">CPR</a> 
 								</li>
 								<li>
 									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">DPR</a> 
 								</li>
-								<li>
+								{{-- <li>
 									<a style="text-transform: unset" wire:navigate href="/student/requirements" class="dropdown-toggle" data-toggle="dropdown">Requirements</a> 
 								</li>
 								<li>
 									<a style="text-transform: unset" wire:navigate href="/student/curriculum" class="dropdown-toggle" data-toggle="dropdown">Curriculum</a>
 									 
-								</li> 
+								</li>  --}}
 							</ul> <!-- .dropdown-menu -->
 						</li>
 						<li class="
@@ -245,7 +261,9 @@
 						<li class="dropdown {{(Route::is('resources.event'))?"active":''}}">
 							<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" >Events</a>  
 							<ul class="dropdown-menu" style="text-transform: unset"> 
-							   
+							    <li>
+									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Spokespersons submit</a>
+								</li>
 							   <li>
 								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">NIPR week</a>   
 							   </li>
@@ -262,9 +280,7 @@
 							   <li>
 								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Aviation Conference</a>
 							   </li>
-							   <li>
-								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Workshop for Spokespersons in Nigeria</a>
-							   </li>
+							  
 							   <li>
 								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Igwe Nnaemeka Alfred Achebe Peace & <br> Reconciliation Annual Lecture Series</a>
 							   </li>
