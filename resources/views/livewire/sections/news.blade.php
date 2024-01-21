@@ -18,7 +18,7 @@
 					<div class="post-wrapper" >
 						<div class="image-wrapper" >
 							<img class="img-responsive" 
-                            style="border-radius: 2%"
+                            style="border-radius: 2%; height: 240px; width: 100%"
                             src="{{Storage::url($item->image)}}" 
                             alt="blog image 01">
 						</div> <!-- .image-wrapper -->
