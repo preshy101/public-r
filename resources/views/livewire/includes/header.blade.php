@@ -49,9 +49,9 @@
 	</div> <!-- .corporex-preloader -->
 	 --}}
 	<header class="site-header fixed-top" >
-		{{-- <div class="top-bar clearfix" id="homepageBanner" style="height: 200px;">
-
-		</div> --}}
+		{{-- <div class="top-bar clearfix" id="" style="height: 200px;"> --}}
+<img src="{{"./img/Banner.jpg"}}" style="height: 200px; width: 100%" alt="" srcset="">
+		{{-- </div> --}}
 		<div class="top-bar clearfix" style="background-color: red">
 			<div class="container">
 

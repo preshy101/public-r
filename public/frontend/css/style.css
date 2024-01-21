@@ -1155,12 +1155,12 @@ ul {
   text-align: center;
   /* media quires */
 }
-#homepageBanner{
-    background: url('../../img/topbanner2.jpg') no-repeat content-box center;
+/* #homepageBanner{
+    background: url('../../img/Banner.jpg') no-repeat content-box center;
   margin: 0%;
   padding: 0%;
 
-}
+} */
 .page-title-banner:after {
   content: '';
   position: absolute;

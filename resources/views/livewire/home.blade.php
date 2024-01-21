@@ -72,7 +72,7 @@
 					</p>
 				 </center>
 				
-
+				<img src="{{asset('./img/OurHistory.jpg')}}"sty alt="" srcset="">
 				<p  style="width: 500px"
 				> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
 				<div class=" col-md-12 col-lg-4" >
