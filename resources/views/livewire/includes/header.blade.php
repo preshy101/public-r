@@ -144,6 +144,9 @@
 											aria-haspopup="true" style="text-transform: unset" wire:navigate href=""   data-toggle="dropdown">Council ></a> 
 											<ul class="dropdown-menu" style="text-transform: unset"> 
 												<li>
+													<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Composition</a> 
+												</li>  
+												<li>
 													<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Council Resolution</a> 
 												</li>  
 											</ul> <!-- .dropdown-menu -->
@@ -153,9 +156,9 @@
 										</li>
 										 
 									</ul> <!-- .dropdown-menu -->
-									    <a wire:navigate href="/about-us" style="text-transform: unset">NIPR History</a>
-									    <a wire:navigate href="/about-us/vision-and-mission" style="text-transform: unset">Vision & History</a>
-									    <a wire:navigate href="/about-us/ethics"style="text-transform: unset"> Code Of Ethics</a>
+									    <a wire:navigate href="/about-us" style="text-transform: unset">Our History</a>
+									    <a wire:navigate href="/about-us/vision-and-mission" style="text-transform: unset">Vision & Mission</a>
+									    <a wire:navigate href="/about-us/ethics"style="text-transform: unset"> Code of Ethics</a>
 									    <a wire:navigate href=""style="text-transform: unset"> FAQ</a>
 									    
 								</li>	   
@@ -228,7 +231,7 @@
 									<ul class="dropdown-menu"> 
 										<li><a wire:navigate href="#"style="text-transform: unset">Mandate </a></li>
 										<li><a wire:navigate href="#"style="text-transform: unset">Composition </a></li> 
-										<li><a wire:navigate href="#"style="text-transform: unset">Commities</a></li>  
+										<li><a wire:navigate href="#"style="text-transform: unset">Committiees</a></li>  
 									</ul> <!-- .dropdown-menu -->
 								</li> 
 								<li>
@@ -263,7 +266,7 @@
 						{{(Route::is('member.information', 'member.upgrade', 'member.categery',
 						  ))?"active":''}} 
 						dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">MemberShip</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Membership</a>
 							<ul class="dropdown-menu">
 								<li>
 									<a wire:navigate href="" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">New application</a> 
@@ -271,9 +274,7 @@
 								<li>
 									<a wire:navigate href="" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Upgrade </a> 
 								</li>
-								<li>
-									<a wire:navigate href="" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Master Class </a> 
-								</li>
+								 
 								<li>
 									<a wire:navigate href="/membership/information" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Recertification</a>
 									
@@ -283,7 +284,7 @@
 									
 								</li>
 								<li>
-									<a wire:navigate href="/membership/category" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">MemberShip Register</a>
+									<a wire:navigate href="/membership/category" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Register</a>
 									
 								</li>
 								
@@ -331,10 +332,10 @@
 							<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" >Events</a>  
 							<ul class="dropdown-menu" style="text-transform: unset"> 
 							    <li>
-									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Spokespersons summit</a>
+									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Spokespersons Summit</a>
 								</li>
 							   <li>
-								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Anual NIPR week/AGM</a>   
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Annual NIPRWeek/AGM</a>   
 							   </li>
 							   
 							   <li>
@@ -344,20 +345,27 @@
 								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Reputation Summit</a>
 							   </li>
 							   <li>
-								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Daimod Jubily</a>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">NIPR Daimond Jubilee </a>
 							   </li>
 							  
 						   </ul> <!-- .dropdown-menu -->   
 						</li>
-						<li class="
-							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" style="text-transform: unset">News</a></li>
+						< class="
+							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" style="text-transform: unset">News</a>
 						{{-- <li class="
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
 							<ul class="dropdown-menu"> 
 								<li><a wire:navigate href="#"style="text-transform: unset">NIPR News </a></li>
 								<li><a wire:navigate href="#"style="text-transform: unset">Newsletter </a></li> 
 								<li><a wire:navigate href="#"style="text-transform: unset">News Links</a></li>  
+								<li>
+									<a wire:navigate href="#" style="text-transform: unset">Press Releases</a>   
+								</li>
+								<li>
+									<a wire:navigate href="#" style="text-transform: unset">Newsletters</a>   
+								</li>
 							</ul> <!-- .dropdown-menu -->
+						</li>
 							<li 
 						class="dropdown
 						    {{(Route::is('contactus'))?"active":''}} "
@@ -382,12 +390,7 @@
 								<li>
 									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Professionals in Tertiary Institutions Hub</a>   
 								</li>
-								 <li>
-								<a wire:navigate href="#" style="text-transform: unset">Press Releases</a>   
-							</li>
-							<li>
-								<a wire:navigate href="#" style="text-transform: unset">Newsletters</a>   
-							</li>
+								
 							</ul> <!-- .dropdown-menu -->   
 							
 						</li>

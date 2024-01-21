@@ -334,10 +334,9 @@
 	<section class="testimonial-section section-block" style="background-color: red" >
 		<div class="container" >
 			<div class="title-block white"  >
-				<h2>What people say</h2>
+				<h2>Indorsements</h2>
 				<p>
-					Clients consistently commend us for our unwavering commitment to excellence, personalized service, and our ability to exceed expectations,
-					 making us a trusted partner in their success stories
+					
 				</p>
 			</div> <!-- .title-block -->
 			<div class="testimonial-carousel" id="testimonial-carousel">
