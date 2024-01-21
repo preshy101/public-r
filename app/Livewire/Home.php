@@ -19,6 +19,7 @@ class Home extends Component
     public $testimony;
     public $faq;
     public $posts;
+    public $events;
 
     // public function create(){
     //     dd($this->sub);
@@ -57,6 +58,9 @@ class Home extends Component
         latest()->take(6)->get();
 
         $this->posts = Post::published()->latest()->take(12)->get();
+
+        $this->events = cms::where('contentId','events')->latest()
+        ->take(3)->get();
     }
     public function render()
     { 

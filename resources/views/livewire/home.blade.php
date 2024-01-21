@@ -75,7 +75,7 @@
 				<img src="{{asset('./img/OurHistory.jpg')}}"style="width:100%" alt="" srcset="">
 				<p  style="width: 500px"
 				> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
-				<div class=" col-md-12 col-lg-4" >
+				{{-- <div class=" col-md-12 col-lg-4" >
 					<div class="item-wrapper" style=" height: 348;">
 						<div class="icon-box" ><h3 style="color: red; height: 348;"><i class="pe-7s-rocket"></i> <b style="text-transform: capitalize"> Mission and Vision</b> </h3> </div>
 						<div class="content-wrapper" >
@@ -90,7 +90,7 @@
 				</div> <!-- .col-sm-4 -->
 				<div class=" col-md-12 col-lg-4" >
 					<div class="item-wrapper" style=" height: 348;" >
-						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-id"></i> Professionalism  </h3></div>
+						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-id"></i> Up Comming Event  </h3></div>
 						<div class="content-wrapper" >
 							
 							<p style=" height: 348;">
@@ -114,7 +114,38 @@
 						</p>
 						</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
-				</div> <!-- .col-sm-4 -->
+				</div> <!-- .col-sm-4 --> --}}
+
+				<div class="row blog-posts">
+					<br>
+					<h3 class="entry-title"><a style="color: red" href="#">Up Coming Events</a></h3> 
+					<br>
+					@if($events) 
+					@foreach ($events as $item) 
+					<div class="col-md-4">
+						<div class="post-wrapper post-grid">
+							<div class="image-wrapper">
+								<img class="img-responsive" src="{{Storage::url($item->image)}}" alt="event image 00">
+							</div> <!-- .image-wrapper -->
+							<div class="post-content">
+								<ul class="post-meta">
+									<li>{{$item->created_at->diffForHumans()}}</li>
+									{{-- <li><a href="#">{{$item->note}}</a></li> --}}
+								</ul>
+								<h3 class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{$item->title}}</a></h3>
+								<div class="entry-content">
+									<p>
+										{{$item->description}}
+									</p>
+								</div>
+								<a wire:navigate class="btn-open" href="/resources/up-coming-events/{{$item->id}}">Read More</a>
+							</div> <!-- .post-content -->
+						</div> <!-- .post-wrapper -->
+					</div> <!-- .col-md-4 -->
+					@endforeach
+					@endif
+					
+				</div> <!-- .row -->
 				</div> <!-- .col-md-8 img-block -->
 			
 
