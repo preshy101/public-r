@@ -62,17 +62,17 @@
 			<div class="row">
 			<div class="col-lg-8 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
 			text-justify: inter-word;" >
-					<h2 style="text-transform: unset">
+					{{-- <h2 style="text-transform: unset">
 						 
-				  {{-- Nigerian Institute Of Public Relations (NIPR) --}}
+				  Nigerian Institute Of Public Relations (NIPR)
 				</h2>
 				 <center>
 					<p class="lead"> 	 
-						{{-- {{($welcome != null)?$welcome->description:""}} --}}
+						{{($welcome != null)?$welcome->description:""}}
 					</p>
-				 </center>
+				 </center> --}}
 				
-				<img src="{{asset('./img/OurHistory.jpg')}}"sty alt="" srcset="">
+				<img src="{{asset('./img/OurHistory.jpg')}}"style="width:100%" alt="" srcset="">
 				<p  style="width: 500px"
 				> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
 				<div class=" col-md-12 col-lg-4" >
