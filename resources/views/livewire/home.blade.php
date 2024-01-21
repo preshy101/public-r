@@ -55,9 +55,28 @@
 	<!-- Slideshow container -->
 	@endif --}}
 	
-	
+	{{-- Partnership --}}
+	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%; padding-top: 2%">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2" style="padding-top: 8px">
+				<p>Premium Partners:</p>	
+				</div>
+				<div class="col-lg-10" style="margin-bottom: 0%; ">
+					<marquee> 
+				<img width="150px" style="margin-right: 7px;" src="{{asset('./img/hensek_logo.png')}}" alt="" srcset="">
+				<img width="60px" height="60px" src="{{asset('./img/usm-nigeria-seal.png')}}" alt="" srcset="">
+			</marquee>
+				
+				</div>
+			</div>
+			
+			
+		</div>
+	</section>
+
     {{-- Key Features --}}
-	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%; padding-top: 1%">
+	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%; padding-top: 0%">
 		{{-- <div class="container"> --}}
 			<div class="row">
 			<div class="col-lg-8 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
@@ -119,7 +138,7 @@
 
 				<div class="row blog-posts">
 					<br>
-					<h3 class="entry-title"><a style="color: red" href="#">Up Coming Events</a></h3> 
+					<h3 class="entry-title"><a style="color: red; text-transform: unset" href="#">Upcoming Events</a></h3> 
 					<br>
 					@if($events) 
 					@foreach ($events as $item) 
@@ -144,7 +163,7 @@
 										{!! Str::words($item->description, 10, ' ...') !!} 
 									</p>
 								</div>
-								<a wire:navigate class="btn-open" href="/resources/up-coming-events/{{$item->id}}">Register</a>
+								<a wire:navigate class="btn-open" style="text-transform: unset" href="/resources/up-coming-events/{{$item->id}}">Register</a>
 							</div> <!-- .post-content -->
 						</div> <!-- .post-wrapper -->
 					</div> <!-- .col-md-4 -->

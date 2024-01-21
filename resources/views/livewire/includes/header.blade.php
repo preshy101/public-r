@@ -123,7 +123,7 @@
 
 					<a class="navbar-brand" href="/" style="text-transform: unset; ">
 						{{-- <img src="{{asset('img/masthead.png')}}"width=70 alt="NIPR logo"> --}}
-						<img style="width: 150px" src="{{asset('./img/20240121_131747.png')}}" alt="" srcset=""> 
+						<img style="width: 150px;" src="{{asset('./img/20240121_131747.png')}}" alt="" srcset=""> 
 					</a>
 
 				</div> <!-- .navbar-header -->
