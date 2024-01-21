@@ -140,7 +140,8 @@
 								<h3 style="text-transform: unset" class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{$item->title}}</a></h3>
 								<div class="entry-content">
 									<p>
-										{{$item->description}}
+										{{-- {{$item->description}} --}}
+										{!! Str::words($item->description, 10, ' ...') !!} 
 									</p>
 								</div>
 								<a wire:navigate class="btn-open" href="/resources/up-coming-events/{{$item->id}}">Register</a>
