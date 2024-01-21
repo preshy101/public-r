@@ -12,7 +12,7 @@
               
             </div> <!-- .col-md-6 img-block -->
             <div class="col-md-6 content-block">
-                <h2><span>Meet the president </span> <br>
+                <h2 style="color: red; text-transform: unset"><span style="color: black; font-size: 25px">Meet the President </span> <br>
                     {{($president != null)?$president->title: "Mr President"}} 
                 </h2>
                 <p>

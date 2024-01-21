@@ -138,7 +138,7 @@
 
 				<div class="row blog-posts">
 					<br>
-					<h3 class="entry-title"><a style="color: red; text-transform: unset" href="#">Upcoming Events</a></h3> 
+					<h3 style="color: red; text-transform: unset" class="entry-title"><a style="color: red; text-transform: unset" href="#">Upcoming Events</a></h3> 
 					<br>
 					@if($events) 
 					@foreach ($events as $item) 
