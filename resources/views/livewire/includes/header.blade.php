@@ -201,7 +201,7 @@
 									</ul> <!-- .dropdown-menu -->
 								</li>
 								<li>
-									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Anual Lectures ></a> 
+									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Annual Lectures ></a> 
 									<ul class="dropdown-menu" style="text-transform: unset"> 
 										<li>
 											<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Sam Epelle Memorial Gold Lecture</a>
@@ -272,7 +272,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Membership</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a wire:navigate href="" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">New application</a> 
+									<a wire:navigate href="#" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">New application</a> 
 								</li>
 								<li>
 									<a wire:navigate href="https://portal.niprng.org.ng/member/membership-upgrade" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Upgrade </a> 
@@ -287,7 +287,7 @@
 									
 								</li>
 								<li>
-									<a wire:navigate href="/membership/category" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Register</a>
+									<a wire:navigate href="https://portal.niprng.org.ng/member/register" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Register</a>
 									
 								</li>
 								
@@ -396,7 +396,7 @@
 									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Young Professionals Hub</a>   
 								</li>
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Professionals in Tertiary Institutions Hub</a>   
+									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Professionals in Tertiary <br>Institutions Hub</a>   
 								</li>
 								
 							</ul> <!-- .dropdown-menu -->   
