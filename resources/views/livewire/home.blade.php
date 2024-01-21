@@ -164,7 +164,7 @@
 				
 				</ol> <!-- .carousel-indicators -->
 				 
-				<div style="border-radius: 2%; padding-right: 5%" class="carousel-inner">
+				<div style="border-radius: 2%; padding-right: 5%; padding-left: 5%" class="carousel-inner">
 	 
 					@foreach ($post as $index => $item) 
 					<div style="border-radius: 2%" class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 

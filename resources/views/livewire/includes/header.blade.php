@@ -350,7 +350,7 @@
 							  
 						   </ul> <!-- .dropdown-menu -->   
 						</li>
-						< class="
+						<li class="
 							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" style="text-transform: unset">News</a>
 						{{-- <li class="
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
