@@ -73,6 +73,7 @@
 				 </center> --}}
 				
 				<img src="{{asset('./img/OurHistory.jpg')}}"style="width:100%" alt="" srcset="">
+				
 				<p  style="width: 500px"
 				> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
 				{{-- <div class=" col-md-12 col-lg-4" >
@@ -163,7 +164,7 @@
 				
 				</ol> <!-- .carousel-indicators -->
 				 
-				<div style="border-radius: 2%; min-height: 858px; height: 858px; padding-right: 5%" class="carousel-inner">
+				<div style="border-radius: 2%; padding-right: 5%" class="carousel-inner">
 	 
 					@foreach ($post as $index => $item) 
 					<div style="border-radius: 2%" class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 
@@ -177,6 +178,11 @@
 								<h6 class="h1-extra" style="color: #f5f5f5;font-size: 30px;">
 								 <!-- <span>N.I.P.R</span> --> 
 								 {{-- {!! Str::words($item->title, 4, ' ...') !!}  --}}
+								<br><br>
+								<br>
+								<br>
+								<br>
+								<br>
 								<br>
 								 <a class="btn btn-main" wire:navigate href="/news/posts/{{$item->slug}}">read more</a> 
 								
@@ -334,7 +340,7 @@
 	<section class="testimonial-section section-block" style="background-color: red" >
 		<div class="container" >
 			<div class="title-block white"  >
-				<h2>Indorsements</h2>
+				<h2>Endorsements</h2>
 				<p>
 					
 				</p>
