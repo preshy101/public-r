@@ -89,23 +89,24 @@
                                     </div> <!-- .modal-content -->
                                 </div> <!-- .modal-dialog -->      
                 		</div> <!-- col-lg-3 col-md-6 -->
-					</li>
-					<li><a href="https://portal.niprng.org.ng/member/login" ><i class="fa fa-user"></i> <span>Become A Member</span></a></li>
+					</li> 
+					<li><a target="_blank" href="https://portal.niprng.org.ng/member/login" ><i class="fa fa-user"></i> <span>Become a Member</span></a></li>
+					<li><a target="_blank" href="#" ><i class="fa fa-support"></i> <span>Volunteer</span></a></li>
 
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">
 					<li><a href="https://web.facebook.com/NIPROFFICIALPAGE?mibextid=LQQJ4d&_rdc=1&_rdr"><i class="fab fa-facebook "></i></a></li>
-                        <li><a href="https://twitter.com/niprofficial"><i class="fab fa-twitter "></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/nigerian-institute-of-public-relations-7600b5a5/"><i class="fab fa-linkedin "></i></a></li>
-                        <li><a href="https://www.instagram.com/niprofficial/"><i class="fab fa-instagram "></i></a></li> 
-                        <li><a href="https://www.youtube.com/@niprofficial"><i class="fab fa-youtube "></i></a></li> 
-                        <li><a href="https://www.tiktok.com/@niprofficial"><i class="fab fa-tiktok "></i></a></li> 
+                        <li><a target="_blank" href="https://twitter.com/niprofficial"><i class="fab fa-twitter "></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/nigerian-institute-of-public-relations-7600b5a5/"><i class="fab fa-linkedin "></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/niprofficial/"><i class="fab fa-instagram "></i></a></li> 
+                        <li><a target="_blank" href="https://www.youtube.com/@niprofficial"><i class="fab fa-youtube "></i></a></li> 
+                        <li><a target="_blank" href="https://www.tiktok.com/@niprofficial"><i class="fab fa-tiktok "></i></a></li> 
 				</ul> <!-- .top-bar-menu -->
 
 				<ul class="list-inline pull-right top-bar-menu">
-					{{-- <li><a href="#">Register</a></li>
-					<li><a href="#">Login</a></li> --}}
+					{{-- <li><a target="_blank" href="#">Register</a></li>--}}
+					<li><a target="_blank" href="https://portal.niprng.org.ng/member/login">Login</a></li> 
 					{{-- <li><a href="#">Sitemap</a></li> --}}
 				</ul> <!-- .top-bar-menu -->
 			</div> <!-- .container -->
@@ -115,9 +116,9 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
-						  {{-- <span class="icon-bar"></span>  
-						  <span class="icon-bar"></span>  --}}
-						<!-- <span class="icon-bar"></span> -->
+						  <span class="icon-bar"></span>  
+						  <span class="icon-bar"></span> 
+						 <span class="icon-bar"></span> 
 						<i class="fa fa-bars"></i>
 					</button>
 
@@ -140,7 +141,7 @@
 							<ul class="dropdown-menu" style="text-transform: unset">
 								<li>  
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
-									aria-haspopup="true" wire:navigate href="/about-us/council"style="text-transform: unset">Management ></a>
+									aria-haspopup="true" wire:navigate href="/about-us/council"style="text-transform: unset" aria-expanded="false">Management ></a>
 									<ul class="dropdown-menu" style="text-transform: unset"> 
 										<li>
 											<a  class="dropdown-toggle" data-toggle="dropdown" role="button" 
@@ -182,7 +183,7 @@
 									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">MCPD</a> 
 								</li>
 								<li>
-									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Conferences ></a> 
+									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Conferences ></a> 
 									<ul class="dropdown-menu" style="text-transform: unset"> 
 										<li>
 											<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Directors Conference and Retreat</a> 
@@ -196,12 +197,11 @@
 										<li>
 											<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Aviation Conference</a>
 										</li>
-									   
-										 
+									    
 									</ul> <!-- .dropdown-menu -->
 								</li>
 								<li>
-									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Anual Lectures ></a> 
+									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Anual Lectures ></a> 
 									<ul class="dropdown-menu" style="text-transform: unset"> 
 										<li>
 											<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Sam Epelle Memorial Gold Lecture</a>
@@ -230,7 +230,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Education </a>
 							<ul class="dropdown-menu">
 								<li>
-									<a style="text-transform: unset" wire:navigate href="/student/curriculum" class="dropdown-toggle" data-toggle="dropdown">Education Advisory Board ></a>
+									<a style="text-transform: unset" wire:navigate href="/student/curriculum" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Education Advisory Board ></a>
 									<ul class="dropdown-menu"> 
 										<li><a wire:navigate href="#"style="text-transform: unset">Mandate </a></li>
 										<li><a wire:navigate href="#"style="text-transform: unset">Composition </a></li> 
@@ -256,7 +256,7 @@
 								</li>
 							 
 								<li>
-									<a style="text-transform: unset" wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown">Finishing School ></a> 
+									<a style="text-transform: unset" wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Finishing School ></a> 
 									<ul class="dropdown-menu"> 
 										<li><a wire:navigate href="#"style="text-transform: unset">LMS</a></li>
 										<li><a wire:navigate href="#"style="text-transform: unset">Faculty</a></li> 
@@ -275,11 +275,11 @@
 									<a wire:navigate href="" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">New application</a> 
 								</li>
 								<li>
-									<a wire:navigate href="" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Upgrade </a> 
+									<a wire:navigate href="https://portal.niprng.org.ng/member/membership-upgrade" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Upgrade </a> 
 								</li>
 								 
 								<li>
-									<a wire:navigate href="/membership/information" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Recertification</a>
+									<a wire:navigate href="https://portal.niprng.org.ng/member/recertification" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Recertification</a>
 									
 								</li>
 								<li>
@@ -301,11 +301,11 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadables</a>
                                 <ul class="dropdown-menu" style="text-transform: unset">
 									 <li>
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"> Publications ></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset" aria-expanded="false"> Publications ></a>
 										<ul class="dropdown-menu" style="text-transform: unset">
                                     
                                     <li>
-                                        <a wire:navigate href="#" style="text-transform: unset">Books ></a>  
+                                        <a wire:navigate href="#" style="text-transform: unset" aria-expanded="false">Books ></a>  
 										<ul class="dropdown-menu"> 
 											<li><a wire:navigate href="#"style="text-transform: unset">Rebooting Nigeria 2.0</a></li>
 										</ul> 
@@ -321,7 +321,7 @@
 									</li>
                                     
                                     <li>
-                                        <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Gallery ></a> 
+                                        <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Gallery ></a> 
 										<ul class="dropdown-menu"> 
 											<li><a wire:navigate href="#"style="text-transform: unset">Photo</a></li>
 											<li><a wire:navigate href="#"style="text-transform: unset">Videos</a></li> 

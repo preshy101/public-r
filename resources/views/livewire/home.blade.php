@@ -163,7 +163,7 @@
 										{!! Str::words($item->description, 10, ' ...') !!} 
 									</p>
 								</div>
-								<a wire:navigate class="btn-open" style="text-transform: unset" href="/resources/up-coming-events/{{$item->id}}">Register</a>
+								<a wire:navigate class="btn-open" style="text-transform: unset" href="https://portal.niprng.org.ng/events">Register</a>
 							</div> <!-- .post-content -->
 						</div> <!-- .post-wrapper -->
 					</div> <!-- .col-md-4 -->
