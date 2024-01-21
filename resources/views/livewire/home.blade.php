@@ -127,7 +127,7 @@
 							<div class="image-wrapper">
 								<img class="img-responsive"
 								height="176px"
-								style="height: 176px; image-rendering: auto"
+								style="height: 176px; image-rendering: auto; width: 100%"
 								src="{{Storage::url($item->image)}}" alt="event image 00">
 							</div> <!-- .image-wrapper -->
 							<div class="post-content">
