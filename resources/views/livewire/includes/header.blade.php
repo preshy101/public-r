@@ -110,7 +110,7 @@
 				</ul> <!-- .top-bar-menu -->
 			</div> <!-- .container -->
 		</div> <!-- .top-bar -->
-		<nav class="navbar  corporex-navbar navbar-01"  style="padding-top: 0%; text-transform: unset; padding-bottom: 0%">
+		<nav class="navbar  corporex-navbar navbar-01"  style="padding-top: 1%; text-transform: unset; padding-bottom: 1%">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
@@ -121,7 +121,10 @@
 						<i class="fa fa-bars"></i>
 					</button>
 
-					<a class="navbar-brand" href="/"><img src="{{asset('img/masthead.png')}}"width=70 alt="NIPR logo"></a>
+					<a class="navbar-brand" href="/" style="text-transform: unset; ">
+						{{-- <img src="{{asset('img/masthead.png')}}"width=70 alt="NIPR logo"> --}}
+						<img style="width: 150px" src="{{asset('./img/20240121_131747.png')}}" alt="" srcset=""> 
+					</a>
 
 				</div> <!-- .navbar-header -->
 
@@ -304,7 +307,7 @@
                                     <li>
                                         <a wire:navigate href="#" style="text-transform: unset">Books ></a>  
 										<ul class="dropdown-menu"> 
-											<li><a wire:navigate href="#"style="text-transform: unset">Reboot Nigeria</a></li>
+											<li><a wire:navigate href="#"style="text-transform: unset">Rebooting Nigeria 2.0</a></li>
 										</ul> 
                                     </li>
 
@@ -348,7 +351,7 @@
 								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Reputation Summit</a>
 							   </li>
 							   <li>
-								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Rebirth Nigeria</a>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">REBIRTH Nigeria</a>
 							   </li>
 							   <li>
 								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">NIPR Daimond Jubilee </a>
@@ -356,11 +359,13 @@
 							  
 						   </ul> <!-- .dropdown-menu -->   
 						</li>
-						<li class="
-							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "><a wire:navigate href="/news/posts" style="text-transform: unset">News</a>
+						<li class=" dropdown
+							{{(Route::is('news.posts','news.posts.view'))?"active":''}} "> 
+							 
+								 <a  wire:navigate href="/news/posts" style="text-transform: unset">News</a>
 						{{-- <li class="
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
-							<ul class="dropdown-menu"> 
+							 <ul class="dropdown-menu">
 								<li><a wire:navigate href="#"style="text-transform: unset">NIPR News </a></li>
 								<li><a wire:navigate href="#"style="text-transform: unset">Newsletter </a></li> 
 								<li><a wire:navigate href="#"style="text-transform: unset">News Links</a></li>  
@@ -369,9 +374,10 @@
 								</li>
 								<li>
 									<a wire:navigate href="#" style="text-transform: unset">Newsletters</a>   
-								</li>
-							</ul> <!-- .dropdown-menu -->
+								</li> 
+							</ul>
 						</li>
+						 
 							<li 
 						class="dropdown
 						    {{(Route::is('contactus'))?"active":''}} "

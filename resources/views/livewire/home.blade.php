@@ -55,9 +55,9 @@
 	<!-- Slideshow container -->
 	@endif --}}
 	
-
+	
     {{-- Key Features --}}
-	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%">
+	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%; padding-top: 1%">
 		{{-- <div class="container"> --}}
 			<div class="row">
 			<div class="col-lg-8 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
@@ -380,4 +380,25 @@
 
     {{-- Subscribe --}}
 	{{-- @endsection --}}
+	<section class="partner-section partner-02 section-block">
+		<div class="container">
+			<div class="title-block">
+				<h2>Our Partners</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore mollit anim id est laborum.
+				</p>
+			</div> <!-- .title-block -->
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="image-wrapper">
+						<img src="http://via.placeholder.com/140x80" alt="partner image">
+					</div> <!-- .image-wrapper -->
+				</div> <!-- .col-md-3 -->
+				
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+	</section> <!-- .partner-section -->
+
+
 </div>
