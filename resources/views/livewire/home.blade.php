@@ -381,7 +381,7 @@
 
     {{-- Subscribe --}}
 	{{-- @endsection --}}
-	<section class="partner-section partner-02 section-block">
+	{{-- <section class="partner-section partner-02 section-block">
 		<div class="container">
 			<div class="title-block">
 				<h2>Our Partners</h2>
@@ -400,6 +400,6 @@
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section> <!-- .partner-section -->
-
+ --}}
 
 </div>
