@@ -219,11 +219,13 @@
 		{{-- </div> <!-- .container --> --}}
 	</section> <!-- .about-section -->
 
+	@include('livewire.sections.presidentMessage') 
+
     {{-- Statistics --}}
-	<section class="fun-facts-section fun-facts-01 section-block">
+	<section class="fun-facts-section fun-facts-01 section-block" >
         <div class="container">
             <div class="row">
-                <div class="col-md-12 facts-block">
+                <div class="col-md-12 facts-block" style=" height: 150px;">
                     {{-- <h2><span>Professionalism at its best</span>Our excellent records preceeds us</h2>
 					<p>
 						With a track record of excellence, our commitment to quality and innovation is reflected in our records, 
@@ -254,8 +256,6 @@
 		</div> <!-- .container -->
 	</section> <!-- .split-section -->
 	
-		@include('livewire.sections.presidentMessage')
-
     {{-- FAQ --}}
 	@if(count($faq)>0)
     <section class="accordion-section" style="background:#f5f5f5;">
