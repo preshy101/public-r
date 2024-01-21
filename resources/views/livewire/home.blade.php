@@ -57,7 +57,7 @@
 	
 
     {{-- Key Features --}}
-	<section class="intro-section intro-08 section-block" style="padding-top: 35px; ">
+	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%">
 		{{-- <div class="container"> --}}
 			<div class="row">
 			<div class="col-lg-8 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
@@ -122,8 +122,8 @@
 					<br>
 					@if($events) 
 					@foreach ($events as $item) 
-					<div class="col-md-4">
-						<div class="post-wrapper post-grid" style="background-color: white; height: 446px">
+					<div class="col-md-4" style="margin-bottom: 0%">
+						<div class="post-wrapper post-grid" style="background-color: white; margin-bottom: 0px; height: 446px">
 							<div class="image-wrapper">
 								<img class="img-responsive"
 								height="176px"
@@ -163,7 +163,7 @@
 				
 				</ol> <!-- .carousel-indicators -->
 				 
-				<div style="border-radius: 2%; max-height: 658px; padding-right: 5%" class="carousel-inner">
+				<div style="border-radius: 2%; min-height: 858px; height: 858px; padding-right: 5%" class="carousel-inner">
 	 
 					@foreach ($post as $index => $item) 
 					<div style="border-radius: 2%" class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 
