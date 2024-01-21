@@ -123,9 +123,12 @@
 					@if($events) 
 					@foreach ($events as $item) 
 					<div class="col-md-4">
-						<div class="post-wrapper post-grid">
+						<div class="post-wrapper post-grid" style="background-color: white; height: 446px">
 							<div class="image-wrapper">
-								<img class="img-responsive" src="{{Storage::url($item->image)}}" alt="event image 00">
+								<img class="img-responsive"
+								height="176px"
+								style="height: 176px; image-rendering: auto"
+								src="{{Storage::url($item->image)}}" alt="event image 00">
 							</div> <!-- .image-wrapper -->
 							<div class="post-content">
 								<ul class="post-meta">
@@ -293,7 +296,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="panel-group corporex-accordion accordion-style-01 radial" id="accordion">
+                    <div class="panel-group corporex-accordion accordion-style-01 radial" id="accordion" style="background-color: white; height: 391px">
                         @foreach ($faq as $index => $item) 
 						<div class="panel" style="background:#f5f5f5;">
                             <div class="panel-heading {{($index == 0)? 'active':''}}">
