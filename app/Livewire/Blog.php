@@ -12,16 +12,16 @@ class Blog extends Component
 {
     use WithPagination;
     // public $posts;
-    public $search;
-    public $gallery;
-    public function mount(){
-       $this->posts = Post::published()->where('title', 'like',"%{$this->search}%")->paginate(6);
+    // public $search;
+    // public $gallery;
+    // public function mount(){
+    //    $this->posts = Post::published()->where('title', 'like',"%{$this->search}%")->paginate(6);
 
-    }
+    // }
 
-    public function posts(){
-        return  Post::published()->where('title', 'like',"%{$this->search}%")->paginate(6);
-        }
+    // public function posts(){
+    //     return  Post::published()->where('title', 'like',"%{$this->search}%")->paginate(6);
+    //     }
 
     public function render()
     {
