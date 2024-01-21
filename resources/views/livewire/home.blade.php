@@ -64,8 +64,8 @@
 				</div>
 				<div class="col-lg-10" style="margin-bottom: 0%; ">
 					<marquee> 
-				<img width="150px" style="margin-right: 7px;" src="{{asset('./img/hensek_logo.png')}}" alt="" srcset="">
-				<img width="60px" height="60px" src="{{asset('./img/usm-nigeria-seal.png')}}" alt="" srcset="">
+				<img width="150px" style="margin-right: 35px;" src="{{asset('./img/hensek_logo.png')}}" alt="" srcset="">
+				<img width="60px" style="margin-right: 35px;" height="60px" src="{{asset('./img/usm-nigeria-seal.png')}}" alt="" srcset="">
 			</marquee>
 				
 				</div>
