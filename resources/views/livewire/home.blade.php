@@ -133,16 +133,17 @@
 							</div> <!-- .image-wrapper -->
 							<div class="post-content">
 								<ul class="post-meta">
-									<li>{{$item->created_at->diffForHumans()}}</li>
-									{{-- <li><a href="#">{{$item->note}}</a></li> --}}
+									{{-- <li>{{$item->created_at->diffForHumans()}}</li> --}}
+									<li><i class="fab fa-time"></i>{{date('d-m', strtotime($item->startDate))}} - {{ date('d-m-Y', strtotime($item->endDate))}}
+										</li>
 								</ul>
-								<h3 class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{$item->title}}</a></h3>
+								<h3 style="text-transform: unset" class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{$item->title}}</a></h3>
 								<div class="entry-content">
 									<p>
 										{{$item->description}}
 									</p>
 								</div>
-								<a wire:navigate class="btn-open" href="/resources/up-coming-events/{{$item->id}}">Read More</a>
+								<a wire:navigate class="btn-open" href="/resources/up-coming-events/{{$item->id}}">Register</a>
 							</div> <!-- .post-content -->
 						</div> <!-- .post-wrapper -->
 					</div> <!-- .col-md-4 -->
@@ -298,13 +299,17 @@
 	
     {{-- FAQ --}}
 	@if(count($faq)>0)
-    <section class="accordion-section" style="background:#f5f5f5;">
+    <section class="accordion-section" 
+	{{-- style="background:#f5f5f5;" --}}
+	>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="panel-group corporex-accordion accordion-style-01 radial" id="accordion" style="background-color: white; height: 391px">
                         @foreach ($faq as $index => $item) 
-						<div class="panel" style="background:#f5f5f5;">
+						<div class="panel" 
+						{{-- style="background:#f5f5f5;" --}}
+						>
                             <div class="panel-heading {{($index == 0)? 'active':''}}">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapsez{{$index}}">
@@ -337,7 +342,7 @@
 	@endif
     {{-- Testimony --}}
 	@if(count($testimony) > 0)
-	<section class="testimonial-section section-block" style="background-color: red" >
+	<section class="testimonial-section section-block" style="background-color: url({{asset('../img/testimonial-bg-1.jpg')}}) center no-repeat" >
 		<div class="container" >
 			<div class="title-block white"  >
 				<h2>Endorsements</h2>

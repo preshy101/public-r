@@ -302,7 +302,10 @@
 										<ul class="dropdown-menu" style="text-transform: unset">
                                     
                                     <li>
-                                        <a wire:navigate href="#" style="text-transform: unset">Books</a>   
+                                        <a wire:navigate href="#" style="text-transform: unset">Books ></a>  
+										<ul class="dropdown-menu"> 
+											<li><a wire:navigate href="#"style="text-transform: unset">Reboot Nigeria</a></li>
+										</ul> 
                                     </li>
 
 									<li>
@@ -343,6 +346,9 @@
 							   </li>
 							   <li>
 								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Reputation Summit</a>
+							   </li>
+							   <li>
+								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Rebirth Nigeria</a>
 							   </li>
 							   <li>
 								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">NIPR Daimond Jubilee </a>
