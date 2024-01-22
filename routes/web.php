@@ -13,22 +13,23 @@ use App\Livewire\About\Ethics;
 
 use App\Livewire\About\Council;
 
+use App\Livewire\Hubs\Aviation;
 use App\Livewire\Training\MCPD;
 use App\Livewire\About\Chapters;
 use App\Livewire\About\Composition;
-use App\Livewire\Resource\ViewEvent;
 
+use App\Livewire\Resource\ViewEvent;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Training\Masterclass;
 use App\Livewire\Student\StudentResult;
 use App\Livewire\About\VisionAndMission;
 use App\Livewire\Education\StudyCenters;
-use App\Livewire\Resource\ResourceEvent;
 
+use App\Livewire\Resource\ResourceEvent;
 use App\Livewire\Resource\ResourceImage;
 use App\Livewire\Resource\ResourceVideo;
-use App\Livewire\Resource\ViewAllImages;
 
+use App\Livewire\Resource\ViewAllImages;
 use App\Livewire\Student\StudentDiploma;
 use App\Livewire\About\CouncilResolution;
 use App\Livewire\Membership\MemberUpgrade;
@@ -123,6 +124,9 @@ Route::get('/membership/upgrade', MemberUpgrade::class)->name('member.upgrade');
 Route::get('/news/posts', Blog::class)->name('news.posts'); 
 Route::get('/news/posts/{slug}', ViewBlog::class)->name('news.posts.view'); 
 Route::get('/news/search/{title}', SearchBlog::class)->name('news.search'); 
+
+// Hub
+Route::get('/hub', Aviation::class)->name('hub.show'); 
 
 // Contact
 Route::get('/contact-us', Contactus::class)->name('contactus'); 

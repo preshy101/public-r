@@ -366,10 +366,10 @@
 						{{-- <li class="
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
 							 <ul class="dropdown-menu">
-								<li><a wire:navigate href="#"style="text-transform: unset">NIPR News </a></li> 
-								<li><a wire:navigate href="#"style="text-transform: unset">Newslinks </a></li>  
+								<li><a wire:navigate href="/news/posts"style="text-transform: unset">NIPR News </a></li> 
+								<li><a wire:navigate href="/news/posts"style="text-transform: unset">Newslinks </a></li>  
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset">Press Releases</a>   
+									<a wire:navigate href="/news/posts" style="text-transform: unset">Press Releases</a>   
 								</li> 
 							</ul>
 						</li>
@@ -381,22 +381,22 @@
 						
 							<ul class="dropdown-menu" style="text-transform: unset">  
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Aviation Hub</a>   
+									<a wire:navigate href="/hub" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Aviation Hub</a>   
 								</li>
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Energy Hub</a>   
+									<a wire:navigate href="/hub" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Energy Hub</a>   
 								</li>
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Maritime Hub</a>   
+									<a wire:navigate href="/hub" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Maritime Hub</a>   
 								</li>
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Enterprise Hub</a>   
+									<a wire:navigate href="/hub" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Enterprise Hub</a>   
 								</li>
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Young Professionals Hub</a>   
+									<a wire:navigate href="/hub" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Young Professionals Hub</a>   
 								</li>
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Professionals in Tertiary <br>Institutions Hub</a>   
+									<a wire:navigate href="/hub" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">PR Professionals in Tertiary <br>Institutions Hub</a>   
 								</li>
 								
 							</ul> <!-- .dropdown-menu -->   

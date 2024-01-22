@@ -302,11 +302,11 @@
 						</div> <!-- .col-xs-6 -->
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-note" style="font-size: 50px;"></i>
-							<h3 style="text-transform: capitalize"><span class="counter">2432</span>NIPR hubs</h3>
+							<h3 style="text-transform: capitalize"><span class="counter">5</span>NIPR hubs</h3>
 						</div> <!-- .col-xs-6 -->
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-camera" style="font-size: 50px;"></i>
-							<h3 style="text-transform: capitalize"><span class="counter">43</span>Chapters</h3>
+							<h3 style="text-transform: capitalize"><span class="counter">36</span>Chapters</h3>
 						</div> <!-- .col-xs-6 --> 
 				</div> <!-- .col-md-6 -->
 				{{-- <div class="col-md-5 col-md-offset-1 facts-block">
