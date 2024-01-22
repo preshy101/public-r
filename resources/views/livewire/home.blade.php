@@ -138,7 +138,7 @@
 
 				<div class="row blog-posts">
 					<br>
-					<h3 style="color: red; text-transform: unset" class="entry-title"><a style="color: red; text-transform: unset" href="#">Upcoming Events</a></h3> 
+					<h3 style="color: red; text-transform: unset" class="entry-title"><a style="color: red; text-transform: unset" href="https://portal.niprng.org.ng/events">Upcoming Events</a></h3> 
 					<br>
 					@if($events) 
 					@foreach ($events as $item) 
@@ -163,7 +163,7 @@
 										{!! Str::words($item->description, 10, ' ...') !!} 
 									</p>
 								</div>
-								<a wire:navigate class="btn-open" style="text-transform: unset" href="https://portal.niprng.org.ng/events">Register</a>
+								<a wire:navigate class="btn-open" style="text-transform: unset" href="{{$item->version}}">Register</a>
 							</div> <!-- .post-content -->
 						</div> <!-- .post-wrapper -->
 					</div> <!-- .col-md-4 -->
