@@ -1,3 +1,29 @@
 <div>
-    {{-- A good traveler has no fixed plans and is not intent upon arriving. --}}
-</div>
+    @section('content')
+    <section class="hero-area">
+		<div class="page-title-banner" >
+			<div class="container">
+				<div class="content-wrapper">
+					<h2>Education</h2>
+					<ul class="bread-crumb">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Education</a></li>
+						<li><a href="#">Examination</a></li> 
+						<li><a href="#">DPR</a></li> 
+					</ul>
+				</div> <!-- .content-wrapper -->
+			</div> <!-- .container -->
+		</div> <!-- .page-title-banner -->
+	</section> <!-- .hero-area -->
+    <br>
+    <br>
+    <div class="container">
+        <h1 class="entry-title"><a style="color: red" href="#"> DPR </a></h1>
+        <p class="lead"> 
+        </p> 
+    </div>
+    <br>
+    <br>
+    <br> 
+    @endsection
+ </div>

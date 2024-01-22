@@ -8,6 +8,7 @@ class Mandate extends Component
 {
     public function render()
     {
-        return view('livewire.education.advisory-board.mandate');
+        return view('livewire.education.advisory-board.mandate')
+        ->extends('welcome');
     }
 }

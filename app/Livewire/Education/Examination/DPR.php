@@ -8,6 +8,7 @@ class DPR extends Component
 {
     public function render()
     {
-        return view('livewire.education.examination.d-p-r');
+        return view('livewire.education.examination.d-p-r')
+        ->extends('welcome');
     }
 }

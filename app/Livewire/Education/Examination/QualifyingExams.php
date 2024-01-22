@@ -8,6 +8,7 @@ class QualifyingExams extends Component
 {
     public function render()
     {
-        return view('livewire.education.examination.qualifying-exams');
+        return view('livewire.education.examination.qualifying-exams')
+        ->extends('welcome');
     }
 }

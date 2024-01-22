@@ -8,6 +8,7 @@ class CPR extends Component
 {
     public function render()
     {
-        return view('livewire.education.examination.c-p-r');
+        return view('livewire.education.examination.c-p-r')
+        ->extends('welcome');
     }
 }

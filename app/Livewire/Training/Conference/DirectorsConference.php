@@ -8,6 +8,7 @@ class DirectorsConference extends Component
 {
     public function render()
     {
-        return view('livewire.training.conference.directors-conference');
+        return view('livewire.training.conference.directors-conference')
+        ->extends('welcome');
     }
 }

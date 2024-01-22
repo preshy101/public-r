@@ -8,6 +8,6 @@ class Chapters extends Component
 {
     public function render()
     {
-        return view('livewire.about.chapters');
+        return view('livewire.about.chapters')->extends('welcome');
     }
 }

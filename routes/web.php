@@ -6,33 +6,51 @@ use App\Livewire\Student;
 use App\Livewire\ViewBlog;
 use App\Livewire\Contactus;
 
+use App\Livewire\SearchBlog;
 use App\Livewire\About\About;
 use App\Livewire\TeamMembers;
 use App\Livewire\About\Ethics;
+
 use App\Livewire\About\Council;
 
+use App\Livewire\Training\MCPD;
+use App\Livewire\About\Chapters;
+use App\Livewire\About\Composition;
 use App\Livewire\Resource\ViewEvent;
 
-use App\Livewire\SearchBlog;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Training\Masterclass;
 use App\Livewire\Student\StudentResult;
 use App\Livewire\About\VisionAndMission;
-
 use App\Livewire\Resource\ResourceEvent;
 use App\Livewire\Resource\ResourceImage;
+
 use App\Livewire\Resource\ResourceVideo;
 use App\Livewire\Resource\ViewAllImages;
 use App\Livewire\Student\StudentDiploma;
-use App\Livewire\Membership\MemberUpgrade;
 
+use App\Livewire\About\CouncilResolution;
+use App\Livewire\Membership\MemberUpgrade;
 use App\Livewire\Student\StudentAdmission;
+use App\Livewire\Education\Examination\CPR;
+use App\Livewire\Education\Examination\DPR;
 use App\Livewire\Membership\MemberCategory;
 use App\Livewire\Student\StudentCurriculum;
-
 use App\Livewire\Student\StudentRequirment;
 use App\Livewire\Student\StudentStudyCentre;
 use App\Livewire\Membership\MemberInformation;
+use App\Livewire\Training\AnnualLecture\Aminu;
 use App\Livewire\Resource\ResourceDownloadables;
+use App\Livewire\Education\AdvisoryBoard\Mandate;
+use App\Livewire\Training\AnnualLecture\SamEpelle;
+use App\Livewire\Education\AdvisoryBoard\Committiees;
+use App\Livewire\Training\AnnualLecture\IgweNnaemeka;
+use App\Livewire\Training\Conference\PRPractitioners;
+use App\Livewire\Education\AdvisoryBoard\eComposition;
+use App\Livewire\Education\Examination\QualifyingExams;
+use App\Livewire\Training\Conference\AviationConference;
+use App\Livewire\Training\Conference\DirectorsConference;
+use App\Livewire\Training\Conference\DirectorsConferenceAndRetreat;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +71,33 @@ Route::get('/about-us', About::class)->name('about-us.history');
 Route::get('/about-us/vision-and-mission', VisionAndMission::class)->name('about-us.vision');
 Route::get('/about-us/ethics', Ethics::class)->name('about-us.ethics'); 
 Route::get('/about-us/council', Council::class)->name('about-us.council'); 
+Route::get('/about-us/management/composition', Composition::class)->name('about-us.composition'); 
+Route::get('/about-us/management/council-resolution',  CouncilResolution::class)->name('about-us.council-resolution'); 
+Route::get('/about-us/management/chapters', Chapters::class)->name('about-us.chapters'); 
+Route::get('/about-us/management/faq', Chapters::class)->name('about-us.faq'); 
+
+// training
+Route::get('/training/masterclass', Masterclass::class)->name('training.masterclass'); 
+Route::get('/training/mcpd', MCPD::class)->name('training.mcp'); 
+Route::get('/training/conference/aviation-conference', AviationConference::class)->name('training.conference.aviation'); 
+Route::get('/training/conference/directors-conference', DirectorsConference::class)->name('training.conference.directors'); 
+Route::get('/training/conference/directors-conference-and-retreat', DirectorsConferenceAndRetreat::class)->name('training.conference.directors-retreat'); 
+Route::get('/training/conference/pr-practitioner-in-tertiary-institution', PRPractitioners::class)->name('training.conference.pr-practitioner'); 
+
+Route::get('/training/annual-lecture/sam-epelle-memorial-gold-lecture', SamEpelle::class)->name('training.conference.sam-epelle'); 
+Route::get('/training/annual-lecture/Igwe-nnaemeka-alfred-achebe-peace-and-reconciliation-annual-lecture-series', IgweNnaemeka::class)->name('training.conference.sam-epelle'); 
+Route::get('/training/annual-lecture/his-highness-aminu-ado-bayero-national-integration-annual-lecture-series', Aminu::class)->name('training.conference.aminu'); 
+
+// Education
+Route::get('/education/advisory-board/mandate', Mandate::class)->name('education.mandate'); 
+Route::get('/education/advisory-board/committees', Committiees::class)->name('education.committees'); 
+Route::get('/education/advisory-board/composition', eComposition::class)->name('education.composition'); 
+
+// examination
+Route::get('/education/examination/cpr', CPR::class)->name('exam.cpr'); 
+Route::get('/education/examination/dpr', DPR::class)->name('exam.dpr'); 
+Route::get('/education/examination/qualifying-examination', QualifyingExams::class)->name('exam.qualifyingExam'); 
+
 
 // Students Routes
 Route::get('/student/professional-certificate', Student::class)->name('student.professional-certificate'); 

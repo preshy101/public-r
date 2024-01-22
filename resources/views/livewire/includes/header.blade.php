@@ -145,25 +145,25 @@
 									<ul class="dropdown-menu" style="text-transform: unset"> 
 										<li>
 											<a  class="dropdown-toggle" data-toggle="dropdown" role="button" 
-											aria-haspopup="true" style="text-transform: unset" wire:navigate href=""   data-toggle="dropdown">Council ></a> 
+											aria-haspopup="true" style="text-transform: unset"  data-toggle="dropdown">Council ></a> 
 											<ul class="dropdown-menu" style="text-transform: unset"> 
 												<li>
-													<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Composition</a> 
+													<a  wire:navigate  href="/about-us/management/composition" style="text-transform: unset"   class="dropdown-toggle" data-toggle="dropdown">Composition</a> 
 												</li>  
 												<li>
-													<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Council Resolution</a> 
+													<a  wire:navigate  href="/about-us/management/council-resolution" style="text-transform: unset"   class="dropdown-toggle" data-toggle="dropdown">Council Resolution</a> 
 												</li>  
 											</ul> <!-- .dropdown-menu -->
 										</li>
 										<li>
-											<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Chapters</a> 
+											<a  wire:navigate href="/about-us/management/chapters" style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Chapters</a> 
 										</li>
 										 
 									</ul> <!-- .dropdown-menu -->
 									    <a wire:navigate href="/about-us" style="text-transform: unset">Our History</a>
 									    <a wire:navigate href="/about-us/vision-and-mission" style="text-transform: unset">Vision & Mission</a>
 									    <a wire:navigate href="/about-us/ethics"style="text-transform: unset"> Code of Ethics</a>
-									    <a wire:navigate href=""style="text-transform: unset"> FAQ</a>
+									    <a wire:navigate href="/about-us/management/faq"style="text-transform: unset"> FAQ</a>
 									    
 								</li>	   
 							</ul> <!-- .dropdown-menu -->
@@ -176,26 +176,26 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Training</a>
 							<ul class="dropdown-menu" style="text-transform: unset"> 
 								<li>
-									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Masterclasses</a> 
+									<a style="text-transform: unset" wire:navigate href="/training/masterclass" class="dropdown-toggle" data-toggle="dropdown">Masterclasses</a> 
 									
 								</li>
 								<li>
-									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">MCPD</a> 
+									<a style="text-transform: unset" wire:navigate href="/training/mcpd" class="dropdown-toggle" data-toggle="dropdown">MCPD</a> 
 								</li>
 								<li>
 									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Conferences ></a> 
 									<ul class="dropdown-menu" style="text-transform: unset"> 
 										<li>
-											<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Directors Conference and Retreat</a> 
+											<a style="text-transform: unset" wire:navigate href="/training/conference/directors-conference-and-retreat" class="dropdown-toggle" data-toggle="dropdown">Directors Conference and Retreat</a> 
 										</li>
 										<li>
-											<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Conference for PR Practitioners in Tertiary Institutions</a>
+											<a wire:navigate href="/training/conference/pr-practitioner-in-tertiary-institution" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Conference for PR Practitioners in Tertiary Institutions</a>
 										</li>
 										<li>
-											<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Director’s Conference</a>
+											<a wire:navigate href="/training/conference/directors-conference" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Director’s Conference</a>
 										</li>
 										<li>
-											<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Aviation Conference</a>
+											<a wire:navigate href="/training/conference/aviation-conference" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Aviation Conference</a>
 										</li>
 									    
 									</ul> <!-- .dropdown-menu -->
@@ -204,15 +204,15 @@
 									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Annual Lectures ></a> 
 									<ul class="dropdown-menu" style="text-transform: unset"> 
 										<li>
-											<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Sam Epelle Memorial Gold Lecture</a>
+											<a wire:navigate href="/training/annual-lecture/sam-epelle-memorial-gold-lecture" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Sam Epelle Memorial Gold Lecture</a>
 										</li>
 
 										<li>
-											<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Igwe Nnaemeka Alfred Achebe Peace & <br> Reconciliation Annual Lecture Series</a>
+											<a wire:navigate href="/training/annual-lecture/Igwe-nnaemeka-alfred-achebe-peace-and-reconciliation-annual-lecture-series" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Igwe Nnaemeka Alfred Achebe Peace & <br> Reconciliation Annual Lecture Series</a>
 										</li>
 
 										<li>
-											<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series</a>
+											<a wire:navigate href="/training/annual-lecture/his-highness-aminu-ado-bayero-national-integration-annual-lecture-series" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series</a>
 										</li>
 										
 									   
@@ -232,9 +232,9 @@
 								<li>
 									<a style="text-transform: unset" wire:navigate href="/student/curriculum" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Education Advisory Board ></a>
 									<ul class="dropdown-menu"> 
-										<li><a wire:navigate href="#"style="text-transform: unset">Mandate </a></li>
-										<li><a wire:navigate href="#"style="text-transform: unset">Composition </a></li> 
-										<li><a wire:navigate href="#"style="text-transform: unset">Committiees</a></li>  
+										<li><a wire:navigate href="/education/advisory-board/mandate"style="text-transform: unset">Mandate </a></li>
+										<li><a wire:navigate href="/education/advisory-board/composition"style="text-transform: unset">Composition </a></li> 
+										<li><a wire:navigate href="/education/advisory-board/committees"style="text-transform: unset">Committees</a></li>  
 									</ul> <!-- .dropdown-menu -->
 								</li> 
 								<li>
@@ -244,9 +244,9 @@
 										<li><a  wire:navigate href="/student/professional-diploma"style="text-transform: unset">Professional Diploma</a></li>
 										<li><a wire:navigate href="/student/professional-admission"style="text-transform: unset">Professional Admission</a></li> --}}
 										{{-- <li><a wire:navigate href="/student/result"style="text-transform: unset">Results</a></li> --}}
-										<li><a wire:navigate href="#"style="text-transform: unset">CPR</a></li>
-										<li><a wire:navigate href="#"style="text-transform: unset">DPR</a></li>
-										<li><a wire:navigate href="#"style="text-transform: unset">Qualifying Examination</a></li> 
+										<li><a wire:navigate href="/education/examination/cpr"style="text-transform: unset">CPR</a></li>
+										<li><a wire:navigate href="/education/examination/dpr"style="text-transform: unset">DPR</a></li>
+										<li><a wire:navigate href="/education/examination/qualifying-examination"style="text-transform: unset">Qualifying Examination</a></li> 
 										{{-- <li><a wire:navigate href="/student/study-centre"style="text-transform: unset">Study Centres</a></li> --}}
 									</ul> <!-- .dropdown-menu -->
 								</li>

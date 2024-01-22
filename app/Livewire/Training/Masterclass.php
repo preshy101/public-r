@@ -8,6 +8,6 @@ class Masterclass extends Component
 {
     public function render()
     {
-        return view('livewire.training.masterclass');
+        return view('livewire.training.masterclass')->extends('welcome');
     }
 }

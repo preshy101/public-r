@@ -8,6 +8,6 @@ class Composition extends Component
 {
     public function render()
     {
-        return view('livewire.about.composition');
+        return view('livewire.about.composition')->extends('welcome');
     }
 }
