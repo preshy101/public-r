@@ -8,6 +8,7 @@ class LMS extends Component
 {
     public function render()
     {
-        return view('livewire.education.finishing-school.l-m-s');
+        return view('livewire.education.finishing-school.l-m-s')
+        ->extends('welcome');
     }
 }

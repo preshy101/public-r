@@ -252,14 +252,14 @@
 								</li>
  
 								<li>
-									<a style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Study Centers</a> 
+									<a style="text-transform: unset" wire:navigate href="/education/study-center" class="dropdown-toggle" data-toggle="dropdown">Study Centers</a> 
 								</li>
 							 
 								<li>
 									<a style="text-transform: unset" wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Finishing School ></a> 
 									<ul class="dropdown-menu"> 
-										<li><a wire:navigate href="#"style="text-transform: unset">LMS</a></li>
-										<li><a wire:navigate href="#"style="text-transform: unset">Faculty</a></li> 
+										<li><a wire:navigate href="/education/finishing-school/lms"style="text-transform: unset">LMS</a></li>
+										<li><a wire:navigate href="/education/finishing-school/faculty"style="text-transform: unset">Faculty</a></li> 
 									</ul> <!-- .dropdown-menu -->
 								</li>
 							
@@ -272,7 +272,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Membership</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a wire:navigate href="#" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">New application</a> 
+									<a wire:navigate href="https://portal.niprng.org.ng/member/register" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">New application</a> 
 								</li>
 								<li>
 									<a wire:navigate href="https://portal.niprng.org.ng/member/membership-upgrade" class="dropdown-toggle" style="text-transform: unset" data-toggle="dropdown">Membership Upgrade </a> 

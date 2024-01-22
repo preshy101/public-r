@@ -8,6 +8,6 @@ class StudyCenters extends Component
 {
     public function render()
     {
-        return view('livewire.education.study-centers');
+        return view('livewire.education.study-centers')->extends('welcome');
     }
 }

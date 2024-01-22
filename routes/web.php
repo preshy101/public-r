@@ -97,6 +97,9 @@ Route::get('/education/advisory-board/composition', eComposition::class)->name('
 Route::get('/education/examination/cpr', CPR::class)->name('exam.cpr'); 
 Route::get('/education/examination/dpr', DPR::class)->name('exam.dpr'); 
 Route::get('/education/examination/qualifying-examination', QualifyingExams::class)->name('exam.qualifyingExam'); 
+Route::get('/education/study-center', StudyCenters::class)->name('exam.studycenters'); 
+Route::get('/education/finishing-school/lms', StudyCenters::class)->name('exam.studycenters'); 
+Route::get('/education/finishing-school/faculty', StudyCenters::class)->name('exam.studycenters'); 
 
 
 // Students Routes
