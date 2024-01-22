@@ -163,7 +163,7 @@
 										{!! Str::words($item->description, 10, ' ...') !!} 
 									</p>
 								</div>
-								<a wire:navigate class="btn-open" style="text-transform: unset" href="{{$item->version}}">Register</a>
+								<a class="btn-open" style="text-transform: unset" href="{{$item->version}}">Register</a>
 							</div> <!-- .post-content -->
 						</div> <!-- .post-wrapper -->
 					</div> <!-- .col-md-4 -->
