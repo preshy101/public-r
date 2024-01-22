@@ -61,8 +61,7 @@
 					</li>
 					<li>
 
-					<a   href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i>  <span>Newsletter</span></a>
-                            
+					<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i>  <span>Newsletter</span></a> 
                         <div class="modal corporex-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">

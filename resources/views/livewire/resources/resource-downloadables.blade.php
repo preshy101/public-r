@@ -23,6 +23,13 @@
    
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+          <b> UPDATES</b>  
+        </a>
+        <a target="_blank" href="{{ asset('docs/updates/NIPR_Gazette.pdf')}}"  class="list-group-item list-group-item-action">NIPR Gazette</a>
+        
+    </div>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
           <b> BROCHURES</b>  
         </a>
       
