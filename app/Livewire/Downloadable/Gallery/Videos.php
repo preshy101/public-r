@@ -8,6 +8,7 @@ class Videos extends Component
 {
     public function render()
     {
-        return view('livewire.downloadable.gallery.videos');
+        return view('livewire.downloadable.gallery.videos')
+        ->extends('welcome');
     }
 }

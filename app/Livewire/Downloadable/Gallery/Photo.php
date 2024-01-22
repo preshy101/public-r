@@ -8,6 +8,7 @@ class Photo extends Component
 {
     public function render()
     {
-        return view('livewire.downloadable.gallery.photo');
+        return view('livewire.downloadable.gallery.photo')
+        ->extends('welcome');
     }
 }

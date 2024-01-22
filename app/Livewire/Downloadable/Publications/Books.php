@@ -8,6 +8,6 @@ class Books extends Component
 {
     public function render()
     {
-        return view('livewire.downloadable.publications.books');
+        return view('livewire.downloadable.publications.books')->extends('welcome');
     }
 }

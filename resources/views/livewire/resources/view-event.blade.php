@@ -3,7 +3,7 @@
 		<div class="page-title-banner" >
 			<div class="container">
 				<div class="content-wrapper">
-					<h2>Resources </h2>
+					<h2>Events </h2>
 					<ul class="bread-crumb">
 						<li><a href="/">Home</a></li> 
 						<li><a href="/resources/up-coming-events">Events</a></li>

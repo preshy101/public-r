@@ -22,13 +22,14 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Training\Masterclass;
 use App\Livewire\Student\StudentResult;
 use App\Livewire\About\VisionAndMission;
+use App\Livewire\Education\StudyCenters;
 use App\Livewire\Resource\ResourceEvent;
-use App\Livewire\Resource\ResourceImage;
 
+use App\Livewire\Resource\ResourceImage;
 use App\Livewire\Resource\ResourceVideo;
 use App\Livewire\Resource\ViewAllImages;
-use App\Livewire\Student\StudentDiploma;
 
+use App\Livewire\Student\StudentDiploma;
 use App\Livewire\About\CouncilResolution;
 use App\Livewire\Membership\MemberUpgrade;
 use App\Livewire\Student\StudentAdmission;
@@ -41,6 +42,7 @@ use App\Livewire\Student\StudentStudyCentre;
 use App\Livewire\Membership\MemberInformation;
 use App\Livewire\Training\AnnualLecture\Aminu;
 use App\Livewire\Resource\ResourceDownloadables;
+use App\Livewire\Downloadable\Publications\Books;
 use App\Livewire\Education\AdvisoryBoard\Mandate;
 use App\Livewire\Training\AnnualLecture\SamEpelle;
 use App\Livewire\Education\AdvisoryBoard\Committiees;
@@ -102,6 +104,7 @@ Route::get('/education/finishing-school/lms', StudyCenters::class)->name('exam.s
 Route::get('/education/finishing-school/faculty', StudyCenters::class)->name('exam.studycenters'); 
 
 
+
 // Students Routes
 Route::get('/student/professional-certificate', Student::class)->name('student.professional-certificate'); 
 Route::get('/student/professional-diploma', StudentDiploma::class)->name('student.professional-diploma'); 
@@ -124,13 +127,14 @@ Route::get('/news/search/{title}', SearchBlog::class)->name('news.search');
 // Contact
 Route::get('/contact-us', Contactus::class)->name('contactus'); 
 
-// Resources
-Route::get('/resources/images', ResourceImage::class)->name('resources.image');
-Route::get('/resources/images/{id}',  ViewAllImages::class)->name('resources.image.view');
+// Downloadable
+Route::get('/downloadable/publications/books', Books::class)->name('resources.books');
+Route::get('/downloadable/images', ResourceImage::class)->name('resources.image');
+Route::get('/downloadable/images/{id}',  ViewAllImages::class)->name('resources.image.view');
 
-Route::get('/resources/videos', ResourceVideo::class)->name('resources.video');
+Route::get('/downloadable/videos', ResourceVideo::class)->name('resources.video');
 
-Route::get('/resources/downloadable', ResourceDownloadables::class)->name('resources.downloadable');
+Route::get('/downloadable/downloadable', ResourceDownloadables::class)->name('resources.downloadable');
 
 Route::get('/resources/up-coming-events', ResourceEvent::class)->name('resources.event');
 Route::get('/resources/up-coming-events/{id}', ViewEvent::class)->name('resources.event.view');

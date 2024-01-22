@@ -298,7 +298,7 @@
 						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video'
 						  ))?"active":''}} 
 						">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadables</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadable</a>
                                 <ul class="dropdown-menu" style="text-transform: unset">
 									 <li>
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset" aria-expanded="false"> Publications ></a>
@@ -307,15 +307,15 @@
                                     <li>
                                         <a wire:navigate href="#" style="text-transform: unset" aria-expanded="false">Books ></a>  
 										<ul class="dropdown-menu"> 
-											<li><a wire:navigate href="#"style="text-transform: unset">Rebooting Nigeria 2.0</a></li>
+											<li><a wire:navigate href="/downloadable/publications/books"style="text-transform: unset">Rebooting Nigeria 2.0</a></li>
 										</ul> 
                                     </li>
 
 									<li>
-										<a wire:navigate href="#" style="text-transform: unset">Occasional Publications</a>   
+										<a wire:navigate href="/downloadable/publications/books" style="text-transform: unset">Occasional Publications</a>   
 									</li>
 									<li>
-										<a wire:navigate href="#" style="text-transform: unset">Working Papers</a>   
+										<a wire:navigate href="/downloadable/publications/books" style="text-transform: unset">Working Papers</a>   
 									</li>
 									</ul>
 									</li>
@@ -323,38 +323,38 @@
                                     <li>
                                         <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Gallery ></a> 
 										<ul class="dropdown-menu"> 
-											<li><a wire:navigate href="#"style="text-transform: unset">Photo</a></li>
-											<li><a wire:navigate href="#"style="text-transform: unset">Videos</a></li> 
+											<li><a wire:navigate href="/downloadable/images"style="text-transform: unset">Photo</a></li>
+											<li><a wire:navigate href="/downloadable/videos"style="text-transform: unset">Videos</a></li> 
 										</ul> <!-- .dropdown-menu -->  
                                     </li>
                                     
                                     
                                     <li>
-                                        <a wire:navigate href="/resources/downloadable" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Other Resources</a>
+                                        <a wire:navigate href="/downloadable/downloadable" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Other Resources</a>
                                     </li>
                                 </ul> <!-- .dropdown-menu --> 
 						</li>
 						<li class="dropdown {{(Route::is('resources.event'))?"active":''}}">
-							<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" >Events</a>  
+							<a wire:navigate href="" style="text-transform: unset" >Events</a>  
 							<ul class="dropdown-menu" style="text-transform: unset"> 
 							    <li>
-									<a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Spokespersons Summit</a>
+									<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Spokespersons Summit</a>
 								</li>
 							   <li>
-								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Annual NIPRWeek/AGM</a>   
+								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Annual NIPRWeek/AGM</a>   
 							   </li>
 							   
 							   <li>
-								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Spokespersons Awards</a>
+								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Spokespersons Awards</a>
 							   </li>
 							   <li>
-								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Reputation Summit</a>
+								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Reputation Summit</a>
 							   </li>
 							   <li>
-								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">REBIRTH Nigeria</a>
+								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">REBIRTH Nigeria</a>
 							   </li>
 							   <li>
-								   <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">NIPR Daimond Jubilee </a>
+								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">NIPR Daimond Jubilee </a>
 							   </li>
 							  
 						   </ul> <!-- .dropdown-menu -->   
@@ -367,7 +367,7 @@
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
 							 <ul class="dropdown-menu">
 								<li><a wire:navigate href="#"style="text-transform: unset">NIPR News </a></li> 
-								<li><a wire:navigate href="#"style="text-transform: unset">Newslinks</a></li>  
+								<li><a wire:navigate href="#"style="text-transform: unset">Newslinks </a></li>  
 								<li>
 									<a wire:navigate href="#" style="text-transform: unset">Press Releases</a>   
 								</li> 
