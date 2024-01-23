@@ -39,6 +39,8 @@
 							{{$item->description}} <br>
                             {!!$item->fullText!!}
 						</p>
+
+				<a class="btn btn-narrow" href="{{$item->version}}">Register</a>
 					</div> <!-- .project-details-content -->
 				</div> <!-- .col-md-8 -->
 				<div class="col-md-4">
