@@ -9,4 +9,5 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateImageGallery extends CreateRecord
 {
     protected static string $resource = ImageGalleryResource::class;
+   
 }

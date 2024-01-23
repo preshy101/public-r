@@ -20,6 +20,31 @@
 			<p class="lead">our wonderful moments captured</p>
 			<br>
 			<div class="row blog-posts">
+
+
+				<div class="col-md-4">
+					<div class="img-wrapper">
+						{{-- <a href="#"> --}}
+							<video class="img-responsive" controls style="height: 540px;" 
+							alt="image 00">	
+							<source src="{{asset('./docs/video/video.mp4')}}" />
+							</video>
+						{{-- </a> --}}
+					</div> <!-- .img-wrapper -->
+					<div class="post-content">
+						<ul class="post-meta">
+							<li> </li>
+							<li><a href="#"></a>25-03 - 28-03-2024</li>
+						</ul>
+						<h3 class="entry-title"><a href="#">2024 Nigerian Public Relations Week/AGM, Abeokuta, Ogun State</a></h3>
+					</div> <!-- .post-content -->
+					 
+					<p>
+						Theme: Leveraging Public Relations as a Critical Asset for Nigeria's Economic and Reputation Renaissance.
+					</p>
+					{{-- <a class="btn-open" href="#">Details</a> --}}
+				</div> <!-- .col-md-4 -->
+	 
                 @if($videos)
 				@foreach ($videos as $item)  
  

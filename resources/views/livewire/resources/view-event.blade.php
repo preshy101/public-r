@@ -34,13 +34,13 @@
 				</div> <!-- .portfolio-item -->
 				<div class="col-md-8">
 					<h2 class="portfolio-title">{{$item->title}}</h2>
+					<a class="btn btn-narrow" href="{{$item->version}}">Register</a>
 					<div class="portfolio-details-content">
 						<p style="text-align: justify">
 							{{$item->description}} <br>
                             {!!$item->fullText!!}
 						</p>
 
-				<a class="btn btn-narrow" href="{{$item->version}}">Register</a>
 					</div> <!-- .project-details-content -->
 				</div> <!-- .col-md-8 -->
 				<div class="col-md-4">
