@@ -44,7 +44,12 @@ class ImageGalleryResource extends Resource
                         $set('cms_id', $state);
                         }
                         $data = cms::find($state);
-                        $set('note', $data->contentId . " - " . $data->version);
+                        if ($data) {
+                            # code...
+                            $set('note', $data->contentId . " - " . $data->version);
+                        }else{
+                            $set('note', '');
+                        }
                     }),
                     
                     
