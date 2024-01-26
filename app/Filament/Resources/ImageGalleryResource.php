@@ -64,27 +64,14 @@ class ImageGalleryResource extends Resource
                     ->readOnly()
                     ->maxLength(255),
                 FileUpload::make('image')
-                // ->multiple()
+                ->multiple()
                 ->label('file(s)')
                 ->required()
-                ->acceptedFileTypes(['video/mp4', 'video/avi', 'video/mov', 'video/wmv', 'video/flv', 'video/mkv', 'video/webm'])
-                ->maxSize(20000)
-                // ->disk('public')
-                ->visibility('public')
-                ->preserveFilenames()
-                // ->maxSize(20000),
-
-                // ->minFiles(2)
-                // ->maxSize(50000024) 
-                // ->maxFiles(25) 
-
-    // ->acceptedFileTypes(['video/mp4',
-    //                     'audio/mp3',
-    //                     'image/jpeg',
-    //                     'image/jpg',
-    //                     'image/png'
-    // ])
-                // ->directory('gallary/thumbnails'), 
+                ->minFiles(2)
+                ->maxSize(5000024) 
+                ->imageCropAspectRatio('20:19')
+                ->maxFiles(25) 
+                ->directory('gallary/thumbnails'), 
         ])->columnSpan(['lg' => 1])
             ])->columns(3);
     }
