@@ -34,7 +34,7 @@
 								<li>{{$item->created_at}}</li>
 								<li><a href="#"></a>{{$item->description}}</li>
 							</ul>
-							<h3 class="entry-title text-white"><a wire:navigate href="/resources/images/{{ $item->id }}">{{$item->title}}
+							<h3 class="entry-title text-white"><a wire:navigate href="/downloadable/images/{{ $item->id }}">{{$item->title}}
 								@if (count($item->imageVideo) > 0)
 								@php
 									$total = 0; 
