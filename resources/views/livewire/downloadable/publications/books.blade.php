@@ -20,9 +20,20 @@
         <h1 class="entry-title"><a style="color: red" href="#"> Books </a></h1>
         <p class="lead"> 
         </p> 
+        
+        <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+          <b> UPDATES</b>  
+        </a>
+        <a target="_blank" href="{{ asset('docs/books/NOA Partners NIPR on Spokespersons Summit, REBIRTH Nigeria Initiative-1.pdf')}}"  
+        class="list-group-item list-group-item-action">NOA Partners NIPR on Spokespersons Summit, REBIRTH Nigeria Initiative-1</a>
+        
+    </div>
     </div>
     <br>
     <br>
     <br> 
+
+    
     @endsection
  </div>
