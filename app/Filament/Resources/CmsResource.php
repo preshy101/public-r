@@ -105,7 +105,7 @@ class CmsResource extends Resource
                     [ 
                 FileUpload::make('image')
                 ->minSize(5)
-                ->maxSize(12400)
+                ->maxSize(1200400)
                 ->imageEditor()
                 ->imageResizeMode('force')
                 // ->imageCropAspectRatio('20:19')
