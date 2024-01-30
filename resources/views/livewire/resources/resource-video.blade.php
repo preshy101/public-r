@@ -101,7 +101,7 @@
 						<li><a href="#">4</a></li>
 						<li><a href="#">5</a></li>
 						<li><a href="#"><i class="fa fa-angle-right"></i></a></li> --}}
-						{{ $videos->links("pagination::bootstrap-5") }} 
+						{{ $videos->links('vendor.livewire.links') }} 
 					</ul>
 				</div> <!-- .btn-container -->
 

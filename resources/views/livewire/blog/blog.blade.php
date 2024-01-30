@@ -71,9 +71,9 @@
 							<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
 						</ul>
 					</div> <!-- .btn-container --> --}}
+					{{$posts->links('vendor.livewire.links')}}
 				</div> <!-- .col-md-8 -->
 			
-				{{$posts->links()}}
 				
 				<div class="col-md-4 sidebar">
 					<div class="widget widget-search">

@@ -74,7 +74,7 @@
 					</div> <!-- .btn-container --> --}}
 				</div> <!-- .col-md-8 -->
 			
-				{{$posts->links()}}
+				{{$posts->links('vendor.livewire.links')}}
 				
 				<div class="col-md-4 sidebar">
 					<div class="widget widget-search">

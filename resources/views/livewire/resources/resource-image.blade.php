@@ -56,8 +56,8 @@
 				</div> <!-- .col-md-4 -->
 				
 				@endforeach
-				@endif  
-				{{ $images->onEachSide(1)->links() }}
+				@endif  <br><br>
+				{{ $images->onEachSide(1)->links('vendor.livewire.links') }}
 				{{-- <div class="pagination-block text-center">
 					<div>
 						@if ($images->hasPages())
