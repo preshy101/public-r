@@ -340,7 +340,7 @@
 									<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">National Spokespersons Summit</a>
 								</li>
 							   <li>
-								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Annual NIPRWeek/AGM</a>   
+								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Annual NIPRWeek</a>   
 							   </li>
 							   
 							   <li>
@@ -353,7 +353,7 @@
 								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">REBIRTH Nigeria</a>
 							   </li>
 							   <li>
-								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">NIPR Daimond Jubilee </a>
+								   <a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">NIPR Diamond Jubilee </a>
 							   </li>
 							  
 						   </ul> <!-- .dropdown-menu -->   

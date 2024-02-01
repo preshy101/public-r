@@ -56,7 +56,7 @@
 				</div> <!-- .col-md-4 -->
 				
 				@endforeach
-				@endif  <br><br>
+				@endif 
 				{{ $images->onEachSide(1)->links('vendor.livewire.links') }}
 				{{-- <div class="pagination-block text-center">
 					<div>

@@ -169,7 +169,7 @@
 					</div> <!-- .col-md-4 -->
 					@endforeach
 					@endif
-					
+					<a class="btn btn-main" wire:navigate href="https://portal.niprng.org.ng/events">Read More</a>
 				</div> <!-- .row -->
 				</div> <!-- .col-md-8 img-block -->
 			
