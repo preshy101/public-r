@@ -16,19 +16,20 @@ use App\Livewire\About\Council;
 use App\Livewire\Hubs\Aviation;
 use App\Livewire\Training\MCPD;
 use App\Livewire\About\Chapters;
-use App\Livewire\About\Composition;
+use App\Livewire\Career\Careers;
 
+use App\Livewire\About\Composition;
 use App\Livewire\Resource\ViewEvent;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Training\Masterclass;
 use App\Livewire\Student\StudentResult;
 use App\Livewire\About\VisionAndMission;
-use App\Livewire\Education\StudyCenters;
 
+use App\Livewire\Education\StudyCenters;
 use App\Livewire\Resource\ResourceEvent;
 use App\Livewire\Resource\ResourceImage;
-use App\Livewire\Resource\ResourceVideo;
 
+use App\Livewire\Resource\ResourceVideo;
 use App\Livewire\Resource\ViewAllImages;
 use App\Livewire\Student\StudentDiploma;
 use App\Livewire\About\CouncilResolution;
@@ -68,6 +69,9 @@ use App\Livewire\Training\Conference\DirectorsConferenceAndRetreat;
 
 Route::get('/',  Home::class)->name('home');
 Route::get('/team-members', TeamMembers::class)->name('team.members');
+
+// Career
+Route::get('/career', Careers::class)->name('career.index');
 
 // About us Routes
 Route::get('/about-us', About::class)->name('about-us.history');

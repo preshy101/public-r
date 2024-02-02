@@ -90,8 +90,48 @@
                 		</div> <!-- col-lg-3 col-md-6 -->
 					</li> 
 					<li><a target="_blank" href="https://portal.niprng.org.ng/member/login" ><i class="fa fa-user"></i> <span>Become a Member</span></a></li>
-					<li><a target="_blank" href="#" ><i class="fa fa-support"></i> <span>Volunteer</span></a></li>
 
+					<li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-support"></i> <span>Volunteer</span></a>
+						<div class="modal corporex-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title" id="myModalLabel">Become a Volunteer</h4>
+									</div> <!-- .modal-header -->
+									<div class="modal-body">
+											<form class="">
+												<div class="form-group">
+													<label class="sr-only" for="subscriber-name">First Name</label>
+													<input wire:model='sub' type="text" name="volunteer-name" id="subscriber-name" class="form-control" placeholder="Your name">
+												</div> <!-- .form-group -->
+												<div class="form-group">
+													<label class="sr-only" for="subscriber-last-name">Last Name</label>
+													<input wire:model='sub' type="text" name="volunteer-last-name" id="subscriber-name" class="form-control" placeholder="Your name">
+												</div> <!-- .form-group -->
+												<div class="form-group">
+													<label class="sr-only" for="subscriber-email">Email</label>
+													<input type="text" name="subscriber-email" id="volunteer-email" class="form-control" placeholder="Your email">
+												</div> <!-- .form-group --> 
+												<div class="form-group">
+														 <p>Are you a Member <input class="pl-3" type="checkbox"></p>
+												</div> <!-- .form-group --> 		 
+												<div class="form-group">
+													<label class="sr-only" for="subscriber-email">Reasons to Volunteer </label>
+													<textarea type="checkbox" rows="5" cols="5" name="reason" id="volunteer-email" class="form-control">
+													</textarea>
+												</div> <!-- .form-group -->
+											  
+									</div> <!-- .modal-body -->
+									<div class="modal-footer">  
+										<button wire:click.prevent='' class="btn btn-main">Submit</button>
+											</form> <!-- .subscription-form -->
+									</div> <!-- .modal-footer -->
+								</div> <!-- .modal-content -->
+							</div> <!-- .modal-dialog -->      
+					</div> <!-- col-lg-3 col-md-6 -->
+					</li>
+					<li><a wire:navigate href="/career" ><i class="fa fa-arrow-up"></i> <span>Career</span></a></li>
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">
