@@ -21,16 +21,12 @@
         <h1 class="entry-title"><a style="color: red" href="#"> Chapters </a></h1>
         <p class="lead"> 
         </p> 
-		<p>
+		<p style="text-align: justify">
 			Chapters
 			The NIPR has Chapters across the thirty-six (36) States of the Federation and the
 			 Federal Capital Territory (Abuja), each Chapter is headed by an elected Chairman
 			  who is assisted by a Vice Chair and other Executive Committee members. 
 
-			Grand Patron and Patrons of the Institute
-			By the NIPR Act, the President and Commander-in-Chief of the Federal Republic of 
-			Nigeria by law is the Grand Patron of the Institute, while the Governors at State 
-			levels and the Minister of FCT are Patrons. 
 
 		</p>
     </div>

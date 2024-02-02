@@ -22,8 +22,8 @@
         <p class="lead"> 
         </p> 
 		<p>
-		<strong> 	The composition of the NIPR Governing Council (2023-2025) is as follows: 
-Elected Members </strong><br>
+		<h2> 	The composition of the NIPR Governing Council (2023-2025) is as follows:</h2> <br>
+	<h3> Elected Members</h3>
 
 1.   Dr. Ike Neliaku  fnipr - President & Chairman of Council – FCT Chapter <br>
 
@@ -61,7 +61,7 @@ Elected Members </strong><br>
 
  <br>
 
- <strong> Federal Government Nominees </strong> <br>
+ <h3> Federal Government Nominees </h3> 
 18.    Brig. Gen. S.K. Usman (Rtd), fnipr, mni – FCT Chapter <br>
 
 19.    Hajiya Maryam Mohammed Sanusi fnipr – FCT Chapter <br>
