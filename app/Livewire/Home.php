@@ -59,7 +59,7 @@ class Home extends Component
 
         $this->posts = Post::published()->latest()->take(12)->get();
 
-        $this->events = cms::where('contentId','events')->latest()
+        $this->events = cms::where([['contentId','events'], ['endDate', '>', Carbon::now()]])->latest()
         ->take(3)->get();
     }
     public function render()

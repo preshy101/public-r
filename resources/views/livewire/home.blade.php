@@ -169,9 +169,11 @@
 					</div> <!-- .col-md-4 -->
 					@endforeach
 					@endif
-					<a class="btn btn-main" wire:navigate href="https://portal.niprng.org.ng/events">Read More</a>
 				</div> <!-- .row -->
-				</div> <!-- .col-md-8 img-block -->
+				<div class="row">
+				<a class="btn btn-main" wire:navigate href="https://portal.niprng.org.ng/events">See More</a>
+			</div>
+		</div> <!-- .col-md-8 img-block -->
 			
 
 			<div class="col-lg-4  ">
@@ -205,7 +207,8 @@
 								<br>
 								<br>
 								<br>
-								 <a class="btn btn-main" wire:navigate href="/news/posts/{{$item->slug}}">read more</a> 
+								
+								 <a class="btn btn-main" wire:navigate href="/news/posts/{{$item->slug}}">see more</a> 
 								
 							</h6>
 							<small class="lead" style="color: white ;font-size: 15px;">
