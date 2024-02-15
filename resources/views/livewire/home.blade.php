@@ -63,9 +63,10 @@
 				<p>Premium Partners:</p>	
 				</div>
 				<div class="col-lg-10" style="margin-bottom: 0%; ">
-					<marquee> 
+			<marquee> 
 				<a href="http://www.hensekgroup.com" target="_blank" rel="noopener noreferrer"><img width="150px" style="margin-right: 35px;" src="{{asset('./img/hensek_logo.png')}}" alt="" srcset=""></a>
 				<a href="https://ng.usembassy.gov" target="_blank" rel="noopener noreferrer"><img width="60px" style="margin-right: 35px;" height="60px" src="{{asset('./img/usm-nigeria-seal.png')}}" alt="" srcset=""></a>
+				<a href="https://ogunstate.gov.ng" target="_blank" rel="noopener noreferrer"><img width="60px" style="margin-right: 35px;" height="60px" src="{{asset('./img/partner.png')}}" alt="" srcset=""></a>
 			</marquee>
 				
 				</div>
@@ -79,7 +80,7 @@
 	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%; padding-top: 0%">
 		{{-- <div class="container"> --}}
 			<div class="row">
-			<div class="col-lg-8 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
+			<div class="col-lg-8 col-sm-12 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
 			text-justify: inter-word;" >
 					{{-- <h2 style="text-transform: unset">
 						 
@@ -171,7 +172,7 @@
 					@endif
 				</div> <!-- .row -->
 				<div class="row">
-				<a class="btn btn-main" wire:navigate href="https://portal.niprng.org.ng/events">See More</a>
+				<a class="btn btn-main" wire:navigate href="/resources/up-coming-events">See More</a>
 			</div>
 		</div> <!-- .col-md-8 img-block -->
 			
