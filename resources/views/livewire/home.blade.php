@@ -80,7 +80,7 @@
 	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%; padding-top: 0%">
 		{{-- <div class="container"> --}}
 			<div class="row">
-			<div class="col-lg-8 col-sm-12 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
+			<div class="col-lg-8 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
 			text-justify: inter-word;" >
 					{{-- <h2 style="text-transform: unset">
 						 
