@@ -68,11 +68,8 @@
 				<a href="https://ng.usembassy.gov" target="_blank" rel="noopener noreferrer"><img width="60px" style="margin-right: 35px;" height="60px" src="{{asset('./img/usm-nigeria-seal.png')}}" alt="" srcset=""></a>
 				<a href="https://ogunstate.gov.ng" target="_blank" rel="noopener noreferrer"><img width="60px" style="margin-right: 35px;" height="60px" src="{{asset('./img/partner.png')}}" alt="" srcset=""></a>
 			</marquee>
-				
 				</div>
 			</div>
-			
-			
 		</div>
 	</section>
 
@@ -81,8 +78,9 @@
 		{{-- <div class="container"> --}}
 			<div class="row">
 			<div class="col-lg-8 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
-			text-justify: inter-word;" >
-					{{-- <h2 style="text-transform: unset">
+			text-justify: inter-word;">
+
+				{{-- <h2 style="text-transform: unset">
 						 
 				  Nigerian Institute Of Public Relations (NIPR)
 				</h2>
@@ -91,7 +89,7 @@
 						{{($welcome != null)?$welcome->description:""}}
 					</p>
 				 </center> --}}
-				
+
 				<img src="{{asset('./img/OurHistory.jpg')}}"style="width:100%" alt="" srcset="">
 				
 				<p  style="width: 500px"
@@ -180,10 +178,10 @@
 			<div class="col-lg-4  ">
 			<div style="border-radius: 2%; " id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
-					 @if (count($post) > 0)  
+
+					@if (count($post) > 0)  
 					@foreach ($post as $index => $item) 
 					<li data-target="#corporex-slider" data-slide-to="{{$index}}" class="{{( $index == 0 )? 'active':'' }}"></li>
-				
 					@endforeach	
 				
 				</ol> <!-- .carousel-indicators -->

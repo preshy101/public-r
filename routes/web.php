@@ -4,31 +4,32 @@ use App\Livewire\Blog;
 use App\Livewire\Home;
 use App\Livewire\Student;
 use App\Livewire\ViewBlog;
-use App\Livewire\Contactus;
+use App\Livewire\About\FAQ;
 
+use App\Livewire\Contactus;
 use App\Livewire\SearchBlog;
 use App\Livewire\About\About;
 use App\Livewire\TeamMembers;
+
 use App\Livewire\About\Ethics;
 
 use App\Livewire\About\Council;
-
 use App\Livewire\Hubs\Aviation;
 use App\Livewire\Training\MCPD;
 use App\Livewire\About\Chapters;
-use App\Livewire\Career\Careers;
 
+use App\Livewire\Career\Careers;
 use App\Livewire\About\Composition;
 use App\Livewire\Resource\ViewEvent;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Training\Masterclass;
 use App\Livewire\Student\StudentResult;
-use App\Livewire\About\VisionAndMission;
 
+use App\Livewire\About\VisionAndMission;
 use App\Livewire\Education\StudyCenters;
 use App\Livewire\Resource\ResourceEvent;
-use App\Livewire\Resource\ResourceImage;
 
+use App\Livewire\Resource\ResourceImage;
 use App\Livewire\Resource\ResourceVideo;
 use App\Livewire\Resource\ViewAllImages;
 use App\Livewire\Student\StudentDiploma;
@@ -81,7 +82,7 @@ Route::get('/about-us/council', Council::class)->name('about-us.council');
 Route::get('/about-us/management/composition', Composition::class)->name('about-us.composition'); 
 Route::get('/about-us/management/council-resolution',  CouncilResolution::class)->name('about-us.council-resolution'); 
 Route::get('/about-us/management/chapters', Chapters::class)->name('about-us.chapters'); 
-Route::get('/about-us/management/faq', Chapters::class)->name('about-us.faq'); 
+Route::get('/about-us/faq', FAQ::class)->name('about-us.faq'); 
 
 // training
 Route::get('/training/masterclass', Masterclass::class)->name('training.masterclass'); 

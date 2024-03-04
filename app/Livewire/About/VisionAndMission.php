@@ -19,7 +19,6 @@ class VisionAndMission extends Component
     {
         return view('livewire.about.vision-and-mission', [
             'vision' => $this->vision
-        ])
-        ->extends('welcome');
+        ])->extends('welcome');
     }
 }

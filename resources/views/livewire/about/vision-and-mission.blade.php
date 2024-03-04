@@ -8,6 +8,7 @@
 					<ul class="bread-crumb">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
+						<li><a href="#">vision and mission</a></li>
 					</ul>
 				</div> <!-- .content-wrapper -->
 			</div> <!-- .container -->
