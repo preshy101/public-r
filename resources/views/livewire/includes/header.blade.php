@@ -215,7 +215,7 @@
 						 'student.professional-admission', 'student.result', 'student.requirements', 
 						 'student.study-centre', 'student.curriculum' ))?"active":''}} 
 						dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Training</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset; color:gray" aria-expanded="false">Training</a>
 							<ul class="dropdown-menu" style="text-transform: unset"> 
 								<li>
 									<a style="text-transform: unset; color:gray" 
