@@ -310,7 +310,7 @@
 									</ul> <!-- .dropdown-menu -->
 								</li> 
 								<li>
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset; color:gray"> Examinations ></a>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"> Examinations ></a>
 									<ul class="dropdown-menu">
 										{{-- <li><a  wire:navigate href="/student/professional-certificate"style="text-transform: unset">Professional Certificate</a></li>
 										<li><a  wire:navigate href="/student/professional-diploma"style="text-transform: unset">Professional Diploma</a></li>
@@ -320,8 +320,13 @@
 
 										<li><a 
 											{{-- wire:navigate href="/education/examination/cpr"style="text-transform: unset; color:gray">CPR</a></li> --}}
-											wire:navigate href="#"style="text-transform: unset; color:gray">CPR</a></li>
+											target="_blank"	href="https://portal.niprng.org.ng/exam-registration"style="text-transform: unset">All Exams</a></li>
+										<li>
 										<li><a 
+											{{-- wire:navigate href="/education/examination/cpr"style="text-transform: unset; color:gray">CPR</a></li> --}}
+											wire:navigate href="#"style="text-transform: unset; color:gray">CPR</a></li>
+										<li>
+											<a 
 											{{-- wire:navigate href="/education/examination/dpr"style="text-transform: unset; color:gray">DPR</a></li> --}}
 											wire:navigate href="#"style="text-transform: unset; color:gray">DPR</a></li>
 										<li><a 
@@ -420,6 +425,9 @@
 						<li class="dropdown {{(Route::is('resources.event'))?"active":''}}">
 							<a wire:navigate href=""href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="text-transform: unset" >Events</a>  
 							<ul class="dropdown-menu" style="text-transform: unset"> 
+							    <li>
+									<a target="_blank" href="https://portal.niprng.org.ng/events" style="text-transform: unset" >Register For Events</a>
+								</li>
 							    <li>
 									<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" >Upcoming Events</a>
 								</li>
