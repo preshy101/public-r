@@ -59,10 +59,10 @@
 	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%; padding-top: 2%">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2" style="padding-top: 8px">
+				<div class="col-md-2 col-sm-12" style="padding-top: 8px">
 				<p>Premium Partners:</p>	
 				</div>
-				<div class="col-lg-10" style="margin-bottom: 0%; ">
+				<div class="col-md-10 col-sm-12" style="margin-bottom: 0%; ">
 			<marquee> 
 				<a href="http://www.hensekgroup.com" target="_blank" rel="noopener noreferrer"><img width="150px" style="margin-right: 35px;" src="{{asset('./img/hensek_logo.png')}}" alt="" srcset=""></a>
 				<a href="https://ng.usembassy.gov" target="_blank" rel="noopener noreferrer"><img width="60px" style="margin-right: 35px;" height="60px" src="{{asset('./img/usm-nigeria-seal.png')}}" alt="" srcset=""></a>
@@ -74,10 +74,10 @@
 	</section>
 
     {{-- Key Features --}}
-	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%; padding-top: 0%">
+	<section class=" intro-08 section-block" style="padding-bottom: 0%; padding-top: 0%">
 		{{-- <div class="container"> --}}
 			<div class="row">
-			<div class="col-lg-8 content-block" style="padding-left: 5%; text-align: justify; margin-bottom: 2%
+			<div class="col-lg-8 content-block" style="padding-left: 5%; padding-right: 5%; text-align: justify; margin-bottom: 2%
 			text-justify: inter-word;">
 
 				{{-- <h2 style="text-transform: unset">
