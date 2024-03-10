@@ -432,7 +432,7 @@
 									<a wire:navigate href="/resources/up-coming-events" style="text-transform: unset" >Upcoming Events</a>
 								</li>
 							    <li>
-									<a wire:navigate href="https://portal.niprng.org.ng/events/17058736972024-national-spokespersons-summit-and-awards" style="text-transform: unset;" >National Spokespersons Summit</a>
+									<a  href="https://portal.niprng.org.ng/events/17058736972024-national-spokespersons-summit-and-awards" style="text-transform: unset;" >National Spokespersons Summit</a>
 								</li>
 							   <li>
 								   <a target="_blank" href="https://nprweek.niprng.org.ng/" style="text-transform: unset" >Annual NIPRWeek</a>   
