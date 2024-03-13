@@ -28,8 +28,8 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body pl-5">
-                  <h5 class="card-title">Upgrade Fellow Form 1</h5>
-                  <p class="card-text">This is to fill to upgrade membership</p>
+                  <h5 class="card-title"> Fellow Upgrade Form 1</h5>
+                  <p class="card-text">This is to be filled to upgrade fellowship</p>
                   <a class="btn btn-danger" href="{{asset("./docs/member-upgrade/FORM-1-nomination-for-fellowship.pdf")}}"> <i class="fa fa-download"></i> download</a>
                 </div>
               </div>
@@ -43,8 +43,8 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body pl-5">
-                  <h5 class="card-title">Upgrade Fellow Form 2</h5>
-                  <p class="card-text">This is to fill to upgrade membership</p>
+                  <h5 class="card-title"> Fellow Upgrade Form 2</h5>
+                  <p class="card-text">This is to be filled to upgrade fellowship</p>
                   <a class="btn btn-danger" href="{{asset("./docs/member-upgrade/FORM-2-SECTION_E-Nomination-for-Fellowship.pdf")}}"> <i class="fa fa-download"></i> download</a>
                 </div>
               </div>
