@@ -360,10 +360,16 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset" aria-expanded="false">Membership</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a target="_blank" href="https://portal.niprng.org.ng/member/register" style="text-transform: unset" >New application</a> 
+									<a target="_blank" 
+									href="https://portal.niprng.org.ng/member/register" style="text-transform: unset" >New application</a> 
 								</li>
 								<li>
-									<a target="_blank" href="https://portal.niprng.org.ng/member/membership-upgrade" style="text-transform: unset" >Membership Upgrade </a> 
+									<a 
+									{{-- target="_blank" --}}
+									wire:navigate
+									 href="/membership/upgrade" 
+									 {{-- href="https://portal.niprng.org.ng/member/membership-upgrade"  --}}
+									 style="text-transform: unset" >Membership Upgrade </a> 
 								</li>
 								 
 								<li>
