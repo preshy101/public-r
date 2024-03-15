@@ -52,21 +52,21 @@
            <b> FORMS</b> 
         </a>
         
-        <a  target="_blank" href="{{ asset('docs/membership_application.pdf')}}" class="list-group-item list-group-item-action">MEMBERSHIP APPLICATION FORM</a>
-        <a target="_blank" href="{{ asset('docs/application_for_corporate_membership.pdf')}}" class="list-group-item list-group-item-action">APPLICATION FOR CORPORATE MEMBERSHIP
+        <a  target="_blank" href="{{ asset('docs/forms/membership_application.pdf')}}" class="list-group-item list-group-item-action">MEMBERSHIP APPLICATION FORM</a>
+        <a target="_blank" href="{{ asset('docs/forms/application_for_corporate_membership.pdf')}}" class="list-group-item list-group-item-action">APPLICATION FOR CORPORATE MEMBERSHIP
         </a>
-        <a target="_blank" href="{{ asset('docs/application_for_membership_upgrade.pdf')}}" class="list-group-item list-group-item-action">APPLICATION FOR UPGRADING OF MEMBERSHIP
+        <a target="_blank" href="{{ asset('docs/forms/application_for_membership_upgrade.pdf')}}" class="list-group-item list-group-item-action">APPLICATION FOR UPGRADING OF MEMBERSHIP
         </a>
-        <a target="_blank" href="{{ asset('docs/exam_form.pdf')}}"class="list-group-item list-group-item-action ">EXAMMINATION FORM</a>
-        <a target="_blank" href="{{ asset('docs/exemption.pdf')}}" class="list-group-item list-group-item-action ">EXEMPTION FORM
+        <a target="_blank" href="{{ asset('docs/forms/exam_form.pdf')}}"class="list-group-item list-group-item-action ">EXAMMINATION FORM</a>
+        <a target="_blank" href="{{ asset('docs/forms/exemption.pdf')}}" class="list-group-item list-group-item-action ">EXEMPTION FORM
         </a>
         <a target="_blank" href="{{ asset('docs/forms/nomination_for_fellowship.pdf')}}" class="list-group-item list-group-item-action ">FELLOWSHIP NOMINATION FORM (1)</a>
         <a target="_blank" href="{{ asset('docs/forms/SECTION_E.pdf')}}" class="list-group-item list-group-item-action ">FELLOWSHIP NOMINATION FORM (2)</a>
-        <a target="_blank" href="{{ asset('docs/recertification.pdf')}}" class="list-group-item list-group-item-action "> RECERTIFICATION FORM</a>
-        <a target="_blank" href="{{ asset('docs/students_reg_form.pdf')}}" class="list-group-item list-group-item-action "> STUDENTS REG FORM</a>
-        <a target="_blank" href="{{ asset('docs/2023_NIPR_NATIONAL_COUNCIL_ELECTION_GUIDELINES.pdf')}}" class="list-group-item list-group-item-action "> 2023 NIPR NATIONAL COUNCIL ELECTION GUIDELINES</a>
-        <a target="_blank" href="{{ asset('docs/NOMINATION_FORM.pdf')}}" class="list-group-item list-group-item-action "> NIPR NATIONAL COUNCIL ELECTIONS 2023 NOMINATION FORM</a>
-        <a target="_blank" href="{{ asset('docs/ANNUAL_DUES_RECERTIFICATION_WAIVER_APPLICATION.pdf')}}" class="list-group-item list-group-item-action "> ANNUAL DUES RECERTIFICATION WAIVER APPLICATION</a>
+        <a target="_blank" href="{{ asset('docs/forms/recertification.pdf')}}" class="list-group-item list-group-item-action "> RECERTIFICATION FORM</a>
+        <a target="_blank" href="{{ asset('docs/forms/students_reg_form.pdf')}}" class="list-group-item list-group-item-action "> STUDENTS REG FORM</a>
+        <a target="_blank" href="{{ asset('docs/forms/2023_NIPR_NATIONAL_COUNCIL_ELECTION_GUIDELINES.pdf')}}" class="list-group-item list-group-item-action "> 2023 NIPR NATIONAL COUNCIL ELECTION GUIDELINES</a>
+        <a target="_blank" href="{{ asset('docs/forms/NOMINATION_FORM.pdf')}}" class="list-group-item list-group-item-action "> NIPR NATIONAL COUNCIL ELECTIONS 2023 NOMINATION FORM</a>
+        <a target="_blank" href="{{ asset('docs/forms/ANNUAL_DUES_RECERTIFICATION_WAIVER_APPLICATION.pdf')}}" class="list-group-item list-group-item-action "> ANNUAL DUES RECERTIFICATION WAIVER APPLICATION</a>
       </div>
 
       <br>
