@@ -21,6 +21,28 @@
 			<br>
 			<div class="row blog-posts">
 
+					<div class="col-md-4">
+						<div class="img-wrapper">
+							{{-- <a href="#"> --}}
+								<video class="img-responsive" controls style="height: 540px;" 
+								alt="image 00">	
+								<source src="{{asset('./video/Dr_Ike_Neliaku.3gp')}}" />
+								</video>
+							{{-- </a> --}}
+						</div> <!-- .img-wrapper -->
+						<div class="post-content">
+							<ul class="post-meta">
+								<li>March 16th 2024</li>
+								<li><a href="#"></a>an Interview on Spokespersons Summit </li>
+							</ul>
+							<h3 class="entry-title"><a href="#">an Interview on Spokespersons Summit Granted by the President</a></h3>
+						</div> <!-- .post-content -->
+						
+						<p>
+							an Interview on Spokespersons Summit Granted by the President
+						</p>
+						{{-- <a class="btn-open" href="#">Details</a> --}}
+					</div> <!-- .col-md-4 -->
 
 				<div class="col-md-4">
 					<div class="img-wrapper">
@@ -44,32 +66,15 @@
 					</p>
 					{{-- <a class="btn-open" href="#">Details</a> --}}
 				</div> <!-- .col-md-4 -->
-	 
+
+
+						
+
+
                 @if($videos)
 				@foreach ($videos as $item)  
  
-					<div class="col-md-4">
-						<div class="img-wrapper">
-							{{-- <a href="#"> --}}
-								<video class="img-responsive" controls style="height: 540px;" 
-								alt="image 00">	
-								<source src="{{Storage::url($item->image)}}" />
-								</video>
-							{{-- </a> --}}
-						</div> <!-- .img-wrapper -->
-						<div class="post-content">
-							<ul class="post-meta">
-								<li>{{$item->created_at->diffForHumans()}}</li>
-								<li><a href="#"></a>{{$item->description}}</li>
-							</ul>
-							<h3 class="entry-title"><a href="#">{{$item->title}}</a></h3>
-						</div> <!-- .post-content -->
-						 
-						<p>
-							{{$item->description}}
-						</p>
-						{{-- <a class="btn-open" href="#">Details</a> --}}
-					</div> <!-- .col-md-4 -->
+					
 		 
 				{{-- <div class="col-md-4 col-sm-6">
 					<div class="image-wrapper gradient-black">
@@ -91,6 +96,8 @@
 				</div> <!-- .col-md-4 --> --}}
 				@endforeach
                 @endif
+
+
 				<div class="pagination-block text-center " style="background-color: brown; color: red
 				">
 					<ul>
