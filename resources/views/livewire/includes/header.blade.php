@@ -133,7 +133,7 @@
 							</div> <!-- .modal-dialog -->      
 					</div> <!-- col-lg-3 col-md-6 -->
 					</li>
-					<li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf-16KSOCRAzCsPrbIBbzZy1mSRmnoa1Cf0RNLM_TzcOTbDFQ/viewform" ><i class="fa fa-arrow-up"></i> <span>Event Registration</span></a></li>
+					<li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf-16KSOCRAzCsPrbIBbzZy1mSRmnoa1Cf0RNLM_TzcOTbDFQ/viewform" ><i class="fa fa-files-o"></i> <span>Event Registration</span></a></li>
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">
