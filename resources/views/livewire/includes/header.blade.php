@@ -133,7 +133,7 @@
 							</div> <!-- .modal-dialog -->      
 					</div> <!-- col-lg-3 col-md-6 -->
 					</li>
-					<li><a target="_blank" href="https://pdf.ac/3tbew1" ><i class="fa fa-files-o"></i> <span>Induction Oat</span></a></li>
+					<li><a target="_blank" href="{{asset("./docs/forms/NIPR_INDUCTION_OATH.pdf")}}" ><i class="fa fa-files-o"></i> <span>Induction Oat</span></a></li>
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">
