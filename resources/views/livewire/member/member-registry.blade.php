@@ -22,12 +22,12 @@
             Search the record to confirm your your membership
         </p>
 
-        <form action="" method="post">
+        {{-- <form action="" method="post"> --}}
             <div class="form-group">
                 <input type="text" placeholder="search with code, first name or chapter" class="form-control" >
             </div>
-            <button class="btn btn-danger btn-lg " style="background-color: red">Search</button>
-        </form>
+            <button type="button" class="btn btn-danger btn-lg " style="background-color: red">Search</button>
+        {{-- </form> --}}
         <br><br>
         {{-- <table class="table">
             <tr>
