@@ -28,7 +28,8 @@
             </div>
             <button class="btn btn-danger btn-lg " style="background-color: red">Search</button>
         </form>
-        <table class="table">
+        <br><br>
+        {{-- <table class="table">
             <tr>
                 <th>SN</th>
                 <th>LAST NAME</th>
@@ -56,11 +57,11 @@
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
-                    
+
                     <tr></tr>
                 </tr>
             </tbody>
-        </table>
+        </table> --}}
 
 </div>
 <br>
