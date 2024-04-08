@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class MemberInformation extends Component
 {
-    public $memberInformation; 
+    public $memberInformation;
 
     public function mount(){
         $this->memberInformation = cms::where([['contentId','membershipInformation'],['startDate', '<=', Carbon::now()]])
@@ -19,7 +19,6 @@ class MemberInformation extends Component
     {
         return view('livewire.member.member-information',
         [ 'memberInformation' => $this->memberInformation]
-        )
-        ->extends('welcome');
+        )->extends('welcome');
     }
 }
