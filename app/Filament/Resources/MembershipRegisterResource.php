@@ -22,7 +22,7 @@ class MembershipRegisterResource extends Resource
 {
     protected static ?string $model = MembershipRegister::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-users';
 
     public static function form(Form $form): Form
     {
@@ -33,7 +33,6 @@ class MembershipRegisterResource extends Resource
                     ->schema([
                  TextInput::make('SNO')
                 ->required()
-                ->minLength(2)
                 ->maxLength(255),
                 TextInput::make('PRACTICE_ID')
                 ->required()
@@ -47,12 +46,10 @@ class MembershipRegisterResource extends Resource
                 ->minLength(2)
                 ->maxLength(255),
                  TextInput::make('PHONE')
-                ->required()
                 ->minLength(2)
                 ->maxLength(255),
                  TextInput::make('EMAIL')
                  ->email()
-                ->required()
                 ->minLength(2)
                 ->maxLength(255),
                 Select::make('GRADE')
@@ -66,11 +63,9 @@ class MembershipRegisterResource extends Resource
                 ,
 
                  TextInput::make('CHAPTER')
-                ->required()
                 ->minLength(2)
                 ->maxLength(255),
                  TextInput::make('ORGANIZATION')
-                ->required()
                 ->minLength(2)
                 ->maxLength(255),
                 DateTimePicker::make('INDUCTED') ,

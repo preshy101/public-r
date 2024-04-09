@@ -449,9 +449,9 @@
 									<a target="_blank" href="https://portal.niprng.org.ng/member/register" style="text-transform: unset" >Membership Register</a>
 
 								</li>
-								<li>
-									<a target="_blank" href="{{route('member_registry.view')}}" style="text-transform: unset" >Membership Register Upload</a> 
-								</li>
+								{{-- <li>
+									<a target="_blank" href="{{route('member_registry.view')}}" style="text-transform: unset" >Membership Register Upload</a>
+								</li> --}}
 
 
 							</ul> <!-- .dropdown-menu -->
