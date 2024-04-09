@@ -1,36 +1,35 @@
 <?php
 
-use App\Http\Controllers\MembershipRegisterController;
 use App\Livewire\Blog;
 use App\Livewire\Home;
 use App\Livewire\Student;
 use App\Livewire\ViewBlog;
 use App\Livewire\About\FAQ;
-
 use App\Livewire\Contactus;
+
 use App\Livewire\SearchBlog;
 use App\Livewire\About\About;
 use App\Livewire\TeamMembers;
-
 use App\Livewire\About\Ethics;
 
 use App\Livewire\About\Council;
+
 use App\Livewire\Hubs\Aviation;
 use App\Livewire\Training\MCPD;
 use App\Livewire\About\Chapters;
-
 use App\Livewire\Career\Careers;
+
 use App\Livewire\About\Composition;
 use App\Livewire\Resource\ViewEvent;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Training\Masterclass;
 use App\Livewire\Student\StudentResult;
-
 use App\Livewire\About\VisionAndMission;
+
 use App\Livewire\Education\StudyCenters;
 use App\Livewire\Resource\ResourceEvent;
-
 use App\Livewire\Resource\ResourceImage;
+
 use App\Livewire\Resource\ResourceVideo;
 use App\Livewire\Resource\ViewAllImages;
 use App\Livewire\Student\StudentDiploma;
@@ -45,6 +44,7 @@ use App\Livewire\Student\StudentRequirment;
 use App\Livewire\Student\StudentStudyCentre;
 use App\Livewire\Membership\MemberInformation;
 use App\Livewire\Training\AnnualLecture\Aminu;
+use App\Http\Controllers\ExcelImportController;
 use App\Livewire\Resource\ResourceDownloadables;
 use App\Livewire\Downloadable\Publications\Books;
 use App\Livewire\Education\AdvisoryBoard\Mandate;
@@ -52,6 +52,7 @@ use App\Livewire\Training\AnnualLecture\SamEpelle;
 use App\Livewire\Education\AdvisoryBoard\Committiees;
 use App\Livewire\Training\AnnualLecture\IgweNnaemeka;
 use App\Livewire\Training\Conference\PRPractitioners;
+use App\Http\Controllers\MembershipRegisterController;
 use App\Livewire\Education\AdvisoryBoard\eComposition;
 use App\Livewire\Education\Examination\QualifyingExams;
 use App\Livewire\Training\Conference\AviationConference;
@@ -124,6 +125,10 @@ Route::get('/student/curriculum', StudentCurriculum::class)->name('student.curri
 // Member route
 Route::get('/membership/information', MemberInformation::class)->name('member.information');
 Route::get('/membership/registry', [MembershipRegisterController::class, 'index'])->name('member.registry');
+Route::get('/membership/registry/upload', [MembershipRegisterController::class, 'uploadView'])->name('member_registry.view');
+Route::post('/membership/registry/upload', [ExcelImportController::class, 'import'])->name('member_registry.import');
+Route::post('/membership/registry/confirm/{id}', [MembershipRegisterController::class, 'confirm'])->name('member_registry.confirm');
+Route::post('/membership/registry/search', [MembershipRegisterController::class, 'searchMembership'])->name('member_registry.search');
 Route::get('/membership/category', MemberCategory::class)->name('member.category');
 Route::get('/membership/upgrade', MemberUpgrade::class)->name('member.upgrade');
 
