@@ -76,7 +76,7 @@
                     <td>{{$result->CHAPTER}}</td>
                     <td>{{$result->INDUCTED}}</td>
                     <td>{{$result->UPGRADED}}</td>
-                    <td>{{$result->ORGANISATION}}</td>
+                    <td>{{$result->ORGANIZATION}}</td>
 
                   @if ($result->Confirmed == 'No')
 
