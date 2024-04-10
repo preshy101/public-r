@@ -31,10 +31,15 @@ class MembershipRegisterController extends Controller
         if ($result == null) {
             $result = MembershipRegister::where('EMAIL', $request->search)->first();
         }
-        session()->flash('result', $result);
+        if ($result) {
+            session()->flash('result', $result);
+        }else{
+
+         session()->flash('error', "No Record found!");
+        }
         return redirect()->back();
     }
-    public function confirm(string $id)  { 
+    public function confirm(string $id)  {
         MembershipRegister::findOrFail($id)->update(['Confirmed' => 'Yes']);
         session()->flash('success', 'Membership Record Confirmed successfully');
         return redirect()->back();

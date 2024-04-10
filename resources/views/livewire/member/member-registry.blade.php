@@ -25,7 +25,12 @@
         <div class="alert alert-success">
             {{ session('success') }}
         </div>
-    @endif
+        @endif
+        @if(session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+        @endif
         <form action="{{route('member_registry.search')}}" method="post">
             @csrf
             <div class="form-group">
@@ -35,6 +40,9 @@
         </form>
 
         <br><br>
+        @php
+            $result = [];
+        @endphp
         @if (Session::has('result'))
             @php
                 $result = Session::get('result');
@@ -89,10 +97,10 @@
                 </tr>
             </tbody>
         </table>
-        @elseif(!Session::has('result'))
+        {{-- @elseif(!Session::get('result'))
         <td>
             No Record Found!
-        </td>
+        </td> --}}
         @endif
 
 
