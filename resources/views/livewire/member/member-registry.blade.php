@@ -28,7 +28,7 @@
         @endif
         @if(session('error'))
         <div class="alert alert-danger">
-            {{ session('error') }}
+            {{ session('error') }}  <button type="submit" class="btn btn-success"><i class="fa-fa-check">Confirm</i></button>
         </div>
         @endif
         <form action="{{route('member_registry.search')}}" method="post">
