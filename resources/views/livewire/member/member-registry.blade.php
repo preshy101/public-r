@@ -28,7 +28,9 @@
         @endif
         @if(session('error'))
         <div class="alert alert-danger">
-            {{ session('error') }}  <button type="submit" class="btn btn-success"><i class="fa-fa-check">Confirm</i></button>
+            {{ session('error') }}  <a href="https://forms.gle/6pDTNGghLYSbjqFG7" target="_blank" class="btn btn-danger-outline" rel="noopener noreferrer">
+                <i class="fa fa-info"></i> Complain
+                </a>
         </div>
         @endif
         <form action="{{route('member_registry.search')}}" method="post">
