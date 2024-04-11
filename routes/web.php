@@ -125,8 +125,8 @@ Route::get('/student/curriculum', StudentCurriculum::class)->name('student.curri
 // Member route
 Route::get('/membership/information', MemberInformation::class)->name('member.information');
 Route::get('/membership/registry', [MembershipRegisterController::class, 'index'])->name('member.registry');
-// Route::get('/membership/registry/upload', [MembershipRegisterController::class, 'uploadView'])->name('member_registry.view');
-// Route::post('/membership/registry/upload', [ExcelImportController::class, 'import'])->name('member_registry.import');
+Route::get('/membership/registry/upload', [MembershipRegisterController::class, 'uploadView'])->name('member_registry.view');
+Route::post('/membership/registry/upload', [ExcelImportController::class, 'import'])->name('member_registry.import');
 Route::post('/membership/registry/confirm/{id}', [MembershipRegisterController::class, 'confirm'])->name('member_registry.confirm');
 Route::post('/membership/registry/search', [MembershipRegisterController::class, 'searchMembership'])->name('member_registry.search');
 Route::get('/membership/category', MemberCategory::class)->name('member.category');
