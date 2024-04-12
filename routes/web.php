@@ -129,6 +129,7 @@ Route::get('/membership/registry', [MembershipRegisterController::class, 'index'
 // Route::post('/membership/registry/upload', [ExcelImportController::class, 'import'])->name('member_registry.import');
 Route::post('/membership/registry/confirm/{id}', [MembershipRegisterController::class, 'confirm'])->name('member_registry.confirm');
 Route::post('/membership/registry/search', [MembershipRegisterController::class, 'searchMembership'])->name('member_registry.search');
+Route::get('/news/publication', [MembershipRegisterController::class, 'publication'])->name('news.publication');
 Route::get('/membership/category', MemberCategory::class)->name('member.category');
 Route::get('/membership/upgrade', MemberUpgrade::class)->name('member.upgrade');
 

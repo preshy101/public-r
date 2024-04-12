@@ -1,42 +1,42 @@
 
 
-<div> 
+<div>
 	{{-- @section('content') --}}
     {{-- Slider --}}
-	{{-- @if (count($slide) > 0)  
-     <section class="hero-area"> 
+	{{-- @if (count($slide) > 0)
+     <section class="hero-area">
 		<div id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
-				@if ($slide != null) 
-				@foreach ($slide as $index => $item) 
+				@if ($slide != null)
+				@foreach ($slide as $index => $item)
 				<li data-target="#corporex-slider" data-slide-to="{{$index}}" class="{{( $index == 0 )? 'active':'' }}"></li>
-			
-				@endforeach	
-			
+
+				@endforeach
+
 			</ol> <!-- .carousel-indicators -->
-			 
+
 			<div class="carousel-inner">
- 
-				@foreach ($slide as $index => $item) 
-				<div class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 
-					<img class="slider-bg img-responsive" 
-					src="{{Storage::url($item->image)}}"  
+
+				@foreach ($slide as $index => $item)
+				<div class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" >
+					<img class="slider-bg img-responsive"
+					src="{{Storage::url($item->image)}}"
 					alt="slider image 01">
 					<div class="container">
-						
+
 						<div class="carousel-caption">
 							<h1 class="h1-extra">
 							 <!-- <span>N.I.P.R</span> -->
 								{{$item->title}}</h1>
 							<p class="lead" style="color: white;">
 								{!!$item->description!!}
-							</p> 
+							</p>
 							<!-- <a class="btn btn-main" href="#">learn more</a> -->
 						</div> <!-- .carousel-caption -->
 					</div> <!-- .container -->
 				</div> <!-- .item -->
 				@endforeach
-			
+
 			</div> <!-- .carousel-inner -->
 
 			<!-- Controls -->
@@ -51,19 +51,112 @@
   			</a> <!-- .carousel-control -->
 		@endif
 	</div> <!-- .carousel -->
-	</section> <!-- .hero-area --> 
+	</section> <!-- .hero-area -->
 	<!-- Slideshow container -->
 	@endif --}}
-	
+
 	{{-- Partnership --}}
+
+    <div class="modal fade bd-example-modal-lg" id="myModalz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content ">
+            <div class="modal-header">
+                <h5 class="modal-title " style="color: red" id="exampleModalLongTitle">Call for papers</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-3 " >
+                <p>
+					<strong>
+
+                    Publication Title: "From Strength to Brilliance: 61 Years of Public Relations Practice in Nigeria" <br>
+						</strong>
+						<br>
+                    The Nigerian Institute of Public Relations is pleased to announce a call for papers for an upcoming publication titled "From Strength to Brilliance: 61 Years of Public Relations Practice in Nigeria." This publication aims to provide a comprehensive understanding of the evolution, challenges, and achievements of public relations in Nigeria over the past 61 years.
+                    <br>
+                    <br>
+                    The relevance of public relations practice in Nigeria cannot be overstated, as it plays a vital role in shaping perceptions, managing reputations, and influencing public opinion. This publication seeks to explore the growth and impact of public relations in Nigeria, shedding light on its journey from strength to brilliance.
+                    <br>
+                    <br>
+                    We invite researchers, scholars, practitioners, and industry experts to submit original research articles, case studies, and conceptual papers that explore diverse aspects of public relations practice in Nigeria. Topics of interest include, but are not limited to:
+                </p>
+                <ol>
+                        <li>  Historical analysis of key milestones in public relations practice in Nigeria.
+                            </li>
+                        <li>              The role of public relations in nation-building and promoting socio-economic development.
+                            </li>
+                        <li>              Ethical considerations and challenges in public relations practice in Nigeria.
+                            </li>
+                        <li>              The impact of digital media and technology on public relations strategies in Nigeria.
+                            </li>
+                        <li>              Crisis management and reputation building in the Nigerian context.
+                            </li>
+                        <li>              Public relations and corporate social responsibility in Nigeria.
+                            </li>
+                        <li>              The intersection of public relations and politics in Nigeria.
+                            </li>
+                        <li>              Public relations education and professional development in Nigeria.
+                            </li>
+                    </ol>
+<br>
+                    <ol class="pl-5" style="list-style-type: circle">
+                        Submissions should please follow the guidelines outlined below:
+<br>
+                    <li>                    Manuscripts should be written in English and should not exceed 6,000 words.
+                        </li>
+                    <li>                    All submissions should be original and not previously published or under consideration elsewhere.
+                        </li>
+                    <li>                    Papers should be formatted according to the guidelines specified by the American Psychological Association (APA) referencing style.
+                        </li>
+                    <li>                    Abstracts should be submitted along with the full manuscript and should not exceed 250 words.
+                        </li>
+                    <li>                    We specially invite submission of iconic photographs that commorate any historical moment in the annals of public relations practice in Nigeria. All photographs and graphs to be submitted as saperate documents, numbered and their position clearly marked within the paper
+                        </li>
+                    <li>                    Submissions should be sent via email to "vpresident@niprng.org.ng and copy dandaura@gmail.com" with the subject line: "Submission: From Strength to Brilliance Publication."
+                        </li>
+
+                    </ol>
+                    <br>
+                    <ol class="pl-5" style="list-style-type: circle">
+                        Important Dates:
+                        <br>
+                        <li>                    Deadline for submission: 15th May 2024
+                                </li>
+                        <li>                    Notification of acceptance: 18th May 2024
+                                </li>
+                        <li>                    Final manuscript submission: 25th May 2024
+                                </li>
+                        <li>                    Publication release: 15th June 2024
+                                </li>
+                    </ol>
+                    <p>
+                    For further inquiries, please contact the editorial team at: <a href="mailto:vpresident@niprng.org.ng">vpresident@niprng.org.ng</a>  and copy <a href="mailto:dandaura@gmail.com">dandaura@gmail.com</a> .
+
+                    We look forward to receiving your contributions and sharing valuable insights on the remarkable journey of public relations practice in Nigeria.
+
+                    Sincerely,
+                </p>
+                    <blockquote>
+
+                       <small> Professor Emmanuel Samu Dandaura, fnipr</small>
+                      <small>  Editor-in-Chief, Vice President and Vice Chairman of NIPR Council.</small>
+                    </blockquote>
+
+                </div>
+            </div>
+        </div>
+      </div>
+
 	<section class="intro-section intro-08 section-block" style="padding-bottom: 0%; padding-top: 2%">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 col-sm-12" style="padding-top: 8px">
-				<p>Premium Partners:</p>	
+				<p>Premium Partners:</p>
 				</div>
 				<div class="col-md-10 col-sm-12" style="margin-bottom: 0%; ">
-			<marquee> 
+			<marquee>
 				<a href="http://www.hensekgroup.com" target="_blank" rel="noopener noreferrer"><img width="150px" style="margin-right: 35px;" src="{{asset('./img/hensek_logo.png')}}" alt="" srcset=""></a>
 				<a href="https://ng.usembassy.gov" target="_blank" rel="noopener noreferrer"><img width="60px" style="margin-right: 35px;" height="60px" src="{{asset('./img/usm-nigeria-seal.png')}}" alt="" srcset=""></a>
 				<a href="https://ogunstate.gov.ng" target="_blank" rel="noopener noreferrer"><img width="60px" style="margin-right: 35px;" height="60px" src="{{asset('./img/partner.png')}}" alt="" srcset=""></a>
@@ -77,35 +170,35 @@
 	<section class=" intro-08 section-block" style="padding-bottom: 0%; padding-top: 0%">
 		{{-- <div class="container"> --}}
 			<div class="row">
-			<div class="col-lg-8 content-block" style="padding-left: 5%; 
-			{{-- padding-right: 5%;  --}} 
+			<div class="col-lg-8 content-block" style="padding-left: 5%;
+			{{-- padding-right: 5%;  --}}
 			text-align: justify; margin-bottom: 2%
 			text-justify: inter-word;">
 
 				{{-- <h2 style="text-transform: unset">
-						 
+
 				  Nigerian Institute Of Public Relations (NIPR)
 				</h2>
 				 <center>
-					<p class="lead"> 	 
+					<p class="lead">
 						{{($welcome != null)?$welcome->description:""}}
 					</p>
 				 </center> --}}
 
 				<img src="{{asset('./img/OurHistory.jpg')}}"style="width:100%" alt="" srcset="">
-				
+
 				<p  style="width: 500px"
-				> {!!($welcome != null)?$welcome->fullText:""!!} </p>	
+				> {!!($welcome != null)?$welcome->fullText:""!!} </p>
 				{{-- <div class=" col-md-12 col-lg-4" >
 					<div class="item-wrapper" style=" height: 348;">
 						<div class="icon-box" ><h3 style="color: red; height: 348;"><i class="pe-7s-rocket"></i> <b style="text-transform: capitalize"> Mission and Vision</b> </h3> </div>
 						<div class="content-wrapper" >
-							
+
 							<p style=" height: 348;">
-								 <li> To be the leading regional public relations organisation.</li> 
+								 <li> To be the leading regional public relations organisation.</li>
 								<li> To unite the PR profession and bring all persons / organisations under a common banner.</li>
 								<li> To represent the industry on PR issues so as to establish growth for the profession as a whole.</li>
-								<li> To enhance the image of public relations in Nigeria</li>		 
+								<li> To enhance the image of public relations in Nigeria</li>
 							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 -->
@@ -113,25 +206,25 @@
 					<div class="item-wrapper" style=" height: 348;" >
 						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-id"></i> Up Comming Event  </h3></div>
 						<div class="content-wrapper" >
-							
+
 							<p style=" height: 348;">
 								 NIPR determine what standards of knowledge
-								 and skills are to be attained by Public Relations practitioners. For high standards of practice. 
-								 The Institute must from time to time upgrade its Code of Professional Conduct. 
-								 The decree empowers the Council to make byelaws and other rules  
+								 and skills are to be attained by Public Relations practitioners. For high standards of practice.
+								 The Institute must from time to time upgrade its Code of Professional Conduct.
+								 The decree empowers the Council to make byelaws and other rules
 							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 -->
 				<div class=" col-md-12 col-lg-4" >
 					<div class="item-wrapper" style=" height: 348;">
 						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-medal"></i> Certification</h3></div>
-						<div class="content-wrapper" > 
+						<div class="content-wrapper" >
 							<p style=" height: 348;">
 								Elevate your expertise and credibility with our range of industry-recognized certifications, empowering you to stay ahead in today's competitive landscape,
-							and introducing a learning management system to foster and breed excellence across every level	
-						<br> 
-						<br> 
-					
+							and introducing a learning management system to foster and breed excellence across every level
+						<br>
+						<br>
+
 						</p>
 						</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
@@ -139,10 +232,10 @@
 
 				<div class="row blog-posts">
 					<br>
-					<h3 style="color: red; text-transform: unset" class="entry-title"><a style="color: red; text-transform: unset" href="https://portal.niprng.org.ng/events">Upcoming Events</a></h3> 
+					<h3 style="color: red; text-transform: unset" class="entry-title"><a style="color: red; text-transform: unset" href="https://portal.niprng.org.ng/events">Upcoming Events</a></h3>
 					<br>
-					@if($events) 
-					@foreach ($events as $item) 
+					@if($events)
+					@foreach ($events as $item)
 					<div class="col-md-4" style="margin-bottom: 0%">
 						<div class="post-wrapper post-grid" style="background-color: white; margin-bottom: 0px; height: 446px">
 							<div class="image-wrapper">
@@ -161,7 +254,7 @@
 								<div class="entry-content">
 									<p>
 										{{-- {{$item->description}} --}}
-										{!! Str::words($item->description, 10, ' ...') !!} 
+										{!! Str::words($item->description, 10, ' ...') !!}
 									</p>
 								</div>
 								<a class="btn-open" style="text-transform: unset" href="{{$item->version}}">Register</a>
@@ -175,32 +268,32 @@
 				<a class="btn btn-main" wire:navigate href="/resources/up-coming-events">See More</a>
 			</div>
 		</div> <!-- .col-md-8 img-block -->
-			
+
 
 			<div class="col-lg-4  ">
 			<div style="border-radius: 2%; " id="corporex-slider" class="corporex-slider corporex-slider-03 carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 
-					@if (count($post) > 0)  
-					@foreach ($post as $index => $item) 
+					@if (count($post) > 0)
+					@foreach ($post as $index => $item)
 					<li data-target="#corporex-slider" data-slide-to="{{$index}}" class="{{( $index == 0 )? 'active':'' }}"></li>
-					@endforeach	
-				
+					@endforeach
+
 				</ol> <!-- .carousel-indicators -->
-				 
+
 				<div style="border-radius: 2%; padding-right: 5%; padding-left: 5%" class="carousel-inner">
-	 
-					@foreach ($post as $index => $item) 
-					<div style="border-radius: 2%" class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" > 
-						<img class="slider-bg img-responsive" 
-						
-						src="{{Storage::url($item->image)}}"  
+
+					@foreach ($post as $index => $item)
+					<div style="border-radius: 2%" class="item caption-left gradient-left-dark {{( $index == 0 )? 'active':'' }}" >
+						<img class="slider-bg img-responsive"
+
+						src="{{Storage::url($item->image)}}"
 						alt="slider image 01">
 						<div class="container">
-							
+
 							<div class="carousel-caption" style="color: white;">
 								<h6 class="h1-extra" style="color: #f5f5f5;font-size: 30px;">
-								 <!-- <span>N.I.P.R</span> --> 
+								 <!-- <span>N.I.P.R</span> -->
 								 {{-- {!! Str::words($item->title, 4, ' ...') !!}  --}}
 								<br><br>
 								<br>
@@ -208,33 +301,33 @@
 								<br>
 								<br>
 								<br>
-								
-								 <a class="btn btn-main" wire:navigate href="/news/posts/{{$item->slug}}">see more</a> 
-								
+
+								 <a class="btn btn-main" wire:navigate href="/news/posts/{{$item->slug}}">see more</a>
+
 							</h6>
 							<small class="lead" style="color: white ;font-size: 15px;">
-								{!! Str::words($item->title, 10, ' ...') !!} 
-							</small> 
+								{!! Str::words($item->title, 10, ' ...') !!}
+							</small>
 							</div> <!-- .carousel-caption -->
 						</div> <!-- .container -->
 					</div> <!-- .item -->
 					@endforeach
-				
+
 				</div> <!-- .carousel-inner -->
-	
+
 				<!-- Controls -->
 				  <a class="left carousel-control" href="#corporex-slider" role="button" data-slide="prev">
 					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 					  <span class="sr-only">Previous</span>
 				  </a> <!-- .carousel-control -->
-	
+
 				  <a class="right carousel-control" href="#corporex-slider" role="button" data-slide="next">
 					  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 					  <span class="sr-only">Previous</span>
 				  </a> <!-- .carousel-control -->
 			@endif
 			</div> <!-- .carousel -->
-			</div>  
+			</div>
 
 		</div> <!-- .row -->
 
@@ -244,12 +337,12 @@
 					<div class="item-wrapper" style=" height: 348;">
 						<div class="icon-box" ><h3 style="color: red; height: 348;"><i class="pe-7s-rocket"></i> <b style="text-transform: capitalize"> Mission and Vision</b> </h3> </div>
 						<div class="content-wrapper" >
-							
+
 							<p style=" height: 348;">
-								 <li> To be the leading regional public relations organisation.</li> 
+								 <li> To be the leading regional public relations organisation.</li>
 								<li> To unite the PR profession and bring all persons / organisations under a common banner.</li>
 								<li> To represent the industry on PR issues so as to establish growth for the profession as a whole.</li>
-								<li> To enhance the image of public relations in Nigeria</li>		 
+								<li> To enhance the image of public relations in Nigeria</li>
 							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 -->
@@ -257,25 +350,25 @@
 					<div class="item-wrapper" style=" height: 348;" >
 						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-id"></i> Professionalism  </h3></div>
 						<div class="content-wrapper" >
-							
+
 							<p style=" height: 348;">
 								 NIPR determine what standards of knowledge
-								 and skills are to be attained by Public Relations practitioners. For high standards of practice. 
-								 The Institute must from time to time upgrade its Code of Professional Conduct. 
-								 The decree empowers the Council to make byelaws and other rules  
+								 and skills are to be attained by Public Relations practitioners. For high standards of practice.
+								 The Institute must from time to time upgrade its Code of Professional Conduct.
+								 The decree empowers the Council to make byelaws and other rules
 							</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .col-sm-4 --> --}}
 				{{-- <div class=" col-md-12 col-lg-4" >
 					<div class="item-wrapper" style=" height: 348;">
 						<div class="icon-box"><h3 style="color: red; text-transform: capitalize"><i class="pe-7s-medal"></i> Certification</h3></div>
-						<div class="content-wrapper" > 
+						<div class="content-wrapper" >
 							<p style=" height: 348;">
 								Elevate your expertise and credibility with our range of industry-recognized certifications, empowering you to stay ahead in today's competitive landscape,
-							and introducing a learning management system to foster and breed excellence across every level	
-						<br> 
-						<br> 
-					
+							and introducing a learning management system to foster and breed excellence across every level
+						<br>
+						<br>
+
 						</p>
 						</div> <!-- .content-wrapper -->
 					</div> <!-- .item-wrapper -->
@@ -284,7 +377,7 @@
 		{{-- </div> <!-- .container --> --}}
 	</section> <!-- .about-section -->
 
-	@include('livewire.sections.presidentMessage') 
+	@include('livewire.sections.presidentMessage')
 
     {{-- Statistics --}}
 	<section class="fun-facts-section fun-facts-01 section-block" >
@@ -293,9 +386,9 @@
                 <div class="col-md-12 facts-block" style=" height: 150px;">
                     {{-- <h2><span>Professionalism at its best</span>Our excellent records preceeds us</h2>
 					<p>
-						With a track record of excellence, our commitment to quality and innovation is reflected in our records, 
-						showcasing a history of successful partnerships and satisfied clients 
-					</p>    --}} 
+						With a track record of excellence, our commitment to quality and innovation is reflected in our records,
+						showcasing a history of successful partnerships and satisfied clients
+					</p>    --}}
                         {{-- <div class="col-xs-12 col-md-3">
                             <i class="pe-7s-user " style="font-size: 50px;"></i>
 							<h3 style="text-transform: capitalize"><span class="counter">15455</span>Students</h3>
@@ -311,27 +404,27 @@
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-camera" style="font-size: 50px;"></i>
 							<h3 style="text-transform: capitalize"><span class="counter">36</span>Chapters</h3>
-						</div> <!-- .col-xs-6 --> 
+						</div> <!-- .col-xs-6 -->
 				</div> <!-- .col-md-6 -->
 				{{-- <div class="col-md-5 col-md-offset-1 facts-block">
-                 
-					
+
+
 				</div> <!-- .col-md-6 --> --}}
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section> <!-- .split-section -->
-	
+
     {{-- FAQ --}}
 	@if(count($faq)>0)
-    <section class="accordion-section" 
+    <section class="accordion-section"
 	{{-- style="background:#f5f5f5;" --}}
 	>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="panel-group corporex-accordion accordion-style-01 radial" id="accordion" style="background-color: white; height: 391px">
-                        @foreach ($faq as $index => $item) 
-						<div class="panel" 
+                        @foreach ($faq as $index => $item)
+						<div class="panel"
 						{{-- style="background:#f5f5f5;" --}}
 						>
                             <div class="panel-heading {{($index == 0)? 'active':''}}">
@@ -348,9 +441,9 @@
                                     </p>
                                 </div> <!-- .panel-body -->
                             </div> <!-- .panel-collapse -->
-                        </div> <!-- .panel panel-default --> 
-						@endforeach 
-					
+                        </div> <!-- .panel panel-default -->
+						@endforeach
+
                     </div> <!-- .panel-group -->
                 </div> <!-- .col-md-6 -->
                 <div class="col-md-6">
@@ -371,18 +464,18 @@
 			<div class="title-block white"  >
 				<h2>Endorsements</h2>
 				<p>
-					
+
 				</p>
 			</div> <!-- .title-block -->
 			<div class="testimonial-carousel" id="testimonial-carousel">
-				@foreach ($testimony as  $item) 
-				 
-				
+				@foreach ($testimony as  $item)
+
+
 				<div class="testimonial-item">
 					<div class="content-wrapper">
 						<div class="image-wrapper">
-							<img class="img-responsive" 
-							src="{{Storage::url($item->image)}}" 
+							<img class="img-responsive"
+							src="{{Storage::url($item->image)}}"
 							style="width:72px; height: 72px;" alt="quote author 01"></div>
 						<blockquote>
 							{{ $item->description }}
@@ -392,9 +485,9 @@
 						</h4>
 					</div> <!-- .content-wrapper -->
 				</div> <!-- .col-md-4 -->
-				 
+
 				@endforeach
-				 
+
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section> <!-- .testimonial-section -->
@@ -419,10 +512,18 @@
 						<img src="http://via.placeholder.com/140x80" alt="partner image">
 					</div> <!-- .image-wrapper -->
 				</div> <!-- .col-md-3 -->
-				
+
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section> <!-- .partner-section -->
  --}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(window).on('load', function() {
 
+        var interval = setTimeout(function() {
+            $('#myModalz').modal('show');
+  }, 3000)
+    });
+</script>
 </div>

@@ -44,5 +44,8 @@ class MembershipRegisterController extends Controller
         session()->flash('success', 'Membership Record Confirmed successfully');
         return redirect()->back();
     }
+    public function publication(){
+        return view('livewire.publication.index');
+    }
 }
 

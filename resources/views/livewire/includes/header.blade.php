@@ -111,6 +111,8 @@
 		</div><!-- .spinner-wrapper -->
 	</div> <!-- .corporex-preloader -->
 	 --}}
+    
+
 	<header class="site-header fixed-top" >
 		{{-- <div class="top-bar clearfix" id="" style="height: 200px;"> --}}
 	<img src="{{asset("./img/Banner1.jpg")}}" style=" width: 100%" alt="" srcset="">
@@ -538,6 +540,9 @@
 								<li><a wire:navigate href="#"style="text-transform: unset; color:gray">Newslinks </a></li>
 								<li>
 									<a wire:navigate href="#" style="text-transform: unset;  color:gray">Press Releases</a>
+								</li>
+								<li>
+									<a  href="{{route('news.publication')}}" style="text-transform: unset;">Publications</a>
 								</li>
 							</ul>
 						</li>
