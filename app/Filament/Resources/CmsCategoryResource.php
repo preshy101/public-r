@@ -8,12 +8,7 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use App\Models\CmsCategory;
 use Filament\Resources\Resource;
-use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Section;
-use Filament\Forms\Components\Textarea;
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Forms\Components\TextInput; 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\CmsCategoryResource\Pages;
@@ -24,18 +19,25 @@ class CmsCategoryResource extends Resource
     protected static ?string $model = CmsCategory::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-circle-stack';
+    protected static ?string $activeNavigationIcon = 'heroicon-s-circle-stack';
+
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Section::make('')  
+                Section::make('')
                     ->description('')
-                    ->schema([  
-                TextInput::make('title')->live()->required()->minLength(3)->maxLength(150), 
-                Textarea::make('description')->required()->maxLength(250),
-                Toggle::make('status'), 
-                ])->columns(2) 
+                    ->schema([
+                Forms\Components\TextInput::make('title')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('description')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\Toggle::make('status')
+                    ->required(),
+            ])->columns(2)
             ]);
     }
 
@@ -43,12 +45,12 @@ class CmsCategoryResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('title')
-                ->searchable()
-                ->sortable(),
-                TextColumn::make('description')
-                ->limit(50),
-                IconColumn::make('status'),
+                Tables\Columns\TextColumn::make('title')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('description')
+                    ->searchable(),
+                Tables\Columns\IconColumn::make('status')
+                    ->boolean(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -57,17 +59,21 @@ class CmsCategoryResource extends Resource
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                
             ])
             ->filters([
-                //
+                Tables\Filters\TrashedFilter::make(),
             ])
             ->actions([
-                // Tables\Actions\EditAction::make(),
+                Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make()->requiresConfirmation(),
+                Tables\Actions\ForceDeleteAction::make(),
+                Tables\Actions\RestoreAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\ForceDeleteBulkAction::make(),
+                    Tables\Actions\RestoreBulkAction::make(),
                 ]),
             ]);
     }
@@ -86,5 +92,14 @@ class CmsCategoryResource extends Resource
             'create' => Pages\CreateCmsCategory::route('/create'),
             'edit' => Pages\EditCmsCategory::route('/{record}/edit'),
         ];
+    }
+
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()
+            ->withoutGlobalScopes([
+                SoftDeletingScope::class,
+            ])
+            ;
     }
 }

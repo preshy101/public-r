@@ -17,10 +17,11 @@ use App\Filament\Resources\ContactUszResource\RelationManagers;
 class ContactUszResource extends Resource
 {
     protected static ?string $model = feedback::class;
-    
+
     protected static ?string $navigationLabel = 'Feedback';
- 
+
     protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-left-right';
+    protected static ?string $activeNavigationIcon = 'heroicon-s-chat-bubble-left-right';
 
     public static function form(Form $form): Form
     {
@@ -28,7 +29,7 @@ class ContactUszResource extends Resource
             ->schema([
                 Section::make('') ->columns(2)
                     ->description('')
-                    ->schema([  
+                    ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
@@ -44,7 +45,7 @@ class ContactUszResource extends Resource
                 Forms\Components\Textarea::make('message')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\Toggle::make::make('status'),
+                Forms\Components\Toggle::make('status'),
             ])
         ]);
     }

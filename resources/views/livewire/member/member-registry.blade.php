@@ -38,6 +38,7 @@
             <div class="form-group">
                 <input type="text" required name="search" placeholder="search with Practice ID, Last name, Other Names, Phone Number, or email" class="form-control" >
             </div>
+            
             <button type="submit" class="btn btn-danger btn-lg " style="background-color: red">Search</button>
         </form>
 

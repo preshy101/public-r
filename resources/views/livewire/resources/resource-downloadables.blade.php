@@ -6,7 +6,7 @@
 				<div class="content-wrapper">
 					<h2>Resources </h2>
 					<ul class="bread-crumb">
-						<li><a href="/">Home</a></li> 
+						<li><a href="/">Home</a></li>
 						<li><a href="#">Downloadables</a></li>
 					</ul>
 				</div> <!-- .content-wrapper -->
@@ -20,19 +20,19 @@
     <h1 class="entry-title"><a style="color: red" href="#">Downloadable</a></h1>
     <p class="lead">find useful items that suite interest</p>
     <br>
-   
+
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
-          <b> UPDATES</b>  
+          <b> ACT</b>
         </a>
         <a target="_blank" href="{{ asset('docs/updates/NIPR_Gazette.pdf')}}"  class="list-group-item list-group-item-action">NIPR Gazette</a>
-        
+
     </div>
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
-          <b> BROCHURES</b>  
+          <b> BROCHURES</b>
         </a>
-      
+
 
 
         <a target="_blank" href="{{ asset('docs/corporate_membership.pdf')}}"  class="list-group-item list-group-item-action">CORPORATE MEMBERSHIP BROCHURE</a>
@@ -46,12 +46,12 @@
         <a target="_blank" href="{{ asset('docs/membership_application.pdf')}}"  class="list-group-item list-group-item-action ">STUDENT HANDBOOK PROFESSIONAL DIPLOMA IN PUBLIC RELATIONS (DPR)</a>
       </div>
       <br>
-      <br> 
+      <br>
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
-           <b> FORMS</b> 
+           <b> FORMS</b>
         </a>
-        
+
         <a  target="_blank" href="{{asset("./docs/forms/NIPR_INDUCTION_OATH.pdf")}}" class="list-group-item list-group-item-action">NIPR INDUCTION OATH FORM</a>
         <a  target="_blank" href="{{ asset('docs/forms/membership_application.pdf')}}" class="list-group-item list-group-item-action">MEMBERSHIP APPLICATION FORM</a>
         <a target="_blank" href="{{ asset('docs/forms/application_for_corporate_membership.pdf')}}" class="list-group-item list-group-item-action">APPLICATION FOR CORPORATE MEMBERSHIP

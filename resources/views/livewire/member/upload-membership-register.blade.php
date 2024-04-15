@@ -9,14 +9,22 @@
             {{ session('success') }}
         </div>
     @endif
+    @if(session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
 
     <form action="{{ route('member_registry.import') }}" method="POST" enctype="multipart/form-data">
         @csrf
-        <div class="form-group">
+        <div class="form-group ">
             <label for="file">Choose Excel File</label>
             <input type="file" name="file" id="file" class="form-control">
         </div>
-        <button type="submit" class="btn btn-primary">Import</button>
+        <div class="form-group">
+            <input type="password" required name="password" placeholder="*************** " class="form-control" >
+        </div>
+        <button type="submit" class="btn btn-danger">Import</button><br>
     </form>
-</div>
+</div><br><br>
 @endsection

@@ -28,6 +28,7 @@ class CmsResource extends Resource
     protected static ?string $navigationLabel = 'CMS';
 
     protected static ?string $navigationIcon = 'heroicon-o-squares-plus';
+    protected static ?string $activeNavigationIcon = 'heroicon-s-squares-plus';
 
     public static function form(Form $form): Form
     {
@@ -35,7 +36,7 @@ class CmsResource extends Resource
             ->schema([
                 Section::make('') ->columns(2)
                     ->description('')
-                    ->schema([  
+                    ->schema([
                 Select::make('contentId')
                 ->required()
                 ->label('Content Category')
@@ -59,25 +60,25 @@ class CmsResource extends Resource
                     // membership
                     'membershipInformation' => 'Membership Information',
                     'membershipCategory' => 'Membership Category',
-                    'membershipUpgrade' => 'Membership Upgrade', 
+                    'membershipUpgrade' => 'Membership Upgrade',
                     // resources
                     'images' => 'Image Gallery',
                     'events' => 'Events',
                     'videos' => 'Video Gallery',
                     'downloads' => 'Downloadable'
                 ])
-                ,   
+                ,
                 TextInput::make('version')
-                ->required() 
+                ->required()
                 ->minLength(2)
-                ->maxLength(255), 
+                ->maxLength(255),
                 TextInput::make('title')
-                ->required() 
+                ->required()
                 ->placeholder('Title')
                 ->minLength(2)
                 ->columnSpanFull()
-                
-                ->maxLength(255), 
+
+                ->maxLength(255),
                 DateTimePicker::make('startDate')->nullable()
                 ->required(),
                 DateTimePicker::make('endDate')->nullable()
@@ -90,19 +91,19 @@ class CmsResource extends Resource
                 ->columnSpanFull()
                 ->minLength(2)
                 ->maxLength(255),
-                
-                RichEditor::make('fullText') 
-                ->minLength(2) 
+
+                RichEditor::make('fullText')
+                ->minLength(2)
                 ->columnSpanFull()
                 ->fileAttachmentsDirectory('attachments')
                 ->fileAttachmentsVisibility('private'),
-            
+
             ])->columnSpan(2),
 
                 Section::make('Images')
                 ->description('')
                 ->schema(
-                    [ 
+                    [
                 FileUpload::make('image')
                 ->minSize(5)
                 ->maxSize(1200400)
@@ -118,11 +119,11 @@ class CmsResource extends Resource
                     '1:1',
                 ])
                 ->directory('resources/thumbnails'),
-                Textarea::make('note') 
+                Textarea::make('note')
                 ->minLength(2)
-                ->maxLength(255), 
-                ])->collapsible()->columnSpan(['lg' => 1]), 
-                
+                ->maxLength(255),
+                ])->collapsible()->columnSpan(['lg' => 1]),
+
             ])->columns(3);
     }
 
@@ -130,9 +131,9 @@ class CmsResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('contentId') 
+                TextColumn::make('contentId')
                 ->searchable()
-                ->label('Content Type') 
+                ->label('Content Type')
                 ->sortable(),
                 TextColumn::make('version')
                 ->sortable(),

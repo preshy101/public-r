@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MembershipRegister;
+use App\Models\Publications;
 use Illuminate\Http\Request;
+use App\Models\MembershipRegister;
 
 class MembershipRegisterController extends Controller
 {
@@ -45,7 +46,9 @@ class MembershipRegisterController extends Controller
         return redirect()->back();
     }
     public function publication(){
-        return view('livewire.publication.index');
+        $publications = Publications::where('status', true)->latest()->paginate(1);
+
+        return view('livewire.publication.index', compact('publications'));
     }
 }
 

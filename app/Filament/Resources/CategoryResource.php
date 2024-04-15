@@ -23,6 +23,7 @@ class CategoryResource extends Resource
     protected static ?string $model = Category::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-archive-box';
+    protected static ?string $activeNavigationIcon = 'heroicon-s-archive-box';
     protected static ?string $navigationGroup = 'Blog';
     protected static ?string $navigationLabel = 'Category';
 
@@ -31,11 +32,11 @@ class CategoryResource extends Resource
     {
         return $form
             ->schema([
-                Section::make('')  
+                Section::make('')
                     ->description('')
-                    ->schema([  
+                    ->schema([
                 TextInput::make('title')->live()->required()->minLength(3)->maxLength(150)
-                ->afterStateUpdated(function 
+                ->afterStateUpdated(function
                 (string $operation, $state, Forms\Set $set){
                     if ($operation === 'edit') {
                         return;
@@ -57,7 +58,7 @@ class CategoryResource extends Resource
             TextColumn::make('title')->sortable()->searchable(),
             TextColumn::make('slug')->sortable()->searchable(),
             TextColumn::make('text_color')->sortable()->searchable(),
-            TextColumn::make('bg_color')->sortable()->searchable(), 
+            TextColumn::make('bg_color')->sortable()->searchable(),
         ])
         ->filters([
             //

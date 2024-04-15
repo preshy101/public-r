@@ -111,7 +111,7 @@
 		</div><!-- .spinner-wrapper -->
 	</div> <!-- .corporex-preloader -->
 	 --}}
-    
+
 
 	<header class="site-header fixed-top" >
 		{{-- <div class="top-bar clearfix" id="" style="height: 200px;"> --}}
@@ -199,8 +199,8 @@
 					</div> <!-- col-lg-3 col-md-6 -->
 					</li>
 					<li>
+                        {{-- <li><a target="_blank" href="{{asset("./docs/forms/NIPR_INDUCTION_OATH.pdf")}}" ><i class="fa fa-files-o"></i> <span>Induction Oat</span></a></li> --}}
                         <a class="button" href="{{route('member.registry')}}"><i class="fa fa-files-o"></i> Membership Register </a></li>
-					{{-- <li><a target="_blank" href="{{asset("./docs/forms/NIPR_INDUCTION_OATH.pdf")}}" ><i class="fa fa-files-o"></i> <span>Induction Oat</span></a></li> --}}
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">

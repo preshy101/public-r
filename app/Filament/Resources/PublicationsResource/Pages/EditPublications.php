@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\CmsCategoryResource\Pages;
+namespace App\Filament\Resources\PublicationsResource\Pages;
 
-use App\Filament\Resources\CmsCategoryResource;
+use App\Filament\Resources\PublicationsResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditCmsCategory extends EditRecord
+class EditPublications extends EditRecord
 {
-    protected static string $resource = CmsCategoryResource::class;
+    protected static string $resource = PublicationsResource::class;
 
     protected function getHeaderActions(): array
     {

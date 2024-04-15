@@ -27,6 +27,7 @@ class ImageGalleryResource extends Resource
     protected static ?string $model = imageGallery::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $activeNavigationIcon = 'heroicon-s-rectangle-stack';
     protected static ?string $navigationLabel = 'Gallery';
 
     public static function form(Form $form): Form
@@ -35,12 +36,12 @@ class ImageGalleryResource extends Resource
             ->schema([
                 Section::make('')->columns(1)
                 ->description('')
-                ->schema([ 
+                ->schema([
                     Select::make('cms_id')->relationship('cms','title')->searchable()->required()
                     ->live()
                     ->afterStateUpdated(function( string $operation, $state, Forms\Set $set){
-                        if($operation === 'edit'){ 
-                            
+                        if($operation === 'edit'){
+
                         $set('cms_id', $state);
                         }
                         $data = cms::find($state);
@@ -51,8 +52,8 @@ class ImageGalleryResource extends Resource
                             $set('note', '');
                         }
                     }),
-                    
-                    
+
+
                     Textarea::make('alternativeText')
                     ->required()
                     ->rows(5)
@@ -62,9 +63,9 @@ class ImageGalleryResource extends Resource
                 ])->columnSpan(2),
                 Section::make('Files')
                 ->description('')
-                ->schema([       
+                ->schema([
                     TextInput::make('note')
-                    ->required() 
+                    ->required()
                     ->minLength(2)
                     ->readOnly()
                     ->maxLength(255),
@@ -73,10 +74,10 @@ class ImageGalleryResource extends Resource
                 ->label('file(s)')
                 ->required()
                 ->minFiles(2)
-                ->maxSize(5000024) 
+                ->maxSize(5000024)
                 ->imageCropAspectRatio('20:19')
-                ->maxFiles(25) 
-                ->directory('gallary/thumbnails'), 
+                ->maxFiles(25)
+                ->directory('gallary/thumbnails'),
         ])->columnSpan(['lg' => 1])
             ])->columns(3);
     }
