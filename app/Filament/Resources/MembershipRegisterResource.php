@@ -14,9 +14,12 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Forms\Components\DateTimePicker;
+use pxlrbt\FilamentExcel\Exports\ExcelExport;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
 use App\Filament\Resources\MembershipRegisterResource\Pages;
 use App\Filament\Resources\MembershipRegisterResource\RelationManagers;
+use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
 
 class MembershipRegisterResource extends Resource
 {
@@ -144,9 +147,14 @@ class MembershipRegisterResource extends Resource
                 Tables\Actions\DeleteAction::make()->requiresConfirmation(),
                 Tables\Actions\ForceDeleteAction::make(),
                 Tables\Actions\RestoreAction::make(),
+                ExportAction::make()->exports([
+                    ExcelExport::make('table')->fromTable()->withFilename(date('Y-m-d') . ' - Members Register'),
+                    ExcelExport::make('form')->fromForm(),
+                ]),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
+                    ExportBulkAction::make(),
                     Tables\Actions\DeleteBulkAction::make(),
                     Tables\Actions\ForceDeleteBulkAction::make(),
                     Tables\Actions\RestoreBulkAction::make(),
