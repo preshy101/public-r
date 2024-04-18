@@ -72,6 +72,7 @@
                 <p class="lead">
                     {{($publications->sub_title)?$publications->sub_title:''}} <br>
                 </p>
+                <img src="{{Storage::url($publications->banner)}}" width="100%" height="400px" alt="" srcset="">
                 {!! ($publications->content)?$publications->content:'' !!}
                     <br>
                     @if ($publications->file)
