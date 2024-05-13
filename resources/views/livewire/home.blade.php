@@ -1,6 +1,8 @@
 
 
 <div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	{{-- @section('content') --}}
     {{-- Slider --}}
 	{{-- @if (count($slide) > 0)
@@ -72,8 +74,10 @@
                 <p class="lead">
                     {{($publications->sub_title)?$publications->sub_title:''}} <br>
                 </p>
+                @if ($publications->banner)
                 <img src="{{Storage::url($publications->banner)}}" width="100%" height="400px" alt="" srcset="">
-                {!! ($publications->content)?$publications->content:'' !!}
+                @endif
+                <br>{!! ($publications->content)?$publications->content:'' !!}
                     <br>
                     @if ($publications->file)
                     <a href="{{Storage::url($publications->file)}}" target="_blank" rel="noopener noreferrer" class="btn btn-danger"><i class="fa fa-download">Download</i></a>
@@ -457,7 +461,6 @@
 		</div> <!-- .container -->
 	</section> <!-- .partner-section -->
  --}}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(window).on('load', function() {
         if ("{{$publications}}") {

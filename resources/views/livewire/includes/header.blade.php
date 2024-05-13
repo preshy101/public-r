@@ -115,7 +115,7 @@
 
 	<header class="site-header fixed-top" >
 		{{-- <div class="top-bar clearfix" id="" style="height: 200px;"> --}}
-	<img src="{{asset("./img/Banner1.jpg")}}" style=" width: 100%" alt="" srcset="">
+	<img src="{{asset("./frontend/img/NIPR_Web_Banner_60th.jpg")}}" style=" width: 100%" alt="" srcset="">
 		{{-- </div> --}}
 		<div class="top-bar clearfix" style="background-color: red">
 			<div class="container">
@@ -199,7 +199,8 @@
 					</div> <!-- col-lg-3 col-md-6 -->
 					</li>
 					<li>
-                        {{-- <li><a target="_blank" href="{{asset("./docs/forms/NIPR_INDUCTION_OATH.pdf")}}" ><i class="fa fa-files-o"></i> <span>Induction Oat</span></a></li> --}}
+                        {{-- <li> --}}
+                            {{-- <a target="_blank" class="button" href="{{asset("./docs/updates/NIPR_Harmonized_Final_State_Chapters_Amendment _Bye_Law_2.docx")}}" ><i class="fa fa-files-o"></i> <span>Revise Bye Law NO 2</span></a></li> --}}
                         <a class="button" href="{{route('member.registry')}}"><i class="fa fa-files-o"></i> Membership Register </a></li>
 				</ul> <!-- .quick-contact -->
 

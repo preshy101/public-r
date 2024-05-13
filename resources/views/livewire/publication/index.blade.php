@@ -35,7 +35,10 @@
             @endif
         @endforeach
     </div>
-    {{$publications->links('vendor.livewire.links')}}
+    <center>
+
+        {{$publications->links('pagination::default')}}
+    </center>
     <br>
     <br>
     <br>
