@@ -115,7 +115,7 @@
 
 	<header class="site-header fixed-top" >
 		{{-- <div class="top-bar clearfix" id="" style="height: 200px;"> --}}
-	<img src="{{asset("./frontend/img/NIPR_Web_Banner_60th.jpg")}}" style=" width: 100%" alt="" srcset="">
+	<img src="{{asset("./frontend/img/banner.jpeg")}}" style=" width: 100%" alt="" srcset="">
 		{{-- </div> --}}
 		<div class="top-bar clearfix" style="background-color: red">
 			<div class="container">
