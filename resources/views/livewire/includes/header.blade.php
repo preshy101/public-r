@@ -400,6 +400,10 @@
 										<li><a
 											{{-- wire:navigate href="/education/examination/qualifying-examination"style="text-transform: unset; color:gray">Qualifying Examination</a></li>  --}}
 											wire:navigate href="#"style="text-transform: unset; color:gray">Qualifying Examination</a></li>
+										<li><a
+											{{-- wire:navigate href="/education/examination/qualifying-examination"style="text-transform: unset; color:gray">Qualifying Examination</a></li>  --}}
+											wire:navigate 
+											href="{{route('education.publication')}}"style="text-transform: unset; ">Exams Information</a></li>
 									</ul> <!-- .dropdown-menu -->
 								</li>
 

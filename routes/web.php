@@ -131,10 +131,11 @@ Route::post('/membership/registry/upload', [ExcelImportController::class, 'impor
 
 Route::post('/membership/registry/confirm/{id}', [MembershipRegisterController::class, 'confirm'])->name('member_registry.confirm');
 Route::post('/membership/registry/search', [MembershipRegisterController::class, 'searchMembership'])->name('member_registry.search');
-Route::get('/news/publication', [MembershipRegisterController::class, 'publication'])->name('news.publication');
 Route::get('/membership/category', MemberCategory::class)->name('member.category');
 Route::get('/membership/upgrade', MemberUpgrade::class)->name('member.upgrade');
 
+Route::get('/news/publication', [MembershipRegisterController::class, 'publication'])->name('news.publication');
+Route::get('/education/examinations/publication', [MembershipRegisterController::class, 'exmPublication'])->name('education.publication');
 // Blog
 Route::get('/news/posts', Blog::class)->name('news.posts');
 Route::get('/news/posts/{slug}', ViewBlog::class)->name('news.posts.view');

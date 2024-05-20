@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Publications;
 use Illuminate\Http\Request;
 use App\Models\MembershipRegister;
+use App\Models\examInfo;
 
 class MembershipRegisterController extends Controller
 {
@@ -49,6 +50,11 @@ class MembershipRegisterController extends Controller
         $publications = Publications::where('status', true)->latest()->paginate(1);
 
         return view('livewire.publication.index', compact('publications'));
+    }
+    public function exmPublication(){
+        $publications = examInfo::where('status', true)->latest()->paginate(1);
+
+        return view('livewire.publication.exam_info', compact('publications'));
     }
 }
 

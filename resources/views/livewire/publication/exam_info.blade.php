@@ -4,10 +4,12 @@
 		<div class="page-title-banner" >
 			<div class="container">
 				<div class="content-wrapper">
-					<h2>Publication  </h2>
+					<h2>Exam Information  </h2>
 					<ul class="bread-crumb">
 						<li><a href="/">Home</a></li>
-						<li><a href="#">Publication</a></li>
+						<li><a href="#">Education</a></li>
+						<li><a href="#">Examinations</a></li>
+						<li><a href="#">Exam Information</a></li>
 					</ul>
 				</div> <!-- .content-wrapper -->
 			</div> <!-- .container -->
@@ -20,20 +22,21 @@
         @foreach ($publications as $publication)
         <h1 class="entry-title"><a style="color: red" href="#"> {{$publication->title}}
             </a></h1>
-            @if ($publication->banner)
+            @if ($publication->image)
             <img class="img-responsive"
-            height="176px"
+            {{-- height="176px" --}}
             {{-- style="height: 176px; image-rendering: auto; width: 100%" --}} 
-            src="{{Storage::url($publication->banner)}}" alt="event image 00">
+            src="{{Storage::url($publication->image)}}" alt="exam image 00">
             @endif <br>
         <p class="lead">
-            {{$publication->sub_title}} <br>
+            {{$publication->description}} <br>
         </p>
-            {!! $publication->content !!}
-            @if ($publication->file)
-            <a href="{{Storage::url($publication->file)}}" target="_blank" rel="noopener noreferrer" class="btn btn-danger"><i class="fa fa-download">Download</i></a>
-            @endif
+            {!! $publication->body !!}
+           
         @endforeach
+        @if(empty($publications))
+        <p>No Exam Information added yet :(</p>
+        @endif
     </div>
     <center>
 
