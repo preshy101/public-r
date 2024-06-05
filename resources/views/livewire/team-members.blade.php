@@ -1,6 +1,6 @@
 <div>
-    
-	 
+
+
 	<section class="hero-area">
 		<div class="page-title-banner" >
 			<div class="container">
@@ -30,8 +30,8 @@
 						{{($president != null)?$president->description:" "}}
 					 </p>
 					<hr class="divider-small">
-					
-				 
+
+
 				</div> <!-- .col-md-6 -->
 				<p align="justify">
 					{!!($president != null)?$president->fullText:""!!}
@@ -53,21 +53,21 @@
 			</div> <!-- .title-block -->
 			<div class="row">
 				@foreach ($teams as $item)
-					 
+
 				<div class="col-lg-3 col-md-6">
 					<div class="img-wrapper">
-						<img class="img-responsive" 
-						src="{{Storage::url($item->image)}}" 
+						<img class="img-responsive"
+						src="{{Storage::url($item->image)}}"
 						style="border-radius: 2%; height: 445px;"
 						alt="team member 00">
 					</div> <!-- .img-wrapper -->
 					<div class="member-info" style="background-color: red; color: white">
 						<h4>{{$item->title}} <small>{{$item->description}}</small></h4>
 						<ul class="social-links">
-							{{-- <li><a href="#" class="facebook-link"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="twitter-link"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="google-plus-link"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" class="linkedin-link"><i class="fa fa-linkedin"></i></a></li> --}}
+							{{-- <li><a href="#" class="facebook-link"><i class="fab fa-facebook"></i></a></li>
+							<li><a href="#" class="twitter-link"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" class="google-plus-link"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" class="linkedin-link"><i class="fab fa-linkedin"></i></a></li> --}}
 						</ul> <!-- .social-links -->
 					</div> <!-- .member-info -->
 				</div> <!-- col-lg-3 col-md-6 -->
@@ -78,7 +78,7 @@
 	@else
 		<p class="lead">No team member yet</p>
 	@endif
-	
+
 
 	<section class="skill-section section-block anim-progress">
 		<div class="container">
@@ -86,7 +86,7 @@
 				<div class="col-md-6">
 					<h2><span>We are best</span>We have most talented people in team</h2>
 					<p>
-					 
+
 					Delivering nothing but excellence across the spheres of her Professionalism</p>
 				</div> <!-- .col-md-6 -->
 				<div class="col-md-6">

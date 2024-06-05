@@ -71,8 +71,7 @@ class Home extends Component
     }
     public function render()
     {
-        // $slide = cms::where('contentId', 'slide')->latest()->take(5)->get();
-
+        // $slide = cms::where('contentId', 'slide')->latest()->take(5)->get(); 
         return view('livewire.home', [
         'slide' => $this->slide,
         'welcomePics' => $this->welcomePics,

@@ -75,7 +75,7 @@
                     {{($publications->sub_title)?$publications->sub_title:''}} <br>
                 </p>
                 @if ($publications->banner)
-                <img src="{{Storage::url($publications->banner)}}" width="100%" height="400px" alt="" srcset="">
+                <img src="{{Storage::url($publications->banner)}}" width="100%" alt="" srcset="">
                 @endif
                 <br>{!! ($publications->content)?$publications->content:'' !!}
                     <br>
