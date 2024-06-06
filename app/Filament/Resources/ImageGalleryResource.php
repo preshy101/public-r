@@ -73,7 +73,7 @@ class ImageGalleryResource extends Resource
                 ->multiple()
                 ->label('file(s)')
                 ->required()
-                ->minFiles(2)
+                ->minFiles(1)
                 ->maxSize(5000024)
                 ->imageCropAspectRatio('20:19')
                 ->maxFiles(105)

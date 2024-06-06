@@ -6,6 +6,7 @@ use App\Models\Publications;
 use Illuminate\Http\Request;
 use App\Models\MembershipRegister;
 use App\Models\examInfo;
+use App\Models\imageGallery;
 
 class MembershipRegisterController extends Controller
 {
@@ -55,6 +56,11 @@ class MembershipRegisterController extends Controller
         $publications = examInfo::where('status', true)->latest()->paginate(1);
 
         return view('livewire.publication.exam_info', compact('publications'));
+    }
+
+    public function allVideos($id){
+        $videos = imageGallery::with('cms')->where('cms_id', $id)->get();
+        return view('livewire.resources.resource-video-view', compact('videos'));
     }
 }
 

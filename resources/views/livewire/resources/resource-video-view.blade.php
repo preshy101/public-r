@@ -1,5 +1,7 @@
 <div>
 
+    @extends('welcome')
+    @section('content')
     <section class="hero-area">
 		<div class="page-title-banner" >
 			<div class="container">
@@ -22,31 +24,39 @@
 			<div class="row blog-posts">
 
                 @if($videos)
-
 				@foreach ($videos as $item)
-                  <div class="col-md-4 col-sm-6">
-					<div class="image-wrapper gradient-black">
-						<img class="img-responsive"src="{{Storage::url($item->image)}}" style="height: 340px;"
+
+            @foreach($item->image as $vid)
+
+
+				<div class="col-md-4 col-sm-6">
+
+						<video class="img-responsive" controls style="height: 540px;"
 						 alt="image 00">
+						 <source src="{{Storage::url($vid)}}" />
+						 </video>
 
-						</div> <!-- .image-wrapper -->
-					<div class="post-wrapper post-overlay">
 
-						<div class="post-content">
-							<ul class="post-meta">
-								<li>{{$item->created_at->diffForHumans()}}</li>
-								<li><a href="#"></a>{{$item->description}}</li>
-							</ul>
-							<h3 class="entry-title"><a href="{{route('resources.videos.view',$item->id)}}">{{$item->title}}</a></h3>
-						</div> <!-- .post-content -->
-					</div> <!-- .post-wrapper post-overlay -->
+
+                    <div class="post-content">
+						<ul class="post-meta">
+							<li> {{$item->created_at->diffForHumans()}}</li>
+							<li><a href="#"></a>{{$item->cms->description}}</li>
+						</ul>
+						<h3 class="entry-title"><a href="#">{{$item->cms->title}}</a></h3>
+					</div> <!-- .post-content -->
+
+					<p>
+                        {!!$item->cms->fullText!!}
+                    </p>
 				</div> <!-- .col-md-4 -->
-
+				@endforeach
 				@endforeach
                 @endif
 
 
-				<div class="pagination-block text-center " style="background-color: brown; color: red">
+				<div class="pagination-block text-center " style="background-color: brown; color: red
+				">
 					<ul>
 						{{-- <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
 						<li class="active"><a href="#">1</a></li>
@@ -65,3 +75,4 @@
 
 	</section> <!-- .portfolio-section -->
 </div>
+@endsection
