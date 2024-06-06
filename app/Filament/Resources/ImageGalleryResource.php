@@ -76,7 +76,7 @@ class ImageGalleryResource extends Resource
                 ->minFiles(2)
                 ->maxSize(5000024)
                 ->imageCropAspectRatio('20:19')
-                ->maxFiles(25)
+                ->maxFiles(105)
                 ->directory('gallary/thumbnails'),
         ])->columnSpan(['lg' => 1])
             ])->columns(3);
