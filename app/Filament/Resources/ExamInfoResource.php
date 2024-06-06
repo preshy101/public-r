@@ -64,7 +64,7 @@ class ExamInfoResource extends Resource
                 ->description('')
                 ->schema(
                     [
-                        FileUpload::make('image')->image()->directory('exams/thumbnails'),
+                        FileUpload::make('image')->directory('exams/thumbnails'),
                     ])->collapsible()->columnSpan(['lg' => 1]),
             ])->columns(3);
     }
