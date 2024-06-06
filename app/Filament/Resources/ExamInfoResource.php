@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ExamInfoResource\Pages;
 use App\Filament\Resources\ExamInfoResource\RelationManagers;
-use App\Models\ExamInfo;
+use App\Models\examInfo;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -24,7 +24,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class ExamInfoResource extends Resource
 {
-    protected static ?string $model = ExamInfo::class;
+    protected static ?string $model = examInfo::class;
     protected static ?string $navigationLabel = 'Exam Information';
 
     protected static ?string $navigationIcon = 'heroicon-o-book-open';
@@ -51,14 +51,14 @@ class ExamInfoResource extends Resource
                 ->columnSpanFull()
                 ->minLength(2)
                 ->maxLength(255),
-                RichEditor::make('body') 
+                RichEditor::make('body')
                 ->required()
                 ->minLength(2)
                 ->columnSpanFull()
                 // ->fileAttachmentsVisibility('private')
                 ->fileAttachmentsDirectory('exam/attachments'),
                 Toggle::make('status'),
-                
+
                 ])->columnSpan(2),
                 Section::make('Upload Image')
                 ->description('')
@@ -89,7 +89,7 @@ class ExamInfoResource extends Resource
                 Tables\Filters\TrashedFilter::make(),
             ])
             ->actions([
-                Tables\Actions\EditAction::make(), 
+                Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make()->requiresConfirmation(),
                 Tables\Actions\ForceDeleteAction::make(),
                 Tables\Actions\RestoreAction::make(),
@@ -106,7 +106,7 @@ class ExamInfoResource extends Resource
     public static function getRelations(): array
     {
         return [
-            
+
         ];
     }
 
