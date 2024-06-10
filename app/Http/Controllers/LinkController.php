@@ -11,7 +11,7 @@ class LinkController extends Controller
 {
     public function index(){
 
-        $links = Link::latest()->paginate(10); // 10 items per page, adjust as necessary
+        $links = Link::latest()->paginate(5); // 10 items per page, adjust as necessary
 
         // Add metadata to the paginated links
         $links->getCollection()->transform(function ($link) {
