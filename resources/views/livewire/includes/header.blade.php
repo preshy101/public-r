@@ -542,7 +542,7 @@
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
 							 <ul class="dropdown-menu">
 								<li><a wire:navigate href="/news/posts"style="text-transform: unset">NIPR News </a></li>
-								<li><a wire:navigate href="/news/newslink"style="text-transform: unset;">Newslinks </a></li>
+								<li><a  href="/news/newslink"style="text-transform: unset; color:gray">Newslinks </a></li>
 								<li>
 									<a wire:navigate href="#" style="text-transform: unset;  color:gray">Press Releases</a>
 								</li>
