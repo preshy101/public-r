@@ -57,6 +57,7 @@
 						<li><a href="#"><i class="fa fa-angle-right"></i></a></li> --}}
 						{{-- {{ $videos->links('vendor.livewire.links') }} --}}
 					</ul>
+					{{$videos->links('vendor.livewire.links')}}
 				</div> <!-- .btn-container -->
 
 

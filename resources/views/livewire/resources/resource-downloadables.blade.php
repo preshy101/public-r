@@ -33,11 +33,9 @@
           <b> BROCHURES</b>
         </a>
 
-
-
+        <a target="_blank" href="{{ asset('docs/2024_PRCA_Africa_APRA_Report_-_ENG_Final_Version.pdf')}}"  class="list-group-item list-group-item-action">2024 PRCA Africa APRA Report</a>
         <a target="_blank" href="{{ asset('docs/final_NIPR_60.pdf')}}"  class="list-group-item list-group-item-action">NIPR @ 60</a>
         <a target="_blank" href="{{ asset('docs/Brochure.pdf')}}"  class="list-group-item list-group-item-action">NIPR @ 60 Brochure</a>
-
 
         <a target="_blank" href="{{ asset('docs/corporate_membership.pdf')}}"  class="list-group-item list-group-item-action">CORPORATE MEMBERSHIP BROCHURE</a>
         <a target="_blank" href="{{ asset('docs/membership_brochure.pdf')}}"  class="list-group-item list-group-item-action">MEMBERSHIP BROCHURE

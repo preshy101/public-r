@@ -45,6 +45,7 @@ use App\Livewire\Student\StudentStudyCentre;
 use App\Livewire\Membership\MemberInformation;
 use App\Livewire\Training\AnnualLecture\Aminu;
 use App\Http\Controllers\ExcelImportController;
+use App\Http\Controllers\LinkController;
 use App\Livewire\Resource\ResourceDownloadables;
 use App\Livewire\Downloadable\Publications\Books;
 use App\Livewire\Education\AdvisoryBoard\Mandate;
@@ -141,6 +142,7 @@ Route::get('/education/examinations/publication', [MembershipRegisterController:
 Route::get('/news/posts', Blog::class)->name('news.posts');
 Route::get('/news/posts/{slug}', ViewBlog::class)->name('news.posts.view');
 Route::get('/news/search/{title}', SearchBlog::class)->name('news.search');
+Route::get('/news/newslink', [LinkController::class, 'index'])->name('news.newslink');
 
 // Hub
 Route::get('/hub', Aviation::class)->name('hub.show');
