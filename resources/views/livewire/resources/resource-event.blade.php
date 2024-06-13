@@ -1,4 +1,4 @@
-<div> 
+<div>
 
     <section class="hero-area">
 		<div class="page-title-banner" >
@@ -6,7 +6,7 @@
 				<div class="content-wrapper">
 					<h2>Events </h2>
 					<ul class="bread-crumb">
-						<li><a href="/">Home</a></li> 
+						<li><a href="/">Home</a></li>
 						<li><a href="#">Events</a></li>
 					</ul>
 				</div> <!-- .content-wrapper -->
@@ -15,16 +15,16 @@
 	</section> <!-- .hero-area -->
     <section class="blog-section blog-post-11 page-content">
 		<div class="container">
-			
+
 			<h1 class="entry-title"><a style="color: red" href="#">Up Coming Events</a></h1>
 			<p class="lead">enlightenment, outreach and wonderful events gallery</p>
 			<br>
             <section class="blog-section blog-post-07 page-content">
                 <div class="container">
-                    
+
                     <div class="row blog-posts">
-                        @if($events) 
-				        @foreach ($events as $item) 
+                        @if($events)
+				        @foreach ($events as $item)
                         <div class="col-md-4">
                             <div class="post-wrapper post-grid">
                                 <div class="image-wrapper">
@@ -35,13 +35,13 @@
                                         <li>{{$item->created_at->diffForHumans()}}</li>
                                         {{-- <li><a href="#">{{$item->note}}</a></li> --}}
                                     </ul>
-                                    <h3 class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{$item->title}}</a></h3>
+                                    <a href="/resources/up-coming-events/{{$item->id}}"><h3 class="entry-title">{{$item->title}}</h3></a>
                                     <div class="entry-content">
                                         <p>
                                             {{$item->description}}
                                         </p>
                                     </div>
-                                    <a wire:navigate class="btn-open" href="/resources/up-coming-events/{{$item->id}}">Read More</a>
+                                    <a   class="btn-open" href="/resources/up-coming-events/{{$item->id}}">Read More</a>
                                 </div> <!-- .post-content -->
                             </div> <!-- .post-wrapper -->
                         </div> <!-- .col-md-4 -->
@@ -61,8 +61,8 @@
                         </ul>
                     </div> <!-- .btn-container --> --}}
                 </div> <!-- .container -->
-            </section> <!-- .portfolio-section -->        
+            </section> <!-- .portfolio-section -->
 		</div> <!-- .container -->
-		
-	</section> <!-- .portfolio-section --> 
+
+	</section> <!-- .portfolio-section -->
 </div>
