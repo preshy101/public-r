@@ -45,6 +45,7 @@ use App\Livewire\Student\StudentStudyCentre;
 use App\Livewire\Membership\MemberInformation;
 use App\Livewire\Training\AnnualLecture\Aminu;
 use App\Http\Controllers\ExcelImportController;
+use App\Http\Controllers\IdcardController;
 use App\Http\Controllers\LinkController;
 use App\Livewire\Resource\ResourceDownloadables;
 use App\Livewire\Downloadable\Publications\Books;
@@ -138,6 +139,10 @@ Route::get('/membership/upgrade', MemberUpgrade::class)->name('member.upgrade');
 Route::get('/news/publication', [MembershipRegisterController::class, 'publication'])->name('news.publication');
 // publication
 Route::get('/education/examinations/publication', [MembershipRegisterController::class, 'exmPublication'])->name('education.publication');
+
+// staff ID Card
+Route::get('/staff/id/{id}', [IdcardController::class,'verifyId'])->name('verify.idcard');
+
 // Blog
 Route::get('/news/posts', Blog::class)->name('news.posts');
 Route::get('/news/posts/{slug}', ViewBlog::class)->name('news.posts.view');
