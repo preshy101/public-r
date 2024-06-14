@@ -9,6 +9,6 @@ class IdcardController extends Controller
 {
     public function verifyId(string $id){
         $data = Idcard::where('idNumber', $id)->first();
-        return view('Livewire.resources.verifyStaff', compact('data'));
+        return view('livewire.resources.verifyStaff', compact('data'));
     }
 }
