@@ -113,8 +113,6 @@ Route::get('/education/study-center', StudyCenters::class)->name('exam.studycent
 Route::get('/education/finishing-school/lms', StudyCenters::class)->name('exam.studycenters');
 Route::get('/education/finishing-school/faculty', StudyCenters::class)->name('exam.studycenters');
 
-
-
 // Students Routes
 Route::get('/student/professional-certificate', Student::class)->name('student.professional-certificate');
 Route::get('/student/professional-diploma', StudentDiploma::class)->name('student.professional-diploma');
@@ -148,6 +146,8 @@ Route::get('/news/posts', Blog::class)->name('news.posts');
 Route::get('/news/posts/{slug}', ViewBlog::class)->name('news.posts.view');
 Route::get('/news/search/{title}', SearchBlog::class)->name('news.search');
 Route::get('/news/newslink', [LinkController::class, 'index'])->name('news.newslink');
+Route::get('/news/press-release', [LinkController::class, 'allPressReleases'])->name('news.pressRelease');
+Route::get('/news/press-release/{id}', [LinkController::class, 'pressReleases'])->name('news.pressRelease.id');
 
 // Hub
 Route::get('/hub', Aviation::class)->name('hub.show');

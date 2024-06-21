@@ -61,6 +61,9 @@ class CmsResource extends Resource
                     'membershipInformation' => 'Membership Information',
                     'membershipCategory' => 'Membership Category',
                     'membershipUpgrade' => 'Membership Upgrade',
+                    // press release
+                    'pressReleases' => 'Press Releases',
+
                     // resources
                     'images' => 'Image Gallery',
                     'events' => 'Events',

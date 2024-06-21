@@ -47,8 +47,8 @@
                         </div> <!-- .col-md-4 -->
                         @endforeach
                         @endif
-                        {{ $events->onEachSide(1)->links('vendor.livewire.links') }}
                     </div> <!-- .row -->
+                    {{ $events->onEachSide(1)->links('vendor.livewire.links') }}
                     {{-- <div class="pagination-block text-center">
                         <ul>
                             <li><a href="#"><i class="fa fa-angle-left"></i></a></li>

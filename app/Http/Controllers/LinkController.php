@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\cms;
 use App\Models\Link;
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
@@ -55,6 +56,16 @@ class LinkController extends Controller
                 'image' => null,
             ];
         }
+    }
+
+    public function allPressReleases(){
+        $pressReleases = cms::where('contentId','pressReleases')->latest()->paginate(9);
+        return view('livewire.news.press-release',  compact('pressReleases'));
+    }
+
+    public function pressReleases(string $id){
+        $pressRelease = cms::with('imageVideo')->where('id', $id)->get();
+        return view('livewire.news.press-release-view',  compact('pressRelease'));
     }
 
 }
