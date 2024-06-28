@@ -61,13 +61,13 @@
 										<option value="Normal">Normal</option>
 										<option value="Urgent">Urgent</option>
 										<option value="Critical">Critical</option>
-			
+
 										</select>
                                     @error('website')
                                         <span class="text-danger">{{$message}}</span>
                                     @enderror
                                     </div> <!-- .form-group -->
-									
+
 									<div class="form-group">
 										<label for="comment" class="sr-only">Comment:</label>
 										<textarea wire:model='message'required class="form-control" name="comment" id="comment" placeholder="Write your comment here *"></textarea>
@@ -78,44 +78,29 @@
 									<button wire:click.prevent='create' class="btn btn-main">Submit</button>
 								</div> <!-- .col-md-6 -->
 								<div class="col-md-6">
-									
+
 								</div> <!-- .col-md-6 -->
 							</div> <!-- .row -->
 						</form>
 					</div> <!-- .col-md-7 -->
 					<div class="col-md-5 map-block">
 						<div class="contact-options section-block">
-						
+
 						<div class="icon-box"><i class="fa fa-map-marker"></i></div>
 						<h3>Address</h3>
 						<b>Lagos: </b><p> 5, Tokunbo Ali Street Off Toyin Street, Ikeja Lagos</p>
 						<b>Abuja: </b><p> Suite 4 Block A, A.R.O Plaza. Herbert Macaulay Way, Zone 6, Wuse Abuja</p><br>
 					</div> <!-- .col-md-4 -->
 					<center> <h3>Location</h3></center>
-						<div class="map-box" id="map-box">
-							
+						<div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.967901217171!2d7.454044873701481!3d9.06668869099613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b21024f44a9%3A0x77fdac9f826a85d5!2sA.R.O%20Plaza!5e0!3m2!1sen!2sng!4v1719573383620!5m2!1sen!2sng" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div> <!-- .map-box -->
 					</div> <!-- .col-md-5 -->
 				</div> <!-- .row -->
 			</div> <!-- .contact-form -->
-			
+
 		</div> <!-- .container -->
 	</section> <!-- .portfolio-section -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSGmNbOd874jHdcQEmXwJC6qz6TZkJjtA&callback=initMap">
-    </script>
-    <script>
-    function initMap() {
-    var uluru = {lat: 23.7869378, lng: 90.3230889};
-    var map = new google.maps.Map(document.getElementById('map-box'), {
-      zoom: 12,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-    }
-    </script>
+     
     {{-- @endsection --}}
 </div>

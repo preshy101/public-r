@@ -82,9 +82,9 @@ Route::get('/career', Careers::class)->name('career.index');
 Route::get('/about-us', About::class)->name('about-us.history');
 Route::get('/about-us/vision-and-mission', VisionAndMission::class)->name('about-us.vision');
 Route::get('/about-us/ethics', Ethics::class)->name('about-us.ethics');
-Route::get('/about-us/council', Council::class)->name('about-us.council');
+// Route::get('/about-us/council', Council::class)->name('about-us.council');
 Route::get('/about-us/management/composition', Composition::class)->name('about-us.composition');
-Route::get('/about-us/management/council-resolution',  CouncilResolution::class)->name('about-us.council-resolution');
+// Route::get('/about-us/management/council-resolution',  CouncilResolution::class)->name('about-us.council-resolution');
 Route::get('/about-us/management/chapters', Chapters::class)->name('about-us.chapters');
 Route::get('/about-us/faq', FAQ::class)->name('about-us.faq');
 

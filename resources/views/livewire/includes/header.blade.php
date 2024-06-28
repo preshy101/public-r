@@ -253,19 +253,18 @@
 									aria-haspopup="true" wire:navigate href="/about-us/council"style="text-transform: unset" aria-expanded="false">Management ></a>
 									<ul class="dropdown-menu" style="text-transform: unset">
 										<li>
-											<a class="dropdown-toggle" data-toggle="dropdown" role="button"
-											aria-haspopup="true" style="text-transform: unset"  data-toggle="dropdown">Council ></a>
-											<ul class="dropdown-menu" style="text-transform: unset">
+											<a wire:navigate href="/about-us/management/composition" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"  data-toggle="dropdown">Council </a>
+											{{-- <ul class="dropdown-menu" style="text-transform: unset">
 												<li>
 													<a  wire:navigate  href="/about-us/management/composition" style="text-transform: unset"   class="dropdown-toggle" data-toggle="dropdown">Composition</a>
 												</li>
 												<li>
 													<a  wire:navigate  href="/about-us/management/council-resolution" style="text-transform: unset"   class="dropdown-toggle" data-toggle="dropdown">Council Resolution</a>
 												</li>
-											</ul> <!-- .dropdown-menu -->
+											</ul> <!-- .dropdown-menu --> --}}
 										</li>
 										<li>
-											<a  wire:navigate href="/about-us/management/chapters" style="text-transform: unset" wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown">Chapters</a>
+											<a  wire:navigate href="/about-us/management/chapters" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Chapters</a>
 										</li>
 
 									</ul> <!-- .dropdown-menu -->
@@ -310,16 +309,6 @@
 											<a
 											{{-- wire:navigate href="/training/conference/pr-practitioner-in-tertiary-institution" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Conference for PR Practitioners in Tertiary Institutions</a> --}}
 											wire:navigate href="#" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Conference for PR Practitioners in Tertiary Institutions</a>
-										</li>
-										<li>
-											<a
-											{{-- wire:navigate href="/training/conference/directors-conference" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Director’s Conference</a> --}}
-											wire:navigate href="#" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Director’s Conference</a>
-										</li>
-										<li>
-											<a
-											{{-- wire:navigate href="/training/conference/aviation-conference" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Aviation Conference</a> --}}
-											wire:navigate href="#" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Aviation Conference</a>
 										</li>
 
 									</ul> <!-- .dropdown-menu -->
@@ -390,16 +379,7 @@
 											{{-- wire:navigate href="/education/examination/cpr"style="text-transform: unset; color:gray">CPR</a></li> --}}
 											target="_blank"	href="https://portal.niprng.org.ng/exam-registration"style="text-transform: unset">All Exams</a></li>
 										<li>
-										<li><a
-											{{-- wire:navigate href="/education/examination/cpr"style="text-transform: unset; color:gray">CPR</a></li> --}}
-											wire:navigate href="#"style="text-transform: unset; color:gray">CPR</a></li>
-										<li>
-											<a
-											{{-- wire:navigate href="/education/examination/dpr"style="text-transform: unset; color:gray">DPR</a></li> --}}
-											wire:navigate href="#"style="text-transform: unset; color:gray">DPR</a></li>
-										<li><a
-											{{-- wire:navigate href="/education/examination/qualifying-examination"style="text-transform: unset; color:gray">Qualifying Examination</a></li>  --}}
-											wire:navigate href="#"style="text-transform: unset; color:gray">Qualifying Examination</a></li>
+
 										<li><a
 											{{-- wire:navigate href="/education/examination/qualifying-examination"style="text-transform: unset; color:gray">Qualifying Examination</a></li>  --}}
 											wire:navigate
@@ -463,12 +443,13 @@
 
 							</ul> <!-- .dropdown-menu -->
 						</li>
-						<li class="dropdown
+						<li class="
+                        {{-- dropdown --}}
 						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video'
 						  ))?"active":''}}
 						">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadable</a>
-                                <ul class="dropdown-menu" style="text-transform: unset">
+							<a wire:navigate href="/downloadable/downloadable" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadable</a>
+                                {{-- <ul class="dropdown-menu" style="text-transform: unset">
 									 <li>
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset" aria-expanded="false"> Publications ></a>
 										<ul class="dropdown-menu" style="text-transform: unset">
@@ -488,23 +469,13 @@
 									</li>
 									</ul>
 									</li>
-
-                                    <li>
-                                        <a wire:navigate href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Gallery ></a>
-										<ul class="dropdown-menu">
-											<li><a wire:navigate href="/downloadable/images"style="text-transform: unset">Photo</a></li>
-											<li><a wire:navigate href="/downloadable/videos"style="text-transform: unset">Videos</a></li>
-										</ul> <!-- .dropdown-menu -->
-                                    </li>
-
-
                                     <li>
                                         <a wire:navigate href="/downloadable/downloadable" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Other Resources</a>
                                     </li>
-                                </ul> <!-- .dropdown-menu -->
+                                </ul> <!-- .dropdown-menu --> --}}
 						</li>
 						<li class="dropdown {{(Route::is('resources.event'))?"active":''}}">
-							<a wire:navigate href=""href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="text-transform: unset" >Events</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Events</a>
 							<ul class="dropdown-menu" style="text-transform: unset">
 							    <li>
 									<a target="_blank" href="https://portal.niprng.org.ng/events" style="text-transform: unset" >Register For Events</a>
@@ -534,10 +505,17 @@
 
 						   </ul> <!-- .dropdown-menu -->
 						</li>
+                        <li class="dropdown">
+                            <a  href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Gallery </a>
+                            <ul class="dropdown-menu">
+                                <li><a wire:navigate href="/downloadable/images"style="text-transform: unset">Photo</a></li>
+                                <li><a wire:navigate href="/downloadable/videos"style="text-transform: unset">Videos</a></li>
+                            </ul> <!-- .dropdown-menu -->
+                        </li>
 						<li class=" dropdown
 							{{(Route::is('news.posts','news.posts.view'))?"active":''}} ">
 
-								 <a  wire:navigate href="/news/posts" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">News</a>
+								 <a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">News</a>
 						{{-- <li class="
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
 							 <ul class="dropdown-menu">
