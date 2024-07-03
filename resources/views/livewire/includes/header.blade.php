@@ -443,37 +443,7 @@
 
 							</ul> <!-- .dropdown-menu -->
 						</li>
-						<li class="
-                        {{-- dropdown --}}
-						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video'
-						  ))?"active":''}}
-						">
-							<a  href="/downloadable/downloadable" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadable</a>
-                                {{-- <ul class="dropdown-menu" style="text-transform: unset">
-									 <li>
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset" aria-expanded="false"> Publications ></a>
-										<ul class="dropdown-menu" style="text-transform: unset">
 
-                                    <li>
-                                        <a wire:navigate href="#" style="text-transform: unset" aria-expanded="false">Books ></a>
-										<ul class="dropdown-menu">
-											<li><a wire:navigate href="/downloadable/publications/books"style="text-transform: unset">Rebooting Nigeria 2.0</a></li>
-										</ul>
-                                    </li>
-
-									<li>
-										<a wire:navigate href="#" style="text-transform: unset; color:gray">Occasional Publications</a>
-									</li>
-									<li>
-										<a wire:navigate href="#" style="text-transform: unset; color:gray">Working Papers</a>
-									</li>
-									</ul>
-									</li>
-                                    <li>
-                                        <a wire:navigate href="/downloadable/downloadable" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Other Resources</a>
-                                    </li>
-                                </ul> <!-- .dropdown-menu --> --}}
-						</li>
 						<li class="dropdown {{(Route::is('resources.event'))?"active":''}}">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Events</a>
 							<ul class="dropdown-menu" style="text-transform: unset">
@@ -505,13 +475,7 @@
 
 						   </ul> <!-- .dropdown-menu -->
 						</li>
-                        <li class="dropdown">
-                            <a  href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Gallery </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/downloadable/images"style="text-transform: unset">Photo</a></li>
-                                <li><a href="/downloadable/videos"style="text-transform: unset">Videos</a></li>
-                            </ul> <!-- .dropdown-menu -->
-                        </li>
+
 						<li class=" dropdown
 							{{(Route::is('news.posts','news.posts.view'))?"active":''}} ">
 
@@ -529,7 +493,44 @@
 								</li>
 							</ul>
 						</li>
+                        <li class="dropdown">
+                            <a  href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Gallery </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/downloadable/images"style="text-transform: unset">Photo</a></li>
+                                <li><a href="/downloadable/videos"style="text-transform: unset">Videos</a></li>
+                            </ul> <!-- .dropdown-menu -->
+                        </li>
+                        <li class="dropdown
+                        {{-- dropdown --}}
+						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video'
+						  ))?"active":''}}
+						">
+							<a  href="/downloadable/downloadable" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadable</a>
+                                {{-- <ul class="dropdown-menu" style="text-transform: unset">
+									 <li>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset" aria-expanded="false"> Publications ></a>
+										<ul class="dropdown-menu" style="text-transform: unset">
 
+                                    <li>
+                                        <a wire:navigate href="#" style="text-transform: unset" aria-expanded="false">Books ></a>
+										<ul class="dropdown-menu">
+											<li><a wire:navigate href="/downloadable/publications/books"style="text-transform: unset">Rebooting Nigeria 2.0</a></li>
+										</ul>
+                                    </li>
+
+									<li>
+										<a wire:navigate href="#" style="text-transform: unset; color:gray">Occasional Publications</a>
+									</li>
+									<li>
+										<a wire:navigate href="#" style="text-transform: unset; color:gray">Working Papers</a>
+									</li>
+									</ul>
+									</li>
+                                    <li>
+                                        <a wire:navigate href="/downloadable/downloadable" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Other Resources</a>
+                                    </li>
+                                </ul> <!-- .dropdown-menu --> --}}
+						</li>
 							<li
 						class="dropdown
 						    {{(Route::is('contactus'))?"active":''}} "
