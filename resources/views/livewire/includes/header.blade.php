@@ -250,10 +250,10 @@
 							<ul class="dropdown-menu" style="text-transform: unset">
 								<li>
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-									aria-haspopup="true" wire:navigate href="/about-us/council"style="text-transform: unset" aria-expanded="false">Management ></a>
+									aria-haspopup="true" href="#"style="text-transform: unset" aria-expanded="false">Management ></a>
 									<ul class="dropdown-menu" style="text-transform: unset">
 										<li>
-											<a wire:navigate href="/about-us/management/composition" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"  data-toggle="dropdown">Council </a>
+											<a href="/about-us/management/composition" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"  data-toggle="dropdown">Council </a>
 											{{-- <ul class="dropdown-menu" style="text-transform: unset">
 												<li>
 													<a  wire:navigate  href="/about-us/management/composition" style="text-transform: unset"   class="dropdown-toggle" data-toggle="dropdown">Composition</a>
@@ -264,14 +264,14 @@
 											</ul> <!-- .dropdown-menu --> --}}
 										</li>
 										<li>
-											<a  wire:navigate href="/about-us/management/chapters" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Chapters</a>
+											<a ` href="/about-us/management/chapters" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Chapters</a>
 										</li>
 
 									</ul> <!-- .dropdown-menu -->
-									    <a wire:navigate href="/about-us" style="text-transform: unset">Our History</a>
-									    <a wire:navigate href="/about-us/vision-and-mission" style="text-transform: unset">Vision & Mission</a>
-									    <a wire:navigate href="/about-us/ethics"style="text-transform: unset"> Code of Ethics</a>
-									    <a wire:navigate href="#" class="disabled" tabindex="-1" style="text-transform: unset; color:gray"> FAQ</a>
+									    <a  href="/about-us" style="text-transform: unset">Our History</a>
+									    <a  href="/about-us/vision-and-mission" style="text-transform: unset">Vision & Mission</a>
+									    <a  href="/about-us/ethics"style="text-transform: unset"> Code of Ethics</a>
+									    <a  href="#" class="disabled" tabindex="-1" style="text-transform: unset; color:gray"> FAQ</a>
 									    {{-- <a wire:navigate href="/about-us/faq"class="disabled" tabindex="-1" style="text-transform: unset"> FAQ</a> --}}
 
 								</li>
@@ -382,13 +382,13 @@
 
 										<li><a
 											{{-- wire:navigate href="/education/examination/qualifying-examination"style="text-transform: unset; color:gray">Qualifying Examination</a></li>  --}}
-											wire:navigate
+
 											href="{{route('education.publication')}}"style="text-transform: unset; ">Exams Information</a></li>
 									</ul> <!-- .dropdown-menu -->
 								</li>
 
 								<li>
-									<a style="text-transform: unset" wire:navigate href="/education/study-center" class="dropdown-toggle" data-toggle="dropdown">Study Centers</a>
+									<a style="text-transform: unset"  href="/education/study-center" class="dropdown-toggle" data-toggle="dropdown">Study Centers</a>
 								</li>
 
 								<li>
@@ -429,7 +429,7 @@
 
 								</li>
 								<li>
-									<a wire:navigate href="/membership/information" style="text-transform: unset" >Membership Information</a>
+									<a  href="/membership/information" style="text-transform: unset" >Membership Information</a>
 
 								</li>
 								<li>
@@ -448,7 +448,7 @@
 						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video'
 						  ))?"active":''}}
 						">
-							<a wire:navigate href="/downloadable/downloadable" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadable</a>
+							<a  href="/downloadable/downloadable" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadable</a>
                                 {{-- <ul class="dropdown-menu" style="text-transform: unset">
 									 <li>
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset" aria-expanded="false"> Publications ></a>
@@ -508,8 +508,8 @@
                         <li class="dropdown">
                             <a  href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Gallery </a>
                             <ul class="dropdown-menu">
-                                <li><a wire:navigate href="/downloadable/images"style="text-transform: unset">Photo</a></li>
-                                <li><a wire:navigate href="/downloadable/videos"style="text-transform: unset">Videos</a></li>
+                                <li><a href="/downloadable/images"style="text-transform: unset">Photo</a></li>
+                                <li><a href="/downloadable/videos"style="text-transform: unset">Videos</a></li>
                             </ul> <!-- .dropdown-menu -->
                         </li>
 						<li class=" dropdown
@@ -519,7 +519,7 @@
 						{{-- <li class="
 						    {{(Route::is('contactus'))?"active":''}} "><a wire:navigate href="/contact-us" style="text-transform: unset">Contact</a></li> --}}
 							 <ul class="dropdown-menu">
-								<li><a wire:navigate href="/news/posts"style="text-transform: unset">NIPR News </a></li>
+								<li><a  href="/news/posts"style="text-transform: unset">NIPR News </a></li>
 								<li><a  href="/news/newslink"style="text-transform: unset;">Newslinks </a></li>
 								<li>
 									<a  href="{{route('news.pressRelease')}}" style="text-transform: unset;">Press Releases</a>

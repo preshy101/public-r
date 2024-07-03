@@ -359,7 +359,7 @@
 	</section> <!-- .split-section -->
 
     {{-- FAQ --}}
-	@if(count($faq)>0)
+	@if(count($faq)>1)
     <section class="accordion-section"
 	{{-- style="background:#f5f5f5;" --}}
 	>
