@@ -18,15 +18,15 @@
         <br>
         <section class="blog-section blog-post-01 page-content">
             <div class="container">
-                
+
                 <div class="row">
-                    @if ($post)  
-                        
+                    @if ($post)
+
                     <div class="col-md-8 blog-posts">
                         <div class="post-wrapper post-standard">
                             <div class="image-wrapper">
-                                <img class="img-responsive" 
-                                src="{{Storage::url($post->image)}}" 
+                                <img class="img-responsive"
+                                src="{{Storage::url($post->image)}}"
                                 alt="news image 00">
                             </div> <!-- .image-wrapper -->
                             <div class="post-content">
@@ -35,7 +35,7 @@
                                     <li><i class="fa fa-user"></i><a href="#">{{$post->author->name}}</a></li>
                                     <li><i class="fa fa-clock-o"></i>{{$post->published_at->diffForHumans()}}</li>
                                     <li><i class="fa fa-folder-open"></i>
-                                        @foreach ($post->categories as $cat)  
+                                        @foreach ($post->categories as $cat)
                                         <a class="badge badge-pill " style="background: {{$cat->bg_color}}; color:{{$cat->text_color}}" href="#">
                                             {{$cat->title}}
                                         </a>
@@ -45,19 +45,19 @@
                                 </ul>
                                 <p>
                                     {!!$post->body!!}
-                                </p> 
+                                </p>
                             </div> <!-- .post-content -->
-                        </div> <!-- .post-wrapper post-overlay --> 
-                        
-                       
+                        </div> <!-- .post-wrapper post-overlay -->
+
+
                     </div> <!-- .col-md-8 -->
-                  
+
                     @else
-    
+
                     <div class="col-md-8 blog-posts">
                         <p class="lead">No News yet</p>
                     </div>
-    
+
                     @endif
                     <div class="col-md-4 sidebar">
                         <div class="widget widget-search">
@@ -67,14 +67,14 @@
                                 <button class="submit-btn" type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div> <!-- .widget widget-search -->
-                
+
                         <div class="widget widget-recent-posts">
                             <h3 class="widget-title">Recent Posts</h3>
                             <ul class="img-list">
                                 @if ($recentPosts)
-                                @foreach ($recentPosts as $item) 
+                                @foreach ($recentPosts as $item)
                                     <li class="clearfix">
-                                    <img class="img-responsive"  
+                                    <img class="img-responsive"
                                     src="{{Storage::url($item->image)}}"  alt="post thumbnail">
                                     <div class="content-wrapper">
                                         <h4>
@@ -87,26 +87,26 @@
                                 @else
                                     <small>No post yet</small>
                                 @endif
-                                
-                                 
+
+
                             </ul>
                         </div><!-- .widget widget-recent-posts -->
-                        
+
                         <div class="widget widget-tags">
                             <h3 class="widget-title">Popular Tags</h3>
                             <ul>
                                 @if ($categories)
                                     @foreach ($categories as $item)
                                     <li><a href="#">{{$item->title}}</a></li>
-                                        
+
                                     @endforeach
                                 @else
                                     <small>No category yet</small>
                                 @endif
-                                
+
                             </ul>
                         </div> <!-- .widget widget-tags -->
-                
+
                         <div class="widget widget-social-links">
                             <h3 class="widget-title">Follow us</h3>
                             <ul>
@@ -117,28 +117,32 @@
                                 <li class="youtube-link"><a href="https://www.instagram.com/nipr_hq"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div> <!-- .widget widget-social-links -->
-                
+
                         <div class="widget widget-gallery">
                             <h3 class="widget-title">Photo Gallery</h3>
                             <ul class="list-inline photo-gallery clearfix">
                                 @if ($gallery)
-                                    @foreach ($gallery as $item)
-                                        @foreach ($item->image as $img) 
+                                    @foreach ($gallery as $keyz => $item)
+                                    @if ($keyz <= 1)
+                                    @foreach ($item->image as $key => $img)
+
+                                    @if($key < 4)
                                         <li><a class="gallery-img" href="#"><img class="img-responsive" src="{{Storage::url($img)}}" alt="gallery photo"></a></li>
+                                        @endif
                                         @endforeach
                                     @endforeach
+                                    @endif
                                 @else
                                     <small>No content yet</small>
                                 @endif
-                                
+
                             </ul> <!-- .footer-social -->
                         </div> <!-- .widget widget-gallery -->
-                
-                         
+
+
                     </div> <!-- .col-md-4 -->
                 </div> <!-- .row -->
             </div> <!-- .container -->
         </section> <!-- .portfolio-section -->
-    
+
     </div>
- 

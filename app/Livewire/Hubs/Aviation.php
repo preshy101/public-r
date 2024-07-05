@@ -8,6 +8,6 @@ class Aviation extends Component
 {
     public function render()
     {
-        return view('livewire.hubs.aviation')->extends('welcome');
+        return view('livewire.hubs.aviation')->layout('layouts.app')->slot('content');
     }
 }

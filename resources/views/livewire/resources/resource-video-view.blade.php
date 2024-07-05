@@ -6,7 +6,7 @@
 		<div class="page-title-banner" >
 			<div class="container">
 				<div class="content-wrapper">
-					<h2>Downloadable </h2>
+					<h2>Gallery </h2>
 					<ul class="bread-crumb">
 						<li><a href="/">Home</a></li>
 						<li><a href="#">Videos</a></li>

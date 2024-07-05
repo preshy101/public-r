@@ -57,6 +57,8 @@ use App\Livewire\Training\Conference\PRPractitioners;
 use App\Http\Controllers\MembershipRegisterController;
 use App\Livewire\Education\AdvisoryBoard\eComposition;
 use App\Livewire\Education\Examination\QualifyingExams;
+use App\Livewire\Hubs\Energy;
+use App\Livewire\Hubs\YoungProfessionals;
 use App\Livewire\Training\Conference\AviationConference;
 use App\Livewire\Training\Conference\DirectorsConference;
 use App\Livewire\Training\Conference\DirectorsConferenceAndRetreat;
@@ -73,6 +75,7 @@ use App\Livewire\Training\Conference\DirectorsConferenceAndRetreat;
 */
 
 Route::get('/',  Home::class)->name('home');
+Route::get('/faq',  FAQ::class)->name('faqs');
 Route::get('/team-members', TeamMembers::class)->name('team.members');
 
 // Career
@@ -88,22 +91,22 @@ Route::get('/about-us/management/composition', Composition::class)->name('about-
 Route::get('/about-us/management/chapters', Chapters::class)->name('about-us.chapters');
 Route::get('/about-us/faq', FAQ::class)->name('about-us.faq');
 
-// training
-Route::get('/training/masterclass', Masterclass::class)->name('training.masterclass');
-Route::get('/training/mcpd', MCPD::class)->name('training.mcp');
-Route::get('/training/conference/aviation-conference', AviationConference::class)->name('training.conference.aviation');
-Route::get('/training/conference/directors-conference', DirectorsConference::class)->name('training.conference.directors');
-Route::get('/training/conference/directors-conference-and-retreat', DirectorsConferenceAndRetreat::class)->name('training.conference.directors-retreat');
-Route::get('/training/conference/pr-practitioner-in-tertiary-institution', PRPractitioners::class)->name('training.conference.pr-practitioner');
 
-Route::get('/training/annual-lecture/sam-epelle-memorial-gold-lecture', SamEpelle::class)->name('training.conference.sam-epelle');
-Route::get('/training/annual-lecture/Igwe-nnaemeka-alfred-achebe-peace-and-reconciliation-annual-lecture-series', IgweNnaemeka::class)->name('training.conference.sam-epelle');
-Route::get('/training/annual-lecture/his-highness-aminu-ado-bayero-national-integration-annual-lecture-series', Aminu::class)->name('training.conference.aminu');
 
 // Education
 Route::get('/education/advisory-board/mandate', Mandate::class)->name('education.mandate');
 Route::get('/education/advisory-board/committees', Committiees::class)->name('education.committees');
 Route::get('/education/advisory-board/composition', eComposition::class)->name('education.composition');
+
+// Training
+Route::get('/trianing/masterclass', Masterclass::class)->name('training.masterclass');
+Route::get('/trianing/m-c-p-d', MCPD::class)->name('training.mcpd');
+Route::get('/trianing/conference/directors-conference-retreat', DirectorsConferenceAndRetreat::class)->name('training.conference.retreat');
+Route::get('/trianing/conference/practitioner', PRPractitioners::class)->name('training.conference.practitioner');
+ // Annual Lecture
+Route::get('/training/annual-lecture/sam-epelle-memorial-gold-lecture', SamEpelle::class)->name('training.lecture.sam-epelle');
+Route::get('/training/annual-lecture/Igwe-nnaemeka-alfred-achebe-peace-and-reconciliation-annual-lecture-series', IgweNnaemeka::class)->name('training.lecture.igwe');
+Route::get('/training/annual-lecture/his-highness-aminu-ado-bayero-national-integration-annual-lecture-series', Aminu::class)->name('training.lecture.aminu');
 
 // examination
 Route::get('/education/examination/cpr', CPR::class)->name('exam.cpr');
@@ -150,7 +153,9 @@ Route::get('/news/press-release', [LinkController::class, 'allPressReleases'])->
 Route::get('/news/press-release/{id}', [LinkController::class, 'pressReleases'])->name('news.pressRelease.id');
 
 // Hub
-Route::get('/hub', Aviation::class)->name('hub.show');
+Route::get('/hub/aviation', Aviation::class)->name('hub.aviation.show');
+Route::get('/hub/energy', Energy::class)->name('hub.energy.show');
+Route::get('/hub/young-professional', YoungProfessionals::class)->name('hub.young.show');
 
 // Contact
 Route::get('/contact-us', Contactus::class)->name('contactus');

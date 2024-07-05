@@ -19,8 +19,8 @@ class ViewBlog extends Component
         return view('livewire.blog.view-blog',
         ['recentPosts' => Post::published()->latest()->take(3)->get(),
         'categories' => Category::latest()->take(10)->get(),
-        'gallery' => $this->gallery = imageGallery:: 
-        latest()->take(8)->get()])
+        'gallery' =>  imageGallery::
+        latest()->limit(8)->get()])
         ->extends('welcome');
     }
 }

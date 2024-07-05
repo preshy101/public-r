@@ -1,12 +1,12 @@
-<div> 
+<div>
 
     <section class="hero-area">
 		<div class="page-title-banner" >
 			<div class="container">
 				<div class="content-wrapper">
-					<h2>Downloadable </h2>
+					<h2>Gallery </h2>
 					<ul class="bread-crumb">
-						<li><a href="/">Home</a></li> 
+						<li><a href="/">Home</a></li>
 						<li><a href="#">Images</a></li>
 					</ul>
 				</div> <!-- .content-wrapper -->
@@ -15,18 +15,18 @@
 	</section> <!-- .hero-area -->
     <section class="blog-section blog-post-11 page-content">
 		<div class="container">
-			
+
 			<h1 class="entry-title"><a style="color: red" href="#">Image Gallery</a></h1>
 			<p class="lead">our wonderful moments captured</p>
 			<br>
 			<div class="row blog-posts">
-				@if($images) 
-				@foreach ($images as $item)  
+				@if($images)
+				@foreach ($images as $item)
 				<div class="col-md-4 col-sm-6">
 					<div class="post-wrapper post-overlay">
 						<div class="image-wrapper gradient-black">
 							<img class="img-responsive"
-							src="{{Storage::url($item->image)}}" 
+							src="{{Storage::url($item->image)}}"
 							 alt="image 00">
 						</div> <!-- .image-wrapper -->
 						<div class="post-content">
@@ -37,26 +37,26 @@
 							<h3 class="entry-title text-white"><a wire:navigate href="/downloadable/images/{{ $item->id }}">{{$item->title}}
 								@if (count($item->imageVideo) > 0)
 								@php
-									$total = 0; 
+									$total = 0;
 								@endphp
-									@foreach ($item->imageVideo as $item) 
+									@foreach ($item->imageVideo as $item)
 									@php
-										$total = $total + count($item['image']) 
-										
-									@endphp 
-									@endforeach 
+										$total = $total + count($item['image'])
+
+									@endphp
+									@endforeach
 								{{ - ($total)}}
-									
-								@endif 
+
+								@endif
 							</a>
 							</h3>
-							
+
 						</div> <!-- .post-content -->
 					</div> <!-- .post-wrapper post-overlay -->
 				</div> <!-- .col-md-4 -->
-				
+
 				@endforeach
-				@endif 
+				@endif
 				{{ $images->onEachSide(1)->links('vendor.livewire.links') }}
 				{{-- <div class="pagination-block text-center">
 					<div>
@@ -69,7 +69,7 @@
 										<button wire:click="previousPage" wire:loading.attr="disabled" rel="prev">Previous</button>
 									@endif
 								</span>
-					 
+
 								<span>
 									@if ($images->onLastPage())
 										<span>Next</span>
@@ -82,8 +82,8 @@
 					</div>
 				</div> <!-- .btn-container --> --}}
 
-			</div> <!-- .row --> 
+			</div> <!-- .row -->
 		</div> <!-- .container -->
-		
-	</section> <!-- .portfolio-section --> 
+
+	</section> <!-- .portfolio-section -->
 </div>

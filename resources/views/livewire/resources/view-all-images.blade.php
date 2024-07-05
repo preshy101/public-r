@@ -1,12 +1,12 @@
-<div> 
+<div>
 
     <section class="hero-area">
 		<div class="page-title-banner" >
 			<div class="container">
 				<div class="content-wrapper">
-					<h2>Resources </h2>
+					<h2>Gallery </h2>
 					<ul class="bread-crumb">
-						<li><a href="/">Home</a></li> 
+						<li><a href="/">Home</a></li>
 						<li><a href="#">Images</a></li>
 					</ul>
 				</div> <!-- .content-wrapper -->
@@ -25,9 +25,9 @@
 				</ul>
 			</div> <!-- .portfolio-sorting -->
 			<div class="row portfolio-container">
-            @if ($images)  
-            @foreach ($images as $item) 
-            @foreach($item->image as $image) 
+            @if ($images)
+            @foreach ($images as $item)
+            @foreach($item->image as $image)
 				<div class="col-md-4 col-sm-6 mix portfolio-item finance">
 					<div class="item-wrapper">
 						<img class="img-responsive" src="{{Storage::url($image)}}" alt="{{Storage::url($image)}}">
@@ -40,11 +40,11 @@
 						</div> <!-- .portfolio-details -->
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .portfolio-item -->
-              
+
 				@endforeach
 				@endforeach
 				@endif
-			</div> <!-- .row --> 
+			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section> <!-- .portfolio-section -->
 

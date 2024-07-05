@@ -8,6 +8,6 @@ class MCPD extends Component
 {
     public function render()
     {
-        return view('livewire.training.m-c-p-d')->extends('welcome');
+        return view('livewire.training.m-c-p-d')->layout('layouts.app')->slot('content');
     }
 }

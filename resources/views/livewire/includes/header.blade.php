@@ -1,108 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
 	<!-- META -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 
-	<!-- TITLE -->
-	<title>Nigerian Institute of Public Relations (NIPR) </title>
 
-	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700%7CRoboto:400,400i,700" rel="stylesheet">
-
-	<!-- ICONS -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/font-awesome.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/pe-icon-7-stroke.css')}}">
-
-	<!-- LIBRARIES -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/slick.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/slick-theme.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/magnific-popup.css')}}">
-	<!-- STYLES -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/bootstrap.min.css')}}">
-	<link rel="icon" href="{{asset('img/masthead.png')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/style.css')}}">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-
-	@livewireStyles
-</head>
-<style>
-	/* #contact:hover {
-    background: white;
-    color: red;
-	border-color: white
-}*/
-	nav {
-		position: fixed;
-		top: 0px;
-		}
-
-.button {
-  background-color: #004A7F;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-animation: glowing 1500ms infinite;
-  -moz-animation: glowing 1500ms infinite;
-  -o-animation: glowing 1500ms infinite;
-  animation: glowing 1500ms infinite;
-}
-@-webkit-keyframes glowing {
-  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-}
-
-@-moz-keyframes glowing {
-  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-}
-
-@-o-keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
-
-@keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
-@-webkit-keyframes glowing {
-  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-}
-
-@-moz-keyframes glowing {
-  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-}
-
-@-o-keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
-
-@keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
-</style>
-<body class="home-11">
 
 	{{-- <!-- preloader -->
 	<div class="corporex-preloader">
@@ -271,7 +170,7 @@
 									    <a  href="/about-us" style="text-transform: unset">Our History</a>
 									    <a  href="/about-us/vision-and-mission" style="text-transform: unset">Vision & Mission</a>
 									    <a  href="/about-us/ethics"style="text-transform: unset"> Code of Ethics</a>
-									    <a  href="#" class="disabled" tabindex="-1" style="text-transform: unset; color:gray"> FAQ</a>
+									    <a  href="{{route('faqs')}}" tabindex="-1" style="text-transform: unset;"> FAQ</a>
 									    {{-- <a wire:navigate href="/about-us/faq"class="disabled" tabindex="-1" style="text-transform: unset"> FAQ</a> --}}
 
 								</li>
@@ -282,58 +181,58 @@
 						 'student.professional-admission', 'student.result', 'student.requirements',
 						 'student.study-centre', 'student.curriculum' ))?"active":''}}
 						dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset; color:gray" aria-expanded="false">Training</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset;" aria-expanded="false">Training</a>
 							<ul class="dropdown-menu" style="text-transform: unset">
 								<li>
-									<a style="text-transform: unset; color:gray"
+									<a style="text-transform: unset; "
 									{{-- wire:navigate href="/training/masterclass" class="dropdown-toggle" data-toggle="dropdown">Masterclasses</a>  --}}
-									wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown">Masterclasses</a>
+									wire:navigate href="{{route('training.masterclass')}}" class="dropdown-toggle" data-toggle="dropdown">Masterclasses</a>
 
 								</li>
 								<li>
-									<a style="text-transform: unset; color:gray"
+									<a style="text-transform: unset;"
 									{{-- wire:navigate href="/training/mcpd" class="dropdown-toggle" data-toggle="dropdown">MCPD</a>  --}}
-									wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown">MCPD</a>
+									wire:navigate href="{{route('training.mcpd')}}" class="dropdown-toggle" data-toggle="dropdown">MCPD</a>
 								</li>
 								<li>
-									<a style="text-transform: unset; color:gray"
+									<a style="text-transform: unset; "
 									{{-- wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Conferences ></a>  --}}
 									wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Conferences ></a>
-									<ul class="dropdown-menu" style="text-transform: unset; color:gray">
+									<ul class="dropdown-menu" style="text-transform: unset; ">
 										<li>
-											<a style="text-transform: unset; color:gray"
+											<a style="text-transform: unset;"
 											{{-- wire:navigate href="/training/conference/directors-conference-and-retreat" class="dropdown-toggle" data-toggle="dropdown">Directors Conference and Retreat</a>  --}}
-											wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown">Directors Conference and Retreat</a>
+											wire:navigate href="{{route('training.conference.retreat')}}" class="dropdown-toggle" data-toggle="dropdown">Directors Conference and Retreat</a>
 										</li>
 										<li>
 											<a
 											{{-- wire:navigate href="/training/conference/pr-practitioner-in-tertiary-institution" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Conference for PR Practitioners in Tertiary Institutions</a> --}}
-											wire:navigate href="#" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Conference for PR Practitioners in Tertiary Institutions</a>
+											wire:navigate href="{{route('training.conference.practitioner')}}" style="text-transform: unset;" class="dropdown-toggle" data-toggle="dropdown">Conference for PR Practitioners in Tertiary Institutions</a>
 										</li>
 
 									</ul> <!-- .dropdown-menu -->
 								</li>
 								<li>
-									<a style="text-transform: unset; color:gray"
+									<a style="text-transform: unset;"
 									{{-- wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Annual Lectures ></a>  --}}
 									wire:navigate href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Annual Lectures ></a>
-									<ul class="dropdown-menu" style="text-transform: unset; color:gray">
+									<ul class="dropdown-menu" style="text-transform: unset; ">
 										<li>
 											<a
 											{{-- wire:navigate href="/training/annual-lecture/sam-epelle-memorial-gold-lecture" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Sam Epelle Memorial Gold Lecture</a> --}}
-											wire:navigate href="#" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Sam Epelle Memorial Gold Lecture</a>
+											wire:navigate href="{{route('training.lecture.sam-epelle')}}" style="text-transform: unset;" class="dropdown-toggle" data-toggle="dropdown">Sam Epelle Memorial Gold Lecture</a>
 										</li>
 
 										<li>
 											<a
 											{{-- wire:navigate href="/training/annual-lecture/Igwe-nnaemeka-alfred-achebe-peace-and-reconciliation-annual-lecture-series" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Igwe Nnaemeka Alfred Achebe Peace & <br> Reconciliation Annual Lecture Series</a> --}}
-											wire:navigate href="#" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">Igwe Nnaemeka Alfred Achebe Peace & <br> Reconciliation Annual Lecture Series</a>
+											wire:navigate href="{{route('training.lecture.igwe')}}" style="text-transform: unset;" class="dropdown-toggle" data-toggle="dropdown">Igwe Nnaemeka Alfred Achebe Peace & <br> Reconciliation Annual Lecture Series</a>
 										</li>
 
 										<li>
 											<a
 											{{-- wire:navigate href="/training/annual-lecture/his-highness-aminu-ado-bayero-national-integration-annual-lecture-series" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series</a> --}}
-											wire:navigate href="#" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series</a>
+											wire:navigate href="{{route('training.lecture.aminu')}}" style="text-transform: unset; " class="dropdown-toggle" data-toggle="dropdown">His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series</a>
 										</li>
 
 
@@ -493,19 +392,25 @@
 								</li>
 							</ul>
 						</li>
-                        <li class="dropdown">
+                        <li class="{{(Route::is('resources.image','resources.image.view','resources.video'
+						  ))?" active":''}} dropdown">
                             <a  href="#" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Gallery </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/downloadable/images"style="text-transform: unset">Photo</a></li>
                                 <li><a href="/downloadable/videos"style="text-transform: unset">Videos</a></li>
                             </ul> <!-- .dropdown-menu -->
                         </li>
-                        <li class="dropdown
-                        {{-- dropdown --}}
+
+                        <li class="{{(Route::is('resources.event.view','resources.downloadable',
+						  ))?" active":''}} dropdown menu-large">
+							<a  href="/downloadable/downloadable" role="button" style="text-transform: unset" aria-haspopup="false" aria-expanded="true">Downloadable</a>
+
+						</li>
+
+                        {{-- <li class="dropdown menu-large
 						{{(Route::is('resources.image','resources.image.view','resources.event.view','resources.downloadable','resources.video'
-						  ))?"active":''}}
-						">
-							<a  href="/downloadable/downloadable" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadable</a>
+						  ))?" active":''}} ">
+							<a  href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit" aria-expanded="false">Downloadable</a> --}}
                                 {{-- <ul class="dropdown-menu" style="text-transform: unset">
 									 <li>
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset" aria-expanded="false"> Publications ></a>
@@ -529,19 +434,24 @@
                                     <li>
                                         <a wire:navigate href="/downloadable/downloadable" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Other Resources</a>
                                     </li>
-                                </ul> <!-- .dropdown-menu --> --}}
-						</li>
+                                </ul> <!-- .dropdown-menu -->
+						</li>--}}
+
+
+
+
+
 							<li
 						class="dropdown
 						    {{(Route::is('contactus'))?"active":''}} "
-							><a wire:navigate href="" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit; color:gray" aria-expanded="false">NIPR Hubs</a>
+							><a wire:navigate href="" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit; " aria-expanded="false">NIPR Hubs</a>
 
 							<ul class="dropdown-menu" style="text-transform: unset">
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset; color:gray" >Aviation Hub</a>
+									<a wire:navigate href="{{route('hub.aviation.show')}}" style="text-transform: unset; " >Aviation Hub</a>
 								</li>
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset; color:gray" >Energy Hub</a>
+									<a wire:navigate href="{{route('hub.energy.show')}}" style="text-transform: unset; " >Energy Hub</a>
 								</li>
 								<li>
 									<a wire:navigate href="#" style="text-transform: unset; color:gray" >Maritime Hub</a>
@@ -550,7 +460,7 @@
 									<a wire:navigate href="#" style="text-transform: unset; color:gray" >Enterprise Hub</a>
 								</li>
 								<li>
-									<a wire:navigate href="#" style="text-transform: unset; color:gray" >PR Young Professionals Hub</a>
+									<a wire:navigate href="{{route('hub.young.show')}}" style="text-transform: unset; " >PR Young Professionals Hub</a>
 								</li>
 								<li>
 									<a wire:navigate href="#" style="text-transform: unset ; color:gray">PR Professionals in Tertiary <br>Institutions Hub</a>
@@ -565,3 +475,4 @@
 			</div> <!-- .container -->
 		</nav> <!-- .navbar -->
 	</header> <!-- .site-header -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

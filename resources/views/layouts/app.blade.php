@@ -106,7 +106,7 @@
 </head>
 <body class="home-11">
     @include('livewire.includes.header')
-    {{-- {{$slot}} --}}
+    {{$slot}}
     @yield('content')
 
     <footer class="site-footer" >

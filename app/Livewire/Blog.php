@@ -30,7 +30,7 @@ class Blog extends Component
             'posts' => Post::with('categories','author')->published()->latest()->paginate(6),
             'recentPosts' => Post::published()->latest()->take(3)->get(),
             'categories' => Category::latest()->take(10)->get(),
-            'gallery' => $this->gallery = imageGallery:: 
+            'gallery' => imageGallery::
             latest()->take(8)->get()
         ])
         ->extends('welcome');

@@ -8,6 +8,6 @@ class YoungProfessionals extends Component
 {
     public function render()
     {
-        return view('livewire.hubs.young-professionals');
+        return view('livewire.hubs.young-professionals')->layout('layouts.app')->slot('content');
     }
 }
