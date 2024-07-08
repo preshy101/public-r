@@ -34,7 +34,7 @@
         </a>
 
         <a target="_blank" href="{{ asset('docs/2024_Edelman_Trust_Barometer_Nigeria_Report_Launch_FINAL.pdf')}}"  class="list-group-item list-group-item-action">2024 Edelman Trust Barometer Nigeria Report </a>
-        <a target="_blank" href="{{ asset('docs/NIPR_Sponsorship_Package_New.pdf')}}"  class="list-group-item list-group-item-action">NIPR Sponsorship Package</a>
+        <a target="_blank" href="{{ asset('docs/books/NIPR_Sponsorship_Package_New.pdf')}}"  class="list-group-item list-group-item-action">NIPR Sponsorship Package</a>
         <a target="_blank" href="{{ asset('docs/2024_PRCA_Africa_APRA_Report_-_ENG_Final_Version.pdf')}}"  class="list-group-item list-group-item-action">The State of Ethics and the Public Relations Industry in Africa 2 0 2 4</a>
         <a target="_blank" href="{{ asset('docs/final_NIPR_60.pdf')}}"  class="list-group-item list-group-item-action">Diamond Anniversary Partnership Brochure</a>
         <a target="_blank" href="{{ asset('docs/Brochure.pdf')}}"  class="list-group-item list-group-item-action">NPRWEEK 2024</a>
