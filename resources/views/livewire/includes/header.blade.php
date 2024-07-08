@@ -437,14 +437,10 @@
                                 </ul> <!-- .dropdown-menu -->
 						</li>--}}
 
-
-
-
-
 							<li
 						class="dropdown
 						    {{(Route::is('contactus'))?"active":''}} "
-							><a wire:navigate href="" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit; " aria-expanded="false">NIPR Hubs</a>
+							><a wire:navigate href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: inherit; " aria-expanded="false">NIPR Hubs</a>
 
 							<ul class="dropdown-menu" style="text-transform: unset">
 								<li>

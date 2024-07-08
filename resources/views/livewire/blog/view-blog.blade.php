@@ -130,8 +130,8 @@
                                         <li><a class="gallery-img" href="#"><img class="img-responsive" src="{{Storage::url($img)}}" alt="gallery photo"></a></li>
                                         @endif
                                         @endforeach
-                                    @endforeach
-                                    @endif
+                                        @endif
+                                        @endforeach 
                                 @else
                                     <small>No content yet</small>
                                 @endif

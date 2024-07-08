@@ -27,10 +27,10 @@
 				        @foreach ($events as $item)
                         <div class="col-md-4">
                             <div class="post-wrapper post-grid">
-                                <div class="image-wrapper">
-                                    <img class="img-responsive" src="{{Storage::url($item->image)}}" alt="event image 00">
+                                <div class="image-wrapper" style="height: 257.22px;">
+                                    <img class="img-responsive" style="image-rendering: crisp-edges" src="{{Storage::url($item->image)}}" alt="event image 00">
                                 </div> <!-- .image-wrapper -->
-                                <div class="post-content">
+                                <div class="post-content" style="max-height: 295px">
                                     <ul class="post-meta">
                                         <li>{{$item->created_at->diffForHumans()}}</li>
                                         {{-- <li><a href="#">{{$item->note}}</a></li> --}}
