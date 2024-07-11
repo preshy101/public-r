@@ -152,7 +152,7 @@
 									aria-haspopup="true" href="#"style="text-transform: unset" aria-expanded="false">Management ></a>
 									<ul class="dropdown-menu" style="text-transform: unset">
 										<li>
-											<a href="/about-us/management/composition" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: unset"  data-toggle="dropdown">Council </a>
+											<a href="/about-us/management/composition" class="dropdown-toggle"   style="text-transform: unset" >Council </a>
 											{{-- <ul class="dropdown-menu" style="text-transform: unset">
 												<li>
 													<a  wire:navigate  href="/about-us/management/composition" style="text-transform: unset"   class="dropdown-toggle" data-toggle="dropdown">Composition</a>
@@ -163,7 +163,7 @@
 											</ul> <!-- .dropdown-menu --> --}}
 										</li>
 										<li>
-											<a ` href="/about-us/management/chapters" style="text-transform: unset" class="dropdown-toggle" data-toggle="dropdown">Chapters</a>
+											<a href="/about-us/management/chapters" style="text-transform: unset" class="dropdown-toggle" >Chapters</a>
 										</li>
 
 									</ul> <!-- .dropdown-menu -->
@@ -287,7 +287,7 @@
 								</li>
 
 								<li>
-									<a style="text-transform: unset"  href="/education/study-center" class="dropdown-toggle" data-toggle="dropdown">Study Centers</a>
+									<a style="text-transform: unset"  href="/education/study-center" class="dropdown-toggle" >Study Centers</a>
 								</li>
 
 								<li>
