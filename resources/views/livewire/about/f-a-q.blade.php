@@ -57,7 +57,7 @@
                     <div class="image-wrapper">
                         <img class="img-responsive"
 						style="height: 550px"
-						src="{{asset('./img/simone-secci-49uySSA678U-unsplash.jpg')}}" alt="hand shake image">
+						src="{{asset('./img/toppng.com-3d-red-question-mark-free-png-3508x2540.png')}}" alt="hand shake image">
                     </div> <!-- .img-wrapper -->
                 </div> <!-- .col-md-6 -->
             </div> <!-- .row -->
