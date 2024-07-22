@@ -55,6 +55,7 @@ use App\Livewire\Education\AdvisoryBoard\Committiees;
 use App\Livewire\Training\AnnualLecture\IgweNnaemeka;
 use App\Livewire\Training\Conference\PRPractitioners;
 use App\Http\Controllers\MembershipRegisterController;
+use App\Http\Controllers\ResultSheetController;
 use App\Livewire\Education\AdvisoryBoard\eComposition;
 use App\Livewire\Education\Examination\QualifyingExams;
 use App\Livewire\Hubs\Energy;
@@ -124,6 +125,13 @@ Route::get('/student/result', StudentResult::class)->name('student.result');
 Route::get('/student/study-centre', StudentStudyCentre::class)->name('student.study-centre');
 Route::get('/student/requirements', StudentRequirment::class)->name('student.requirements');
 Route::get('/student/curriculum', StudentCurriculum::class)->name('student.curriculum');
+
+// result
+Route::get('/education/examination/result', [ResultSheetController::class,'resultView' ])->name('education.exams.result');
+Route::post('/education/examination/result', [ResultSheetController::class,'searchResult' ])->name('education.exams.result.search');
+Route::get('/education/examination/result/upload', [ResultSheetController::class,'resultUploadView' ])->name('education.exams.result.upload');
+Route::post('/education/examination/result/upload', [ResultSheetController::class, 'importResult'])->name('result.import');
+
 
 // Member route
 Route::get('/membership/information', MemberInformation::class)->name('member.information');

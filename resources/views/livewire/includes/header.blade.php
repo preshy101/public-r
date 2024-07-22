@@ -283,6 +283,9 @@
 											{{-- wire:navigate href="/education/examination/qualifying-examination"style="text-transform: unset; color:gray">Qualifying Examination</a></li>  --}}
 
 											href="{{route('education.publication')}}"style="text-transform: unset; ">Exams Information</a></li>
+										<li><a
+											href="{{route('education.exams.result')}}"style="text-transform: unset; "> Result </a>
+                                        </li>
 									</ul> <!-- .dropdown-menu -->
 								</li>
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\ImportMembershipRegisterClass;
+use App\Imports\ResultSheet;
+use App\Models\ResultSheet as ModelsResultSheet;
 
 class ExcelImportController extends Controller
 {
@@ -27,6 +29,7 @@ class ExcelImportController extends Controller
     }
         session()->flash('error', 'Incorrect password or wrong file format, Please try again :(');
         return redirect()->back();
-    
+
 }
+   
 }

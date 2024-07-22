@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->text('fullText')->nullable();
             $table->text('note')->nullable();
-            $table->softDeletes();
+            $table->softDeletes();  
             $table->timestamps();
         });
     }
