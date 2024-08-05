@@ -21,7 +21,7 @@
         <p class="lead">
             THE MANDATORY CONTINUING DEVELOPMEMT PROGRAMME (MCPD)
         </p>
-        <div class="col-md-10" style="padding-bottom: 8%">
+        {{-- <div class="col-md-10" style="padding-bottom: 8%">
         As part of its responsibilities, the Nigerian Institute of Public Relations
         embarks on trainings to enhance the competencies of professional public
         relations practitioners and also expose them to modern PR trends that would aid service delivery.
@@ -33,9 +33,29 @@
         Also every member needs a minimum of three (3) MCPDs for upgrade from one level of membership to another.
         The MCPD is bi-monthly.
         <br><br>
-        The Mandatory Continuing Professional Development (MCPD) programme offered by the Nigerian Institute of Public Relations provides members
+        The Mandatory Continuing Professional Development (MC PD) programme offered by the Nigerian Institute of Public Relations provides members
         with ongoing professional training to stay abreast of the latest trends in public relations and communication. This initiative aims to
         enhance members' professional skills, reputational standing, and financial value, ensuring they remain at the forefront of the industry.
+    </div> --}}
+    <div class="row">
+        <div class="col-md-8">
+            <div style="padding-bottom: 8%; margin-left: 5%;  text-align: justify;">
+                {!! $training->description !!}
+            <p>
+
+            </p>
+        </div>
+        </div>
+        <div class="col-md-4 w-75" style="">
+
+            <div class="list-group">
+            @foreach ($training->tContent as $item)
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                <p>{{ \Carbon\Carbon::createFromFormat('Y-m-d', $item->year)->format('m-Y')  }}</p>
+            </a>
+                @endforeach
+            </div>
+        </div>
     </div>
     </div>
 

@@ -60,10 +60,10 @@ class ImageGalleryResource extends Resource
                     ->cols(20)
                     ->minLength(2)
                     ->maxLength(255),
-                ])->columnSpan(2),
-                Section::make('Files')
-                ->description('')
-                ->schema([
+                    ])->columnSpan(2),
+                    Section::make('Files')
+                    ->description('')
+                    ->schema([
                     TextInput::make('note')
                     ->required()
                     ->minLength(2)

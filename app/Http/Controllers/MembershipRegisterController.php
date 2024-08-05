@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Models\MembershipRegister;
 use App\Models\examInfo;
 use App\Models\imageGallery;
+use App\Models\Training;
+use App\Models\TrainingContent;
 
 class MembershipRegisterController extends Controller
 {
@@ -56,6 +58,14 @@ class MembershipRegisterController extends Controller
         $publications = examInfo::where('status', true)->latest()->paginate(1);
 
         return view('livewire.publication.exam_info', compact('publications'));
+    }
+    public function viewTraining($training_id, $item_id){
+        $content = TrainingContent::find($item_id);
+        $training = Training::with('tContent')->where('id',$training_id)->first();
+        return view('livewire.training.training',[
+            'content' => $content,
+            'training' => $training
+        ]);
     }
 
     public function allVideos($id){

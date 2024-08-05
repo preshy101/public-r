@@ -100,7 +100,7 @@
 					<li>
                         {{-- <li> --}}
                             {{-- <a target="_blank" class="button" href="{{asset("./docs/updates/NIPR_Harmonized_Final_State_Chapters_Amendment _Bye_Law_2.docx")}}" ><i class="fa fa-files-o"></i> <span>Revise Bye Law NO 2</span></a></li> --}}
-                        <a class="button" href="{{route('member.registry')}}"><i class="fa fa-files-o"></i> Membership Register </a></li>
+                        <a class="" href="{{route('member.registry')}}"><i class="fa fa-files-o"></i> Membership Register </a></li>
 				</ul> <!-- .quick-contact -->
 
 				<ul class="list-inline pull-right top-bar-social">

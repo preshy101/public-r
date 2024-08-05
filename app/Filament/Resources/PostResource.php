@@ -50,7 +50,7 @@ class PostResource extends Resource
                         }
                 ),
                     TextInput::make('slug')->readOnly()->required()->unique(ignoreRecord: true),
-                    Select::make('categories')->multiple()->relationship('categories','title')->searchable()->required(),
+                    Select::make('categories')->multiple()->relationship('categories','title')->required(),
                     RichEditor::make('body')->required()
                     ->fileAttachmentsDirectory('post/images')->columnSpanFull(),
                     Select::make('user_id')->relationship('author','name')->searchable()->required(),

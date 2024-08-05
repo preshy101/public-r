@@ -96,7 +96,7 @@
 				<p>Premium Partners:</p>
 				</div>
 				<div class="col-md-10 col-sm-12" style="margin-bottom: 0%; ">
-			<marquee>
+			<marquee scrollamount="2">
 				<a href="http://www.hensekgroup.com" target="_blank" rel="noopener noreferrer"><img width="150px" style="margin-right: 35px;" src="{{asset('./img/hensek_logo.png')}}" alt="" srcset=""></a>
 				<a href="https://ng.usembassy.gov" target="_blank" rel="noopener noreferrer"><img width="60px" style="margin-right: 35px;" height="60px" src="{{asset('./img/usm-nigeria-seal.png')}}" alt="" srcset=""></a>
 
