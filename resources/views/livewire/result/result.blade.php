@@ -54,18 +54,20 @@
 
             <div class="col-md-3" >
                 <label for="file">Month</label>
-           <select name="month" required id="" class="form-control">
+           <select name="month"   id="" class="form-control">
             <option disabled selected>Select Month</option>
             <option value="march">March</option>
             <option value="june">June</option>
             <option value="july">July</option>
+            <option value="october">October</option>
             <option value="november">November</option>
         </select>
     </div>
             <div class="col-md-3" >
                 <label for="file">Year</label>
-                <select name="year" id="" required class="form-control">
+                <select name="year" id=""  class="form-control">
                     <option disabled selected>Select Year</option>
+                    <option value="2020">2020</option>
                     <option value="2023">2023</option>
                 </select>
             </div>
@@ -112,6 +114,13 @@
 
             </tbody>
         </table>
+        @elseif(Session::has('error'))
+        @php
+        $error = Session::get('error');
+        @endphp
+        <p>
+
+            {{ $error }}</p>
      @endif
 
 

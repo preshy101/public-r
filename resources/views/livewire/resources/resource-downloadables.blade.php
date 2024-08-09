@@ -71,7 +71,7 @@
         <a target="_blank" href="{{ asset('docs/forms/students_reg_form.pdf')}}" class="list-group-item list-group-item-action "> STUDENTS REG FORM</a>
         <a target="_blank" href="{{ asset('docs/forms/2023_NIPR_NATIONAL_COUNCIL_ELECTION_GUIDELINES.pdf')}}" class="list-group-item list-group-item-action "> 2023 NIPR NATIONAL COUNCIL ELECTION GUIDELINES</a>
         <a target="_blank" href="{{ asset('docs/forms/NOMINATION_FORM.pdf')}}" class="list-group-item list-group-item-action "> NIPR NATIONAL COUNCIL ELECTIONS 2023 NOMINATION FORM</a>
-        <a target="_blank" href="{{ asset('docs/forms/ANNUAL_DUES_RECERTIFICATION_WAIVER_APPLICATION.pdf')}}" class="list-group-item list-group-item-action "> ANNUAL DUES RECERTIFICATION WAIVER APPLICATION</a>
+        {{-- <a target="_blank" href="{{ asset('docs/forms/ANNUAL_DUES_RECERTIFICATION_WAIVER_APPLICATION.pdf')}}" class="list-group-item list-group-item-action "> ANNUAL DUES RECERTIFICATION WAIVER APPLICATION</a> --}}
       </div>
 
       <br>

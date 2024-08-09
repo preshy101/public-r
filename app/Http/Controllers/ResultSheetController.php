@@ -19,8 +19,8 @@ class ResultSheetController extends Controller
         $request->validate([
             'reg' => 'required|max:255',
             'type' => 'required|max:255',
-            'month' => 'required|max:255',
-            'year' => 'required|max:255'
+            'month' => 'nullable|max:255',
+            'year' => 'nullable|max:255'
         ]);
 
         if ($request->type == 'all') {
@@ -28,10 +28,11 @@ class ResultSheetController extends Controller
         }else{
             $result = ResultSheet::where([['registrationNumber',$request->reg],['month', $request->month],['type', $request->type],['year', $request->year]])->get();
         }
+
         if ($result) {
             session()->flash('result', $result);
         }else{
-         session()->flash('error', "No Record found!");
+            session()->flash('error', "No Record found!");
         }
         return redirect()->back();
     }
