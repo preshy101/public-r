@@ -149,7 +149,7 @@ Route::get('/news/publication', [MembershipRegisterController::class, 'publicati
 // publication
 Route::get('/education/examinations/publication', [MembershipRegisterController::class, 'exmPublication'])->name('education.publication');
 // Training
-Route::get('/training/view/{training_id}/{item_id}', [MembershipRegisterController::class, 'viewTraining'])->name('training.vew');
+Route::get('/training/view/{item_id}', [MembershipRegisterController::class, 'viewTraining'])->name('training.vew');
 
 // staff ID Card
 Route::get('/staff/id/{id}', [IdcardController::class,'verifyId'])->name('verify.idcard');

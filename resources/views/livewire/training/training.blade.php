@@ -24,10 +24,12 @@
     </div>
         <div class="row">
             <div class="col-md-8">
-                @if (Str::length($training->image))
-                <img src="{{ Storage::url($training->image) }}" alt="">
-                @endif
                 <div style="padding-bottom: 8%; margin-left: 5%;  text-align: justify;">
+                    @if (Str::length($content->image))
+                    <img src="{{ Storage::url($content->image) }}" alt="">
+                    @endif
+                    <br>
+                    <br>
                     {!! $content->content !!}
                 <p>
 

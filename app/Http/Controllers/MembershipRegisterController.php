@@ -59,9 +59,9 @@ class MembershipRegisterController extends Controller
 
         return view('livewire.publication.exam_info', compact('publications'));
     }
-    public function viewTraining($training_id, $item_id){
+    public function viewTraining(  $item_id){
         $content = TrainingContent::find($item_id);
-        $training = Training::with('tContent')->where('id',$training_id)->first();
+        $training = Training::with('tContent')->where('id',$content->training_id)->first();
         return view('livewire.training.training',[
             'content' => $content,
             'training' => $training
