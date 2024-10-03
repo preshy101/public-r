@@ -68,4 +68,7 @@ class LinkController extends Controller
         return view('livewire.news.press-release-view',  compact('pressRelease'));
     }
 
+    public function certifcate(){
+        return view('livewire.certificate');
+    }
 }

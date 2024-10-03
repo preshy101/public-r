@@ -113,7 +113,7 @@
 				</ul> <!-- .top-bar-menu -->
 
 				<ul class="list-inline pull-right top-bar-menu">
-					{{-- <li><a target="_blank" href="#">Register</a></li>--}}
+					{{-- <li><a target="_blank" class="button"  href="{{ route('certificate.show') }}">Certificates</a></li> --}}
 					<li><a target="_blank" href="https://portal.niprng.org.ng/member/login">Login</a></li>
 					{{-- <li><a href="#">Sitemap</a></li> --}}
 				</ul> <!-- .top-bar-menu -->

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CertificateController;
 use App\Livewire\Blog;
 use App\Livewire\Home;
 use App\Livewire\Student;
@@ -161,6 +162,10 @@ Route::get('/news/search/{title}', SearchBlog::class)->name('news.search');
 Route::get('/news/newslink', [LinkController::class, 'index'])->name('news.newslink');
 Route::get('/news/press-release', [LinkController::class, 'allPressReleases'])->name('news.pressRelease');
 Route::get('/news/press-release/{id}', [LinkController::class, 'pressReleases'])->name('news.pressRelease.id');
+
+// certificate
+Route::get('/certificate', [LinkController::class, 'certifcate'])->name('certificate.show');
+Route::post('/certificate', [CertificateController::class, 'searchCertificate'])->name('certificate.search');
 
 // Hub
 Route::get('/hub/aviation', Aviation::class)->name('hub.aviation.show');

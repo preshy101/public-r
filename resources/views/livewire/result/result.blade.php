@@ -49,6 +49,7 @@
                     <option value="CPR2">CPR2</option>
                     <option value="DPR1">DPR1</option>
                     <option value="DPR2">DPR2</option>
+                    <option value="PRV1">Professional Variant</option>
                 </select>
             </div>
 
@@ -67,6 +68,7 @@
                 <label for="file">Year</label>
                 <select name="year" id=""  class="form-control">
                     <option disabled selected>Select Year</option>
+                    <option value="2023">2024</option>
                     <option value="2023">2023</option>
                     <option value="2022">2022</option>
                     <option value="2020">2020</option>
