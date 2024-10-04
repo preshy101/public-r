@@ -21,7 +21,7 @@ class TrainingResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-building-library';
     protected static ?string $activeNavigationIcon = 'heroicon-s-building-library';
 
-    protected static ?string $navigationGroup = 'Training';
+    protected static ?string $navigationGroup = 'TRAINING';
     protected static ?int $navigationSort = 1;
 
     public static function form(Form $form): Form

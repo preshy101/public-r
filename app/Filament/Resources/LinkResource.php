@@ -21,7 +21,7 @@ class LinkResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-link';
     protected static ?string $activeNavigationIcon = 'heroicon-s-link';
-    protected static ?string $navigationGroup = 'Blog';
+    protected static ?string $navigationGroup = 'BLOG';
 
     public static function form(Form $form): Form
     {

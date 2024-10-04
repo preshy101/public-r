@@ -29,6 +29,7 @@ class ExamInfoResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-book-open';
     protected static ?string $activeNavigationIcon = 'heroicon-s-book-open';
+    protected static ?string $navigationGroup = 'EDUCATION';
 
     public static function form(Form $form): Form
     {

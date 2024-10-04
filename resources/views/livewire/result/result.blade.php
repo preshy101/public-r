@@ -92,7 +92,8 @@
                 <th>SNO</th>
                 <th>Month/Year</th>
                 <th>Registration Number</th>
-                <th>Course</th>
+                <th>Programme</th>
+                <th>Courses</th>
                 <th>TU</th>
                 <th>TP</th>
                 <th>CGPA</th>
@@ -106,6 +107,7 @@
                     <td>{{$item->month.'/'.$item->year}}</td>
                     <td>{{$item->registrationNumber}}</td>
                     <td>{{$item->type}}</td>
+                    <td>{!! $item->courses !!}</td>
                     <td>{{$item->tu}}</td>
                     <td>{{$item->tp}}</td>
                     <td>{{$item->cgpa}}</td>

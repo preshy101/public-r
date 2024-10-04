@@ -31,7 +31,7 @@ class PostResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-arrow-up-on-square-stack';
     protected static ?string $activeNavigationIcon = 'heroicon-s-arrow-up-on-square-stack';
-    protected static ?string $navigationGroup = 'Blog';
+    protected static ?string $navigationGroup = 'BLOG';
 
     public static function form(Form $form): Form
     {
