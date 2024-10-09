@@ -57,6 +57,7 @@
                 <label for="file">Month</label>
            <select name="month"   id="" class="form-control">
             <option disabled selected>Select Month</option>
+            <option value="February">February</option>
             <option value="march">March</option>
             <option value="june">June</option>
             <option value="july">July</option>
@@ -71,6 +72,7 @@
                     <option value="2023">2024</option>
                     <option value="2023">2023</option>
                     <option value="2022">2022</option>
+                    <option value="2021">2021</option>
                     <option value="2020">2020</option>
                 </select>
             </div>
