@@ -32,16 +32,17 @@
 						<div class="post-content">
 							<ul class="post-meta">
 								<li>{{$item->created_at}}</li>
-								<li><a href="#"></a>{{$item->description}}</li>
+								<li><a href="#"></a>{{ Str::of($item->description)->words(10, '...') }}</li>
 							</ul>
-							<h3 class="entry-title text-white"><a wire:navigate href="/downloadable/images/{{ $item->id }}">{{$item->title}}
+							<h3 class="entry-title text-white">
+                                <a wire:navigate href="/downloadable/images/{{ $item->id }}">{{$item->title}}
 								@if (count($item->imageVideo) > 0)
 								@php
 									$total = 0;
 								@endphp
-									@foreach ($item->imageVideo as $item)
+									@foreach ($item->imageVideo as $itemz)
 									@php
-										$total = $total + count($item['image'])
+										$total = $total + count($itemz['image'])
 
 									@endphp
 									@endforeach
