@@ -32,7 +32,7 @@
 						<div class="post-content">
 							<ul class="post-meta">
 								<li>{{$item->created_at}}</li>
-								<li><a href="#"></a>{{ Str::of($item->description)->words(10, '...') }}</li>
+								<li><a  wire:navigate href="/downloadable/images/{{ $item->id }}"> {{ Str::of($item->description)->words(10, '...') }}</a></li>
 							</ul>
 							<h3 class="entry-title text-white">
                                 <a wire:navigate href="/downloadable/images/{{ $item->id }}">{{$item->title}}
@@ -58,7 +58,7 @@
 
 				@endforeach
 				@endif
-				{{ $images->onEachSide(1)->links('vendor.livewire.links') }}
+
 				{{-- <div class="pagination-block text-center">
 					<div>
 						@if ($images->hasPages())
@@ -82,8 +82,8 @@
 						@endif
 					</div>
 				</div> <!-- .btn-container --> --}}
-
 			</div> <!-- .row -->
+	{{ $images->onEachSide(1)->links('vendor.livewire.links') }}
 		</div> <!-- .container -->
 
 	</section> <!-- .portfolio-section -->
