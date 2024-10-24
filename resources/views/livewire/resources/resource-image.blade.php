@@ -36,20 +36,20 @@
 							</ul>
 							<h3 class="entry-title text-white">
                                 <a wire:navigate href="/downloadable/images/{{ $item->id }}">{{$item->title}}
-								@if (count($item->imageVideo) > 0)
 								@php
 									$total = 0;
 								@endphp
+								@if (count($item->imageVideo) > 0)
+
 									@foreach ($item->imageVideo as $itemz)
 									@php
 										$total = $total + count($itemz['image'])
-
 									@endphp
 									@endforeach
-								{{ - ($total)}}
 
-								@endif
-							</a>
+                                    @endif
+                                {{ - ($total)}}
+							    </a>
 							</h3>
 
 						</div> <!-- .post-content -->
