@@ -19,19 +19,19 @@
     <br>
     <div class="container">
         <h1 class="entry-title"><a style="color: red" href="#"> Chapters </a></h1>
-        <p class="lead"> 
-        </p> 
+        <p class="lead">
+        </p>
 		<p style="text-align: justify">
-			Chapters
+			
 			The NIPR has Chapters across the thirty-six (36) States of the Federation and the
 			 Federal Capital Territory (Abuja), each Chapter is headed by an elected Chairman
-			  who is assisted by a Vice Chair and other Executive Committee members. 
+			  who is assisted by a Vice Chair and other Executive Committee members.
 
 
 		</p>
     </div>
     <br>
     <br>
-    <br> 
+    <br>
     @endsection
  </div>
