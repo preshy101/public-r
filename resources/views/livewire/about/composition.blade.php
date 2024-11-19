@@ -66,9 +66,9 @@
 
 19.    Hajiya Maryam Mohammed Sanusi fnipr – FCT Chapter <br>
 
-20.    Mrs. Omolara Ebunoluwa Esan  - FCT Chapter <br>
+20.    Mr. Jibrin Baba Ndace – Niger Chapter<br>
 
-21.    Mr. Jibril Baba Ndace – Niger Chapter <br>
+21.    Dr Suleiman Haruna, anipr  - FCT Chapter <br>
 
 22.    Mr. Lanre Issa-Onilu  - Lagos Chapter <br>
 		</p>
@@ -85,7 +85,7 @@
 			  elected Council Members.
 			<br>
 			To ease the day-to-day administration of the Institute, the Law provides for the appointment
-			of a Registrar by the Council appoints a Registrar. The Registrar is appointed for a fixed
+			of a Registrar by the Council. The Registrar is appointed for a fixed
 			renewable term of five years and has the primary duty to prepare and maintain the register of
 			 members by the rules made by the Council. The Registrar is assisted by a host of competent
 			 and professional diverse workforce located at the Abuja National Secretariat and the Lagos
