@@ -9,7 +9,7 @@
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Training</a></li>
 						<li><a href="#">Annual Lectures</a></li>
-						<li><a href="#">His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series<</a></li>
+						<li><a href="#">Raymond Dokpesi Annual</a></li>
 					</ul>
 				</div> <!-- .content-wrapper -->
 			</div> <!-- .container -->
