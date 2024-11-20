@@ -5,12 +5,12 @@
 				<div class="content-wrapper">
 					<h2>Events </h2>
 					<ul class="bread-crumb">
-						<li><a href="/">Home</a></li> 
+						<li><a href="/">Home</a></li>
 						<li><a href="/resources/up-coming-events">Events</a></li>
 						<li><a href="#">
                             @if($event)
                              @foreach ($event as $item)
-                            {{$item->title}}    
+                            {{$item->title}}
                             @endforeach
                             @endif
                         </a></li>
@@ -19,14 +19,14 @@
 			</div> <!-- .container -->
 		</div> <!-- .page-title-banner -->
 	</section> <!-- .hero-area -->
-    
+
 	<section class="portfolio-details-section page-content">
 		<div class="container">
-			
+
 			<div class="row">
                 @if($event)
              @foreach ($event as $item)
-                    
+
 				<div class="col-md-12">
 					<div class="item-wrapper">
 						<img class="portfolio-f-img img-responsive" src="{{Storage::url($item->image)}}" alt="event image">
@@ -58,15 +58,14 @@
             <br>
             <br>
             <br>
+            @if (count($item->imageVideo) > 0)
+            @foreach ($item->imageVideo as $item)
+            @foreach ($item->image as $eventImages)
 			<div class="related-project-block">
 				<h3 class="block-title">Some Moment Captured</h3>
 				<div class="portfolio-section portfolio-style-02">
 					<div class="row">
-                        {{-- {{ dd($item)}} --}}
-                        @if (count($item->imageVideo) > 0)
-                        @foreach ($item->imageVideo as $item)
-                        @foreach ($item->image as $eventImages)
-                                                
+                        {{-- {{ dd($item)}} --}} 
 						<div class="col-sm-4 portfolio-item">
 							<div class="item-wrapper">
 								<img class="img-responsive" src="{{Storage::url($eventImages)}}" alt="event image">
@@ -83,11 +82,11 @@
                         @endforeach
                         @endforeach
                         @endif
-						 
+
 					</div> <!-- .row -->
 				</div> <!-- .portfolio-section portfolio-style-02 -->
-			</div> <!-- .related-project-block --> 
-            
+			</div> <!-- .related-project-block -->
+
             @endforeach
             @endif
 		</div> <!-- .container -->

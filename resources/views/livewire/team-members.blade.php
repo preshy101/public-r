@@ -42,7 +42,7 @@
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</section> <!-- .about-section -->
-	@if ($teams)
+	@if ($teams->count() >= 1)
 		<section class="team-section section-block">
 		<div class="container">
 			<div class="title-block">
@@ -84,7 +84,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h2><span>We are best</span>We have most talented people in team</h2>
+					<h2><span>We are the best</span>We have most talented people in our team</h2>
 					<p>
 
 					Delivering nothing but excellence across the spheres of her Professionalism</p>
@@ -93,36 +93,36 @@
 					<div class="progress-wrapper">
 						<h4>Creativity</h4>
 						<div class="progress ">
-						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="80"
+						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="100"
 						  aria-valuemin="0" aria-valuemax="100">
-						    <span>80%</span>
+						    {{-- <span>80%</span> --}}
 						  </div>
 						</div> <!-- .progress -->
 					</div> <!-- .progress-wrapper -->
 					<div class="progress-wrapper">
 						<h4>Technology</h4>
 						<div class="progress">
-						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="79"
+						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="100"
 						  aria-valuemin="0" aria-valuemax="100">
-						    <span>79%</span>
+						    {{-- <span>79%</span> --}}
 						  </div>
 						</div> <!-- .progress -->
 					</div> <!-- .progress-wrapper -->
 					<div class="progress-wrapper">
 						<h4>Education</h4>
 						<div class="progress">
-						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="90"
+						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="100"
 						  aria-valuemin="0" aria-valuemax="100">
-						    <span>90%</span>
+						    {{-- <span>90%</span> --}}
 						  </div>
 						</div> <!-- .progress -->
 					</div> <!-- .progress-wrapper -->
 					<div class="progress-wrapper">
 						<h4>Resource</h4>
 						<div class="progress">
-						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="95"
+						  <div class="progress-bar" style="background-color: red" role="progressbar" aria-valuenow="100"
 						  aria-valuemin="0" aria-valuemax="100">
-						    <span>95%</span>
+						    {{-- <span>95%</span> --}}
 						  </div>
 						</div> <!-- .progress -->
 					</div> <!-- .progress-wrapper -->

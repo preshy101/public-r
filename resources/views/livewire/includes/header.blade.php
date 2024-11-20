@@ -25,7 +25,7 @@
 					</li>
 					<li>
 
-					<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i>  <span>Newsletter</span></a>
+					{{-- <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i>  <span>Newsletter</span></a> --}}
                         {{-- Model for Newsletter --}}
 					<div class="modal corporex-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -56,7 +56,8 @@
 					</li>
 					<li><a target="_blank" href="https://portal.niprng.org.ng/member/register" ><i class="fa fa-user"></i> <span>Become a Member</span></a></li>
 
-					<li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-support"></i> <span>Volunteer</span></a>
+					<li>
+                        {{-- <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-support"></i> <span>Volunteer</span></a> --}}
 						<div class="modal corporex-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							{{-- model for volunteer --}}
 							<div class="modal-dialog">
@@ -232,7 +233,7 @@
 										<li>
 											<a
 											{{-- wire:navigate href="/training/annual-lecture/his-highness-aminu-ado-bayero-national-integration-annual-lecture-series" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series</a> --}}
-											wire:navigate href="{{route('training.lecture.aminu')}}" style="text-transform: unset; " class="dropdown-toggle" data-toggle="dropdown">His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series</a>
+											wire:navigate href="{{route('training.lecture.aminu')}}" style="text-transform: unset; " class="dropdown-toggle" data-toggle="dropdown">Raymond Dokpesi Annual Lecture Series</a>
 										</li>
 
 

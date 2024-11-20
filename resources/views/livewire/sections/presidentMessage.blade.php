@@ -34,7 +34,7 @@
                 {{-- src="{{asset('img/unseen-histories-G2vxuMlATxA-unsplash.jpg')}}" --}}
         @endif
         {{-- Our Team --}}
-        @if (count($team)> 0)
+        @if (count($team)>= 1)
         <section class="team-section team-01 mt-0 section-block" style="padding-top: 0px">
             <div class="container">
                 <div class="title-block">

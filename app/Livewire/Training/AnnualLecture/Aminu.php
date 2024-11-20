@@ -9,7 +9,7 @@ class Aminu extends Component
 {
     public $training;
     public function mount(){
-        $this->training = Training::with('tContent')->where('title', 'LIKE', "%igwe%")->first();
+        $this->training = Training::with('tContent')->where('title', 'LIKE', "%Raymond Dokpesi%")->first();
     }
     public function render()
     {

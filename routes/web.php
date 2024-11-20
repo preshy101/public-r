@@ -108,7 +108,7 @@ Route::get('/trianing/conference/practitioner', PRPractitioners::class)->name('t
  // Annual Lecture
 Route::get('/training/annual-lecture/sam-epelle-memorial-gold-lecture', SamEpelle::class)->name('training.lecture.sam-epelle');
 Route::get('/training/annual-lecture/Igwe-nnaemeka-alfred-achebe-peace-and-reconciliation-annual-lecture-series', IgweNnaemeka::class)->name('training.lecture.igwe');
-Route::get('/training/annual-lecture/his-highness-aminu-ado-bayero-national-integration-annual-lecture-series', Aminu::class)->name('training.lecture.aminu');
+Route::get('/training/annual-lecture/Raymond-Dokpesi-annual-lecture-series', Aminu::class)->name('training.lecture.raymond');
 
 // examination
 Route::get('/education/examination/cpr', CPR::class)->name('exam.cpr');

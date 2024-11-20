@@ -18,7 +18,7 @@
     <br>
     <br>
     <div class="container">
-        <h1 class="entry-title"><a style="color: red" href="#"> His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series </a></h1>
+        <h1 class="entry-title"><a style="color: red" href="#"> Raymond Dokpesi Annual Lecture Series </a></h1>
         <p class="lead">
         </p>
         <div class="row">
