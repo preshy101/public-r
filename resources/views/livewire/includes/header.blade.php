@@ -233,7 +233,7 @@
 										<li>
 											<a
 											{{-- wire:navigate href="/training/annual-lecture/his-highness-aminu-ado-bayero-national-integration-annual-lecture-series" style="text-transform: unset; color:gray" class="dropdown-toggle" data-toggle="dropdown">His Highness, Aminu Ado Bayero National <br> Integration Annual Lecture Series</a> --}}
-											wire:navigate href="{{route('training.lecture.aminu')}}" style="text-transform: unset; " class="dropdown-toggle" data-toggle="dropdown">Raymond Dokpesi Annual Lecture Series</a>
+											wire:navigate href="{{route('training.lecture.raymond')}}" style="text-transform: unset; " class="dropdown-toggle" data-toggle="dropdown">Raymond Dokpesi Annual Lecture Series</a>
 										</li>
 
 
