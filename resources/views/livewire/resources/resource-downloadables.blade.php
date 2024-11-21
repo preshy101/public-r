@@ -65,8 +65,8 @@
         <a target="_blank" href="{{ asset('docs/forms/exam_form.pdf')}}"class="list-group-item list-group-item-action ">EXAMMINATION FORM</a>
         <a target="_blank" href="{{ asset('docs/forms/exemption.pdf')}}" class="list-group-item list-group-item-action ">EXEMPTION FORM
         </a>
-        <a target="_blank" href="{{ asset('docs/forms/nomination_for_fellowship.pdf')}}" class="list-group-item list-group-item-action ">FELLOWSHIP NOMINATION FORM (1)</a>
-        <a target="_blank" href="{{ asset('docs/forms/SECTION_E.pdf')}}" class="list-group-item list-group-item-action ">FELLOWSHIP NOMINATION FORM (2)</a>
+        <a target="_blank" href="{{ asset('docs/forms/NIPR_FELLOWSHIP_APPLICATION_FORM.pdf')}}" class="list-group-item list-group-item-action ">FELLOWSHIP APPLICATION FORM </a>
+        {{-- <a target="_blank" href="{{ asset('docs/forms/SECTION_E.pdf')}}" class="list-group-item list-group-item-action ">FELLOWSHIP NOMINATION FORM (2)</a> --}}
         <a target="_blank" href="{{ asset('docs/forms/recertification.pdf')}}" class="list-group-item list-group-item-action "> RECERTIFICATION FORM</a>
         <a target="_blank" href="{{ asset('docs/forms/students_reg_form.pdf')}}" class="list-group-item list-group-item-action "> STUDENTS REG FORM</a>
         <a target="_blank" href="{{ asset('docs/forms/2023_NIPR_NATIONAL_COUNCIL_ELECTION_GUIDELINES.pdf')}}" class="list-group-item list-group-item-action "> 2023 NIPR NATIONAL COUNCIL ELECTION GUIDELINES</a>
