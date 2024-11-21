@@ -33,8 +33,10 @@
 					</div> <!-- .item-wrapper -->
 				</div> <!-- .portfolio-item -->
 				<div class="col-md-8">
-					<h2 class="portfolio-title">{{$item->title}}</h2>
-					<a class="btn btn-narrow" href="{{$item->version}}">Register</a>
+					<h2 class="portfolio-title">{{$item->title}}</h2><br>
+                    @if ($item->version != '##')
+					<a class="btn btn-narrow" href="{{$item->version}}">Register</a> 
+                    @endif
 					<div class="portfolio-details-content">
 						<p style="text-align: justify">
 							{{$item->description}} <br>
@@ -65,7 +67,7 @@
 				<h3 class="block-title">Some Moment Captured</h3>
 				<div class="portfolio-section portfolio-style-02">
 					<div class="row">
-                        {{-- {{ dd($item)}} --}} 
+                        {{-- {{ dd($item)}} --}}
 						<div class="col-sm-4 portfolio-item">
 							<div class="item-wrapper">
 								<img class="img-responsive" src="{{Storage::url($eventImages)}}" alt="event image">
