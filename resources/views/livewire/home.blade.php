@@ -340,10 +340,13 @@
                             <i class="pe-7s-user " style="font-size: 50px;"></i>
 							<h3 style="text-transform: capitalize"><span class="counter">15455</span>Students</h3>
 						</div> <!-- .col-xs-6 --> --}}
-						<div class="col-xs-12 col-md-3">
+
+						{{-- <div class="col-xs-12 col-md-3">
                             <i class="pe-7s-users" style="font-size: 50px;"></i>
 							<h3 style="text-transform: capitalize"><span class="counter">7464</span>Members</h3>
-						</div> <!-- .col-xs-6 -->
+						</div> --}}
+                        
+                        <!-- .col-xs-6 -->
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-note" style="font-size: 50px;"></i>
 							<h3 style="text-transform: capitalize"><span class="counter">8</span>NIPR hubs</h3>
