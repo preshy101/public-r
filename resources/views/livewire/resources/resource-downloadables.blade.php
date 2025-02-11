@@ -30,6 +30,13 @@
     </div>
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+          <b> STUDENT</b>
+        </a>
+        <a target="_blank" href="{{ asset('docs/student/STUDENT_HANDBOOK_DPR.pdf')}}"  class="list-group-item list-group-item-action">DPR Handbook </a>
+
+    </div>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
           <b> BROCHURES</b>
         </a>
 
