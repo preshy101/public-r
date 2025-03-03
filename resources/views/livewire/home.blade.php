@@ -341,11 +341,11 @@
 							<h3 style="text-transform: capitalize"><span class="counter">15455</span>Students</h3>
 						</div> <!-- .col-xs-6 --> --}}
 
-						{{-- <div class="col-xs-12 col-md-3">
+						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-users" style="font-size: 50px;"></i>
-							<h3 style="text-transform: capitalize"><span class="counter">7464</span>Members</h3>
-						</div> --}}
-                        
+							<h3 style="text-transform: capitalize"><span id="memberStrength" class="counter">-</span>Members</h3>
+						</div>
+
                         <!-- .col-xs-6 -->
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-note" style="font-size: 50px;"></i>
@@ -353,7 +353,7 @@
 						</div> <!-- .col-xs-6 -->
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-camera" style="font-size: 50px;"></i>
-							<h3 style="text-transform: capitalize"><span class="counter">37</span>Chapters</h3>
+							<h3 style="text-transform: capitalize"><span class="counter">30</span>Chapters</h3>
 						</div> <!-- .col-xs-6 -->
 				</div> <!-- .col-md-6 -->
 				{{-- <div class="col-md-5 col-md-offset-1 facts-block">
@@ -469,6 +469,8 @@
 		</div> <!-- .container -->
 	</section> <!-- .partner-section -->
  --}}
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script type="text/javascript">
     $(window).on('load', function() {
         if ("{{$publications}}") {
@@ -477,6 +479,24 @@
                 $('#myModalz').modal('show');
             }, 2000)
         }
+
+        var host = 'https://portal.niprng.org.ng';
+        var hostLocal = 'http://127.0.0.1:8000';
+         $.ajax({
+        url: hostLocal+'/api/member/strength',
+        method: 'GET',
+        // data: { query: value },
+        success: function(response) {
+
+          $('#memberStrength').text(response.member);
+         console.log('AJAX call successful', response);
+          // Process the response here
+        },
+        error: function(xhr, status, error) {
+          console.error('AJAX call error', error);
+
+        }
+      });
     });
 </script>
 </div>
