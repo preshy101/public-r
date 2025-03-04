@@ -481,9 +481,9 @@
         }
 
         var host = 'https://portal.niprng.org.ng';
-        var hostLocal = 'http://127.0.0.1:8000';
+        // var hostLocal = 'http://127.0.0.1:8000';
          $.ajax({
-        url: hostLocal+'/api/member/strength',
+        url: host+'/api/member/strength',
         method: 'GET',
         // data: { query: value },
         success: function(response) {
