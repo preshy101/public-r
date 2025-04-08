@@ -119,8 +119,8 @@
             function fetchMember() {
                 // Get the value from the input field
                 const searchValue = document.querySelector('input[name="search"]').value;
-                const apiUrl = `http://127.0.0.1:8000/api/member/practice/id/${searchValue}`; // Replace with your API URL
-                // const apiUrl = `http://portal.niprng.org.ng/api/member/practice/id/${searchValue}`; // Replace with live API URL
+                // const apiUrl = `http://127.0.0.1:8000/api/member/practice/id/${searchValue}`; // Replace with your API URL
+                const apiUrl = `https://portal.niprng.org.ng/api/member/practice/id/${searchValue}`; // Replace with live API URL
 
 
                 button.disabled = true;
