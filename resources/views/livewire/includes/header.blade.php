@@ -100,6 +100,7 @@
 					</li>
 					<li>
                         {{-- <li> --}}
+                            {{-- election link --}}
                             <a target="_blank" class="button" href="https://elections.niprng.org.ng/" ><i class="fas fa-vote-yea"></i> <span>Elections Portal</span></a></li>
                         {{-- <a class="" href="{{route('member.registry')}}"><i class="fa fa-files-o"></i> Membership Register </a></li> --}}
 				</ul> <!-- .quick-contact -->
