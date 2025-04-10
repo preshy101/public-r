@@ -119,7 +119,7 @@
             function fetchMember() {
                 // Get the value from the input field
                 const searchValue = document.querySelector('input[name="search"]').value;
-                // const apiUrl = `http://127.0.0.1:8000/api/member/practice/id/${searchValue}`; // Replace with your API URL
+                // const apiUrl = `http://127.0.0.1:8002/api/member/practice/id/${searchValue}`; // Replace with your API URL
                 const apiUrl = `https://portal.niprng.org.ng/api/member/practice/id/${searchValue}`; // Replace with live API URL
 
 
@@ -141,7 +141,7 @@
                 console.log('AJAX call successful', response);
                 // Process the response here
                 if (response.status) {
-                displayDataInTable(response.member);
+                displayDataInTable(response);
                 } else {
                     let html = `<div class="alert alert-danger">No record found    <a href="https://forms.gle/6pDTNGghLYSbjqFG7" target="_blank" class="btn btn-danger-outline" rel="noopener noreferrer">
                     <i class="fa fa-info"></i> Complain
@@ -167,13 +167,13 @@
                 html += '</tr>';
 
                 // Table rows
-                $.each(userx, function(index, user) {
+                $.each(userx.member, function(index, user) {
                     html += '<tr>';
                         html += `<td>${user.first_name}</td>`;
                     html += `<td>${user.last_name}</td>`;
                     html += `<td>${user.email}</td>`;
                     html += `<td>${user.phone_number}</td>`;
-                    html += `<td>${user.membership_category}</td>`; // Nested data example
+                    html += `<td>${userx.category.category_name}</td>`; // Nested data example
                     html += ` <td>
                     <a href="https://forms.gle/6pDTNGghLYSbjqFG7" target="_blank" class="btn btn-danger-outline" rel="noopener noreferrer">
                     <i class="fa fa-info"></i> Complain
