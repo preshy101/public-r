@@ -337,7 +337,7 @@
 
 								</li>
 								<li>
-									<a target="_blank" href="https://portal.niprng.org.ng/member/register" style="text-transform: unset" >Membership Register</a>
+									<a target="_blank" href="{{route('member.registry')}}" style="text-transform: unset" >Membership Register</a>
 
 								</li>
 								{{-- <li>
