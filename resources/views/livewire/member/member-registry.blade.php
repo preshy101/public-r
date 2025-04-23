@@ -36,13 +36,13 @@
         {{-- <form action="{{route('member_registry.search')}}" method="post"> --}}
             {{-- @csrf --}}
             <div class="form-group">
-                <input type="text" required name="search" placeholder="search with Practice ID, 154*** 141***" class="form-control" >
+                <input type="text" required name="search" placeholder="search with Practice ID, 0154*** 141***" class="form-control" >
             </div>
 
             <button id="btn" type="button" class="btn btn-danger btn-lg " onclick="fetchMember()" style="background-color: red">
                 <i id="spinner" class="fa fa-spinner " style="visibility: hidden"></i>
                 <i id="search" class="fa fa-search"></i> Search
-                </button>
+            </button>
         {{-- </form> --}}
 
         <br><br>
