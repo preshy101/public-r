@@ -76,8 +76,8 @@
         {{-- <a target="_blank" href="{{ asset('docs/forms/SECTION_E.pdf')}}" class="list-group-item list-group-item-action ">FELLOWSHIP NOMINATION FORM (2)</a> --}}
         <a target="_blank" href="{{ asset('docs/forms/recertification.pdf')}}" class="list-group-item list-group-item-action "> RECERTIFICATION FORM</a>
         <a target="_blank" href="{{ asset('docs/forms/students_reg_form.pdf')}}" class="list-group-item list-group-item-action "> STUDENTS REG FORM</a>
-        <a target="_blank" href="{{ asset('docs/forms/2023_NIPR_NATIONAL_COUNCIL_ELECTION_GUIDELINES.pdf')}}" class="list-group-item list-group-item-action "> 2023 NIPR NATIONAL COUNCIL ELECTION GUIDELINES</a>
-        <a target="_blank" href="{{ asset('docs/forms/NOMINATION_FORM.pdf')}}" class="list-group-item list-group-item-action "> NIPR NATIONAL COUNCIL ELECTIONS 2023 NOMINATION FORM</a>
+        {{-- <a target="_blank" href="{{ asset('docs/forms/2023_NIPR_NATIONAL_COUNCIL_ELECTION_GUIDELINES.pdf')}}" class="list-group-item list-group-item-action "> 2023 NIPR NATIONAL COUNCIL ELECTION GUIDELINES</a> --}}
+        <a target="_blank" href="{{ asset('docs/forms/NIPR Annual Reports and Audited Accounts for the year ended 31st March, 2025.pdf')}}" class="list-group-item list-group-item-action "> NIPR Annual Reports and Audited Accounts for the year ended 31st March, 2025</a>
         {{-- <a target="_blank" href="{{ asset('docs/forms/ANNUAL_DUES_RECERTIFICATION_WAIVER_APPLICATION.pdf')}}" class="list-group-item list-group-item-action "> ANNUAL DUES RECERTIFICATION WAIVER APPLICATION</a> --}}
       </div>
 
