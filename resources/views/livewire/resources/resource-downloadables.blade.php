@@ -33,7 +33,9 @@
           <b> STUDENT</b>
         </a>
         <a target="_blank" href="{{ asset('docs/student/STUDENT_HANDBOOK_DPR.pdf')}}"  class="list-group-item list-group-item-action">DPR Handbook </a>
-
+        <a target="_blank" href="{{ asset('docs/STUDENTHANDBOOK-CPR.pdf')}}"  class="list-group-item list-group-item-action ">STUDENT HANDBOOK PROFESSIONAL CERTIFICATE IN PUBLIC RELATIONS (CPR)
+        </a>
+        <a target="_blank" href="{{ asset('docs/membership_application.pdf')}}"  class="list-group-item list-group-item-action ">STUDENT HANDBOOK PROFESSIONAL DIPLOMA IN PUBLIC RELATIONS (DPR)</a>
     </div>
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
@@ -52,9 +54,8 @@
         <a target="_blank" href="{{ asset('docs/membership_upgrade.pdf')}}"  class="list-group-item list-group-item-action">MEMBERSHIP UPGRADE
         </a>
         <a target="_blank" href="{{ asset('docs/code_of_conduct.pdf')}}"  class="list-group-item list-group-item-action ">NIPR CODE OF CONDUCT</a>
-        <a target="_blank" href="{{ asset('docs/STUDENTHANDBOOK-CPR.pdf')}}"  class="list-group-item list-group-item-action ">STUDENT HANDBOOK PROFESSIONAL CERTIFICATE IN PUBLIC RELATIONS (CPR)
-        </a>
-        <a target="_blank" href="{{ asset('docs/membership_application.pdf')}}"  class="list-group-item list-group-item-action ">STUDENT HANDBOOK PROFESSIONAL DIPLOMA IN PUBLIC RELATIONS (DPR)</a>
+      
+        <a target="_blank" href="{{ asset('docs/forms/NIPR Annual Reports and Audited Accounts for the year ended 31st March, 2025.pdf')}}" class="list-group-item list-group-item-action "> NIPR Annual Reports and Audited Accounts for the year ended 31st March, 2025</a>
       </div>
       <br>
       <br>
@@ -77,7 +78,7 @@
         <a target="_blank" href="{{ asset('docs/forms/recertification.pdf')}}" class="list-group-item list-group-item-action "> RECERTIFICATION FORM</a>
         <a target="_blank" href="{{ asset('docs/forms/students_reg_form.pdf')}}" class="list-group-item list-group-item-action "> STUDENTS REG FORM</a>
         {{-- <a target="_blank" href="{{ asset('docs/forms/2023_NIPR_NATIONAL_COUNCIL_ELECTION_GUIDELINES.pdf')}}" class="list-group-item list-group-item-action "> 2023 NIPR NATIONAL COUNCIL ELECTION GUIDELINES</a> --}}
-        <a target="_blank" href="{{ asset('docs/forms/NIPR Annual Reports and Audited Accounts for the year ended 31st March, 2025.pdf')}}" class="list-group-item list-group-item-action "> NIPR Annual Reports and Audited Accounts for the year ended 31st March, 2025</a>
+        
         {{-- <a target="_blank" href="{{ asset('docs/forms/ANNUAL_DUES_RECERTIFICATION_WAIVER_APPLICATION.pdf')}}" class="list-group-item list-group-item-action "> ANNUAL DUES RECERTIFICATION WAIVER APPLICATION</a> --}}
       </div>
 
