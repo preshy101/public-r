@@ -22,42 +22,41 @@
         <p class="lead">
         </p>
 		<p>
-		<h2> 	The composition of the NIPR Governing Council (2023-2025) is as follows:</h2> <br>
+		<h2> 	The composition of the NIPR Governing Council (2025-2027) is as follows:</h2> <br>
 	<h3> Elected Members</h3>
 
 1.   Dr. Ike Neliaku  fnipr - President & Chairman of Council – FCT Chapter <br>
 
 2.   Prof. Emmanuel S. Dandaura fnipr, FNAL - Vice President & Vice Chairman of Council – Nasarawa Chapter <br>
 
-3.   Dr. Sule Ya'u Sule  fnipr – Kano Chapter <br>
+3.   Mr. Akin Agbejule, fnipr – Niger Chapter <br>
 
-4.   Mr. Akin Agbejule fnipr – Niger CHapter <br>
+4.   Mrs. Olubunmi Adedoyin Badejo, fnipr – FCT CHapter <br>
 
-5.   Mrs. Olubunmi Adedoyin Badejo fnipr – FCT Chapter <br>
+5.   Prof. Kate Azuka Omenugha, fnipr – Anambra Chapter <br>
 
-6.   Prof. Kate Azuka Omenugha fnipr – Anambra Chapter <br>
+6.   Mallam Bashir Adamu Chedi,  fnipr – Kadnuna Chapter <br>
 
-7.   Mallam Bashir Adamu Chedi  fnipr – Kaduna Chapter <br>
+7.   Prof. Saudat Salah Abdulbaqi, fnipr – Kwara Chapter <br>
 
-8.   Prince Ford ObiOzumba  fnipr – Imo Chapter <br>
+8.   Dr. Ahmad I. Sajoh, fnipr – Adamawa Chapter <br>
 
-9.   Dr. Saudat Salah Abdulbaqi fnipr – Kwara Chapter  <br>
+9.   Pastor Paulinus Enyindah Nsirim, fnipr – Rivers Chapter  <br>
 
-10.    Mrs. Thelma  Chika Okoh   mnipr – Lagos Chapter <br>
+10.  Comrade Ini Ememobong Essien, mnipr – Akwa Ibom Chapter <br>
 
-11.    Comrade Ini Ememobong Essien  mnipr - Akwa Ibom Chapter <br>
+11.  Mallam Kabir Ali Kobi, mnipr - Bauchi Chapter <br>
 
-12.    Mallam Kabir Ali Kobi  mnipr – Bauchi Chapter <br>
+12.  Prof. Sarah Benjamin Lwahas, mnipr – Plateau Chapter <br>
 
-13.    Pastor Paulinus Enyindah Nsirim mnipr  - Rivers Chapter <br>
+13.  Mr. Adaramola Temitope, mnipr  - Ogun Chapter <br>
 
-14.    Prof. Sarah Benjamin Lwahas mnipr  - Plateau Chapter <br>
+14.  Dr. Adewale Oladipo Oyekanmi, mnipr  - Osun Chapter <br>
 
-15.    Mr. Adaramola Temitope  mnipr – Ogun Chapter <br>
+15.  Chief Patrick Ukah, mnipr – Delta Chapter <br>
 
-16.    Dr. Adewale Oladipo Oyekanmi mnipr – Osun Chapter <br>
-
-17.    Mr. Bajulaiye Olanrewaju Adetokunbo anipr – Lagos Chapter <br>
+16.  Mr. Olajide Segun McMedal, mnipr – Lagos Chapter <br>
+17.  Mrs. Comfort Obot Nwankwo, fnipr – Lagos Chapter <br>
 
  <br>
 
