@@ -194,7 +194,7 @@
 									{{-- <li><i class="fab fa-time"></i>{{date('d-m', strtotime($item->startDate))}} - {{ date('d-m-Y', strtotime($item->endDate))}}
 										</li> --}}
 								</ul>
-								<h3 style="text-transform: unset" class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{$item->title}}</a></h3>
+								<h4 style="text-transform: unset" class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{$item->title}}</a></h4>
 								<div class="entry-content">
 									<p>
 										{{-- {{$item->description}} --}}
