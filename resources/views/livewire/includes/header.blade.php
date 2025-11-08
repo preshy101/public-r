@@ -101,7 +101,8 @@
 					<li>
                         {{-- <li> --}}
                             {{-- election link --}}
-                            <a target="_blank" class="button" href="https://elections.niprng.org.ng/" ><i class="fas fa-vote-yea"></i> <span>Elections Portal</span></a></li>
+                            <a target="_blank" class="button" href="{{route('member.tribute')}}" ><i class="fas fa-thumbs-up"></i> <span>Tribute in honour of Chief Frank Tamuno-Koko</span></a></li>
+                            {{-- <a target="_blank" class="button" href="https://elections.niprng.org.ng/" ><i class="fas fa-vote-yea"></i> <span>Elections</span></a></li> --}}
                         {{-- <a class="" href="{{route('member.registry')}}"><i class="fa fa-files-o"></i> Membership Register </a></li> --}}
 				</ul> <!-- .quick-contact -->
 
@@ -394,6 +395,10 @@
 								</li>
 								<li>
 									<a  href="{{route('news.publication')}}" style="text-transform: unset;">Publications</a>
+								</li>
+
+								<li>
+									<a  href="{{route('member.tribute')}}" style="text-transform: unset;">Tribute in Honour of Chief Frank Tamuno-Koko </a>
 								</li>
 							</ul>
 						</li>

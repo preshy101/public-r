@@ -15,6 +15,9 @@ class MembershipRegisterController extends Controller
     public function index(){
         return view('livewire.member.member-registry');
     }
+    public function tribute(){
+        return view('livewire.member.tribute');
+    }
     public function uploadView(){
         return view('livewire.member.upload-membership-register');
     }

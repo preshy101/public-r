@@ -136,6 +136,7 @@ Route::post('/education/examination/result/upload', [ResultSheetController::clas
 
 // Member route
 Route::get('/membership/information', MemberInformation::class)->name('member.information');
+Route::get('/membership/tribute', [MembershipRegisterController::class, 'tribute'])->name('member.tribute');
 Route::get('/membership/registry', [MembershipRegisterController::class, 'index'])->name('member.registry');
 
 Route::get('/membership/registry/upload', [MembershipRegisterController::class, 'uploadView'])->name('member_registry.view');
