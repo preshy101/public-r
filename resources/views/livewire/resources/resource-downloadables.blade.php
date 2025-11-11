@@ -39,7 +39,7 @@
     </div>
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
-          <b> BROCHURES</b>
+          <b> BROCHURES/Laws</b>
         </a>
 
         <a target="_blank" href="{{ asset('docs/2024_Edelman_Trust_Barometer_Nigeria_Report_Launch_FINAL.pdf')}}"  class="list-group-item list-group-item-action">2024 Edelman Trust Barometer Nigeria Report </a>
@@ -56,6 +56,8 @@
         <a target="_blank" href="{{ asset('docs/code_of_conduct.pdf')}}"  class="list-group-item list-group-item-action ">NIPR CODE OF CONDUCT</a>
       
         <a target="_blank" href="{{ asset('docs/forms/NIPR Annual Reports and Audited Accounts for the year ended 31st March, 2025.pdf')}}" class="list-group-item list-group-item-action "> NIPR Annual Reports and Audited Accounts for the year ended 31st March, 2025</a>
+        <a target="_blank" href="{{ asset('docs/docs/NIPR_Harmonized_Final_State_Chapters_Amendment _Bye_Law_2.pdf')}}" class="list-group-item list-group-item-action "> BYE-LAW NO 2 OF 1992 “CREATION, ADMINISTRATION OF CHAPTERS” AS 
+          AMENDED 2024</a>
       </div>
       <br>
       <br>
