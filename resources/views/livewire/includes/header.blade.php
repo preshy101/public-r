@@ -364,8 +364,11 @@
 							   <li>
 								   <a target="_blank" href="https://nprweek.niprng.org.ng/" style="text-transform: unset" >Annual NPRWeek</a>
 							   </li>
-
 							   <li>
+								   <a target="_blank" href="https://www.wprf2026.niprng.org.ng/" style="text-transform: unset" >WPRF Abuja 2026</a>
+							   </li>
+
+							   {{-- <li>
 								   <a wire:navigate href="#" style="text-transform: unset; color:gray" >National Spokespersons Awards</a>
 							   </li>
 							   <li>
@@ -376,7 +379,7 @@
 							   </li>
 							   <li>
 								   <a wire:navigate href="#" style="text-transform: unset; color:gray" >NIPR Diamond Jubilee </a>
-							   </li>
+							   </li> --}}
 
 						   </ul> <!-- .dropdown-menu -->
 						</li>
