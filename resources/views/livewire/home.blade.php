@@ -193,7 +193,7 @@
 									{{-- <li><i class="fab fa-time"></i>{{date('d-m', strtotime($item->startDate))}} - {{ date('d-m-Y', strtotime($item->endDate))}}
 										</li> --}}
 								</ul>
-								<h4 style="text-transform: unset" class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{Str::words($item->title, 9, ' ...')}}</a></h4>
+								<h4 style="text-transform: unset" class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{Str::words($item->title, 5, ' ...')}}</a></h4>
 								<div class="entry-content">
 									<p>
 										{{-- {{$item->description}} --}}
