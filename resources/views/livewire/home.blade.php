@@ -184,8 +184,7 @@
 						<div class="post-wrapper post-grid" style="background-color: white; margin-bottom: 0px; height: 446px">
 							<div class="image-wrapper">
 								<img class="img-responsive"
-								height="176px"
-								style="height: 176px; image-rendering: auto; width: 100%"
+                                style="height: 176px; width: 100%; object-fit: cover;"
 								src="{{Storage::url($item->image)}}" alt="event image 00">
 							</div> <!-- .image-wrapper -->
 							<div class="post-content">
@@ -194,7 +193,7 @@
 									{{-- <li><i class="fab fa-time"></i>{{date('d-m', strtotime($item->startDate))}} - {{ date('d-m-Y', strtotime($item->endDate))}}
 										</li> --}}
 								</ul>
-								<h4 style="text-transform: unset" class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{$item->title}}</a></h4>
+								<h4 style="text-transform: unset" class="entry-title"><a href="/resources/up-coming-events/{{$item->id}}">{{Str::words($item->title, 9, ' ...')}}</a></h4>
 								<div class="entry-content">
 									<p>
 										{{-- {{$item->description}} --}}
