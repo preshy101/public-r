@@ -401,7 +401,7 @@
 								</li>
 
 								<li>
-									<a  href="{{route('member.tribute')}}" style="text-transform: unset;">Tribute in Honour of Chief Frank Tamuno-Koko </a>
+									<a  href="https://www.wprf2026.niprng.org.ng/" style="text-transform: unset;">WPRF 2026 Abuja</a>
 								</li>
 							</ul>
 						</li>
