@@ -101,7 +101,11 @@
 					<li>
                         {{-- <li> --}}
                             {{-- election link --}}
-                            <a target="_blank" class="button" href="https://www.wprf2026.niprng.org.ng/" ><i class="fas fa-thumbs-up"></i> <span>WPRF 2026 Abuja</span></a></li>
+                            <a target="_blank" class="button" href="https://www.wprf2026.niprng.org.ng/" ><i class="fas fa-vote-yea"></i> <span>WPRF 2026 Abuja</span></a>
+                        </li>
+					<li>
+                        <a target="_blank" class="button" href="https://www.rpireport.com/" ><i class="fas fa-vote-yea"></i> <span>NPRI 2025</span></a>
+                    </li>
                             {{-- <a target="_blank" class="button" href="https://elections.niprng.org.ng/" ><i class="fas fa-vote-yea"></i> <span>Elections</span></a></li> --}}
                         {{-- <a class="" href="{{route('member.registry')}}"><i class="fa fa-files-o"></i> Membership Register </a></li> --}}
 				</ul> <!-- .quick-contact -->
@@ -365,6 +369,9 @@
 								   <a target="_blank" href="https://nprweek.niprng.org.ng/" style="text-transform: unset" >Annual NPRWeek</a>
 							   </li>
 							   <li>
+								   <a target="_blank" href="https://www.rpireport.com/" style="text-transform: unset" >NPRI 2025</a>
+							   </li>
+							   <li>
 								   <a target="_blank" href="https://www.wprf2026.niprng.org.ng/" style="text-transform: unset" >WPRF Abuja 2026</a>
 							   </li>
 
@@ -402,6 +409,9 @@
 
 								<li>
 									<a  href="https://www.wprf2026.niprng.org.ng/" style="text-transform: unset;">WPRF 2026 Abuja</a>
+								</li>
+								<li>
+									<a  href="https://www.rpireport.com/" style="text-transform: unset;">NPRI 2025</a>
 								</li>
 							</ul>
 						</li>
