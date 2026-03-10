@@ -36,62 +36,71 @@ class PostResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-        ->schema([
-            Section::make('Mean Content')->columns(2)
-                ->description('few words')
-                ->schema([
-                    TextInput::make('title')->live()->required()->minLength(3)->maxLength(150)
-                    ->afterStateUpdated(function
-                    (string $operation, $state, Forms\Set $set){
-                        if ($operation === 'edit') {
-                            return;
-                        }
-                        $set('slug', Str::slug($state));
-                        }
-                ),
-                    TextInput::make('slug')->readOnly()->required()->unique(ignoreRecord: true),
-                    Select::make('categories')->multiple()->relationship('categories','title')->required(),
-                    RichEditor::make('body')->required()
-                    ->fileAttachmentsDirectory('post/images')->columnSpanFull(),
-                    Select::make('user_id')->relationship('author','name')->searchable()->required(),
-                    DateTimePicker::make('published_at')->nullable(),
-                    Toggle::make('featured'),
-                ])
-                ->columnSpan(2),
-            Section::make('Meta')
-                ->description('')
-                ->schema([
-                    FileUpload::make('image')->image()->directory('post/thumbnails'),
+            ->schema([
+                Section::make('Mean Content')->columns(2)
+                    ->description('few words')
+                    ->schema([
+                        TextInput::make('title')->live()->required()->minLength(3)->maxLength(150)
+                            ->afterStateUpdated(
+                                function (string $operation, $state, Forms\Set $set) {
+                                    if ($operation === 'edit') {
+                                        return;
+                                    }
+                                    $set('slug', Str::slug($state));
+                                }
+                            ),
+                        TextInput::make('slug')->readOnly()->required()->unique(ignoreRecord: true),
+                        Select::make('categories')->multiple()->relationship('categories', 'title')->required(),
+                        RichEditor::make('body')->required()
+                            ->fileAttachmentsDirectory('post/images')->columnSpanFull(),
+                        Select::make('user_id')->relationship('author', 'name')->searchable()->required(),
+                        DateTimePicker::make('published_at')->nullable(),
+                        Toggle::make('featured'),
+                    ])
+                    ->columnSpan(2),
+                Section::make('Meta')
+                    ->description('')
+                    ->schema([
+                        FileUpload::make('image')->image()->directory('post/thumbnails'),
 
-                ])->collapsible()->columnSpan(['lg' => 1])
+                        FileUpload::make('gallery')
+                            ->label('Gallery Images')
+                            ->image()
+                            ->multiple()
+                            ->reorderable()
+                            ->directory('post/gallery')
+                            ->maxFiles(10)
+                            ->helperText('Add up to 10 images; drag to reorder.'),
+
+                    ])->collapsible()->columnSpan(['lg' => 1])
                 // ->columns(2),
-        ])->columns(3);
+            ])->columns(3);
     }
 
     public static function table(Table $table): Table
     {
         return $table
-        ->columns([
-            ImageColumn::make('image'),
-            TextColumn::make('title')->sortable()->searchable(),
-            TextColumn::make('slug')->sortable()->searchable(),
-            TextColumn::make('author.name')->sortable()->searchable(),
-            TextColumn::make('published_at')->date('Y-m-d')->sortable()->searchable(),
-            CheckboxColumn::make('featured'),
-        ])
-        ->filters([
-            Tables\Filters\TrashedFilter::make(),
-        ])
-        ->actions([
-            Tables\Actions\EditAction::make(),
-        ])
-        ->bulkActions([
-            Tables\Actions\BulkActionGroup::make([
-                Tables\Actions\DeleteBulkAction::make(),
-                Tables\Actions\ForceDeleteBulkAction::make(),
-                Tables\Actions\RestoreBulkAction::make(),
-            ]),
-        ]);
+            ->columns([
+                ImageColumn::make('image'),
+                TextColumn::make('title')->sortable()->searchable(),
+                TextColumn::make('slug')->sortable()->searchable(),
+                TextColumn::make('author.name')->sortable()->searchable(),
+                TextColumn::make('published_at')->date('Y-m-d')->sortable()->searchable(),
+                CheckboxColumn::make('featured'),
+            ])
+            ->filters([
+                Tables\Filters\TrashedFilter::make(),
+            ])
+            ->actions([
+                Tables\Actions\EditAction::make(),
+            ])
+            ->bulkActions([
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\ForceDeleteBulkAction::make(),
+                    Tables\Actions\RestoreBulkAction::make(),
+                ]),
+            ]);
     }
 
     public static function getRelations(): array

@@ -18,9 +18,13 @@
     <br>
     <div class="container">
         <h1 class="entry-title"><a style="color: red" href="#"> MCPD </a></h1>
-        <p class="lead">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+            <p class="lead">
             THE MANDATORY CONTINUING DEVELOPMEMT PROGRAMME (MCPD)
         </p>
+        <a href="https://portal.niprng.org.ng/mcpd-registration" class="btn btn-danger"> Register Now</a>
+        </div>
+
         {{-- <div class="col-md-10" style="padding-bottom: 8%">
         As part of its responsibilities, the Nigerian Institute of Public Relations
         embarks on trainings to enhance the competencies of professional public
@@ -40,21 +44,22 @@
     <div class="row">
         <div class="col-md-8">
             <div style="padding-bottom: 8%; margin-left: 5%;  text-align: justify;">
-                {!! $training->description !!}
+                {!! $training?->description ?? 'No description available.' !!}
             <p>
 
             </p>
         </div>
         </div>
         <div class="col-md-4 w-75" style="">
-
+            @if ($training && $training->Content && count($training->Content) > 0)
             <div class="list-group">
-            @foreach ($training->tContent as $item)
+            @foreach ($training->Content as $item)
             <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
-                <p>{{ \Carbon\Carbon::createFromFormat('Y-m-d', $item->year)->format('m-Y')  }}</p>
+                <p>{{ \Carbon\Carbon::createFromFormat('Y-m-d', $item->year)->format('jS F Y') }}</p>
             </a>
                 @endforeach
             </div>
+            @endif
         </div>
     </div>
     </div>

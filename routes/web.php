@@ -64,6 +64,7 @@ use App\Livewire\Hubs\YoungProfessionals;
 use App\Livewire\Training\Conference\AviationConference;
 use App\Livewire\Training\Conference\DirectorsConference;
 use App\Livewire\Training\Conference\DirectorsConferenceAndRetreat;
+use App\Livewire\Training\Calendar;
 
 /*
 |--------------------------------------------------------------------------
@@ -105,7 +106,8 @@ Route::get('/trianing/masterclass', Masterclass::class)->name('training.mastercl
 Route::get('/trianing/m-c-p-d', MCPD::class)->name('training.mcpd');
 Route::get('/trianing/conference/directors-conference-retreat', DirectorsConferenceAndRetreat::class)->name('training.conference.retreat');
 Route::get('/trianing/conference/practitioner', PRPractitioners::class)->name('training.conference.practitioner');
- // Annual Lecture
+Route::get('/training/calendar', Calendar::class)->name('training.calendar');
+// Annual Lecture
 Route::get('/training/annual-lecture/sam-epelle-memorial-gold-lecture', SamEpelle::class)->name('training.lecture.sam-epelle');
 Route::get('/training/annual-lecture/Igwe-nnaemeka-alfred-achebe-peace-and-reconciliation-annual-lecture-series', IgweNnaemeka::class)->name('training.lecture.igwe');
 Route::get('/training/annual-lecture/Raymond-Dokpesi-annual-lecture-series', Aminu::class)->name('training.lecture.raymond');
@@ -128,9 +130,9 @@ Route::get('/student/requirements', StudentRequirment::class)->name('student.req
 Route::get('/student/curriculum', StudentCurriculum::class)->name('student.curriculum');
 
 // result
-Route::get('/education/examination/result', [ResultSheetController::class,'resultView' ])->name('education.exams.result');
-Route::post('/education/examination/result', [ResultSheetController::class,'searchResult' ])->name('education.exams.result.search');
-Route::get('/education/examination/result/upload', [ResultSheetController::class,'resultUploadView' ])->name('education.exams.result.upload');
+Route::get('/education/examination/result', [ResultSheetController::class, 'resultView'])->name('education.exams.result');
+Route::post('/education/examination/result', [ResultSheetController::class, 'searchResult'])->name('education.exams.result.search');
+Route::get('/education/examination/result/upload', [ResultSheetController::class, 'resultUploadView'])->name('education.exams.result.upload');
 Route::post('/education/examination/result/upload', [ResultSheetController::class, 'importResult'])->name('result.import');
 
 
@@ -154,7 +156,7 @@ Route::get('/education/examinations/publication', [MembershipRegisterController:
 Route::get('/training/view/{item_id}', [MembershipRegisterController::class, 'viewTraining'])->name('training.vew');
 
 // staff ID Card
-Route::get('/staff/id/{id}', [IdcardController::class,'verifyId'])->name('verify.idcard');
+Route::get('/staff/id/{id}', [IdcardController::class, 'verifyId'])->name('verify.idcard');
 
 // Blog
 Route::get('/news/posts', Blog::class)->name('news.posts');

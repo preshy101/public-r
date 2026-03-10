@@ -19,29 +19,36 @@ class Post extends Model
 
     protected $casts = [
         'published_at' => 'datetime',
+        'gallery' => 'array',
     ];
-   public function scopePublished($query){
-    $query->where('published_at', '<=', Carbon::now());
-   }
+    public function scopePublished($query)
+    {
+        $query->where('published_at', '<=', Carbon::now());
+    }
 
-   public function scopeFeatured($query){
-    $query->where('featured', true);
-   }
+    public function scopeFeatured($query)
+    {
+        $query->where('featured', true);
+    }
 
-   public function categories(){
-    return $this->belongsToMany(Category::class);
-   }
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class);
+    }
 
-   public function author(){
-    return $this->belongsTo(User::class, 'user_id');
-   }
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 
-   public function getExcept(){
-    return Str::limit(strip_tags($this->body) , 150);
-   }
+    public function getExcept()
+    {
+        return Str::limit(strip_tags($this->body), 150);
+    }
 
-   public function getReadingTime(){
-   $mins = round(str_word_count($this->body) / 250);
-    return ($mins <1) ? 1 : $mins;
-   }
+    public function getReadingTime()
+    {
+        $mins = round(str_word_count($this->body) / 250);
+        return ($mins < 1) ? 1 : $mins;
+    }
 }

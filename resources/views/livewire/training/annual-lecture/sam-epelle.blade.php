@@ -35,7 +35,7 @@
                 <div class="list-group">
                 @foreach ($training->tContent as $item)
                 <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
-                    <p>{{ \Carbon\Carbon::createFromFormat('Y-m-d', $item->year)->format('m-Y')  }}</p>
+                    <p>{{ \Carbon\Carbon::createFromFormat('Y-m-d', $item->year)->format('jS F Y') }}</p>
                 </a>
                     @endforeach
                 </div>

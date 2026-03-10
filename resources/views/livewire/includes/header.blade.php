@@ -195,6 +195,11 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" style="text-transform: unset;" aria-expanded="false">Training</a>
 							<ul class="dropdown-menu" style="text-transform: unset">
 								<li>
+									<a style="text-transform: unset;"
+									wire:navigate href="{{route('training.calendar')}}" class="dropdown-toggle" data-toggle="dropdown">Training Calendar</a>
+
+								</li>
+								<li>
 									<a style="text-transform: unset; "
 									{{-- wire:navigate href="/training/masterclass" class="dropdown-toggle" data-toggle="dropdown">Masterclasses</a>  --}}
 									wire:navigate href="{{route('training.masterclass')}}" class="dropdown-toggle" data-toggle="dropdown">Masterclasses</a>
