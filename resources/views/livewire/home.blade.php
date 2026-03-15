@@ -393,7 +393,7 @@
 			pointer-events: none;
 		">&rdquo;</div>
 
-		<div class="container">
+		<div class="container" id="nipr-definition">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 text-center">
 					{{-- Section label --}}
