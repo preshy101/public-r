@@ -323,6 +323,137 @@
 		{{-- </div> <!-- .container --> --}}
 	</section> <!-- .about-section -->
 
+	{{-- NIPR Definition of Public Relations --}}
+	<section class="section-block" style="
+		background: linear-gradient(135deg, #c0392b 0%, #96281B 50%, #7B1F1F 100%);
+		padding: 80px 0;
+		position: relative;
+		overflow: hidden;
+	">
+		{{-- Decorative background elements --}}
+		<div style="
+			position: absolute;
+			top: -80px;
+			right: -80px;
+			width: 260px;
+			height: 260px;
+			border: 2px solid rgba(255,255,255,0.08);
+			border-radius: 50%;
+		"></div>
+		<div style="
+			position: absolute;
+			top: -30px;
+			right: -30px;
+			width: 160px;
+			height: 160px;
+			border: 2px solid rgba(255,255,255,0.05);
+			border-radius: 50%;
+		"></div>
+		<div style="
+			position: absolute;
+			bottom: -50px;
+			left: -50px;
+			width: 200px;
+			height: 200px;
+			border: 2px solid rgba(255,255,255,0.06);
+			border-radius: 50%;
+		"></div>
+		<div style="
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			width: 100px;
+			height: 100px;
+			border: 2px solid rgba(255,255,255,0.04);
+			border-radius: 50%;
+		"></div>
+		<div style="
+			position: absolute;
+			top: 50%;
+			left: 4%;
+			transform: translateY(-50%);
+			font-size: 200px;
+			color: rgba(255,255,255,0.05);
+			font-family: Georgia, serif;
+			line-height: 1;
+			pointer-events: none;
+		">&ldquo;</div>
+		<div style="
+			position: absolute;
+			top: 40%;
+			right: 4%;
+			transform: translateY(-50%);
+			font-size: 200px;
+			color: rgba(255,255,255,0.05);
+			font-family: Georgia, serif;
+			line-height: 1;
+			pointer-events: none;
+		">&rdquo;</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center">
+					{{-- Section label --}}
+					<div style="margin-bottom: 25px;">
+						<span style="
+							display: inline-block;
+							background: rgba(255,255,255,0.15);
+							color: #ffffff;
+							font-size: 12px;
+							font-weight: 700;
+							letter-spacing: 3px;
+							text-transform: uppercase;
+							padding: 8px 24px;
+							border-radius: 30px;
+							border: 1px solid rgba(255,255,255,0.2);
+						">NIPR Definition of Public Relations</span>
+					</div>
+
+					{{-- Decorative line --}}
+					<div style="margin: 0 auto 30px; width: 60px; height: 3px; background: #ffffff; border-radius: 2px;"></div>
+
+					{{-- Quote --}}
+					<blockquote style="
+						border: none;
+						margin: 0;
+						padding: 0 20px;
+					">
+						<p style="
+							font-size: 24px;
+							line-height: 1.8;
+							color: #ffffff;
+							font-weight: 300;
+							font-style: italic;
+							font-family: Georgia, 'Times New Roman', serif;
+							margin-bottom: 30px;
+							text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+						">
+							&ldquo;Public Relations is a strategic leadership role that builds trust,
+							reputation, lasting relationships, and drives inclusive development through ethical, transparent, and culturally
+							respectful communication.&rdquo;
+						</p>
+					</blockquote>
+
+					{{-- Decorative divider --}}
+					<div style="margin: 0 auto 20px; width: 40px; height: 2px; background: rgba(255,255,255,0.4); border-radius: 2px;"></div>
+
+					{{-- Attribution --}}
+					<p style="
+						color: rgba(255,255,255,0.85);
+						font-size: 14px;
+						font-weight: 400;
+						letter-spacing: 0.5px;
+						margin: 0;
+					">
+						<i class="fa fa-check-circle" style="color: #ffffff; margin-right: 6px;"></i>
+						Approved by NIPR Council &mdash; Tuesday, 22nd July 2025
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	{{-- End NIPR Definition --}}
+
 	@include('livewire.sections.presidentMessage')
 
     {{-- Statistics --}}
