@@ -323,13 +323,16 @@
 		{{-- </div> <!-- .container --> --}}
 	</section> <!-- .about-section -->
 
-	{{-- NIPR Definition of Public Relations --}}
+
+
+	@include('livewire.sections.presidentMessage')
+{{-- NIPR Definition of Public Relations --}}
 	<section class="section-block" style="
 		background: linear-gradient(135deg, #c0392b 0%, #96281B 50%, #7B1F1F 100%);
 		padding: 80px 0;
 		position: relative;
 		overflow: hidden;
-	">
+	    ">
 		{{-- Decorative background elements --}}
 		<div style="
 			position: absolute;
@@ -453,9 +456,6 @@
 		</div>
 	</section>
 	{{-- End NIPR Definition --}}
-
-	@include('livewire.sections.presidentMessage')
-
     {{-- Statistics --}}
 	<section class="fun-facts-section fun-facts-01 section-block" >
         <div class="container">
