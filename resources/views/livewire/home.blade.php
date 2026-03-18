@@ -473,7 +473,8 @@
 
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-users" style="font-size: 50px;"></i>
-							<h3 style="text-transform: capitalize"><span id="memberStrength" class="counter">-</span>Members</h3>
+							{{-- <h3 style="text-transform: capitalize"><span id="memberStrength" class="counter">-</span>Members</h3> --}}
+							<h3 style="text-transform: capitalize"><span id="number" class="counter">30,000</span>Members</h3>
 						</div>
 
                         <!-- .col-xs-6 -->
