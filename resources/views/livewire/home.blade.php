@@ -473,8 +473,8 @@
 
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-users" style="font-size: 50px;"></i>
-							{{-- <h3 style="text-transform: capitalize"><span id="memberStrength" class="counter">-</span>Members</h3> --}}
-							<h3 style="text-transform: capitalize"><span id="number" class="counter">30,982</span>Members</h3>
+							<h3 style="text-transform: capitalize"><span id="memberStrength" class="counter">-</span>Members</h3>
+							{{-- <h3 style="text-transform: capitalize"><span id="number" class="counter">30,982</span>Members</h3> --}}
 						</div>
 
                         <!-- .col-xs-6 -->
@@ -619,7 +619,7 @@
         // data: { query: value },
         success: function(response) {
 
-          $('#memberStrength').text(response.member);
+          $('#memberStrength').text(response.member+30000);
          console.log('AJAX call successful', response);
           // Process the response here
         },
