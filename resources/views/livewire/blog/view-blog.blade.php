@@ -29,6 +29,7 @@
                                 src="{{Storage::url($post->image)}}"
                                 alt="news image 00">
                             </div> <!-- .image-wrapper -->
+
                             <div class="post-content">
                                 <h2 class="entry-title"><a href="#">{{$post->title}}</a></h2>
                                 <ul class="post-meta">
@@ -47,6 +48,17 @@
                                     {!!$post->body!!}
                                 </p>
                             </div> <!-- .post-content -->
+                            @if(is_array($post->gallery) && count($post->gallery) > 0)
+                                <div class="gallery-wrapper" style="margin-top: 1rem;">
+                                    <div class="row">
+                                        @foreach($post->gallery as $galleryImage)
+                                            <div class="col-xs-6 col-sm-4 col-md-3" style="margin-bottom: 1rem;">
+                                                <img class="img-responsive" style="height: 120px; width: 100%; object-fit: cover; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" src="{{Storage::url($galleryImage)}}" alt="gallery image">
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            @endif
                         </div> <!-- .post-wrapper post-overlay -->
 
 
@@ -131,7 +143,7 @@
                                         @endif
                                         @endforeach
                                         @endif
-                                        @endforeach 
+                                        @endforeach
                                 @else
                                     <small>No content yet</small>
                                 @endif
