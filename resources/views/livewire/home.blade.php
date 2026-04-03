@@ -480,7 +480,7 @@
                         <!-- .col-xs-6 -->
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-note" style="font-size: 50px;"></i>
-							<h3 style="text-transform: capitalize"><span class="counter">13</span>NIPR hubs</h3>
+							<h3 style="text-transform: capitalize"><span class="counter">12</span>NIPR hubs</h3>
 						</div> <!-- .col-xs-6 -->
 						<div class="col-xs-12 col-md-3">
                             <i class="pe-7s-camera" style="font-size: 50px;"></i>
